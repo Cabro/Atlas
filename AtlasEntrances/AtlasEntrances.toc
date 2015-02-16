@@ -1,0 +1,24 @@
+## Interface: 11200
+## Title: AtlasEntrances
+## Title-zhCN: Atlas |r|cFF0099FF[地下城入口]|r
+## Title-zhTW: |r|cFF0099FF[地圖]|rAtlas 副本入口
+## Notes: Instance Entrances
+## Notes-frFR: Zone d'entrées des instances
+## Notes-zhCN: 地下城入口
+## Notes-zhTW: 副本入口地圖，顯示副本入口附近的地形與相關的NPC位置
+## Notes-deDE: Eingänge
+## Notes-esES: Entradas
+## Version: 1.10.3
+## X-Date: November, 2007
+## Author: Dan Gilbert, edited by Snelf
+## X-Email: loglow@gmail.com
+## X-Website: http://www.atlasmod.com
+## X-Category: MYADDONS_CATEGORY_MAP
+## RequiredDeps: Atlas
+
+Locale\AtlasEntrances-enUS.lua
+Locale\AtlasEntrances-deDE.lua
+Locale\AtlasEntrances-frFR.lua
+Locale\AtlasEntrances-zhCN.lua
+Locale\AtlasEntrances-esES.lua
+Locale\AtlasEntrances-zhTW.lua

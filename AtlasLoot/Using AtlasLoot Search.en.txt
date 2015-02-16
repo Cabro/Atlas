@@ -1,0 +1,11 @@
+AtlasLoot was never coded to be and is not capable of being a Lootlink type mod where advanced searching is possible.  The search facility now provided is intended as an easy way to find who drops an item you see someone wearing or linked in chat.  As such, there are a few limitations to its operation.
+
+1) The name of the item must match EXACTLY.  Incomplete names will match nothing.
+2) While in English it will search all items (as they are stored that way), searches performed in non-English languages can only search 'safe' items, due to limitations of the Blizzard GetItemInfo function.
+3) When searching for an item that may appear on multiple pages (like Dragonstalker's Spaulders, for example), the search will return the page with the instance boss as opposed to a set or collection page (in this case, the Chromaggus loot table will be displayed).
+
+To perform a search, simply type the name of the item you want to know more about in the search box on the bottom of the AtlasLoot Panel or AtlasLoot Loot Browser.  If the item exists, the correct loot page should be displayed with the name of the mob as the title.  If no match is found, a message will be displayed in the chat window.
+
+I hope you find this feature useful.
+
+-Dav
