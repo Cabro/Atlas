@@ -47,14 +47,6 @@ function AtlasLootRepMenu()
     AtlasLootMenuItem_3.lootpage="Darkmoon";
     AtlasLootMenuItem_3.text=ATLASLOOT_FACTION_DARKMOON;
     AtlasLootMenuItem_3:Show();
-    --Frostwolf Clan
-    AtlasLootMenuItem_25_Name:SetText(ATLASLOOT_FACTION_FROSTWOLF);
-    AtlasLootMenuItem_25_Extra:SetText("|cffFF0000"..ATLASLOOT_HORDE);
-    AtlasLootMenuItem_25_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_FrostwolfTrinket_01");
-    AtlasLootMenuItem_25.type="Factions";
-    AtlasLootMenuItem_25.lootpage="Frostwolf1";
-    AtlasLootMenuItem_25.text=ATLASLOOT_FACTION_FROSTWOLF;
-    AtlasLootMenuItem_25:Show();
     --Hydraxian Waterlords
     AtlasLootMenuItem_18_Name:SetText(ATLASLOOT_FACTION_WATERLORDS);
     AtlasLootMenuItem_18_Extra:SetText("");
@@ -63,14 +55,6 @@ function AtlasLootRepMenu()
     AtlasLootMenuItem_18.lootpage="WaterLords1";
     AtlasLootMenuItem_18.text=ATLASLOOT_FACTION_WATERLORDS;
     AtlasLootMenuItem_18:Show();
-    --Stormpike
-    AtlasLootMenuItem_10_Name:SetText(ATLASLOOT_FACTION_STORMPIKE);
-    AtlasLootMenuItem_10_Extra:SetText("|cff2773ff"..ATLASLOOT_ALLIANCE);
-    AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_StormPikeTrinket_01");
-    AtlasLootMenuItem_10.type="Factions";
-    AtlasLootMenuItem_10.lootpage="Stormpike1";
-    AtlasLootMenuItem_10.text=ATLASLOOT_FACTION_STORMPIKE;
-    AtlasLootMenuItem_10:Show();
     --Thorium Brotherhood
     AtlasLootMenuItem_4_Name:SetText(ATLASLOOT_FACTION_THORIUM);
     AtlasLootMenuItem_4_Extra:SetText("");

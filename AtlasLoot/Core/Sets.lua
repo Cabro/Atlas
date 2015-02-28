@@ -74,27 +74,27 @@ function AtlasLootSetMenu()
     AtlasLootMenuItem_9.type="Sets";
     AtlasLootMenuItem_9.lootpage="OldMounts";
     AtlasLootMenuItem_9:Show();
+	--Unobtainable Mounts
+    AtlasLootMenuItem_10_Name:SetText(ATLASLOOT_UNOBMOUNTS);
+    AtlasLootMenuItem_10_Extra:SetText("");
+    AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\Ability_Mount_Whitetiger");
+    AtlasLootMenuItem_10.type="Sets";
+    AtlasLootMenuItem_10.lootpage="UnobMounts";
+    AtlasLootMenuItem_10:Show();
     --Pets
     AtlasLootMenuItem_8_Name:SetText(ATLASLOOT_CEPETS);
     AtlasLootMenuItem_8_Extra:SetText("");
     AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\Ability_Seal");
     AtlasLootMenuItem_8.type="Sets";
-    AtlasLootMenuItem_8.lootpage="RarePets";
+    AtlasLootMenuItem_8.lootpage="RarePets1";
     AtlasLootMenuItem_8:Show();
-    --PvPSets
-    AtlasLootMenuItem_11_Name:SetText(ATLASLOOT_PVP_SETS);
-    AtlasLootMenuItem_11_Extra:SetText("|cffFF8400"..ATLASLOOT_LEVEL_60);
-    AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Axe_02");
-    AtlasLootMenuItem_11.type="Sets";
-    AtlasLootMenuItem_11.lootpage="PVPSET";
-    AtlasLootMenuItem_11:Show();
 	--World Epics
-    AtlasLootMenuItem_15_Name:SetText(ATLASLOOT_WORLDEPICS);
-    AtlasLootMenuItem_15_Extra:SetText("");
-    AtlasLootMenuItem_15_Icon:SetTexture("Interface\\Icons\\INV_Box_04");
-    AtlasLootMenuItem_15.type="Sets";
-    AtlasLootMenuItem_15.lootpage="WorldEpics3";
-    AtlasLootMenuItem_15:Show();
+    AtlasLootMenuItem_22_Name:SetText(ATLASLOOT_WORLDEPICS);
+    AtlasLootMenuItem_22_Extra:SetText("");
+    AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Box_04");
+    AtlasLootMenuItem_22.type="Sets";
+    AtlasLootMenuItem_22.lootpage="WorldEpics3";
+    AtlasLootMenuItem_22:Show();
     --Dungeon Set 1/2
     AtlasLootMenuItem_17_Name:SetText(ATLASLOOT_TIER0_SETS);
     AtlasLootMenuItem_17_Extra:SetText("");

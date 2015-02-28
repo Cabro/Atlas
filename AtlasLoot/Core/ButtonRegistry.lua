@@ -69,6 +69,16 @@ AtlasLoot_ButtonRegistry = {
         Prev_Page = "Argent2";
         Prev_Title = ATLASLOOT_FACTION_ARGENT..": "..ATLASLOOT_FRIENDLY.."/"..ATLASLOOT_HONORED;
         };
+    ["RarePets1"] = {
+        Title = ATLASLOOT_CEPETS;
+        Next_Page = "RarePets2";
+        Next_Title = ATLASLOOT_CEPETS;
+        };
+    ["RarePets2"] = {
+        Title = ATLASLOOT_CEPETS;
+        Prev_Page = "RarePets1";
+        Prev_Title = ATLASLOOT_CEPETS;
+        };
     ["WorldEpics1"] = {
         Title = ATLASLOOT_WORLDEPICS.." 30-39";
         Next_Page = "WorldEpics2";
@@ -722,5 +732,185 @@ AtlasLoot_ButtonRegistry = {
         Title = "Abyssal Lords";
         Back_Page = "AbyssalCouncil";
         Back_Title = "Abyssal Council";
+        };
+    ["ABRepFriendly2029"] = {
+        Title = "AB 20-29 Friendly Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepFriendly3039";
+        };
+    ["ABRepFriendly3039"] = {
+        Title = "AB 30-39 Friendly Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepFriendly4049";
+        Prev_Page = "ABRepFriendly2029";
+        };
+    ["ABRepFriendly4049"] = {
+        Title = "AB 40-49 Friendly Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepFriendly5059";
+        Prev_Page = "ABRepFriendly3039";
+        };
+    ["ABRepFriendly5059"] = {
+        Title = "AB 50-59 Friendly Rewards";
+        Back_Page = "ABRepMenu";
+        Prev_Page = "ABRepFriendly4049";
+        };
+    ["ABRepHonored2029"] = {
+        Title = "AB 20-29 Honored Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepHonored3039";
+        };
+    ["ABRepHonored3039"] = {
+        Title = "AB 30-39 Honored Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepHonored4049";
+        Prev_Page = "ABRepHonored2029";
+        };
+    ["ABRepHonored4049"] = {
+        Title = "AB 40-49 Honored Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepHonored5059";
+        Prev_Page = "ABRepHonored3039";
+        };
+    ["ABRepHonored5059"] = {
+        Title = "AB 50-59 Honored Rewards";
+        Back_Page = "ABRepMenu";
+        Prev_Page = "ABRepHonored4049";
+        };
+	["ABRepRevered2029"] = {
+        Title = "AB 20-29 Revered Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepRevered3039";
+        };
+    ["ABRepRevered3039"] = {
+        Title = "AB 30-39 Revered Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepRevered4049";
+        Prev_Page = "ABRepRevered2029";
+        };
+    ["ABRepRevered4049"] = {
+        Title = "AB 40-49 Revered Rewards";
+        Back_Page = "ABRepMenu";
+        Next_Page = "ABRepRevered5059";
+        Prev_Page = "ABRepRevered3039";
+        };
+	["ABRepRevered5059"] = {
+        Title = "AB 50-59 Revered Rewards";
+        Back_Page = "ABRepMenu";
+        Prev_Page = "ABRepRevered4049";
+        };
+    ["ABRepExalted"] = {
+        Title = "AB Exalted Rewards";
+        Back_Page = "ABRepMenu";
+        };
+    ["AVRepFriendly"] = {
+        Title = "AV Friendly Rewards";
+        Back_Page = "AVRepMenu";
+        Next_Page = "AVRepHonored";
+        };
+    ["AVRepHonored"] = {
+        Title = "AV Honored Rewards";
+        Back_Page = "AVRepMenu";
+        Next_Page = "AVRepRevered";
+        Prev_Page = "AVRepFriendly";
+        };
+    ["AVRepRevered"] = {
+        Title = "AV Revered Rewards";
+        Back_Page = "AVRepMenu";
+        Next_Page = "AVRepExalted";
+        Prev_Page = "AVRepHonored";
+        };
+    ["AVRepExalted"] = {
+        Title = "AV Exalted Rewards";
+        Back_Page = "AVRepMenu";
+        Prev_Page = "AVRepRevered";
+        };
+    ["WSGRepFriendly2029"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 20-29 Friendly Rewards";
+        Next_Page = "WSGRepFriendly3039";
+        };
+    ["WSGRepFriendly3039"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 30-39 Friendly Rewards";
+        Next_Page = "WSGRepFriendly4049";
+        Prev_Page = "WSGRepFriendly2029";
+        };
+    ["WSGRepFriendly4049"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 40-49 Friendly Rewards";
+        Prev_Page = "WSGRepFriendly3039";
+        };
+    ["WSGRepHonored1019"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 10-19 Honored Rewards";
+        Next_Page = "WSGRepHonored2029";
+        };
+    ["WSGRepHonored2029"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 20-29 Honored Rewards";
+        Next_Page = "WSGRepHonored3039";
+        Prev_Page = "WSGRepHonored1019";
+        };
+    ["WSGRepHonored3039"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 30-39 Honored Rewards";
+        Next_Page = "WSGRepHonored4049";
+        Prev_Page = "WSGRepHonored2029";
+        };
+    ["WSGRepHonored4049"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 40-49 Honored Rewards";
+        Next_Page = "WSGRepHonored5059";
+        Prev_Page = "WSGRepHonored3039";
+        };
+    ["WSGRepHonored5059"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 50-59 Honored Rewards";
+        Prev_Page = "WSGRepHonored4049";
+        };
+    ["WSGRepRevered1019"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 10-19 Revered Rewards";
+        Next_Page = "WSGRepRevered2029";
+        };
+    ["WSGRepRevered2029"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 20-29 Revered Rewards";
+        Next_Page = "WSGRepRevered3039";
+        Prev_Page = "WSGRepRevered1019";
+        };
+    ["WSGRepRevered3039"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 30-39 Revered Rewards";
+        Next_Page = "WSGRepRevered4049";
+        Prev_Page = "WSGRepRevered2029";
+        };
+    ["WSGRepRevered4049"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 40-49 Revered Rewards";
+        Next_Page = "WSGRepRevered5059";
+        Prev_Page = "WSGRepRevered3039";
+        };
+    ["WSGRepRevered5059"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 50-59 Revered Rewards";
+        Prev_Page = "WSGRepRevered4049";
+        };
+    ["WSGRepExalted4049"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 40-49 Exalted Rewards";
+        Next_Page = "WSGRepExalted5059";
+        };
+    ["WSGRepExalted5059"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 50-59 Exalted Rewards";
+        Next_Page = "WSGRepExalted60";
+        Prev_Page = "WSGRepExalted4049";
+        };
+    ["WSGRepExalted60"] = {
+        Back_Page = "WSGRepMenu";
+        Title = "WSG 60 Exalted Rewards";
+        Prev_Page = "WSGRepExalted5059";
         };
 };

@@ -559,6 +559,12 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
         AtlasLoot_SetMenu("PVPSET");
 	elseif(dataID=="AbyssalCouncil") then
 		AtlasLoot_EventsMenu("AbyssalCouncil");
+	elseif(dataID=="WSGRepMenu") then
+		AtlasLoot_PvPMenu("WSGRepMenu");
+	elseif(dataID=="ABRepMenu") then
+		AtlasLoot_PvPMenu("ABRepMenu");
+	elseif(dataID=="AVRepMenu") then
+		AtlasLoot_PvPMenu("AVRepMenu");
     else
         for i = 1, 30, 1 do
             if(dataSource[dataID][i] ~= nil and dataSource[dataID][i][3] ~= "") then
