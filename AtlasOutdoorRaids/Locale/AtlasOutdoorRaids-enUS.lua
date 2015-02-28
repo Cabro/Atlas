@@ -65,7 +65,7 @@ if ( GetLocale() == "enUS" or GetLocale() == "enGB" ) then
 			ORNG.."Damage: Frost";
 		};
 		FourDragons = {
-			ZoneName = "Dragons of Nightmare";
+			ZoneName = "Emerald Dragons";
 			"";
 			GREN..INDENT.."Lethon";
 			GREN..INDENT.."Emeriss";
@@ -78,7 +78,7 @@ if ( GetLocale() == "enUS" or GetLocale() == "enGB" ) then
 			GREY.."4) Ashenvale";
 			"";
 			"";
-			GREY..INDENT.."Dragons of Nightmare Trash";
+			GREY..INDENT.."Emerald Dragons Trash";
 			"";
 			"";
 			"";
