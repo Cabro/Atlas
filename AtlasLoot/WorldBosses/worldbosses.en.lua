@@ -6,22 +6,15 @@ AtlasLootWBBossButtons = {
 
 	FourDragons = {
 		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
-		"";
 		"DLethon";
 		"DEmeriss";
 		"DTaerar";
 		"DYsondre";
+		"";
+		"";
+		"";
+		"";
+		"";
 		"";
 		"";
 		"DTrash";
