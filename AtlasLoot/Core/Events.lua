@@ -126,21 +126,21 @@ function AtlasLootAbyssalCouncilMenu()
     end
     getglobal("AtlasLootItemsFrame_NEXT"):Hide();
     getglobal("AtlasLootItemsFrame_PREV"):Hide();
-    --Druid
+    --Templars
     AtlasLootMenuItem_2_Name:SetText("Abyssal Templars");
     AtlasLootMenuItem_2_Extra:SetText("");
     AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Talisman_05");
     AtlasLootMenuItem_2.type="Subset";
     AtlasLootMenuItem_2.lootpage="AbyssalTemplars";
     AtlasLootMenuItem_2:Show();
-    --Mage
+    --Dukes
     AtlasLootMenuItem_3_Name:SetText("Abyssal Dukes");
     AtlasLootMenuItem_3_Extra:SetText("");
     AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Ring_36");
     AtlasLootMenuItem_3.type="Subset";
     AtlasLootMenuItem_3.lootpage="AbyssalDukes";
     AtlasLootMenuItem_3:Show();
-    --Priest
+    --Lords
     AtlasLootMenuItem_4_Name:SetText("Abyssal Lords");
     AtlasLootMenuItem_4_Extra:SetText("");
     AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Staff_13");

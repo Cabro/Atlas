@@ -97,28 +97,28 @@ function AtlasLootWSGRepMenu()
     --Friendly
     AtlasLootMenuItem_2_Name:SetText("Friendly Reputation Rewards");
     AtlasLootMenuItem_2_Extra:SetText("");
-	AtlasLootMenuItem_2_Icon:SetTexture("");
+	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
     AtlasLootMenuItem_2.type="Subset";
     AtlasLootMenuItem_2.lootpage="WSGRepFriendly4049";
     AtlasLootMenuItem_2:Show();
     --Honored
     AtlasLootMenuItem_3_Name:SetText("Honored Reputation Rewards");
     AtlasLootMenuItem_3_Extra:SetText("");
-    AtlasLootMenuItem_3_Icon:SetTexture("");
+    AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
     AtlasLootMenuItem_3.type="Subset";
     AtlasLootMenuItem_3.lootpage="WSGRepHonored5059";
     AtlasLootMenuItem_3:Show();
     --Revered
     AtlasLootMenuItem_4_Name:SetText("Revered Reputation Rewards");
     AtlasLootMenuItem_4_Extra:SetText("");
-    AtlasLootMenuItem_4_Icon:SetTexture("");
+    AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
     AtlasLootMenuItem_4.type="Subset";
     AtlasLootMenuItem_4.lootpage="WSGRepRevered5059";
     AtlasLootMenuItem_4:Show();
     --Exalted
     AtlasLootMenuItem_5_Name:SetText("Exalted Reputation Rewards");
     AtlasLootMenuItem_5_Extra:SetText("");
-    AtlasLootMenuItem_5_Icon:SetTexture("");
+    AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
     AtlasLootMenuItem_5.type="Subset";
     AtlasLootMenuItem_5.lootpage="WSGRepExalted60";
     AtlasLootMenuItem_5:Show();
@@ -141,28 +141,28 @@ function AtlasLootABRepMenu()
     --Friendly
     AtlasLootMenuItem_2_Name:SetText("Friendly Reputation Rewards");
     AtlasLootMenuItem_2_Extra:SetText("");
-	AtlasLootMenuItem_2_Icon:SetTexture("");
+	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
     AtlasLootMenuItem_2.type="Subset";
     AtlasLootMenuItem_2.lootpage="ABRepFriendly5059";
     AtlasLootMenuItem_2:Show();
     --Honored
     AtlasLootMenuItem_3_Name:SetText("Honored Reputation Rewards");
     AtlasLootMenuItem_3_Extra:SetText("");
-    AtlasLootMenuItem_3_Icon:SetTexture("");
+    AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
     AtlasLootMenuItem_3.type="Subset";
     AtlasLootMenuItem_3.lootpage="ABRepHonored5059";
     AtlasLootMenuItem_3:Show();
     --Revered
     AtlasLootMenuItem_4_Name:SetText("Revered Reputation Rewards");
     AtlasLootMenuItem_4_Extra:SetText("");
-    AtlasLootMenuItem_4_Icon:SetTexture("");
+    AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
     AtlasLootMenuItem_4.type="Subset";
     AtlasLootMenuItem_4.lootpage="ABRepRevered5059";
     AtlasLootMenuItem_4:Show();
     --Exalted
     AtlasLootMenuItem_5_Name:SetText("Exalted Reputation Rewards");
     AtlasLootMenuItem_5_Extra:SetText("");
-    AtlasLootMenuItem_5_Icon:SetTexture("");
+    AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
     AtlasLootMenuItem_5.type="Subset";
     AtlasLootMenuItem_5.lootpage="ABRepExalted";
     AtlasLootMenuItem_5:Show();
@@ -185,28 +185,28 @@ function AtlasLootAVRepMenu()
     --Friendly
     AtlasLootMenuItem_2_Name:SetText("Friendly Reputation Rewards");
     AtlasLootMenuItem_2_Extra:SetText("");
-	AtlasLootMenuItem_2_Icon:SetTexture("");
+	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
     AtlasLootMenuItem_2.type="Subset";
     AtlasLootMenuItem_2.lootpage="AVRepFriendly";
     AtlasLootMenuItem_2:Show();
     --Honored
     AtlasLootMenuItem_3_Name:SetText("Honored Reputation Rewards");
     AtlasLootMenuItem_3_Extra:SetText("");
-    AtlasLootMenuItem_3_Icon:SetTexture("");
+    AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
     AtlasLootMenuItem_3.type="Subset";
     AtlasLootMenuItem_3.lootpage="AVRepHonored";
     AtlasLootMenuItem_3:Show();
     --Revered
     AtlasLootMenuItem_4_Name:SetText("Revered Reputation Rewards");
     AtlasLootMenuItem_4_Extra:SetText("");
-    AtlasLootMenuItem_4_Icon:SetTexture("");
+    AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
     AtlasLootMenuItem_4.type="Subset";
     AtlasLootMenuItem_4.lootpage="AVRepRevered";
     AtlasLootMenuItem_4:Show();
     --Exalted
     AtlasLootMenuItem_5_Name:SetText("Exalted Reputation Rewards");
     AtlasLootMenuItem_5_Extra:SetText("");
-	AtlasLootMenuItem_5_Icon:SetTexture("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
     AtlasLootMenuItem_5.type="Subset";
     AtlasLootMenuItem_5.lootpage="AVRepExalted";
     AtlasLootMenuItem_5:Show();
