@@ -31,7 +31,7 @@
 						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT"/>
 					</Anchors>
 				</FontString>
-                <Texture name="$parent_Loot" file="Interface\AddOns\AtlasLoot\Images\silver" hidden="true">
+                <Texture name="$parent_Loot" file="Interface\AddOns\AtlasLoot\Images\looticon" hidden="true">
                     <Size>
 						<AbsDimension x="16" y="16"/>
 					</Size>

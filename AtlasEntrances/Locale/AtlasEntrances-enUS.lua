@@ -45,7 +45,7 @@ if ( GetLocale() == "enUS" or GetLocale() == "enGB" ) then
 		BlackrockSpireEnt = {
 			ZoneName = "Blackrock Mountain";
 			Acronym = "BRM";
-			Location = "Searing Gorge / Burning Steppes";
+			Location = "Blackrock Mountain";
 			BLUE.."A) Searing Gorge";
 			BLUE.."B) Burning Steppes";
 			BLUE.."C) Blackrock Depths (BRD)";
@@ -55,10 +55,10 @@ if ( GetLocale() == "enUS" or GetLocale() == "enGB" ) then
 			BLUE..INDENT.."Blackwing Lair (BWL)";
 			BLUE..INDENT.."Bodley (Ghost)";
 			GREY.."1) Overmaster Pyron (Patrols)";
-			GREY.."2) Lothos Riftwaker";
+			GREY.."2) Lothos Riftwaker (MC Teleport)";
 			GREY.."3) Franclorn Forgewright (Ghost)";
 			GREY.."4) BRD Meeting Stone";
-			GREY.."5) Orb of Command";
+			GREY.."5) Orb of Command (BWL Teleport)";
 			GREY.."6) BRS Meeting Stone";
 			GREY.."7) Scarshield Quartermaster (Rare)";
 		};
@@ -173,7 +173,7 @@ if ( GetLocale() == "enUS" or GetLocale() == "enGB" ) then
 
 	myData.BlackfathomDeepsEnt.LevelRange =		"20-35";
 	myData.BlackfathomDeepsEnt.PlayerLimit =		"10";
-	myData.BlackrockSpireEnt.LevelRange =		"52-70";
+	myData.BlackrockSpireEnt.LevelRange =		"52-60";
 	myData.BlackrockSpireEnt.PlayerLimit =		"5/10/40";
 	myData.GnomereganEnt.LevelRange =			"24-40";
 	myData.GnomereganEnt.PlayerLimit =			"10";
