@@ -33,7 +33,7 @@ if ( GetLocale() == "enUS" or GetLocale() == "enGB" ) then
 	local WHIT = "|cffffffff";
 	local INDENT = "   ";
 
-	local myCategory = "Battleground Maps";
+	local myCategory = "Battlegrounds";
 
 	local myData = {
 		AlteracValleyNorth = {

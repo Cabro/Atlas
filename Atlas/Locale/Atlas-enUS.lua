@@ -112,8 +112,8 @@ local INDENT = "   ";
 
 --Keeps track of the different categories of maps
 Atlas_MapTypes = {
-	[1] = "Kalimdor Instances";
-	[2] = "Eastern Kingdoms Instances";
+	[1] = "Dungeons & Raids";
+	[2] = "World Bosses";
 };
 
 AtlasMaps = {
@@ -443,9 +443,7 @@ AtlasMaps = {
 		GREY..INDENT.."AQ20 Class Sets";
 		"";
 		ORNG.."Damage: Nature";
-		};
-	};
-	[2] = {
+	};	
 		BlackrockDepths = {
 			ZoneName = "Blackrock Depths";
 			Acronym = "BRD";
@@ -1024,6 +1022,94 @@ AtlasMaps = {
 		GREY..INDENT.."T3 Sets";
 		"";
 		ORNG.."Damage: Nature, Fire, Shadow, Frost";
+		};
+	};
+	[2] = {
+		Azuregos = {
+			ZoneName = "Azuregos";
+			Location = "Azshara";
+			GREY.."1) Azuregos";
+			GREY..INDENT.."Spirit of Azuregos";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			ORNG.."Damage: Frost";
+		};
+		FourDragons = {
+			ZoneName = "Emerald Dragons";
+			"";
+			GREN..INDENT.."Lethon";
+			GREN..INDENT.."Emeriss";
+			GREN..INDENT.."Taerar";
+			GREN..INDENT.."Ysondre";
+			"";
+			GREY.."1) Duskwood";
+			GREY.."2) The Hinterlands";
+			GREY.."3) Feralas";
+			GREY.."4) Ashenvale";
+			"";
+			"";
+			GREY..INDENT.."Emerald Dragons Trash";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			ORNG.."Damage: Nature";
+		};
+		Kazzak = {
+			ZoneName = "Lord Kazzak";
+			Location = "Blasted Lands";
+			GREY.."1) Lord Kazzak";
+			GREY.."2) Nethergarde Keep";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			"";
+			ORNG.."Damage: Shadow";
 		};
 	};
 };

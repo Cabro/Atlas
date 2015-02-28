@@ -4924,7 +4924,5 @@ AtlasLootItems = {
         { 0,"","","" },
         { 5422, "INV_Pants_02", "=q2=Brambleweed Leggings", "=ds=#s11#, #a2#", "64%" },
         };
-
-	
-	
+		
 };

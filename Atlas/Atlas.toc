@@ -24,7 +24,6 @@ Locale\Atlas-frFR.lua
 Locale\Atlas-koKR.lua
 Locale\Atlas-zhCN.lua
 Locale\Atlas-zhTW.lua
-
 Locale\Atlas-CA.lua
 Locale\Atlas-NL.lua
 
