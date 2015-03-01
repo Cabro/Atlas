@@ -35,7 +35,6 @@ AtlasMaps[1].RagefireChasm.LevelRange =				"13-18";
 AtlasMaps[1].ZulFarrak.LevelRange =					"44-54";
 AtlasMaps[1].TheTempleofAhnQiraj.LevelRange =		"60+";
 AtlasMaps[1].TheRuinsofAhnQiraj.LevelRange =		"60+";
-
 AtlasMaps[1].BlackrockSpireLower.LevelRange =		"55-60";
 AtlasMaps[1].BlackrockSpireUpper.LevelRange =		"55-60";
 AtlasMaps[1].BlackrockDepths.LevelRange =			"52-60";
@@ -55,7 +54,6 @@ AtlasMaps[1].Stratholme.LevelRange =				"58-60";
 AtlasMaps[1].Uldaman.LevelRange =					"41-51";
 AtlasMaps[1].ZulGurub.LevelRange =					"60+";
 AtlasMaps[1].Naxxramas.LevelRange =					"60+";
-
 AtlasMaps[1].BlackfathomDeeps.PlayerLimit =			"10";
 AtlasMaps[1].WailingCaverns.PlayerLimit =			"10";
 AtlasMaps[1].DireMaulNorth.PlayerLimit =			"5";
@@ -69,7 +67,6 @@ AtlasMaps[1].RagefireChasm.PlayerLimit =			"10";
 AtlasMaps[1].ZulFarrak.PlayerLimit =				"10";
 AtlasMaps[1].TheTempleofAhnQiraj.PlayerLimit =		"40";
 AtlasMaps[1].TheRuinsofAhnQiraj.PlayerLimit =		"20";
-
 AtlasMaps[1].BlackrockSpireLower.PlayerLimit =		"10";
 AtlasMaps[1].BlackrockSpireUpper.PlayerLimit =		"10";
 AtlasMaps[1].BlackrockDepths.PlayerLimit =			"5";
@@ -92,8 +89,37 @@ AtlasMaps[1].Gnomeregan.PlayerLimit =				"10";
 
 AtlasMaps[2].Azuregos.LevelRange =		"60+";
 AtlasMaps[2].FourDragons.LevelRange =		"60+";
-AtlasMaps[2].Kazzak.LevelRange =			"60+";
-	
+AtlasMaps[2].Kazzak.LevelRange =			"60+";	
 AtlasMaps[2].Azuregos.PlayerLimit =		"40";
 AtlasMaps[2].FourDragons.PlayerLimit =	"40";
 AtlasMaps[2].Kazzak.PlayerLimit =			"40";
+
+AtlasMaps[3].AlteracValleyNorth.LevelRange =		"51-60";
+AtlasMaps[3].AlteracValleySouth.LevelRange =		"51-60";
+AtlasMaps[3].ArathiBasin.LevelRange =				"20-60";
+AtlasMaps[3].WarsongGulch.LevelRange =			"10-60";
+AtlasMaps[3].AlteracValleyNorth.PlayerLimit =		"40";
+AtlasMaps[3].AlteracValleySouth.PlayerLimit =		"40";
+AtlasMaps[3].ArathiBasin.PlayerLimit =			"15";
+AtlasMaps[3].WarsongGulch.PlayerLimit =			"10";
+
+AtlasMaps[5].BlackfathomDeepsEnt.LevelRange =		"20-35";
+AtlasMaps[5].BlackfathomDeepsEnt.PlayerLimit =		"10";
+AtlasMaps[5].BlackrockSpireEnt.LevelRange =		"52-60";
+AtlasMaps[5].BlackrockSpireEnt.PlayerLimit =		"5/10/40";
+AtlasMaps[5].GnomereganEnt.LevelRange =			"24-40";
+AtlasMaps[5].GnomereganEnt.PlayerLimit =			"10";
+AtlasMaps[5].MaraudonEnt.LevelRange =			"40-58";
+AtlasMaps[5].MaraudonEnt.PlayerLimit =			"10";
+AtlasMaps[5].TheDeadminesEnt.LevelRange =			"15-28";
+AtlasMaps[5].TheDeadminesEnt.PlayerLimit =		"10";
+AtlasMaps[5].TheSunkenTempleEnt.LevelRange =		"44-60";
+AtlasMaps[5].TheSunkenTempleEnt.PlayerLimit =		"10";
+AtlasMaps[5].UldamanEnt.LevelRange =			"35-52";
+AtlasMaps[5].UldamanEnt.PlayerLimit =			"10";
+AtlasMaps[5].WailingCavernsEnt.LevelRange =		"15-28";
+AtlasMaps[5].WailingCavernsEnt.PlayerLimit =		"10";
+AtlasMaps[5].DireMaulEnt.LevelRange =			"54-61";
+AtlasMaps[5].DireMaulEnt.PlayerLimit =			"5";
+AtlasMaps[5].SMEnt.LevelRange =				"29-45";
+AtlasMaps[5].SMEnt.PlayerLimit =				"10";

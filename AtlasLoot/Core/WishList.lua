@@ -221,6 +221,20 @@ function AtlasLoot_CategorizeWishList(wlTable)
 			table.insert(categories[subheadings[dataID]], v);
 		end
 	end
+
+	-- Sort and flatten categories
+	for k, v in pairs(categories) do
+		-- Add a empty line between categories when in a same column
+		if getn(result) > 1 and (getn(result) - math.floor( getn(result)/15)*15) > 0 then table.insert(result, { 0, "", "", "" }) end
+		-- If a subheading is on the last row of a column, push it to next column
+		if ((getn(result) + 1) - math.floor((getn(result) + 1)/15)*15) == 0 then table.insert(result, { 0, "", "", "" }) end
+		-- Subheading
+		table.insert(result, { 0, "INV_Box_01", "=q6="..k, "" });
+		-- Sort first then add items
+		table.sort(v, AtlasLoot_WishListSortCheck); -- not works?
+		for i = 1, getn(v) do table.insert(result, v[i]) end
+	end
+
 	return result;
 end
 
@@ -232,7 +246,7 @@ page: the page number needed
 function AtlasLoot_GetWishListPage(page)
 	if not AtlasLoot_WishList then AtlasLoot_WishList = AtlasLoot_CategorizeWishList(AtlasLootCharDB["WishList"]) end
 	-- Calc for maximal pages
-	local pageMax = math.ceil(#AtlasLoot_WishList / 30);
+	local pageMax = math.ceil(getn(AtlasLoot_WishList) / 30);
 	if page < 1 then page = 1 end
 	if page > pageMax then page = pageMax end
 	currentPage = page;

@@ -30,4 +30,4 @@ WorldBosses\WorldBosses.xml
 DefaultFrame\AtlaslootDefaultFrameData.xml
 Core\AtlasLoot.xml
 DefaultFrame\AtlaslootDefaultFrame.xml
-Events\Events.xml
+WorldEvents\WorldEvents.xml

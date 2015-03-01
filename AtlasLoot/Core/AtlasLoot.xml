@@ -6,11 +6,13 @@
     <Script file="Sets.lua"/>
     <Script file="Rep.lua"/>
     <Script file="PvP.lua"/>
-    <Script file="Events.lua"/>
-    <Script file="LootButtons.lua"/>
+    <Script file="Crafting.lua"/>
+    <Script file="WorldEvents.lua"/>
     <Script file="Options.lua"/>
+    <Script file="LootButtons.lua"/>
     <Script file="AtlasLootMinimap.lua"/>
 	<Script file="AtlasLoot.lua"/>
+	<Script file="WishList.lua"/>
     <Script file="Search.lua"/>
     
 	
@@ -980,7 +982,7 @@
     
     <Frame name="AtlasLootPanel" parent="UIParent" hidden="true">
         <Size>
-			<AbsDimension x="555" y="90"/>
+			<AbsDimension x="450" y="110"/>
 		</Size>
         <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
 			<BackgroundInsets>
@@ -1019,28 +1021,11 @@
 			</Layer>
 		</Layers>
         <Frames>
-            <Button name="$parent_Options" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_OPTIONS">
+            <Button name="$parent_Sets" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_SETS">
                 <Anchors>
                     <Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
                         <Offset>
-                            <AbsDimension x="15" y="19"/>
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-                <Scripts>
-					<OnClick>
-						AtlasLootOptions_Toggle();
-					</OnClick>
-                    <OnShow>
-				        this:SetFrameLevel( (this:GetParent()):GetFrameLevel() + 1 );
-			        </OnShow>
-				</Scripts>
-            </Button>
-            <Button name="$parent_Sets" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_SETS">
-                <Anchors>
-                    <Anchor point="LEFT" relativeTo="$parent_Options" relativePoint="RIGHT">
-                        <Offset>
-                            <AbsDimension x="0" y="0"/>
+                            <AbsDimension x="15" y="30"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -1087,7 +1072,7 @@
 			        </OnShow>
 				</Scripts>
             </Button>
-            <Button name="$parent_Events" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_EVENTS">
+            <Button name="$parent_WorldEvents" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_EVENTS">
                 <Anchors>
                     <Anchor point="LEFT" relativeTo="$parent_PvP" relativePoint="RIGHT">
                         <Offset>
@@ -1104,14 +1089,65 @@
 			        </OnShow>
 				</Scripts>
             </Button>
+            <Button name="$parent_Crafting" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_CRAFTING">
+                <Anchors>
+                    <Anchor point="TOP" relativeTo="$parent" relativePoint="BOTTOM">
+                        <Offset>
+                            <AbsDimension x="0" y="73"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+					<OnClick>
+						AtlasLootSetMenu();
+					</OnClick>
+                    <OnShow>
+				        this:SetFrameLevel( (this:GetParent()):GetFrameLevel() + 1 );
+			        </OnShow>
+				</Scripts>
+            </Button>
+            <Button name="$parent_Options" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_OPTIONS">
+                <Anchors>
+                    <Anchor point="RIGHT" relativeTo="$parent_Crafting" relativePoint="LEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+					<OnClick>
+						AtlasLootOptions_Toggle();
+					</OnClick>
+                    <OnShow>
+				        this:SetFrameLevel( (this:GetParent()):GetFrameLevel() + 1 );
+			        </OnShow>
+				</Scripts>
+            </Button>
+            <Button name="$parent_WishList" inherits="AtlasLootPanelButtonTemplate" text="ATLASLOOT_PANEL_BUTTON_WISHLIST">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parent_Crafting" relativePoint="RIGHT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+					<OnClick>
+						AtlasLoot_ShowWishList();
+					</OnClick>
+                    <OnShow>
+				        this:SetFrameLevel( (this:GetParent()):GetFrameLevel() + 1 );
+			        </OnShow>
+				</Scripts>
+            </Button>
             <EditBox name="AtlasLootSearchBox" inherits="InputBoxTemplate" letters="100">
 				<Size>
-					<AbsDimension x="200" y="35"></AbsDimension>
+					<AbsDimension x="200" y="20"></AbsDimension>
 				</Size>
 				<Anchors>
 					<Anchor point="BOTTOM" relativeTo="$parent" relativePoint="BOTTOM">
 						<Offset>
-							<AbsDimension x="0" y="20"/>
+							<AbsDimension x="-102" y="26"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -1129,12 +1165,12 @@
 			</EditBox>
             <Button name="AtlasLootSearchButton" inherits="UIPanelButtonTemplate2" parent="AtlasLootSearchBox" text="ATLASLOOT_SEARCH">
 				<Size>
-					<AbsDimension x="69" y="32"/>
+					<AbsDimension x="69" y="20"/>
 				</Size>
 				<Anchors>
 					<Anchor point="LEFT" relativePoint="RIGHT">
 						<Offset>
-							<AbsDimension x="1" y="0"/>
+							<AbsDimension x="2" y="1"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -1145,14 +1181,14 @@
 					</OnClick>
 				</Scripts>
 			</Button>
-			<Button name="AtlasLootSearchClearButton" inherits="UIPanelButtonTemplate2" parent="AtlasLootSearchBox" text="ATLASLOOT_CLEAR">
+			<Button name="AtlasLootSearchClearButton" inherits="UIPanelButtonTemplate2" parent="AtlasLootSearchButton" text="ATLASLOOT_CLEAR">
 				<Size>
-					<AbsDimension x="69" y="32"/>
+					<AbsDimension x="58" y="20"/>
 				</Size>
 				<Anchors>
-					<Anchor point="RIGHT" relativePoint="LEFT">
+                    <Anchor point="LEFT" relativePoint="RIGHT">
 						<Offset>
-							<AbsDimension x="-7" y="0"/>
+							<AbsDimension x="0" y="0"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -1160,6 +1196,23 @@
 					<OnClick>
 						AtlasLootSearchBox:SetText("");
 						AtlasLootSearchBox:ClearFocus();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="AtlasLootSearchLastFind" inherits="UIPanelButtonTemplate2" parent="AtlasLootSearchClearButton" text="ATLASLOOT_PANEL_BUTTON_LASTFIND">
+				<Size>
+					<AbsDimension x="81" y="20"/>
+				</Size>
+				<Anchors>
+                    <Anchor point="LEFT" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						AtlasLootSetMenu();
 					</OnClick>
 				</Scripts>
 			</Button>
