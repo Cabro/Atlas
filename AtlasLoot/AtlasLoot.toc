@@ -2,7 +2,7 @@
 ## Title: AtlasLoot Enhanced
 ## Notes: Shows the possible loot from the bosses
 ## Author: Daviesh
-## Version: 4.06.04
+## Version: 4.06.05
 ## SavedVariablesPerCharacter: AtlasLootCharDB
 ## OptionalDeps: Alphamap, AtlasLoader, LootLink, ItemSync, DewdropLib, Ace2, EquipCompare, EQCompare
 
