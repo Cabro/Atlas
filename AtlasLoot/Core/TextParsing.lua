@@ -1,498 +1,505 @@
+local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
+
 --------------------------------------------------------------------------------
 -- Text replacement function
 --------------------------------------------------------------------------------
 function AtlasLoot_FixText(text)
     --Armour class
-    text = gsub(text, "#a1#", ATLASLOOT_CLOTH);
-    text = gsub(text, "#a2#", ATLASLOOT_LEATHER);
-    text = gsub(text, "#a3#", ATLASLOOT_MAIL);
-    text = gsub(text, "#a4#", ATLASLOOT_PLATE);
+    text = gsub(text, "#a1#", AL["Cloth"]);
+    text = gsub(text, "#a2#", AL["Leather"]);
+    text = gsub(text, "#a3#", AL["Mail"]);
+    text = gsub(text, "#a4#", AL["Plate"]);
 
     --Body slot
-    text = gsub(text, "#s1#", ATLASLOOT_HEAD);
-    text = gsub(text, "#s2#", ATLASLOOT_NECK);
-    text = gsub(text, "#s3#", ATLASLOOT_SHOULDER);
-    text = gsub(text, "#s4#", ATLASLOOT_BACK);
-    text = gsub(text, "#s5#", ATLASLOOT_CHEST);
-    text = gsub(text, "#s6#", ATLASLOOT_SHIRT);
-    text = gsub(text, "#s7#", ATLASLOOT_TABARD);
-    text = gsub(text, "#s8#", ATLASLOOT_WRIST);
-    text = gsub(text, "#s9#", ATLASLOOT_HANDS);
-    text = gsub(text, "#s10#", ATLASLOOT_WAIST);
-    text = gsub(text, "#s11#", ATLASLOOT_LEGS);
-    text = gsub(text, "#s12#", ATLASLOOT_FEET);
-    text = gsub(text, "#s13#", ATLASLOOT_RING);
-    text = gsub(text, "#s14#", ATLASLOOT_TRINKET);
-    text = gsub(text, "#s15#", ATLASLOOT_OFF_HAND);
-    text = gsub(text, "#s16#", ATLASLOOT_RELIC);
+    text = gsub(text, "#s1#", AL["Head"]);
+    text = gsub(text, "#s2#", AL["Neck"]);
+    text = gsub(text, "#s3#", AL["Shoulder"]);
+    text = gsub(text, "#s4#", AL["Back"]);
+    text = gsub(text, "#s5#", AL["Chest"]);
+    text = gsub(text, "#s6#", AL["Shirt"]);
+    text = gsub(text, "#s7#", AL["Tabard"]);
+    text = gsub(text, "#s8#", AL["Wrist"]);
+    text = gsub(text, "#s9#", AL["Hands"]);
+    text = gsub(text, "#s10#", AL["Waist"]);
+    text = gsub(text, "#s11#", AL["Legs"]);
+    text = gsub(text, "#s12#", AL["Feet"]);
+    text = gsub(text, "#s13#", AL["Ring"]);
+    text = gsub(text, "#s14#", AL["Trinket"]);
+    text = gsub(text, "#s15#", AL["Held In Off-hand"]);
+    text = gsub(text, "#s16#", AL["Relic"]);
 
     --Weapon Weilding
-    text = gsub(text, "#h1#", ATLASLOOT_ONE_HAND);
-    text = gsub(text, "#h2#", ATLASLOOT_TWO_HAND);
-    text = gsub(text, "#h3#", ATLASLOOT_MAIN_HAND);
-    text = gsub(text, "#h4#", ATLASLOOT_OFFHAND);
+    text = gsub(text, "#h1#", AL["One-Hand"]);
+    text = gsub(text, "#h2#", AL["Two-Hand"]);
+    text = gsub(text, "#h3#", AL["Main Hand"]);
+    text = gsub(text, "#h4#", AL["Off Hand"]);
 
     --Weapon type
-    text = gsub(text, "#w1#", ATLASLOOT_AXE);
-    text = gsub(text, "#w2#", ATLASLOOT_BOW);
-    text = gsub(text, "#w3#", ATLASLOOT_CROSSBOW);
-    text = gsub(text, "#w4#", ATLASLOOT_DAGGER);
-    text = gsub(text, "#w5#", ATLASLOOT_GUN);
-    text = gsub(text, "#w6#", ATLASLOOT_MACE);
-    text = gsub(text, "#w7#", ATLASLOOT_POLEARM);
-    text = gsub(text, "#w8#", ATLASLOOT_SHIELD);
-    text = gsub(text, "#w9#", ATLASLOOT_STAFF);
-    text = gsub(text, "#w10#", ATLASLOOT_SWORD);
-    text = gsub(text, "#w11#", ATLASLOOT_THROWN);
-    text = gsub(text, "#w12#", ATLASLOOT_WAND);
-    text = gsub(text, "#w13#", ATLASLOOT_FIST);
-    text = gsub(text, "#w14#", ATLASLOOT_FISHINGPOLE);
+    text = gsub(text, "#w1#", AL["Axe"]);
+    text = gsub(text, "#w2#", AL["Bow"]);
+    text = gsub(text, "#w3#", AL["Crossbow"]);
+    text = gsub(text, "#w4#", AL["Dagger"]);
+    text = gsub(text, "#w5#", AL["Gun"]);
+    text = gsub(text, "#w6#", AL["Mace"]);
+    text = gsub(text, "#w7#", AL["Polearm"]);
+    text = gsub(text, "#w8#", AL["Shield"]);
+    text = gsub(text, "#w9#", AL["Staff"]);
+    text = gsub(text, "#w10#", AL["Sword"]);
+    text = gsub(text, "#w11#", AL["Thrown"]);
+    text = gsub(text, "#w12#", AL["Wand"]);
+    text = gsub(text, "#w13#", AL["Fist Weapon"]);
+    text = gsub(text, "#w14#", AL["Fishing Pole"]);
 
     -- Misc. Equipment
-    text = gsub(text, "#e1#", ATLASLOOT_POTION);
-    text = gsub(text, "#e2#", ATLASLOOT_FOOD);
-    text = gsub(text, "#e3#", ATLASLOOT_DRINK);
-    text = gsub(text, "#e4#", ATLASLOOT_BANDAGE);
-    text = gsub(text, "#e5#", ATLASLOOT_ARROW);
-    text = gsub(text, "#e6#", ATLASLOOT_BULLET);
-    text = gsub(text, "#e7#", ATLASLOOT_MOUNT);
-    text = gsub(text, "#e8#", ATLASLOOT_AMMO);
-    text = gsub(text, "#e9#", ATLASLOOT_QUIVER);
-    text = gsub(text, "#e10#", ATLASLOOT_BAG);
-    text = gsub(text, "#e11#", ATLASLOOT_ENCHANT);
-    text = gsub(text, "#e12#", ATLASLOOT_TRADE_GOODS);
-    text = gsub(text, "#e13#", ATLASLOOT_SCOPE);
-    text = gsub(text, "#e14#", ATLASLOOT_KEY);
-    text = gsub(text, "#e15#", ATLASLOOT_PET);
-    text = gsub(text, "#e16#", ATLASLOOT_IDOL);
-    text = gsub(text, "#e17#", ATLASLOOT_TOTEM);
-    text = gsub(text, "#e18#", ATLASLOOT_LIBRAM);
-    text = gsub(text, "#e19#", ATLASLOOT_DARKMOON);
-    text = gsub(text, "#e20#", ATLASLOOT_BOOK);
-    text = gsub(text, "#e21#", ATLASLOOT_BANNER);
-    text = gsub(text, "#e22#", ATLASLOOT_FACTION_ARGENT_INSIGNIAS);
-    text = gsub(text, "#e23#", ATLASLOOT_GEM);
-    text = gsub(text, "#e24#", ATLASLOOT_TOKENS);
-    text = gsub(text, "#e25#", ATLASLOOT_TOKENS_HORDE);
-    text = gsub(text, "#e26#", ATLASLOOT_TOKENS_ALLIANCE);
-    text = gsub(text, "#e27#", ATLASLOOT_TOKEN);
-    text = gsub(text, "#e28#", ATLASLOOT_CRAFTING);
-    text = gsub(text, "#e31#", ATLASLOOT_RANDOM_STATS);
-	text = gsub(text, "#e32#", ATLASLOOT_RANDOM_ENCHANT);
-	text = gsub(text, "#e33#", ATLASLOOT_RANDOM_COLOR);
+    text = gsub(text, "#e1#", AL["Potion"]);
+    text = gsub(text, "#e2#", AL["Food"]);
+    text = gsub(text, "#e3#", AL["Drink"]);
+    text = gsub(text, "#e4#", AL["Bandage"]);
+    text = gsub(text, "#e5#", AL["Arrow"]);
+    text = gsub(text, "#e6#", AL["Bullet"]);
+    text = gsub(text, "#e7#", AL["Mount"]);
+    text = gsub(text, "#e8#", AL["Ammo Pouch"]);
+    text = gsub(text, "#e9#", AL["Quiver"]);
+    text = gsub(text, "#e10#", AL["Bag"]);
+    text = gsub(text, "#e11#", AL["Enchant"]);
+    text = gsub(text, "#e12#", AL["Trade Goods"]);
+    text = gsub(text, "#e13#", AL["Scope"]);
+    text = gsub(text, "#e14#", AL["Key"]);
+    text = gsub(text, "#e15#", AL["Pet"]);
+    text = gsub(text, "#e16#", AL["Idol"]);
+    text = gsub(text, "#e17#", AL["Totem"]);
+    text = gsub(text, "#e18#", AL["Libram"]);
+    text = gsub(text, "#e19#", AL["Darkmoon Faire Card"]);
+    text = gsub(text, "#e20#", AL["Book"]);
+    text = gsub(text, "#e21#", AL["Banner"]);
+    text = gsub(text, "#e22#", AL["Needed to purchase rewards"]);
+    text = gsub(text, "#e23#", AL["Gem"]);
+    text = gsub(text, "#e24#", AL["Use to purchase rewards"]);
+    text = gsub(text, "#e25#", AL["Use to purchase rewards (Horde)"]);
+    text = gsub(text, "#e26#", AL["Use to purchase rewards (Alliance)"]);
+    text = gsub(text, "#e27#", AL["Token"]);
+    text = gsub(text, "#e28#", AL["Crafting Reagent"]);
+    text = gsub(text, "#e31#", AL["random stats"]);
+	text = gsub(text, "#e32#", AL["random resistance"]);
+	text = gsub(text, "#e33#", AL["random colour"]);
 
     -- Classes
-    text = gsub(text, "#c1#", ATLASLOOT_DRUID); -- =q13=#c1#
-    text = gsub(text, "#c2#", ATLASLOOT_HUNTER); -- =q14=#c2#
-    text = gsub(text, "#c3#", ATLASLOOT_MAGE); -- =q10=#c3#
-    text = gsub(text, "#c4#", ATLASLOOT_PALADIN); -- =q16=#c4#
-    text = gsub(text, "#c5#", ATLASLOOT_PRIEST); -- =q9=#c5#
-    text = gsub(text, "#c6#", ATLASLOOT_ROGUE); -- =q12=#c6#
-    text = gsub(text, "#c7#", ATLASLOOT_SHAMAN); -- =q15=#c7#
-    text = gsub(text, "#c8#", ATLASLOOT_WARLOCK); -- =q11=#c8#
-    text = gsub(text, "#c9#", ATLASLOOT_WARRIOR); -- =q17=#c9#
+    text = gsub(text, "#c1#", AL["Druid"]); -- =q13=#c1#
+    text = gsub(text, "#c2#", AL["Hunter"]); -- =q14=#c2#
+    text = gsub(text, "#c3#", AL["Mage"]); -- =q10=#c3#
+    text = gsub(text, "#c4#", AL["Paladin"]); -- =q16=#c4#
+    text = gsub(text, "#c5#", AL["Priest"]); -- =q9=#c5#
+    text = gsub(text, "#c6#", AL["Rogue"]); -- =q12=#c6#
+    text = gsub(text, "#c7#", AL["Shaman"]); -- =q15=#c7#
+    text = gsub(text, "#c8#", AL["Warlock"]); -- =q11=#c8#
+    text = gsub(text, "#c9#", AL["Warrior"]); -- =q17=#c9#
 
     --Professions
-    text = gsub(text, "#p1#", ATLASLOOT_ALCHEMY);
-    text = gsub(text, "#p2#", ATLASLOOT_BLACKSMITHING);
-    text = gsub(text, "#p3#", ATLASLOOT_COOKING);
-    text = gsub(text, "#p4#", ATLASLOOT_ENCHANTING);
-    text = gsub(text, "#p5#", ATLASLOOT_ENGINEERING);
-    text = gsub(text, "#p6#", ATLASLOOT_FIRST_AID);
-    text = gsub(text, "#p7#", ATLASLOOT_LEATHERWORKING);
-    text = gsub(text, "#p8#", ATLASLOOT_TAILORING);
-    text = gsub(text, "#p9#", ATLASLOOT_DRAGONSCALE);
-    text = gsub(text, "#p10#", ATLASLOOT_TRIBAL);
-    text = gsub(text, "#p11#", ATLASLOOT_ELEMENTAL);
-    text = gsub(text, "#p13#", ATLASLOOT_LOCKPICKING);
+    text = gsub(text, "#p1#", AL["Alchemy"]);
+    text = gsub(text, "#p2#", AL["Blacksmithing"]);
+    text = gsub(text, "#p3#", AL["Cooking"]);
+    text = gsub(text, "#p4#", AL["Enchanting"]);
+    text = gsub(text, "#p5#", AL["Engineering"]);
+    text = gsub(text, "#p6#", AL["First Aid"]);
+    text = gsub(text, "#p7#", AL["Leatherworking"]);
+    text = gsub(text, "#p8#", AL["Tailoring"]);
+    text = gsub(text, "#p9#", AL["Dragonscale"]);
+    text = gsub(text, "#p10#", AL["Tribal"]);
+    text = gsub(text, "#p11#", AL["Elemental"]);
+    text = gsub(text, "#p13#", AL["Lockpicking"]);
 
     --Reputation
-    text = gsub(text, "#r1#", ATLASLOOT_NEUTRAL);
-    text = gsub(text, "#r2#", ATLASLOOT_FRIENDLY);
-    text = gsub(text, "#r3#", ATLASLOOT_HONORED);
-    text = gsub(text, "#r4#", ATLASLOOT_REVERED);
-    text = gsub(text, "#r5#", ATLASLOOT_EXALTED);
+    text = gsub(text, "#r1#", AL["Neutral"]);
+    text = gsub(text, "#r2#", AL["Friendly"]);
+    text = gsub(text, "#r3#", AL["Honored"]);
+    text = gsub(text, "#r4#", AL["Revered"]);
+    text = gsub(text, "#r5#", AL["Exalted"]);
 
     --Battleground Factions
-    text = gsub(text, "#b1#", ATLASLOOT_BG_STORMPIKE);
-    text = gsub(text, "#b2#", ATLASLOOT_BG_FROSTWOLF);
-    text = gsub(text, "#b3#", ATLASLOOT_BG_SENTINELS);
-    text = gsub(text, "#b4#", ATLASLOOT_BG_OUTRIDERS);
-    text = gsub(text, "#b5#", ATLASLOOT_BG_ARATHOR);
-    text = gsub(text, "#b6#", ATLASLOOT_BG_DEFILERS);
+    text = gsub(text, "#b1#", AL["Stormpike Guard"]);
+    text = gsub(text, "#b2#", AL["Frostwolf Clan"]);
+    text = gsub(text, "#b3#", AL["Silverwing Sentinels"]);
+    text = gsub(text, "#b4#", AL["Warsong Outriders"]);
+    text = gsub(text, "#b5#", AL["The League of Arathor"]);
+    text = gsub(text, "#b6#", AL["The Defilers"]);
     
     --BRDArena
-    text = gsub(text, "#brd1#", ATLASLOOT_BRDARENA1);
-    text = gsub(text, "#brd2#", ATLASLOOT_BRDARENA2);
-    text = gsub(text, "#brd3#", ATLASLOOT_BRDARENA3);
-    text = gsub(text, "#brd4#", ATLASLOOT_BRDARENA4);
-    text = gsub(text, "#brd5#", ATLASLOOT_BRDARENA5);
-    text = gsub(text, "#brd6#", ATLASLOOT_BRDARENA6);
+    text = gsub(text, "#brd1#", AL["Anub'shiah"]);
+    text = gsub(text, "#brd2#", AL["Eviscerator"]);
+    text = gsub(text, "#brd3#", AL["Gorosh the Dervish"]);
+    text = gsub(text, "#brd4#", AL["Grizzle"]);
+    text = gsub(text, "#brd5#", AL["Hedrum the Creeper"]);
+    text = gsub(text, "#brd6#", AL["Ok'thor the Breaker"]);
 
     --Sunken Temple Mini Bosses
-    text = gsub(text, "#st1#", ATLASLOOT_ST1);
-    text = gsub(text, "#st2#", ATLASLOOT_ST2);
-    text = gsub(text, "#st3#", ATLASLOOT_ST3);
-    text = gsub(text, "#st4#", ATLASLOOT_ST4);
-    text = gsub(text, "#st5#", ATLASLOOT_ST5);
-    text = gsub(text, "#st6#", ATLASLOOT_ST6);
+    text = gsub(text, "#st1#", AL["Gasher"]);
+    text = gsub(text, "#st2#", AL["Hukku"]);
+    text = gsub(text, "#st3#", AL["Loro"]);
+    text = gsub(text, "#st4#", AL["Mijan"]);
+    text = gsub(text, "#st5#", AL["Zolo"]);
+    text = gsub(text, "#st6#", AL["Zul'Lor"]);
 
 
     -- Misc phrases and mod specific stuff
-    text = gsub(text, "#m1#", ATLASLOOT_CLASSES);
-    text = gsub(text, "#m2#", ATLASLOOT_ITEMBEGINSQUEST);
-    text = gsub(text, "#m3#", ATLASLOOT_QUESTITEM);
-    text = gsub(text, "#m4#", ATLASLOOT_QUESTREWARD);
-    text = gsub(text, "#m5#", ATLASLOOT_SHARED);
-    text = gsub(text, "#m6#", ATLASLOOT_HORDE); -- =q6=#m6#
-    text = gsub(text, "#m7#", ATLASLOOT_ALLIANCE); -- =q8=#m7#
-    text = gsub(text, "#m8#", ATLASLOOT_UNIQUE);
-    text = gsub(text, "#m9#", ATLASLOOT_RIGHTSIDE);
-    text = gsub(text, "#m10#", ATLASLOOT_LEFTSIDE);
-    text = gsub(text, "#m11#", ATLASLOOT_FELCOREBAG);
-    text = gsub(text, "#m12#", ATLASLOOT_ONYBAG);
-    text = gsub(text, "#m13#", ATLASLOOT_WCBAG);
-    text = gsub(text, "#m14#", ATLASLOOT_FULLSKILL);
-    text = gsub(text, "#m15#", ATLASLOOT_295);
-    text = gsub(text, "#m16#", ATLASLOOT_275);
-    text = gsub(text, "#m17#", ATLASLOOT_265);
-    text = gsub(text, "#m18#", ATLASLOOT_290);
-    text = gsub(text, "#m19#", ATLASLOOT_SET);
-    text = gsub(text, "#m20#", ATLASLOOT_285);
-    text = gsub(text, "#m21#", ATLASLOOT_16SLOT);
-	text = gsub(text, "#m22#", ATLASLOOT_BRDSCHEMATIC);
-    text = gsub(text, "#m23#", ATLASLOOT_CONTAINER);
-    text = gsub(text, "#m24#", ATLASLOOT_PLANS);
-    text = gsub(text, "#m25#", ATLASLOOT_CONSUMABLE);
-    text = gsub(text, "#m26#", ATLASLOOT_185);
-    text = gsub(text, "#m27#", ATLASLOOT_160);
-    text = gsub(text, "#m28#", ATLASLOOT_125);
-    text = gsub(text, "#m29#", ATLASLOOT_200);
-    text = gsub(text, "#m30#", ATLASLOOT_1);
-    text = gsub(text, "#m31#", ATLASLOOT_REAGENT);
-	text = gsub(text, "#m32#", ATLASLOOT_BINDSPICKED);
-	text = gsub(text, "#m33#", ATLASLOOT_MISC);
-	text = gsub(text, "#m34#", ATLASLOOT_PURCHASE);
-	text = gsub(text, "#m35#", ATLASLOOT_FIREWORKS);
-	text = gsub(text, "#m36#", ATLASLOOT_MISC_SUMMON_BOSS);
-    text = gsub(text, "#m37#", ATLASLOOT_24SLOT);
-    text = gsub(text, "#m38#", ATLASLOOT_ZGCOIN);
-    text = gsub(text, "#m39#", ATLASLOOT_ZGBIJOU);
-    text = gsub(text, "#m40#", ATLASLOOT_ZGDOLL);
+    text = gsub(text, "#m1#", AL["Classes"]);
+    text = gsub(text, "#m2#", AL["This Item Begins a Quest"]);
+    text = gsub(text, "#m3#", AL["Quest Item"]);
+    text = gsub(text, "#m4#", AL["Quest Reward"]);
+    text = gsub(text, "#m5#", AL["Shared"]);
+    text = gsub(text, "#m6#", AL["Horde"]); -- =q6=#m6#
+    text = gsub(text, "#m7#", AL["Alliance"]); -- =q8=#m7#
+    text = gsub(text, "#m8#", AL["Unique"]);
+    text = gsub(text, "#m9#", AL["Right Half"]);
+    text = gsub(text, "#m10#", AL["Left Half"]);
+    text = gsub(text, "#m11#", AL["28 Slot Soul"]);
+    text = gsub(text, "#m12#", AL["18 Slot"]);
+    text = gsub(text, "#m13#", AL["10 Slot"]);
+    text = gsub(text, "#m14#", AL["(300)"]);
+    text = gsub(text, "#m15#", AL["(295)"]);
+    text = gsub(text, "#m16#", AL["(275)"]);
+    text = gsub(text, "#m17#", AL["(265)"]);
+    text = gsub(text, "#m18#", AL["(290)"]);
+    text = gsub(text, "#m19#", AL["Set"]);
+    text = gsub(text, "#m20#", AL["(285)"]);
+    text = gsub(text, "#m21#", AL["16 Slot"]);
+	text = gsub(text, "#m22#", AL["Schematic: Field Repair Bot 74A"]);
+    text = gsub(text, "#m23#", AL["Container"]);
+    text = gsub(text, "#m24#", AL["Blacksmithing Plans"]);
+    text = gsub(text, "#m25#", AL["Consumable"]);
+    text = gsub(text, "#m26#", AL["(185)"]);
+    text = gsub(text, "#m27#", AL["(160)"]);
+    text = gsub(text, "#m28#", AL["(125)"]);
+    text = gsub(text, "#m29#", AL["(200)"]);
+    text = gsub(text, "#m30#", AL["(1)"]);
+    text = gsub(text, "#m31#", AL["Reagent"]);
+	text = gsub(text, "#m32#", AL["Binds when picked up"]);
+	text = gsub(text, "#m33#", AL["Misc"]);
+	text = gsub(text, "#m34#", AL["Use to purchase rewards"]);
+	text = gsub(text, "#m35#", AL["Fireworks"]);
+	text = gsub(text, "#m36#", AL["Used to summon boss"]);
+    text = gsub(text, "#m37#", AL["24 Slot"]);
+    text = gsub(text, "#m38#", AL["Coin"]);
+    text = gsub(text, "#m39#", AL["Bijou"]);
+    text = gsub(text, "#m40#", AL["Doll"]);
 	
 	-- Random names
-    text = gsub(text, "#x1#", ATLASLOOT_COBRAHN);
-    text = gsub(text, "#x2#", ATLASLOOT_ANACONDRA);
-    text = gsub(text, "#x3#", ATLASLOOT_SERPENTIS);
-    text = gsub(text, "#x4#", ATLASLOOT_FANGDRUID);
-    text = gsub(text, "#x5#", ATLASLOOT_PYTHAS);
-    text = gsub(text, "#x6#", ATLASLOOT_VANCLEEF);
-    text = gsub(text, "#x7#", ATLASLOOT_GREENSKIN);
-    text = gsub(text, "#x8#", ATLASLOOT_DEFIASMINER);
-    text = gsub(text, "#x9#", ATLASLOOT_DEFIASOVERSEER);
-    text = gsub(text, "#x10#", ATLASLOOT_Primal_Hakkari_Kossack);
-    text = gsub(text, "#x11#", ATLASLOOT_Primal_Hakkari_Shawl);
-    text = gsub(text, "#x12#", ATLASLOOT_Primal_Hakkari_Bindings);
-    text = gsub(text, "#x13#", ATLASLOOT_Primal_Hakkari_Sash);
-    text = gsub(text, "#x14#", ATLASLOOT_Primal_Hakkari_Stanchion);
-    text = gsub(text, "#x15#", ATLASLOOT_Primal_Hakkari_Aegis);
-    text = gsub(text, "#x16#", ATLASLOOT_Primal_Hakkari_Girdle);
-    text = gsub(text, "#x17#", ATLASLOOT_Primal_Hakkari_Armsplint);
-    text = gsub(text, "#x18#", ATLASLOOT_Primal_Hakkari_Tabard);
-    text = gsub(text, "#x19#", ATLASLOOT_Qiraji_Ornate_Hilt);
-    text = gsub(text, "#x20#", ATLASLOOT_Qiraji_Martial_Drape);
-    text = gsub(text, "#x21#", ATLASLOOT_Qiraji_Magisterial_Ring);
-    text = gsub(text, "#x22#", ATLASLOOT_Qiraji_Ceremonial_Ring);
-    text = gsub(text, "#x23#", ATLASLOOT_Qiraji_Regal_Drape);
-    text = gsub(text, "#x24#", ATLASLOOT_Qiraji_Spiked_Hilt);
-    text = gsub(text, "#x25#", ATLASLOOT_Qiraji_Bindings_of_Dominance);
-    text = gsub(text, "#x26#", ATLASLOOT_Veknilashs_Circlet);
-    text = gsub(text, "#x27#", ATLASLOOT_Ouros_Intact_Hide);
-    text = gsub(text, "#x28#", ATLASLOOT_Husk_of_the_Old_God);
-    text = gsub(text, "#x29#", ATLASLOOT_Qiraji_Bindings_of_Command);
-    text = gsub(text, "#x30#", ATLASLOOT_Veklors_Diadem);
-    text = gsub(text, "#x31#", ATLASLOOT_Skin_of_the_Great_Sandworm);
-    text = gsub(text, "#x32#", ATLASLOOT_Carapace_of_the_Old_God);
-    text = gsub(text, "#x33#", ATLASLOOT_SCARLETDEFENDER);
-    text = gsub(text, "#x34#", ATLASLOOT_SCARLETTRASH);
-    text = gsub(text, "#x35#", ATLASLOOT_SCARLETCHAMPION);
-    text = gsub(text, "#x36#", ATLASLOOT_SCARLETCENTURION);
-    text = gsub(text, "#x37#", ATLASLOOT_SCARLETHEROD);
-    text = gsub(text, "#x38#", ATLASLOOT_SCARLETPROTECTOR);
-    text = gsub(text, "#x39#", ATLASLOOT_SCARLETMYRMIDON);
-	text = gsub(text, "#x40#", ATLASLOOT_DEFIASPIRATE);
-	text = gsub(text, "#x41#", ATLASLOOT_DEFIASRING);
-	text = gsub(text, "#x42#", ATLASLOOT_STRATBLACKGUARD);
-	text = gsub(text, "#x43#", ATLASLOOT_STRATHAMMERSMITH);
-	text = gsub(text, "#x44#", ATLASLOOT_BRDFLAMEKEEPER);
-	text = gsub(text, "#x45#", ATLASLOOT_BRDMARSHAL);
-	text = gsub(text, "#x46#", ATLASLOOT_BRDCAPTAIN);
-	text = gsub(text, "#x47#", ATLASLOOT_BRDTECHNICIAN);
-	text = gsub(text, "#x48#", ATLASLOOT_BRDCRAFTSMAN);
-	text = gsub(text, "#x49#", ATLASLOOT_BRDARCANASMITH);
-	text = gsub(text, "#x50#", ATLASLOOT_BRDPATRON);
-	text = gsub(text, "#x51#", ATLASLOOT_LBRSWARLOCK);
-	text = gsub(text, "#x52#", ATLASLOOT_LBRSPYROMANCER);
-	text = gsub(text, "#x53#", ATLASLOOT_LBRSGRUNT);
-	text = gsub(text, "#x54#", ATLASLOOT_LBRSINVOKER);
-	text = gsub(text, "#x55#", ATLASLOOT_LBRSLEGIONNAIRE);
-	text = gsub(text, "#x56#", ATLASLOOT_LBRSMYSTIC);
-	text = gsub(text, "#x57#", ATLASLOOT_LBRSWARLORD);
-	text = gsub(text, "#x58#", ATLASLOOT_LBRSSPIDERS);
-	text = gsub(text, "#x59#", ATLASLOOT_LBRSELITE);
-	text = gsub(text, "#x60#", ATLASLOOT_LBRSASSASSIN);
-	text = gsub(text, "#x61#", ATLASLOOT_BWLWYRMGUARD);
-	text = gsub(text, "#x62#", ATLASLOOT_GNOMEREGANAGENT);
-	text = gsub(text, "#x63#", ATLASLOOT_MCDESTROYER);
-	text = gsub(text, "#x64#", ATLASLOOT_SCARLETTRAINEE);
-	text = gsub(text, "#x65#", ATLASLOOT_SCARLETMOGRAINE);
-	text = gsub(text, "#x66#", ATLASLOOT_SCARLETGUARDSMAN);
-	text = gsub(text, "#x67#", ATLASLOOT_SCHOLOHATCHLING);
-	text = gsub(text, "#x68#", ATLASLOOT_SCHOLOADEPT);
-	text = gsub(text, "#x69#", ATLASLOOT_SCHOLOSUMMONER);
-	text = gsub(text, "#x70#", ATLASLOOT_SCHOLORESEARCHER);
-    text = gsub(text, "#x71#", ATLASLOOT_NIGHTMARECORRUPTER);
-    text = gsub(text, "#x72#", ATLASLOOT_STRATSHADOWCASTER);
-    text = gsub(text, "#x73#", ATLASLOOT_STRATSORCERER);
-    text = gsub(text, "#x74#", ATLASLOOT_STRATBATTLEMAGE);
-    text = gsub(text, "#x75#", ATLASLOOT_STRATCITIZEN);
-    text = gsub(text, "#x76#", ATLASLOOT_STRATRAVENER);
-    text = gsub(text, "#x77#", ATLASLOOT_STRATINQUISITOR);
-    text = gsub(text, "#x78#", ATLASLOOT_STWITCHDOCTOR);
-    text = gsub(text, "#x79#", ATLASLOOT_STMURKWORM);
-    text = gsub(text, "#x80#", ATLASLOOT_ABYSSAL_TEMPLAR_FIRE);
-    text = gsub(text, "#x81#", ATLASLOOT_ABYSSAL_TEMPLAR_WATER);
-    text = gsub(text, "#x82#", ATLASLOOT_ABYSSAL_TEMPLAR_EARTH);
-    text = gsub(text, "#x83#", ATLASLOOT_ABYSSAL_TEMPLAR_AIR);
-    text = gsub(text, "#x84#", ATLASLOOT_ABYSSAL_DUKE_AIR);
-    text = gsub(text, "#x85#", ATLASLOOT_ABYSSAL_DUKE_EARTH);
-    text = gsub(text, "#x86#", ATLASLOOT_ABYSSAL_DUKE_FIRE);
-    text = gsub(text, "#x87#", ATLASLOOT_ABYSSAL_DUKE_WATER);
-    text = gsub(text, "#x88#", ATLASLOOT_ABYSSAL_LORD_AIR);
-    text = gsub(text, "#x89#", ATLASLOOT_ABYSSAL_LORD_EARTH);
-    text = gsub(text, "#x90#", ATLASLOOT_ABYSSAL_LORD_FIRE);
-    text = gsub(text, "#x91#", ATLASLOOT_ABYSSAL_LORD_WATER);
-    text = gsub(text, "#x92#", ATLASLOOT_ELEMENTAL_CHARR);
-    text = gsub(text, "#x93#", ATLASLOOT_ELEMENTAL_AVALANCHION);
-    text = gsub(text, "#x94#", ATLASLOOT_ELEMENTAL_TEMPESTRIA);
-    text = gsub(text, "#x95#", ATLASLOOT_ELEMENTAL_WINDREAVER);
+    text = gsub(text, "#x1#", AL["Lord Cobrahn"]);
+    text = gsub(text, "#x2#", AL["Lady Anacondra"]);
+    text = gsub(text, "#x3#", AL["Lord Serpentis"]);
+    text = gsub(text, "#x4#", AL["Druid of the Fang"]);
+    text = gsub(text, "#x5#", AL["Lord Pythas"]);
+    text = gsub(text, "#x6#", AL["Edwin VanCleef"]);
+    text = gsub(text, "#x7#", AL["Captain Greenskin"]);
+    text = gsub(text, "#x8#", AL["Defias Strip Miner"]);
+    text = gsub(text, "#x9#", AL["Overseer/Taskmaster"]);
+    text = gsub(text, "#x10#", AL["Primal Hakkari Kossack"]);
+    text = gsub(text, "#x11#", AL["Primal Hakkari Shawl"]);
+    text = gsub(text, "#x12#", AL["Primal Hakkari Bindings"]);
+    text = gsub(text, "#x13#", AL["Primal Hakkari Sash"]);
+    text = gsub(text, "#x14#", AL["Primal Hakkari Stanchion"]);
+    text = gsub(text, "#x15#", AL["Primal Hakkari Aegis"]);
+    text = gsub(text, "#x16#", AL["Primal Hakkari Girdle"]);
+    text = gsub(text, "#x17#", AL["Primal Hakkari Armsplint"]);
+    text = gsub(text, "#x18#", AL["Primal Hakkari Tabard"]);
+    text = gsub(text, "#x19#", AL["Qiraji Ornate Hilt"]);
+    text = gsub(text, "#x20#", AL["Qiraji Martial Drape"]);
+    text = gsub(text, "#x21#", AL["Qiraji Magisterial Ring"]);
+    text = gsub(text, "#x22#", AL["Qiraji Ceremonial Ring"]);
+    text = gsub(text, "#x23#", AL["Qiraji Regal Drape"]);
+    text = gsub(text, "#x24#", AL["Qiraji Spiked Hilt"]);
+    text = gsub(text, "#x25#", AL["Qiraji Bindings of Dominance"]);
+    text = gsub(text, "#x26#", AL["Vek'nilash's Circlet"]);
+    text = gsub(text, "#x27#", AL["Ouro's Intact Hide"]);
+    text = gsub(text, "#x28#", AL["Husk of the Old God"]);
+    text = gsub(text, "#x29#", AL["Qiraji Bindings of Command"]);
+    text = gsub(text, "#x30#", AL["Vek'lor's Diadem"]);
+    text = gsub(text, "#x31#", AL["Skin of the Great Sandworm"]);
+    text = gsub(text, "#x32#", AL["Carapace of the Old God"]);
+    text = gsub(text, "#x33#", AL["Defender"]);
+    text = gsub(text, "#x34#", AL["Trash Mobs"]);
+    text = gsub(text, "#x35#", AL["Champion"]);
+    text = gsub(text, "#x36#", AL["Centurion"]);
+    text = gsub(text, "#x37#", AL["Herod"]);
+    text = gsub(text, "#x38#", AL["Protector"]);
+    text = gsub(text, "#x39#", AL["Myrmidon"]);
+	text = gsub(text, "#x40#", AL["Defias Pirate"]);
+	text = gsub(text, "#x41#", AL["Prisoner/Insurgent/Convict"]);
+	text = gsub(text, "#x42#", AL["Black Guard Swordsmith"]);
+	text = gsub(text, "#x43#", AL["Crimson Hammersmith"]);
+	text = gsub(text, "#x44#", AL["Shadowforge Flame Keeper"]);
+	text = gsub(text, "#x45#", AL["Anvilrage Marshal"]);
+	text = gsub(text, "#x46#", AL["Anvilrage Captain"]);
+	text = gsub(text, "#x47#", AL["Weapon Technician"]);
+	text = gsub(text, "#x48#", AL["Doomforge Craftsman"]);
+	text = gsub(text, "#x49#", AL["Doomforge Arcanasmith"]);
+	text = gsub(text, "#x50#", AL["Hammered Patron"]);
+	text = gsub(text, "#x51#", AL["Scarshield Warlock"]);
+	text = gsub(text, "#x52#", AL["Firebrand Pyromancer"]);
+	text = gsub(text, "#x53#", AL["Firebrand Grunt"]);
+	text = gsub(text, "#x54#", AL["Firebrand Invoker"]);
+	text = gsub(text, "#x55#", AL["Firebrand Legionnaire"]);
+	text = gsub(text, "#x56#", AL["Spirestone Mystic"]);
+	text = gsub(text, "#x57#", AL["Spirestone Warlord"]);
+	text = gsub(text, "#x58#", AL["Spire Spider/Spiderling"]);
+	text = gsub(text, "#x59#", AL["Blackhand Elite"]);
+	text = gsub(text, "#x60#", AL["Blackhand Assassin"]);
+	text = gsub(text, "#x61#", AL["Death Talon Wyrmguard"]);
+	text = gsub(text, "#x62#", AL["Dark Iron Agent"]);
+	text = gsub(text, "#x63#", AL["Molten Destroyer"]);
+	text = gsub(text, "#x64#", AL["Scarlet Trainee"]);
+	text = gsub(text, "#x65#", AL["Scarlet Commander Mograine"]);
+	text = gsub(text, "#x66#", AL["Guardsman"]);
+	text = gsub(text, "#x67#", AL["Plagued Hatchling"]);
+	text = gsub(text, "#x68#", AL["Scholomance Adept"]);
+	text = gsub(text, "#x69#", AL["Scholomance Dark Summoner"]);
+	text = gsub(text, "#x70#", AL["Spectral Researcher"]);
+    text = gsub(text, "#x71#", AL["Twilight Corrupter"]);
+    text = gsub(text, "#x72#", AL["Thuzadin Shadowcaster"]);
+    text = gsub(text, "#x73#", AL["Crimson Sorcerer"]);
+    text = gsub(text, "#x74#", AL["Crimson Battle Mage"]);
+    text = gsub(text, "#x75#", AL["Spectral Citizen"]);
+    text = gsub(text, "#x76#", AL["Ghoul Ravener"]);
+    text = gsub(text, "#x77#", AL["Crimson Inquisitor"]);
+    text = gsub(text, "#x78#", AL["Atal'ai Witch Doctor"]);
+    text = gsub(text, "#x79#", AL["Murk Worm"]);
+    text = gsub(text, "#x80#", AL["Crimson Templar"]);
+    text = gsub(text, "#x81#", AL["Azure Templar"]);
+    text = gsub(text, "#x82#", AL["Earthen Templar"]);
+    text = gsub(text, "#x83#", AL["Hoary Templar"]);
+    text = gsub(text, "#x84#", AL["The Duke of Zephyrs"]);
+    text = gsub(text, "#x85#", AL["The Duke of Shards"]);
+    text = gsub(text, "#x86#", AL["The Duke of Cynders"]);
+    text = gsub(text, "#x87#", AL["The Duke of Fathoms"]);
+    text = gsub(text, "#x88#", AL["High Marshal Whirlaxis"]);
+    text = gsub(text, "#x89#", AL["Baron Kazum"]);
+    text = gsub(text, "#x90#", AL["Prince Skaldrenox"]);
+    text = gsub(text, "#x91#", AL["Lord Skwol"]);
+    text = gsub(text, "#x92#", AL["Baron Charr"]);
+    text = gsub(text, "#x93#", AL["Avalanchion"]);
+    text = gsub(text, "#x94#", AL["Princess Tempestria"]);
+    text = gsub(text, "#x95#", AL["The Windreaver"]);
 
 	-- Misc
-    text = gsub(text, "#j1#", ATLASLOOT_MISC_D1_SET);
-    text = gsub(text, "#j2#", ATLASLOOT_MISC_D2_SET);
-    text = gsub(text, "#j3#", ATLASLOOT_DUNGEONSET2BOSS);
-    text = gsub(text, "#j4#", ATLASLOOT_MISC_TOKENS);
-    text = gsub(text, "#j5#", ATLASLOOT_MISC_LEVEL_60);
-    text = gsub(text, "#j6#", ATLASLOOT_MISC_FR_GEAR);
-    text = gsub(text, "#j7#", ATLASLOOT_MISC_AR_GEAR);
-    text = gsub(text, "#j8#", ATLASLOOT_MISC_NR_GEAR);
-    text = gsub(text, "#j9#", ATLASLOOT_MISC_FRR_GEAR);
-    text = gsub(text, "#j10#", ATLASLOOT_MISC_SR_GEAR);
-    text = gsub(text, "#j11#", ATLASLOOT_MISC_ANGLER);
-    text = gsub(text, "#j12#", ATLASLOOT_MISC_1ST_PRIZE);
-    text = gsub(text, "#j13#", ATLASLOOT_MISC_RARE_FISH_REWARDS);
-    text = gsub(text, "#j14#", ATLASLOOT_MISC_RARE_FISH);
-    text = gsub(text, "#j15#", ATLASLOOT_FIRE);
-    text = gsub(text, "#j16#", ATLASLOOT_WATER);
-    text = gsub(text, "#j17#", ATLASLOOT_EARTH);
-    text = gsub(text, "#j18#", ATLASLOOT_AIR);
+    text = gsub(text, "#j1#", AL["Dungeon 1 Set"]);
+    text = gsub(text, "#j2#", AL["Dungeon 2 Set"]);
+    text = gsub(text, "#j3#", AL["D2 Summonable"]);
+    text = gsub(text, "#j4#", AL["Token Hand-Ins"]);
+    text = gsub(text, "#j5#", AL["Level 60"]);
+    text = gsub(text, "#j6#", AL["Fire Resistance Gear"]);
+    text = gsub(text, "#j7#", AL["Arcane Resistance Gear"]);
+    text = gsub(text, "#j8#", AL["Nature Resistance Gear"]);
+    text = gsub(text, "#j9#", AL["Frost Resistance Gear"]);
+    text = gsub(text, "#j10#", AL["Shadow Resistance Gear"]);
+    text = gsub(text, "#j11#", AL["Master Angler"]);
+    text = gsub(text, "#j12#", AL["First Prize"]);
+    text = gsub(text, "#j13#", AL["Rare Fish Rewards"]);
+    text = gsub(text, "#j14#", AL["Rare Fish"]);
+    text = gsub(text, "#j15#", AL["Fire"]);
+    text = gsub(text, "#j16#", AL["Water"]);
+    text = gsub(text, "#j17#", AL["Earth"]);
+    text = gsub(text, "#j18#", AL["Air"]);
 
     
 	-- Chests, boxes
-    text = gsub(text, "#cb1#", ATLASLOOT_SCARLET_DOAN);
+    text = gsub(text, "#cb1#", AL["Doan's Strongbox"]);
     --[[text = gsub(text, "#cb2#", ATLASLOOT_Chest of The Seven);
     text = gsub(text, "#cb3#", ATLASLOOT_The Vault);
     text = gsub(text, "#cb4#", ATLASLOOT_Dark Coffer);
     text = gsub(text, "#cb5#", ATLASLOOT_The Secret Safe);
     text = gsub(text, "#cb6#", ATLASLOOT_Ogre Tannin Basket);]]
-    text = gsub(text, "#cb7#", ATLASLOOT_DM_FENGUS);
+    text = gsub(text, "#cb7#", AL["Fengus's Chest"]);
     --[[text = gsub(text, "#cb8#", ATLASLOOT_The Princes Chest);]]
-    text = gsub(text, "#cb9#", ATLASLOOT_FELVINE_SHARD);
-    text = gsub(text, "#cb10#", ATLASLOOT_UBRS_BREASTPLATE);
+    text = gsub(text, "#cb9#", AL["Felvine Shard"]);
+    text = gsub(text, "#cb10#", AL["Unforged Rune Covered Breastplate"]);
     --[[text = gsub(text, "#cb11#", ATLASLOOT_Unfinished Painting);
     text = gsub(text, "#cb12#", ATLASLOOT_Frostwhispers Embalming Fluid);--]]
-    text = gsub(text, "#cb13#", ATLASLOOT_STRAT_STRONGBOX);
+    text = gsub(text, "#cb13#", AL["Malor's Strongbox"]);
     --[[text = gsub(text, "#cb14#", ATLASLOOT_Baelogs Chest);
     text = gsub(text, "#cb15#", ATLASLOOT_Conspicuous Urn);--]]
-    text = gsub(text, "#cb16#", ATLASLOOT_GIFTADORATION);
-    text = gsub(text, "#cb17#", ATLASLOOT_BOXCHOCOLATES);
-    text = gsub(text, "#cb18#", ATLASLOOT_TREATBAG);
+    text = gsub(text, "#cb16#", AL["Gift of Adoration"]);
+    text = gsub(text, "#cb17#", AL["Box of Chocolates"]);
+    text = gsub(text, "#cb18#", AL["Treat Bag"]);
     --[[text = gsub(text, "#cb19#", ATLASLOOT_Gaily Wrapped Present);
     text = gsub(text, "#cb20#", ATLASLOOT_Festive Gift);
     text = gsub(text, "#cb21#", ATLASLOOT_Ticking Present);
     text = gsub(text, "#cb22#", ATLASLOOT_Gently Shaken Gift);
     text = gsub(text, "#cb24#", ATLASLOOT_Lunar Festival Fireworks Pack);
     text = gsub(text, "#cb25#", ATLASLOOT_Lucky Red Envelope);--]]
-    text = gsub(text, "#cb25#", ATLASLOOT_COLOREDEGG);
-    text = gsub(text, "#cb26#", ATLASLOOT_LUNAR_SMALLROCKETRECIPES);
-    text = gsub(text, "#cb27#", ATLASLOOT_LUNAR_LARGEROCKETRECIPES);
-    text = gsub(text, "#cb28#", ATLASLOOT_LUNAR_CLUSTERRECIPES);
-    text = gsub(text, "#cb29#", ATLASLOOT_LUNAR_LARGECLUSTERRECIPES);
-    text = gsub(text, "#cb30#", ATLASLOOT_DM_WARPWOODPOD);
-    text = gsub(text, "#cb31#", ATLASLOOT_AQ20_COFFER);
-    text = gsub(text, "#cb32#", ATLASLOOT_AQ40_COFFER);
+    text = gsub(text, "#cb25#", AL["Brightly Colored Egg"]);
+    text = gsub(text, "#cb26#", AL["Small Rocket Recipes"]);
+    text = gsub(text, "#cb27#", AL["Large Rocket Recipes"]);
+    text = gsub(text, "#cb28#", AL["Cluster Rocket Recipes"]);
+    text = gsub(text, "#cb29#", AL["Large Cluster Rocket Recipes"]);
+    text = gsub(text, "#cb30#", AL["Warpwood Pod"]);
+    text = gsub(text, "#cb31#", AL["Scarab Coffer"]);
+    text = gsub(text, "#cb32#", AL["Greater Scarab Coffer"]);
 	
     --Pre60 Sets
-    text = gsub(text, "#pre60s1#", ATLASLOOT_PRE60_DEADMINES);
-    text = gsub(text, "#pre60s2#", ATLASLOOT_PRE60_WAILING);
-    text = gsub(text, "#pre60s3#", ATLASLOOT_PRE60_SCARLET);
-    text = gsub(text, "#pre60s4#", ATLASLOOT_PRE60_BLACKROCKD);
-    text = gsub(text, "#pre60s5#", ATLASLOOT_PRE60_IRONWEAVE);
-    text = gsub(text, "#pre60s6#", ATLASLOOT_PRE60_NECROPILE);
-    text = gsub(text, "#pre60s7#", ATLASLOOT_PRE60_CADAVEROUS);
-    text = gsub(text, "#pre60s8#", ATLASLOOT_PRE60_BLOODMAIL);
-    text = gsub(text, "#pre60s9#", ATLASLOOT_PRE60_DEATHBONE);
-    text = gsub(text, "#pre60s10#", ATLASLOOT_PRE60_POSTMASTER);
-    text = gsub(text, "#pre60s11#", ATLASLOOT_PRE60_UNDEADCLOTH);
-    text = gsub(text, "#pre60s12#", ATLASLOOT_PRE60_UNDEADLEATHER);
-    text = gsub(text, "#pre60s13#", ATLASLOOT_PRE60_UNDEADMAIL);
-    text = gsub(text, "#pre60s14#", ATLASLOOT_PRE60_UNDEADPLATE);
-    text = gsub(text, "#pre60s15#", ATLASLOOT_PRE60_SHARD);
-    text = gsub(text, "#pre60s16#", ATLASLOOT_PRE60_MAJORMOJO);
-    text = gsub(text, "#pre60s17#", ATLASLOOT_PRE60_OVERLORDRES);
-    text = gsub(text, "#pre60s18#", ATLASLOOT_PRE60_PRAYERPRIMAL);
-    text = gsub(text, "#pre60s19#", ATLASLOOT_PRE60_ZANZIL);
-    text = gsub(text, "#pre60s20#", ATLASLOOT_PRE60_ESHKANDAR);
-    text = gsub(text, "#pre60s21#", ATLASLOOT_PRE60_HAKKARIBLADES);
-    text = gsub(text, "#pre60s22#", ATLASLOOT_PRE60_PRIMALBLESSING);
-    text = gsub(text, "#pre60s23#", ATLASLOOT_PRE60_DALREND);
-    text = gsub(text, "#pre60s24#", ATLASLOOT_PRE60_SPIDERKISS);
+    text = gsub(text, "#pre60s1#", AL["Defias Leather"]);
+    text = gsub(text, "#pre60s2#", AL["Embrace of the Viper"]);
+    text = gsub(text, "#pre60s3#", AL["Chain of the Scarlet Crusade"]);
+    text = gsub(text, "#pre60s4#", AL["The Gladiator"]);
+    text = gsub(text, "#pre60s5#", AL["Ironweave Battlesuit"]);
+    text = gsub(text, "#pre60s6#", AL["Necropile Raiment"]);
+    text = gsub(text, "#pre60s7#", AL["Cadaverous Garb"]);
+    text = gsub(text, "#pre60s8#", AL["Bloodmail Regalia"]);
+    text = gsub(text, "#pre60s9#", AL["Deathbone Guardian"]);
+    text = gsub(text, "#pre60s10#", AL["The Postmaster"]);
+    text = gsub(text, "#pre60s11#", AL["Regalia of Undead Cleansing"]);
+    text = gsub(text, "#pre60s12#", AL["Undead Slayer's Armor"]);
+    text = gsub(text, "#pre60s13#", AL["Garb of the Undead Slayer"]);
+    text = gsub(text, "#pre60s14#", AL["Battlegear of Undead Slaying"]);
+    text = gsub(text, "#pre60s15#", AL["Shard of the Gods"]);
+    text = gsub(text, "#pre60s16#", AL["Major Mojo Infusion"]);
+    text = gsub(text, "#pre60s17#", AL["Overlord's Resolution"]);
+    text = gsub(text, "#pre60s18#", AL["Prayer of the Primal"]);
+    text = gsub(text, "#pre60s19#", AL["Zanzil's Concentration"]);
+    text = gsub(text, "#pre60s20#", AL["Spirit of Eskhandar"]);
+    text = gsub(text, "#pre60s21#", AL["The Twin Blades of Hakkari"]);
+    text = gsub(text, "#pre60s22#", AL["Primal Blessing"]);
+    text = gsub(text, "#pre60s23#", AL["Dal'Rend's Arms"]);
+    text = gsub(text, "#pre60s24#", AL["Spider's Kiss"]);
 
     --ZG Sets
-    text = gsub(text, "#zgs1#", ATLASLOOT_ZG_DRUID);
-    text = gsub(text, "#zgs2#", ATLASLOOT_ZG_HUNTER);
-    text = gsub(text, "#zgs3#", ATLASLOOT_ZG_MAGE);
-    text = gsub(text, "#zgs4#", ATLASLOOT_ZG_PALADIN);
-    text = gsub(text, "#zgs5#", ATLASLOOT_ZG_PRIEST);
-    text = gsub(text, "#zgs6#", ATLASLOOT_ZG_ROGUE);
-    text = gsub(text, "#zgs7#", ATLASLOOT_ZG_SHAMAN);
-    text = gsub(text, "#zgs8#", ATLASLOOT_ZG_WARLOCK);
-    text = gsub(text, "#zgs9#", ATLASLOOT_ZG_WARRIOR);
+    text = gsub(text, "#zgs1#", AL["Haruspex's Garb"]);
+    text = gsub(text, "#zgs2#", AL["Predator's Armor"]);
+    text = gsub(text, "#zgs3#", AL["Illusionist's Attire"]);
+    text = gsub(text, "#zgs4#", AL["Freethinker's Armor"]);
+    text = gsub(text, "#zgs5#", AL["Confessor's Raiment"]);
+    text = gsub(text, "#zgs6#", AL["Madcap's Outfit"]);
+    text = gsub(text, "#zgs7#", AL["Augur's Regalia"]);
+    text = gsub(text, "#zgs8#", AL["Demoniac's Threads"]);
+    text = gsub(text, "#zgs9#", AL["Vindicator's Battlegear"]);
     
     --AQ20 Sets
-    text = gsub(text, "#aq20s1#", ATLASLOOT_AQ20_DRUID);
-    text = gsub(text, "#aq20s2#", ATLASLOOT_AQ20_HUNTER);
-    text = gsub(text, "#aq20s3#", ATLASLOOT_AQ20_MAGE);
-    text = gsub(text, "#aq20s4#", ATLASLOOT_AQ20_PALADIN);
-    text = gsub(text, "#aq20s5#", ATLASLOOT_AQ20_PRIEST);
-    text = gsub(text, "#aq20s6#", ATLASLOOT_AQ20_ROGUE);
-    text = gsub(text, "#aq20s7#", ATLASLOOT_AQ20_SHAMAN);
-    text = gsub(text, "#aq20s8#", ATLASLOOT_AQ20_WARLOCK);
-    text = gsub(text, "#aq20s9#", ATLASLOOT_AQ20_WARRIOR);
+    text = gsub(text, "#aq20s1#", AL["Symbols of Unending Life"]);
+    text = gsub(text, "#aq20s2#", AL["Trappings of the Unseen Path"]);
+    text = gsub(text, "#aq20s3#", AL["Trappings of Vaulted Secrets"]);
+    text = gsub(text, "#aq20s4#", AL["Battlegear of Eternal Justice"]);
+    text = gsub(text, "#aq20s5#", AL["Finery of Infinite Wisdom"]);
+    text = gsub(text, "#aq20s6#", AL["Emblems of Veiled Shadows"]);
+    text = gsub(text, "#aq20s7#", AL["Gift of the Gathering Storm"]);
+    text = gsub(text, "#aq20s8#", AL["Implements of Unspoken Names"]);
+    text = gsub(text, "#aq20s9#", AL["Battlegear of Unyielding Strength"]);
     
     --AQ40 Sets
-    text = gsub(text, "#aq40s1#", ATLASLOOT_AQ40_DRUID);
-    text = gsub(text, "#aq40s2#", ATLASLOOT_AQ40_HUNTER);
-    text = gsub(text, "#aq40s3#", ATLASLOOT_AQ40_MAGE);
-    text = gsub(text, "#aq40s4#", ATLASLOOT_AQ40_PALADIN);
-    text = gsub(text, "#aq40s5#", ATLASLOOT_AQ40_PRIEST);
-    text = gsub(text, "#aq40s6#", ATLASLOOT_AQ40_ROGUE);
-    text = gsub(text, "#aq40s7#", ATLASLOOT_AQ40_SHAMAN);
-    text = gsub(text, "#aq40s8#", ATLASLOOT_AQ40_WARLOCK);
-    text = gsub(text, "#aq40s9#", ATLASLOOT_AQ40_WARRIOR);
+    text = gsub(text, "#aq40s1#", AL["Genesis Raiment"]);
+    text = gsub(text, "#aq40s2#", AL["Striker's Garb"]);
+    text = gsub(text, "#aq40s3#", AL["Enigma Vestments"]);
+    text = gsub(text, "#aq40s4#", AL["Avenger's Battlegear"]);
+    text = gsub(text, "#aq40s5#", AL["Garments of the Oracle"]);
+    text = gsub(text, "#aq40s6#", AL["Deathdealer's Embrace"]);
+    text = gsub(text, "#aq40s7#", AL["Stormcaller's Garb"]);
+    text = gsub(text, "#aq40s8#", AL["Doomcaller's Attire"]);
+    text = gsub(text, "#aq40s9#", AL["Conqueror's Battlegear"]);
     
     --T0 Sets
-    text = gsub(text, "#t0s1#", ATLASLOOT_T0_DRUID);
-    text = gsub(text, "#t0s2#", ATLASLOOT_T0_HUNTER);
-    text = gsub(text, "#t0s3#", ATLASLOOT_T0_MAGE);
-    text = gsub(text, "#t0s4#", ATLASLOOT_T0_PALADIN);
-    text = gsub(text, "#t0s5#", ATLASLOOT_T0_PRIEST);
-    text = gsub(text, "#t0s6#", ATLASLOOT_T0_ROGUE);
-    text = gsub(text, "#t0s7#", ATLASLOOT_T0_SHAMAN);
-    text = gsub(text, "#t0s8#", ATLASLOOT_T0_WARLOCK);
-    text = gsub(text, "#t0s9#", ATLASLOOT_T0_WARRIOR);
+    text = gsub(text, "#t0s1#", AL["Wildheart Raiment"]);
+    text = gsub(text, "#t0s2#", AL["Beaststalker Armor"]);
+    text = gsub(text, "#t0s3#", AL["Magister's Regalia"]);
+    text = gsub(text, "#t0s4#", AL["Lightforge Armor"]);
+    text = gsub(text, "#t0s5#", AL["Vestments of the Devout"]);
+    text = gsub(text, "#t0s6#", AL["Shadowcraft Armor"]);
+    text = gsub(text, "#t0s7#", AL["The Elements"]);
+    text = gsub(text, "#t0s8#", AL["Dreadmist Raiment"]);
+    text = gsub(text, "#t0s9#", AL["Battlegear of Valor"]);
     
     --T0.5 Sets
-    text = gsub(text, "#t05s1#", ATLASLOOT_T05_DRUID);
-    text = gsub(text, "#t05s2#", ATLASLOOT_T05_HUNTER);
-    text = gsub(text, "#t05s3#", ATLASLOOT_T05_MAGE);
-    text = gsub(text, "#t05s4#", ATLASLOOT_T05_PALADIN);
-    text = gsub(text, "#t05s5#", ATLASLOOT_T05_PRIEST);
-    text = gsub(text, "#t05s6#", ATLASLOOT_T05_ROGUE);
-    text = gsub(text, "#t05s7#", ATLASLOOT_T05_SHAMAN);
-    text = gsub(text, "#t05s8#", ATLASLOOT_T05_WARLOCK);
-    text = gsub(text, "#t05s9#", ATLASLOOT_T05_WARRIOR);
+    text = gsub(text, "#t05s1#", AL["Feralheart Raiment"]);
+    text = gsub(text, "#t05s2#", AL["Beastmaster Armor"]);
+    text = gsub(text, "#t05s3#", AL["Sorcerer's Regalia"]);
+    text = gsub(text, "#t05s4#", AL["Soulforge Armor"]);
+    text = gsub(text, "#t05s5#", AL["Vestments of the Virtuous"]);
+    text = gsub(text, "#t05s6#", AL["Darkmantle Armor"]);
+    text = gsub(text, "#t05s7#", AL["The Five Thunders"]);
+    text = gsub(text, "#t05s8#", AL["Deathmist Raiment"]);
+    text = gsub(text, "#t05s9#", AL["Battlegear of Heroism"]);
     
     --T1 Sets
-    text = gsub(text, "#t1s1#", ATLASLOOT_T1_DRUID);
-    text = gsub(text, "#t1s2#", ATLASLOOT_T1_HUNTER);
-    text = gsub(text, "#t1s3#", ATLASLOOT_T1_MAGE);
-    text = gsub(text, "#t1s4#", ATLASLOOT_T1_PALADIN);
-    text = gsub(text, "#t1s5#", ATLASLOOT_T1_PRIEST);
-    text = gsub(text, "#t1s6#", ATLASLOOT_T1_ROGUE);
-    text = gsub(text, "#t1s7#", ATLASLOOT_T1_SHAMAN);
-    text = gsub(text, "#t1s8#", ATLASLOOT_T1_WARLOCK);
-    text = gsub(text, "#t1s9#", ATLASLOOT_T1_WARRIOR);
+    text = gsub(text, "#t1s1#", AL["Cenarion Raiment"]);
+    text = gsub(text, "#t1s2#", AL["Giantstalker Armor"]);
+    text = gsub(text, "#t1s3#", AL["Arcanist Regalia"]);
+    text = gsub(text, "#t1s4#", AL["Lawbringer Armor"]);
+    text = gsub(text, "#t1s5#", AL["Vestments of Prophecy"]);
+    text = gsub(text, "#t1s6#", AL["Nightslayer Armor"]);
+    text = gsub(text, "#t1s7#", AL["The Earthfury"]);
+    text = gsub(text, "#t1s8#", AL["Felheart Raiment"]);
+    text = gsub(text, "#t1s9#", AL["Battlegear of Might"]);
     
     --T2 Sets
-    text = gsub(text, "#t2s1#", ATLASLOOT_T2_DRUID);
-    text = gsub(text, "#t2s2#", ATLASLOOT_T2_HUNTER);
-    text = gsub(text, "#t2s3#", ATLASLOOT_T2_MAGE);
-    text = gsub(text, "#t2s4#", ATLASLOOT_T2_PALADIN);
-    text = gsub(text, "#t2s5#", ATLASLOOT_T2_PRIEST);
-    text = gsub(text, "#t2s6#", ATLASLOOT_T2_ROGUE);
-    text = gsub(text, "#t2s7#", ATLASLOOT_T2_SHAMAN);
-    text = gsub(text, "#t2s8#", ATLASLOOT_T2_WARLOCK);
-    text = gsub(text, "#t2s9#", ATLASLOOT_T2_WARRIOR);
+    text = gsub(text, "#t2s1#", AL["Stormrage Raiment"]);
+    text = gsub(text, "#t2s2#", AL["Dragonstalker Armor"]);
+    text = gsub(text, "#t2s3#", AL["Netherwind Regalia"]);
+    text = gsub(text, "#t2s4#", AL["Judgement Armor"]);
+    text = gsub(text, "#t2s5#", AL["Vestments of Transcendence"]);
+    text = gsub(text, "#t2s6#", AL["Bloodfang Armor"]);
+    text = gsub(text, "#t2s7#", AL["The Ten Storms"]);
+    text = gsub(text, "#t2s8#", AL["Nemesis Raiment"]);
+    text = gsub(text, "#t2s9#", AL["Battlegear of Wrath"]);
     
     --T3 Sets
-    text = gsub(text, "#t3s1#", ATLASLOOT_T3_DRUID);
-    text = gsub(text, "#t3s2#", ATLASLOOT_T3_HUNTER);
-    text = gsub(text, "#t3s3#", ATLASLOOT_T3_MAGE);
-    text = gsub(text, "#t3s4#", ATLASLOOT_T3_PALADIN);
-    text = gsub(text, "#t3s5#", ATLASLOOT_T3_PRIEST);
-    text = gsub(text, "#t3s6#", ATLASLOOT_T3_ROGUE);
-    text = gsub(text, "#t3s7#", ATLASLOOT_T3_SHAMAN);
-    text = gsub(text, "#t3s8#", ATLASLOOT_T3_WARLOCK);
-    text = gsub(text, "#t3s9#", ATLASLOOT_T3_WARRIOR);
+    text = gsub(text, "#t3s1#", AL["Dreamwalker Raiment"]);
+    text = gsub(text, "#t3s2#", AL["Cryptstalker Armor"]);
+    text = gsub(text, "#t3s3#", AL["Frostfire Regalia"]);
+    text = gsub(text, "#t3s4#", AL["Redemption Armor"]);
+    text = gsub(text, "#t3s5#", AL["Vestments of Faith"]);
+    text = gsub(text, "#t3s6#", AL["Bonescythe Armor"]);
+    text = gsub(text, "#t3s7#", AL["The Earthshatterer"]);
+    text = gsub(text, "#t3s8#", AL["Plagueheart Raiment"]);
+    text = gsub(text, "#t3s9#", AL["Dreadnaught's Battlegear"]);
+    
+    --BoN
+    text = gsub(text, "#pob1#", AL["Path of the Conqueror"]);
+    text = gsub(text, "#pob2#", AL["Path of the Invoker"]);
+    text = gsub(text, "#pob3#", AL["Path of the Protector"]);
     
     --PvP Epic Horde Sets
-    text = gsub(text, "#pvpeh1#", ATLASLOOT_PVP_EPIC_H_DRUID);
-    text = gsub(text, "#pvpeh2#", ATLASLOOT_PVP_EPIC_H_HUNTER);
-    text = gsub(text, "#pvpeh3#", ATLASLOOT_PVP_EPIC_H_MAGE);
-    text = gsub(text, "#pvpeh4#", ATLASLOOT_PVP_EPIC_H_PRIEST);
-    text = gsub(text, "#pvpeh5#", ATLASLOOT_PVP_EPIC_H_ROGUE);
-    text = gsub(text, "#pvpeh6#", ATLASLOOT_PVP_EPIC_H_SHAMAN);
-    text = gsub(text, "#pvpeh7#", ATLASLOOT_PVP_EPIC_H_WARLOCK);
-    text = gsub(text, "#pvpeh8#", ATLASLOOT_PVP_EPIC_H_WARRIOR);
-    text = gsub(text, "#pvpeh9#", ATLASLOOT_PVP_EPIC_H_PALADIN);
+    text = gsub(text, "#pvpeh1#", AL["Warlord's Sanctuary"]);
+    text = gsub(text, "#pvpeh2#", AL["Warlord's Pursuit"]);
+    text = gsub(text, "#pvpeh3#", AL["Warlord's Regalia"]);
+    text = gsub(text, "#pvpeh4#", AL["Warlord's Raiment"]);
+    text = gsub(text, "#pvpeh5#", AL["Warlord's Vestments"]);
+    text = gsub(text, "#pvpeh6#", AL["Warlord's Earthshaker"]);
+    text = gsub(text, "#pvpeh7#", AL["Warlord's Threads"]);
+    text = gsub(text, "#pvpeh8#", AL["Warlord's Battlegear"]);
+    text = gsub(text, "#pvpeh9#", AL["Warlord's Aegis"]);
     
     --PvP Epic Alliance Sets
-    text = gsub(text, "#pvpea1#", ATLASLOOT_PVP_EPIC_A_DRUID);
-    text = gsub(text, "#pvpea2#", ATLASLOOT_PVP_EPIC_A_HUNTER);
-    text = gsub(text, "#pvpea3#", ATLASLOOT_PVP_EPIC_A_MAGE);
-    text = gsub(text, "#pvpea4#", ATLASLOOT_PVP_EPIC_A_PALADIN);
-    text = gsub(text, "#pvpea5#", ATLASLOOT_PVP_EPIC_A_PRIEST);
-    text = gsub(text, "#pvpea6#", ATLASLOOT_PVP_EPIC_A_ROGUE);
-    text = gsub(text, "#pvpea7#", ATLASLOOT_PVP_EPIC_A_WARLOCK);
-    text = gsub(text, "#pvpea8#", ATLASLOOT_PVP_EPIC_A_WARRIOR);
-    text = gsub(text, "#pvpea9#", ATLASLOOT_PVP_EPIC_A_SHAMAN);
+    text = gsub(text, "#pvpea1#", AL["Field Marshal's Sanctuary"]);
+    text = gsub(text, "#pvpea2#", AL["Field Marshal's Pursuit"]);
+    text = gsub(text, "#pvpea3#", AL["Field Marshal's Regalia"]);
+    text = gsub(text, "#pvpea4#", AL["Field Marshal's Aegis"]);
+    text = gsub(text, "#pvpea5#", AL["Field Marshal's Raiment"]);
+    text = gsub(text, "#pvpea6#", AL["Field Marshal's Vestments"]);
+    text = gsub(text, "#pvpea7#", AL["Field Marshal's Threads"]);
+    text = gsub(text, "#pvpea8#", AL["Field Marshal's Battlegear"]);
+    text = gsub(text, "#pvpea9#", AL["Field Marshal's Earthshaker"]);
     
     --PvP Rare Horde Sets
-    text = gsub(text, "#pvprh1#", ATLASLOOT_PVP_RARE_H_DRUID);
-    text = gsub(text, "#pvprh2#", ATLASLOOT_PVP_RARE_H_HUNTER);
-    text = gsub(text, "#pvprh3#", ATLASLOOT_PVP_RARE_H_MAGE);
-    text = gsub(text, "#pvprh4#", ATLASLOOT_PVP_RARE_H_PRIEST);
-    text = gsub(text, "#pvprh5#", ATLASLOOT_PVP_RARE_H_ROGUE);
-    text = gsub(text, "#pvprh6#", ATLASLOOT_PVP_RARE_H_SHAMAN);
-    text = gsub(text, "#pvprh7#", ATLASLOOT_PVP_RARE_H_WARLOCK);
-    text = gsub(text, "#pvprh8#", ATLASLOOT_PVP_RARE_H_WARRIOR);
-    text = gsub(text, "#pvprh9#", ATLASLOOT_PVP_RARE_H_PALADIN);
+    text = gsub(text, "#pvprh1#", AL["Champion's Refuge"]);
+    text = gsub(text, "#pvprh2#", AL["Champion's Pursuance"]);
+    text = gsub(text, "#pvprh3#", AL["Champion's Arcanum"]);
+    text = gsub(text, "#pvprh4#", AL["Champion's Investiture"]);
+    text = gsub(text, "#pvprh5#", AL["Champion's Guard"]);
+    text = gsub(text, "#pvprh6#", AL["Champion's Stormcaller"]);
+    text = gsub(text, "#pvprh7#", AL["Champion's Dreadgear"]);
+    text = gsub(text, "#pvprh8#", AL["Champion's Battlearmor"]);
+    text = gsub(text, "#pvprh9#", AL["Champion's Redoubt"]);
     
     --PvP Rare Alliance Sets
-    text = gsub(text, "#pvpra1#", ATLASLOOT_PVP_RARE_A_DRUID);
-    text = gsub(text, "#pvpra2#", ATLASLOOT_PVP_RARE_A_HUNTER);
-    text = gsub(text, "#pvpra3#", ATLASLOOT_PVP_RARE_A_MAGE);
-    text = gsub(text, "#pvpra4#", ATLASLOOT_PVP_RARE_A_PALADIN);
-    text = gsub(text, "#pvpra5#", ATLASLOOT_PVP_RARE_A_PRIEST);
-    text = gsub(text, "#pvpra6#", ATLASLOOT_PVP_RARE_A_ROGUE);
-    text = gsub(text, "#pvpra7#", ATLASLOOT_PVP_RARE_A_WARLOCK);
-    text = gsub(text, "#pvpra8#", ATLASLOOT_PVP_RARE_A_WARRIOR);
-    text = gsub(text, "#pvpra9#", ATLASLOOT_PVP_RARE_A_SHAMAN);
+    text = gsub(text, "#pvpra1#", AL["Lieutenant Commander's Refuge"]);
+    text = gsub(text, "#pvpra2#", AL["Lieutenant Commander's Pursuance"]);
+    text = gsub(text, "#pvpra3#", AL["Lieutenant Commander's Arcanum"]);
+    text = gsub(text, "#pvpra4#", AL["Lieutenant Commander's Redoubt"]);
+    text = gsub(text, "#pvpra5#", AL["Lieutenant Commander's Investiture"]);
+    text = gsub(text, "#pvpra6#", AL["Lieutenant Commander's Guard"]);
+    text = gsub(text, "#pvpra7#", AL["Lieutenant Commander's Dreadgear"]);
+    text = gsub(text, "#pvpra8#", AL["Lieutenant Commander's Battlearmor"]);
+    text = gsub(text, "#pvpra9#", AL["Lieutenant Commander's Stormcaller"]);
     
     --Misc PvP Set Text
-    text = gsub(text, "#pvps1#", ATLASLOOT_PVP_EPIC_SET);
-    text = gsub(text, "#pvps2#", ATLASLOOT_PVP_RARE_SET);
+    text = gsub(text, "#pvps1#", AL["Epic Set"]);
+    text = gsub(text, "#pvps2#", AL["Rare Set"]);
     
     --Text colouring
     text = gsub(text, "=q0=", "|cff9d9d9d");
@@ -503,7 +510,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "=q5=", "|cffFF8000");
     text = gsub(text, "=q6=", "|cffFF0000");
 	text = gsub(text, "=q7=", "|cff03c0f6"); -- "dropped by" colour
-	text = gsub(text, "=q8=", "|cff2773ff"); -- alliance colour
+	text = gsub(text, "=q8=", "|cff2773ff"); -- alliance colour, alliance rank colour
 	text = gsub(text, "=q9=", "|cffffffff"); -- priest colour
 	text = gsub(text, "=q10=", "|cff68ccef"); -- mage colour
 	text = gsub(text, "=q11=", "|cff9382c9"); -- warlock colour
@@ -513,6 +520,7 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "=q15=", "|cff2773ff"); -- shaman colour
 	text = gsub(text, "=q16=", "|cfff48cba"); -- paladin colour
 	text = gsub(text, "=q17=", "|cffc69b6d"); -- warrior colour
+	text = gsub(text, "=q18=", "|cffff3100"); -- horde rank colour
     text = gsub(text, "=ec1=", "|cffFF8400");
     text = gsub(text, "=ds=", "|cffFFd200");
     
@@ -525,7 +533,6 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#av#", "Interface\\Icons\\INV_Jewelry_Necklace_21");
     text = gsub(text, "#horde#", "Interface\\AddOns\\AtlasLoot\\Images\\Horde");
     text = gsub(text, "#alliance#", "Interface\\AddOns\\AtlasLoot\\Images\\Alliance");
-    text = gsub(text, "#arena#", "Interface\\PVPFrame\\PVP-ArenaPoints-Icon");
     text = gsub(text, "#darkmoon#", "Interface\\Icons\\INV_Misc_Ticket_Darkmoon_01");
     text = gsub(text, "#ccombat#", "Interface\\Icons\\INV_Jewelry_Talisman_06");
     text = gsub(text, "#ctactical#", "Interface\\Icons\\INV_Jewelry_Amulet_02");
@@ -534,5 +541,5 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#ccenarius#", "Interface\\Icons\\INV_Jewelry_Necklace_12");
     text = gsub(text, "#zandalar#", "Interface\\Icons\\INV_Misc_Coin_08");
     
-    return text;
+	return text;
 end

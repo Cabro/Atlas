@@ -1,7 +1,7 @@
 <!--
 
 	Atlas, a World of Warcraft instance map browser
-	Copyright 2005, 2006 Dan Gilbert
+	Copyright 2005 - 2008 Dan Gilbert
 	Email me at loglow@gmail.com
 
 	This file is part of Atlas.
@@ -26,7 +26,7 @@
 ..\FrameXML\UI.xsd">
 	<Frame name="AtlasOptionsFrame" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent" clampedToScreen="true">
 		<Size>
-			<AbsDimension x="300" y="485"/>
+			<AbsDimension x="300" y="570"/>
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER"/>
@@ -100,30 +100,11 @@
 					</OnClick>
 				</Scripts>
 			</CheckButton>
-			<CheckButton name="$ParentReplaceWorldMap" inherits="OptionsCheckButtonTemplate">
-				<Anchors>
-					<Anchor point="TOPLEFT">
-						<Offset>
-							<AbsDimension x="20" y="-120"/>
-						</Offset>
-					</Anchor>
-				</Anchors>
-				<Scripts>
-					<OnLoad>
-						getglobal(this:GetName().."Text"):SetText(ATLAS_OPTIONS_REPMAP);
-						this:Disable();
-						getglobal(this:GetName().."Text"):SetTextColor(GRAY_FONT_COLOR.r, GRAY_FONT_COLOR.g, GRAY_FONT_COLOR.b);
-					</OnLoad>
-					<OnClick>
-						AtlasOptions_ReplaceWorldMapToggle();
-					</OnClick>
-				</Scripts>
-			</CheckButton>
 			<CheckButton name="$ParentRightClick" inherits="OptionsCheckButtonTemplate">
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="20" y="-150"/>
+							<AbsDimension x="20" y="-120"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -140,7 +121,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="20" y="-180"/>
+							<AbsDimension x="20" y="-150"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -157,7 +138,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="20" y="-210"/>
+							<AbsDimension x="20" y="-180"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -177,7 +158,7 @@
 				<Anchors>
 					<Anchor point="TOP">
 						<Offset>
-							<AbsDimension x="0" y="-270" />
+							<AbsDimension x="0" y="-300" />
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -186,6 +167,7 @@
 						AtlasOptions_SetupSlider(ATLAS_OPTIONS_BUTPOS, 0, 360, 1);
 					</OnLoad>
 					<OnValueChanged>
+						AtlasOptions_UpdateSlider(ATLAS_OPTIONS_BUTPOS);
 						AtlasOptions.AtlasButtonPosition = this:GetValue();
 						AtlasButton_UpdatePosition();
 					</OnValueChanged>
@@ -198,7 +180,7 @@
 				<Anchors>
 					<Anchor point="TOP">
 						<Offset>
-							<AbsDimension x="0" y="-310" />
+							<AbsDimension x="0" y="-340" />
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -207,6 +189,7 @@
 						AtlasOptions_SetupSlider(ATLAS_OPTIONS_BUTRAD, 0, 200, 1);
 					</OnLoad>
 					<OnValueChanged>
+						AtlasOptions_UpdateSlider(ATLAS_OPTIONS_BUTRAD);
 						AtlasOptions.AtlasButtonRadius = this:GetValue();
 						AtlasButton_UpdatePosition();
 					</OnValueChanged>
@@ -219,7 +202,7 @@
 				<Anchors>
 					<Anchor point="TOP">
 						<Offset>
-							<AbsDimension x="0" y="-350" />
+							<AbsDimension x="0" y="-380" />
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -228,6 +211,7 @@
 						AtlasOptions_SetupSlider(ATLAS_OPTIONS_TRANS, 0.25, 1.0, 0.01);
 					</OnLoad>
 					<OnValueChanged>
+						AtlasOptions_UpdateSlider(ATLAS_OPTIONS_TRANS);
 						AtlasOptions.AtlasAlpha = this:GetValue();
 						Atlas_UpdateAlpha();
 					</OnValueChanged>
@@ -240,20 +224,48 @@
 				<Anchors>
 					<Anchor point="TOP">
 						<Offset>
-							<AbsDimension x="0" y="-390" />
+							<AbsDimension x="0" y="-420" />
 						</Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
 					<OnLoad>
-						AtlasOptions_SetupSlider(ATLAS_OPTIONS_SCALE, 0.25, 1.0, 0.01);
+						AtlasOptions_SetupSlider(ATLAS_OPTIONS_SCALE, 0.25, 1.5, 0.01);
 					</OnLoad>
 					<OnValueChanged>
+						AtlasOptions_UpdateSlider(ATLAS_OPTIONS_SCALE);
 						AtlasOptions.AtlasScale = this:GetValue();
 						Atlas_UpdateScale();
 					</OnValueChanged>
 				</Scripts>
 			</Slider>
+			<Button name="$ParentDropDownCats" inherits="UIDropDownMenuTemplate">
+				<Layers>
+					<Layer level="BACKGROUND">
+						<FontString name="$parentLabel" inherits="GameFontNormalSmall" text="ATLAS_OPTIONS_CATDD">
+							<Anchors>
+								<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT">
+									<Offset>
+										<AbsDimension x="21" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-475"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnShow>
+						AtlasOptionsFrameDropDownCats_OnShow();
+					</OnShow>
+				</Scripts>
+			</Button>
 			<Button name="$ParentResetPosition" inherits="UIPanelButtonTemplate2" text="ATLAS_OPTIONS_RESETPOS">
 				<Size>
 					<AbsDimension x="160" y="32"/>

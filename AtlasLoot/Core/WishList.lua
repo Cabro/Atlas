@@ -32,7 +32,7 @@ AtlasLoot_ShowWishList()
 Displays the WishList
 ]]
 function AtlasLoot_ShowWishList()
-    AtlasLoot_ShowItemsFrame("WishList", "WishListPage"..currentPage, ATLASLOOT_WISHLIST, pFrame);
+	AtlasLoot_ShowItemsFrame("WishList", "WishListPage"..currentPage, AL["WishList"], pFrame);
 end
 
 --[[
@@ -42,12 +42,12 @@ Looks for an empty slot in the wishlist and slots the item in
 function AtlasLoot_AddToWishlist(itemID, itemTexture, itemName, lootPage, sourcePage)
 	for _, v in ipairs(AtlasLootCharDB["WishList"]) do
 		if v[1] == itemID then
-			DEFAULT_CHAT_FRAME:AddMessage(BLUE..ATLASLOOT_TITLE..": "..AtlasLoot_FixText(itemName)..RED.." already in the WishList!");
+			DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..AtlasLoot_FixText(itemName)..RED..AL[" already in the WishList!"]);
 			return;
 		end
 	end
 	table.insert(AtlasLootCharDB["WishList"], { itemID, itemTexture, itemName, lootPage, sourcePage });
-	DEFAULT_CHAT_FRAME:AddMessage(RED..ATLASLOOT_TITLE..": "..AtlasLoot_FixText(itemName)..GREY.." added to the WishList.");
+	DEFAULT_CHAT_FRAME:AddMessage(RED..AL["AtlasLoot"]..": "..AtlasLoot_FixText(itemName)..GREY..AL[" added to the WishList."]);
 	AtlasLoot_WishList = AtlasLoot_CategorizeWishList(AtlasLootCharDB["WishList"]);
 end
 
@@ -59,14 +59,14 @@ function AtlasLoot_DeleteFromWishList(itemID)
 	if itemID and itemID == 0 then return end
 	for i, v in ipairs(AtlasLootCharDB["WishList"]) do
 		if v[1] == itemID then
-			DEFAULT_CHAT_FRAME:AddMessage(RED..ATLASLOOT_TITLE..": "..AtlasLoot_FixText(v[3])..GREY.." deleted from the WishList.");
+			DEFAULT_CHAT_FRAME:AddMessage(RED..AL["AtlasLoot"]..": "..AtlasLoot_FixText(v[3])..GREY..AL[" deleted from the WishList."]);
 			table.remove(AtlasLootCharDB["WishList"], i);
 			break;
 		end
 	end
 	AtlasLoot_WishList = AtlasLoot_CategorizeWishList(AtlasLootCharDB["WishList"]);
 	AtlasLootItemsFrame:Hide();
-	AtlasLoot_ShowItemsFrame("WishList", "WishListPage"..currentPage, ATLASLOOT_WISHLIST, pFrame);
+	AtlasLoot_ShowItemsFrame("WishList", "WishListPage"..currentPage, AL["WishList"], pFrame);
 end
 
 --[[
@@ -188,6 +188,39 @@ function AtlasLoot_GetWishListSubheading(dataID)
 	return RecursiveSearchZoneName(AtlasLoot_DewDropDown, zoneID or dataID);
 end
 
+function AtlasLoot_GetWishListSubheadingBoss(dataID)
+	if not AtlasLoot_TableNames then return end
+	local zoneID ;
+	for i, v in pairs(AtlasLoot_TableNamesBoss) do
+		for j,k in pairs(v) do
+			if dataID == j then
+				zoneID = k[1]
+				break;
+			end
+		end
+	end
+	--[[for i, v in pairs(AtlasLoot_TableNames) do
+		if dataID == i then
+			zoneID = v[1]
+			break;
+		end
+	end]]
+	return zoneID;
+end
+
+function GetLootTableParent(dataID)
+	local parentID ;
+	for i, v in pairs(AtlasLoot_TableNamesBoss) do
+		for j,k in pairs(v) do
+			if dataID == j then
+				parentID = i
+				break;
+			end
+		end
+	end
+	return parentID;
+end
+
 --[[
 AtlasLoot_CategorizeWishList(wlTable):
 Group items with zone/event name etc, and format them by adding subheadings and empty lines
@@ -202,16 +235,10 @@ function AtlasLoot_CategorizeWishList(wlTable)
 			local dataID = strsplit("|", v[5]);
 			-- Build subheading table
 			if not subheadings[dataID] then
-				-- Heroic handling
-				if strsub(dataID, strlen(dataID) - 5) == "HEROIC" then
-					subheadings[dataID] = AtlasLoot_GetWishListSubheading(strsub(dataID, 1, strlen(dataID) - 6));
-					if subheadings[dataID] then subheadings[dataID] = subheadings[dataID].." ("..AL["Heroic"]..")" end
-				else
-					subheadings[dataID] = AtlasLoot_GetWishListSubheading(dataID);
-					-- If search failed, replace ID like "Aldor2" to "Aldor1" and try again
-					if not subheadings[dataID] and string.find(dataID, "^%a+%d?$") then
-						subheadings[dataID] = AtlasLoot_GetWishListSubheading(strsub(dataID, 1, strlen(dataID) - 1).."1");
-					end
+				subheadings[dataID] = AtlasLoot_GetWishListSubheadingBoss(dataID);
+				-- If search failed, replace ID like "Aldor2" to "Aldor1" and try again
+				if not subheadings[dataID] and string.find(dataID, "^%a+%d?$") then
+					subheadings[dataID] = AtlasLoot_GetWishListSubheading(string.sub(dataID, 1, string.len(dataID) - 1).."1");
 				end
 				-- If still cant find it, mark it with Unknown
 				if not subheadings[dataID] then subheadings[dataID] = AL["Unknown"] end
@@ -225,16 +252,16 @@ function AtlasLoot_CategorizeWishList(wlTable)
 	-- Sort and flatten categories
 	for k, v in pairs(categories) do
 		-- Add a empty line between categories when in a same column
-		if getn(result) > 1 and (getn(result) - math.floor( getn(result)/15)*15) > 0 then table.insert(result, { 0, "", "", "" }) end
+		if table.getn(result) > 1 and (table.getn(result) - math.floor(table.getn(result)/15)*15) > 0 then table.insert(result, { 0, "", "", "" }) end
 		-- If a subheading is on the last row of a column, push it to next column
-		if ((getn(result) + 1) - math.floor((getn(result) + 1)/15)*15) == 0 then table.insert(result, { 0, "", "", "" }) end
+		if ((table.getn(result) + 1) - math.floor((table.getn(result) + 1)/15)*15) == 0 then table.insert(result, { 0, "", "", "" }) end
 		-- Subheading
-		table.insert(result, { 0, "INV_Box_01", "=q6="..k, "" });
+		table.insert(result, { 0, "INV_Box_01", "=q6="..k, "=q0="..GetLootTableParent(strsplit("|", categories[k][1][5])) });
 		-- Sort first then add items
 		table.sort(v, AtlasLoot_WishListSortCheck); -- not works?
-		for i = 1, getn(v) do table.insert(result, v[i]) end
+		for i = 1, table.getn(v) do table.insert(result, v[i]) end
 	end
-
+	collectgarbage();
 	return result;
 end
 
@@ -246,7 +273,7 @@ page: the page number needed
 function AtlasLoot_GetWishListPage(page)
 	if not AtlasLoot_WishList then AtlasLoot_WishList = AtlasLoot_CategorizeWishList(AtlasLootCharDB["WishList"]) end
 	-- Calc for maximal pages
-	local pageMax = math.ceil(getn(AtlasLoot_WishList) / 30);
+	local pageMax = math.ceil(table.getn(AtlasLoot_WishList) / 30);
 	if page < 1 then page = 1 end
 	if page > pageMax then page = pageMax end
 	currentPage = page;
