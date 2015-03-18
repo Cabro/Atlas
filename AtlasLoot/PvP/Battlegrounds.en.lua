@@ -167,6 +167,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 	EmptyInstance = {};
 	AVRepFriendly = {
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b1#" },
+		{ 0, "", "", "" },
 		{ 19318, "INV_Drink_11", "=q1=Bottled Alterac Spring Water", "=ds=#e3#" },
 		{ 19307, "INV_Misc_Bandage_12", "=q1=Alterac Heavy Runecloth Bandage", "=ds=#e4#" },
 		{ 17349, "INV_Potion_39", "=q1=Superior Healing Draught", "=ds=#e1#" },
@@ -180,9 +181,9 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b2#" },
-		{ 19318, "INV_Drink_11", "=q1=Bottled Alterac Spring Water", "=ds=#e3#" },
+		{ 0, "", "", "" },
+		{ 19318, "INV_Drink_11", "=q1= Spring Water", "=ds=#e3#" },
 		{ 19307, "INV_Misc_Bandage_12", "=q1=Alterac Heavy Runecloth Bandage", "=ds=#e4#" },
 		{ 17349, "INV_Potion_39", "=q1=Superior Healing Draught", "=ds=#e1#" },
 		{ 17352, "INV_Potion_81", "=q1=Superior Mana Draught", "=ds=#e1#" },
@@ -191,6 +192,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 	};
 	AVRepHonored = {
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b1#" },
+		{ 0, "", "", "" },
 		{ 19098, "INV_Jewelry_Necklace_08", "=q3=Stormpike Sage's Pendant", "=ds=#s2#" },
 		{ 19097, "INV_Jewelry_Necklace_15", "=q3=Stormpike Soldier's Pendant", "=ds=#s2#" },
 		{ 19086, "INV_Misc_Cape_18", "=q3=Stormpike Sage's Cloak", "=ds=#s4#" },
@@ -204,8 +206,8 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19301, "INV_Misc_Food_33", "=q1=Alterac Manna Biscuit", "=ds=#e2#" },
 		{ 17348, "INV_Potion_38", "=q1=Major Healing Draught", "=ds=#e1#" },
 		{ 17351, "INV_Potion_80", "=q1=Major Mana Draught", "=ds=#e1#" },
-		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b2#" },
+		{ 0, "", "", "" },
 		{ 19096, "INV_Jewelry_Necklace_07", "=q3=Frostwolf Advisor's Pendant", "=ds=#s2#" },
 		{ 19095, "INV_Jewelry_Necklace_16", "=q3=Frostwolf Legionnaire's Pendant", "=ds=#s2#" },
 		{ 19085, "INV_Misc_Cape_18", "=q3=Frostwolf Advisor's Cloak", "=ds=#s4#" },
@@ -222,6 +224,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 	};
 	AVRepRevered = {
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b1#" },
+		{ 0, "", "", "" },
 		{ 19045, "INV_BannerPVP_02", "=q3=Stormpike Battle Standard", "=ds=#e21#" },
 		{ 19320, "INV_Misc_Ammo_Bullet_01", "=q3=Gnoll Skin Bandolier", "=ds=#m21# #e8#" },
 		{ 19319, "INV_Misc_Quiver_06", "=q3=Harpy Hide Quiver", "=ds=#m21# #e9#" },
@@ -235,8 +238,8 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b2#" },
+		{ 0, "", "", "" },
 		{ 19046, "INV_BannerPVP_01", "=q3=Frostwolf Battle Standard", "=ds=#e21#" },
 		{ 19320, "INV_Misc_Ammo_Bullet_01", "=q3=Gnoll Skin Bandolier", "=ds=#m21# #e8#" },
 		{ 19319, "INV_Misc_Quiver_06", "=q3=Harpy Hide Quiver", "=ds=#m21# #e9#" },
@@ -246,6 +249,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 	};
 	AVRepExalted = {
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b1#" },
+		{ 0, "", "", "" },
 		{ 19030, "Ability_Mount_MountainRam", "=q4=Stormpike Battle Charger", "=ds=#e7#" },
 		{ 0, "", "", "" },
 		{ 19312, "INV_Misc_Flower_04", "=q4=Lei of the Lifegiver", "=ds=#s15#" },
@@ -259,8 +263,8 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19321, "Spell_Frost_ChillingArmor", "=q4=The Immovable Object", "=ds=#w8#" },
 		{ 19324, "INV_Sword_29", "=q4=The Lobotomizer", "=ds=#h1#, #w4#" },
 		{ 19323, "INV_Hammer_13", "=q4=The Unstoppable Force", "=ds=#h2#, #w6#" },
-		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b2#" },
+		{ 0, "", "", "" },
 		{ 19029, "INV_Misc_Horn_01", "=q4=Horn of the Frostwolf Howler", "=ds=#e7#" },
 		{ 0, "", "", "" },
 		{ 19312, "INV_Misc_Flower_04", "=q4=Lei of the Lifegiver", "=ds=#s15#" },
@@ -599,7 +603,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20131, "INV_Shirt_GuildTabard_01", "=q1=Battle Tabard of the Defilers", "=q1=#m4# =ds=#s7#" },
 	};
 	WSGRepFriendly2029 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 21568, "INV_Misc_Rune_02", "=q3=Rune of Duty", "=ds=#s14# =q17=#c9#=ds=, =q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#" },
 		{ 21566, "INV_Misc_Rune_05", "=q3=Rune of Perfection", "=ds=#s14# =q9=#c5#=ds=, =q15=#c7#=ds=, =q10=#c3#=ds=, =q11=#c8#=ds=, =q13=#c1#" },
@@ -614,7 +618,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 21568, "INV_Misc_Rune_02", "=q3=Rune of Duty", "=ds=#s14# =q17=#c9#=ds=, =q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#" },
 		{ 21566, "INV_Misc_Rune_05", "=q3=Rune of Perfection", "=ds=#s14# =q9=#c5#=ds=, =q15=#c7#=ds=, =q10=#c3#=ds=, =q11=#c8#=ds=, =q13=#c1#" },
@@ -623,7 +627,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19068, "INV_Misc_Bandage_02", "=q1=Warsong Gulch Silk Bandage", "=ds=#e4#" },
 	};
 	WSGRepFriendly3039 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
@@ -638,7 +642,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
@@ -649,7 +653,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 17352, "INV_Potion_81", "=q1=Superior Mana Draught", "=ds=#e1#" },
 	};
 	WSGRepFriendly4049 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 21567, "INV_Misc_Rune_02", "=q3=Rune of Duty", "=ds=#s14# =q17=#c9#=ds=, =q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#" },
 		{ 21565, "INV_Misc_Rune_05", "=q3=Rune of Perfection", "=ds=#s14# =q9=#c5#=ds=, =q15=#c7#=ds=, =q10=#c3#=ds=, =q11=#c8#=ds=, =q13=#c1#" },
@@ -664,7 +668,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 21567, "INV_Misc_Rune_02", "=q3=Rune of Duty", "=ds=#s14# =q17=#c9#=ds=, =q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#" },
 		{ 21565, "INV_Misc_Rune_05", "=q3=Rune of Perfection", "=ds=#s14# =q9=#c5#=ds=, =q15=#c7#=ds=, =q10=#c3#=ds=, =q11=#c8#=ds=, =q13=#c1#" },
@@ -673,7 +677,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19066, "INV_Misc_Bandage_12", "=q1=Warsong Gulch Runecloth Bandage", "=ds=#e4#" },
 	};
 	WSGRepHonored1019 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 20444, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 20428, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -688,7 +692,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 20444, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 20428, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -696,7 +700,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20439, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepHonored2029 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19541, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19533, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -711,7 +715,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19541, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19533, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -719,7 +723,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19517, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepHonored3039 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19540, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19532, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -734,7 +738,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19540, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19532, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -742,7 +746,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19515, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepHonored4049 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19539, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19531, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -757,7 +761,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19539, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19531, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -768,7 +772,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 17351, "INV_Potion_80", "=q1=Major Mana Draught", "=ds=#e1#" },
 	};
 	WSGRepHonored5059 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19538, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19530, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -783,7 +787,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19538, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
 		{ 19530, "INV_Misc_Cape_13", "=q3=Caretaker's Cape", "=ds=#s4#" },
@@ -791,7 +795,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19514, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepRevered1019 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 20438, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
 		{ 20443, "INV_Weapon_ShortBlade_14", "=q3=Sentinel's Blade", "=ds=#h1#, #w4#" },
@@ -806,7 +810,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 20437, "INV_Weapon_Bow_06", "=q3=Outrider's Bow", "=ds=#w2#" },
 		{ 20441, "INV_Weapon_ShortBlade_15", "=q3=Scout's Blade", "=ds=#h1#, #w4#" },
@@ -814,7 +818,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20425, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered2029 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19565, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
 		{ 19549, "INV_Weapon_ShortBlade_14", "=q3=Sentinel's Blade", "=ds=#h1#, #w4#" },
@@ -829,7 +833,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19561, "INV_Weapon_Bow_06", "=q3=Outrider's Bow", "=ds=#w2#" },
 		{ 19545, "INV_Weapon_ShortBlade_15", "=q3=Scout's Blade", "=ds=#h1#, #w4#" },
@@ -837,7 +841,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19569, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered3039 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19564, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
 		{ 19548, "INV_Weapon_ShortBlade_14", "=q3=Sentinel's Blade", "=ds=#h1#, #w4#" },
@@ -852,7 +856,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19560, "INV_Weapon_Bow_06", "=q3=Outrider's Bow", "=ds=#w2#" },
 		{ 19544, "INV_Weapon_ShortBlade_15", "=q3=Scout's Blade", "=ds=#h1#, #w4#" },
@@ -860,7 +864,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19568, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered4049 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19563, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
 		{ 19547, "INV_Weapon_ShortBlade_14", "=q3=Sentinel's Blade", "=ds=#h1#, #w4#" },
@@ -875,7 +879,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19559, "INV_Weapon_Bow_06", "=q3=Outrider's Bow", "=ds=#w2#" },
 		{ 19543, "INV_Weapon_ShortBlade_15", "=q3=Scout's Blade", "=ds=#h1#, #w4#" },
@@ -883,7 +887,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19567, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered5059 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19562, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
 		{ 19546, "INV_Weapon_ShortBlade_14", "=q3=Sentinel's Blade", "=ds=#h1#, #w4#" },
@@ -898,7 +902,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19558, "INV_Weapon_Bow_06", "=q3=Outrider's Bow", "=ds=#w2#" },
 		{ 19542, "INV_Weapon_ShortBlade_15", "=q3=Scout's Blade", "=ds=#h1#, #w4#" },
@@ -906,7 +910,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19566, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepExalted4049 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19597, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
 		{ 19590, "INV_Bracer_12", "=q4=Forest Stalker's Bracers", "=ds=#s8#, #a2#" },
@@ -921,7 +925,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19597, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
 		{ 19590, "INV_Bracer_12", "=q4=Forest Stalker's Bracers", "=ds=#s8#, #a2#" },
@@ -929,7 +933,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19581, "INV_Bracer_06", "=q4=Berserker Bracers", "=ds=#s8#, #a4#" },
 	};
 	WSGRepExalted5059 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19596, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
 		{ 19589, "INV_Bracer_12", "=q4=Forest Stalker's Bracers", "=ds=#s8#, #a2#" },
@@ -944,7 +948,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19596, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
 		{ 19589, "INV_Bracer_12", "=q4=Forest Stalker's Bracers", "=ds=#s8#, #a2#" },
@@ -952,7 +956,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19580, "INV_Bracer_06", "=q4=Berserker Bracers", "=ds=#s8#, #a4#" },
 	};
 	WSGRepExalted60 = {
-		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
+		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19595, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
 		{ 19587, "INV_Bracer_12", "=q4=Forest Stalker's Bracers", "=ds=#s8#, #a2#" },
@@ -967,7 +971,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 19506, "INV_Shirt_GuildTabard_01", "=q1=Silverwing Battle Tabard", "=ds=#s7#" },
 		{ 0, "", "", "" },
-		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b6#" },
+		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b4#" },
 		{ 0, "", "", "" },
 		{ 19595, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
 		{ 19587, "INV_Bracer_12", "=q4=Forest Stalker's Bracers", "=ds=#s8#, #a2#" },
