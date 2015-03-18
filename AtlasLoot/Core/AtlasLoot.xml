@@ -2168,7 +2168,7 @@
 				<Anchors>
 					<Anchor point="LEFT" relativeTo="AtlasLootSearchButton" relativePoint="RIGHT">
 						<Offset>
-							<AbsDimension x="-6" y="0"/>
+							<AbsDimension x="-2" y="0"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
