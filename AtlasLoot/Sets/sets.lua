@@ -926,7 +926,15 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 22631, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=ds=#m4#, =q1=#m1# =ds=#c5#"},
 		{ 22630, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=ds=#m4#, =q1=#m1# =ds=#c8#"},
 		{ 0, "", "", "" },
-		{ 22726, "INV_Qiraj_Jewelblessed", "=q5=Splinter of Atiesh", "=q1=#m3#", " 11.39%" }
+		{ 22726, "INV_Qiraj_Jewelblessed", "=q5=Splinter of Atiesh", "=q1=#m3#", " 11.39%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 23051, "INV_Spear_05", "=q5=Glaive of the Defender", "=ds=#h3#, #w10# =q17=#c9#" },
+		{ 13262, "INV_Sword_48", "=q5=Ashbringer", "=ds=#h2#, #w10#" },
 	};
 	RareMounts = {
 		{ 21176, "INV_Misc_QirajiCrystal_05", "=q5=Black Qiraji Resonating Crystal", "=ds=#e7#" },
