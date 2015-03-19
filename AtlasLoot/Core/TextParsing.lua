@@ -524,6 +524,80 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "=q19=", "|cffe6cc80"); -- horde rank colour
     text = gsub(text, "=ec1=", "|cffFF8400");
     text = gsub(text, "=ds=", "|cffFFd200");
+	
+	--Dropped by names
+    text = gsub(text, "#db1#", AL["Patchwerk"]);
+    text = gsub(text, "#db2#", AL["Grobbulus"]);
+    text = gsub(text, "#db3#", AL["Gluth"]);
+    text = gsub(text, "#db4#", AL["Thaddius"]);
+    text = gsub(text, "#db5#", AL["Anub'Rekhan"]);
+    text = gsub(text, "#db6#", AL["Faerlina"]);
+    text = gsub(text, "#db7#", AL["Maexxna"]);
+    text = gsub(text, "#db8#", AL["Noth"]);
+    text = gsub(text, "#db9#", AL["Heigan"]);
+    text = gsub(text, "#db10#", AL["Loatheb"]);
+    text = gsub(text, "#db11#", AL["Razuvious"]);
+    text = gsub(text, "#db12#", AL["Gothik"]);
+    text = gsub(text, "#db13#", AL["The Four Horsemen"]);
+    text = gsub(text, "#db14#", AL["Kel'Thuzad"]);
+    text = gsub(text, "#db15#", AL["Onyxia"]);
+    text = gsub(text, "#db16#", AL["Ragnaros"]);
+    text = gsub(text, "#db17#", AL["Razorgore the Untamed"]);
+    text = gsub(text, "#db18#", AL["Vaelastrasz the Corrupt"]);
+    text = gsub(text, "#db19#", AL["Broodlord Lashlayer"]);
+    text = gsub(text, "#db20#", AL["Firemaw"]);
+    text = gsub(text, "#db21#", AL["Ebonroc"]);
+    text = gsub(text, "#db22#", AL["Flamegor"]);
+    text = gsub(text, "#db23#", AL["Chromaggus"]);
+    text = gsub(text, "#db24#", AL["Nefarian"]);
+    text = gsub(text, "#db25#", AL["Lucifron"]);
+    text = gsub(text, "#db26#", AL["Magmadar"]);
+    text = gsub(text, "#db27#", AL["Gehennas"]);
+    text = gsub(text, "#db28#", AL["Garr"]);
+    text = gsub(text, "#db29#", AL["Baron Geddon"]);
+    text = gsub(text, "#db30#", AL["Shazzrah"]);
+    text = gsub(text, "#db31#", AL["Sulfuron Harbinger"]);
+    text = gsub(text, "#db32#", AL["Golemagg the Incinerator"]);
+    text = gsub(text, "#db33#", AL["Darkmaster Gandling"]);
+    text = gsub(text, "#db34#", AL["Baron Rivendare"]);
+    text = gsub(text, "#db35#", AL["General Drakkisath"]);
+    text = gsub(text, "#db36#", AL["Ras Frostwhisper"]);
+    text = gsub(text, "#db37#", AL["Doctor Theolen Krastinov"]);
+    text = gsub(text, "#db38#", AL["Hearthsinger Forresten"]);
+    text = gsub(text, "#db39#", AL["Solakar Flamewreath"]);
+    text = gsub(text, "#db40#", AL["Archivist Galford"]);
+    text = gsub(text, "#db41#", AL["Maleki the Pallid"]);
+    text = gsub(text, "#db42#", AL["Jandice Barov"]);
+    text = gsub(text, "#db43#", AL["Lorekeeper Polkelt"]);
+    text = gsub(text, "#db44#", AL["Baroness Anastari"]);
+    text = gsub(text, "#db45#", AL["Cannon Master Willey"]);
+    text = gsub(text, "#db46#", AL["Instructor Malicia"]);
+    text = gsub(text, "#db47#", AL["Shadow Hunter Vosh'gajin"]);
+    text = gsub(text, "#db48#", AL["Rattlegore"]);
+    text = gsub(text, "#db49#", AL["Gizrul the Slavener"]);
+    text = gsub(text, "#db50#", AL["Mother Smolderweb"]);
+    text = gsub(text, "#db51#", AL["The Unforgiven"]);
+    text = gsub(text, "#db52#", AL["The Ravenian"]);
+    text = gsub(text, "#db53#", AL["Overlord Wyrmthalak"]);
+    text = gsub(text, "#db54#", AL["War Master Voone"]);
+    text = gsub(text, "#db55#", AL["Nerub'enkan"]);
+    text = gsub(text, "#db56#", AL["Gyth"]);
+    text = gsub(text, "#db57#", AL["Pyroguard Emberseer"]);
+    text = gsub(text, "#db58#", AL["Highlord Omokk"]);
+    text = gsub(text, "#db59#", AL["Warchief Rend Blackhand"]);
+    text = gsub(text, "#db60#", AL["Ramstein the Gorger"]);
+    text = gsub(text, "#db61#", AL["Kirtonos the Herald"]);
+    text = gsub(text, "#db62#", AL["The Beast"]);
+    text = gsub(text, "#db63#", AL["Lord Alexei Barov"]);
+    text = gsub(text, "#db64#", AL["Timmy the Cruel"]);
+    text = gsub(text, "#db65#", AL["Balnazzar"]);
+	
+	--Zones abbreviations
+    text = gsub(text, "#z1#", "("..AL["MC"]..")");
+    text = gsub(text, "#z2#", AL["Scholo"]);
+    text = gsub(text, "#z3#", AL["Strat"]);
+    text = gsub(text, "#z4#", AL["LBRS"]);
+    text = gsub(text, "#z5#", AL["UBRS"]);
     
     --Currency Icons
     text = gsub(text, "#gold#", "Interface\\AddOns\\AtlasLoot\\Images\\gold");
