@@ -515,6 +515,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Epic Set"] = true,
 	["Rare Set"] = true,
 	["Legendary Items"] = true,
+	["Artifact Items"] = true,
 	["Accesories and Weapons"] = true,
 	["Accessories"] = true,
 	["Armor and Weapons"] = true,

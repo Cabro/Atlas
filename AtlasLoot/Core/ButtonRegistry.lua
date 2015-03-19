@@ -1067,6 +1067,11 @@ AtlasLoot_ButtonRegistry = {
 		Back_Page = "SETMENU";
 		Back_Title = AL["Collections"];
 	};
+	["Artifacts"] = {
+		Title = AL["Artifact Items"];
+		Back_Page = "SETMENU";
+		Back_Title = AL["Collections"];
+	};
 	["PvPMountsPvP"] = {
 		Title = AL["PvP Mounts"];
 		Back_Page = "PVPMENU";

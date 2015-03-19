@@ -905,7 +905,15 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21391, "INV_Shoulder_35", "=q4=Avenger's Pauldrons", "=q4=#x25#=ds=, #r1#" },
 		{ 21388, "INV_Boots_Chain_07", "=q4=Avenger's Greaves", "=q4=#x25#=ds=, #r1#" },
 	};
+	Artifacts = {
+		{ 0, "", "", "" },
+		{ 12947, "INV_Gizmo_BronzeFramework_01", "=q19=Alex's Ring of Audacity", "=ds=#s13#" },
+		{ 18582, "Spell_Arcane_PortalStormwind", "=q19=The Twin Blades of Azzinoth", "=ds=#h1#, #w10#" },
+		{ 18583, "INV_Sword_07", "=q19=Warglaive of Azzinoth (Right)", "=ds=#h1#, #w10#" },
+		{ 18584, "INV_Sword_07", "=q19=Warglaive of Azzinoth (Left)", "=ds=#h1#, #w10#" },
+	};
 	Legendaries = {
+		{ 0, "", "", "" },
 		{ 19019, "INV_Sword_39", "=q5=Thunderfury, Blessed Blade of the Windseeker", "=ds=#h1#, #w10#" },
 		{ 22736, "INV_Sword_61", "=q5=Andonisus, Reaper of Souls", "=ds=#h1#, #w10#" },
 		{ 17182, "INV_Hammer_Unique_Sulfuras", "=q5=Sulfuras, Hand of Ragnaros", "=ds=#h2#, #w6#" },
@@ -918,8 +926,8 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "", "", "" },
 		{ 17782, "INV_Jewelry_Amulet_04", "=q5=Talisman of Binding Shard", "=ds=#s2#" },
+		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 22632, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=ds=#m4#, =q1=#m1# =ds=#c1#"},
 		{ 22589, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=ds=#m4#, =q1=#m1# =ds=#c3#"},
@@ -927,7 +935,6 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 22630, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=ds=#m4#, =q1=#m1# =ds=#c8#"},
 		{ 0, "", "", "" },
 		{ 22726, "INV_Qiraj_Jewelblessed", "=q5=Splinter of Atiesh", "=q1=#m3#", " 11.39%" },
-		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },

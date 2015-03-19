@@ -38,36 +38,42 @@ function AtlasLootSetMenu()
 	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Staff_Medivh");
 	AtlasLootMenuItem_7.lootpage="Legendaries";
 	AtlasLootMenuItem_7:Show();
-	--Rare Pets
-	AtlasLootMenuItem_8_Name:SetText(AL["Rare Pets"]);
+	--Artifacts
+	AtlasLootMenuItem_8_Name:SetText(AL["Artifact Items"]);
 	AtlasLootMenuItem_8_Extra:SetText("");
-	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\Ability_Seal");
-	AtlasLootMenuItem_8.lootpage="RarePets1";
+	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\INV_Sword_07");
+	AtlasLootMenuItem_8.lootpage="Artifacts";
 	AtlasLootMenuItem_8:Show();
-	--Rare Mounts
-	AtlasLootMenuItem_9_Name:SetText(AL["Rare Mounts"]);
+	--Rare Pets
+	AtlasLootMenuItem_9_Name:SetText(AL["Rare Pets"]);
 	AtlasLootMenuItem_9_Extra:SetText("");
-	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\INV_Misc_QirajiCrystal_05");
-	AtlasLootMenuItem_9.lootpage="RareMounts";
+	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\Ability_Seal");
+	AtlasLootMenuItem_9.lootpage="RarePets1";
 	AtlasLootMenuItem_9:Show();
-	--Old Mounts
-	AtlasLootMenuItem_10_Name:SetText(AL["Old Mounts"]);
+	--Rare Mounts
+	AtlasLootMenuItem_10_Name:SetText(AL["Rare Mounts"]);
 	AtlasLootMenuItem_10_Extra:SetText("");
-	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\Ability_Mount_RidingHorse");
-	AtlasLootMenuItem_10.lootpage="OldMounts";
+	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\INV_Misc_QirajiCrystal_05");
+	AtlasLootMenuItem_10.lootpage="RareMounts";
 	AtlasLootMenuItem_10:Show();
-	--Unobtainable Mounts
-	AtlasLootMenuItem_11_Name:SetText(AL["Unobtainable Mounts"]);
+	--Old Mounts
+	AtlasLootMenuItem_11_Name:SetText(AL["Old Mounts"]);
 	AtlasLootMenuItem_11_Extra:SetText("");
-	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\Ability_Mount_Whitetiger");
-	AtlasLootMenuItem_11.lootpage="UnobMounts";
+	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\Ability_Mount_RidingHorse");
+	AtlasLootMenuItem_11.lootpage="OldMounts";
 	AtlasLootMenuItem_11:Show();
-	--Tabards
-	AtlasLootMenuItem_12_Name:SetText(AL["Tabards"]);
+	--Unobtainable Mounts
+	AtlasLootMenuItem_12_Name:SetText(AL["Unobtainable Mounts"]);
 	AtlasLootMenuItem_12_Extra:SetText("");
-	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Shirt_GuildTabard_01");
-	AtlasLootMenuItem_12.lootpage="Tabards";
+	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\Ability_Mount_Whitetiger");
+	AtlasLootMenuItem_12.lootpage="UnobMounts";
 	AtlasLootMenuItem_12:Show();
+	--Tabards
+	AtlasLootMenuItem_13_Name:SetText(AL["Tabards"]);
+	AtlasLootMenuItem_13_Extra:SetText("");
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Shirt_GuildTabard_01");
+	AtlasLootMenuItem_13.lootpage="Tabards";
+	AtlasLootMenuItem_13:Show();
 	--World Epics
 	AtlasLootMenuItem_2_Name:SetText(AL["Pre 60 Sets"]);
 	AtlasLootMenuItem_2_Extra:SetText("");

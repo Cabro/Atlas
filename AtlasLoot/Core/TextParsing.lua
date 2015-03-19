@@ -521,6 +521,7 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "=q16=", "|cfff48cba"); -- paladin colour
 	text = gsub(text, "=q17=", "|cffc69b6d"); -- warrior colour
 	text = gsub(text, "=q18=", "|cffff3100"); -- horde rank colour
+	text = gsub(text, "=q19=", "|cffe6cc80"); -- horde rank colour
     text = gsub(text, "=ec1=", "|cffFF8400");
     text = gsub(text, "=ds=", "|cffFFd200");
     
