@@ -208,59 +208,59 @@ function AtlasLootPVPSetMenu()
 	getglobal("AtlasLootItemsFrame_NEXT"):Hide();
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
-	--Druid
-	AtlasLootMenuItem_3_Name:SetText(AL["Druid"]);
+	--Priest
+	AtlasLootMenuItem_3_Name:SetText("|cffffffff"..AL["Priest"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
-	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\Spell_Nature_Regeneration");
-	AtlasLootMenuItem_3.lootpage="PVPDruid";
+	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\Spell_Holy_PowerWordShield");
+	AtlasLootMenuItem_3.lootpage="PVPPriest";
 	AtlasLootMenuItem_3:Show();
 	--Mage
-	AtlasLootMenuItem_4_Name:SetText(AL["Mage"]);
+	AtlasLootMenuItem_4_Name:SetText("|cff68ccef"..AL["Mage"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\Spell_Frost_IceStorm");
 	AtlasLootMenuItem_4.lootpage="PVPMage";
 	AtlasLootMenuItem_4:Show();
-	--Priest
-	AtlasLootMenuItem_5_Name:SetText(AL["Priest"]);
+	--Warlock
+	AtlasLootMenuItem_5_Name:SetText("|cff9382c9"..AL["Warlock"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
-	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\Spell_Holy_PowerWordShield");
-	AtlasLootMenuItem_5.lootpage="PVPPriest";
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\Spell_Shadow_CurseOfTounges");
+	AtlasLootMenuItem_5.lootpage="PVPWarlock";
 	AtlasLootMenuItem_5:Show();
-	--Shaman
-	AtlasLootMenuItem_6_Name:SetText(AL["Shaman"]);
+	--Rogue
+	AtlasLootMenuItem_6_Name:SetText("|cfffff468"..AL["Rogue"]);
 	AtlasLootMenuItem_6_Extra:SetText("");
-	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
-	AtlasLootMenuItem_6.lootpage="PVPShaman";
+	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\Ability_BackStab");
+	AtlasLootMenuItem_6.lootpage="PVPRogue";
 	AtlasLootMenuItem_6:Show();
-	--Warrior
-	AtlasLootMenuItem_7_Name:SetText(AL["Warrior"]);
+	--Druid
+	AtlasLootMenuItem_7_Name:SetText("|cffff7c0a"..AL["Druid"]);
 	AtlasLootMenuItem_7_Extra:SetText("");
-	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Shield_05");
-	AtlasLootMenuItem_7.lootpage="PVPWarrior";
+	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\Spell_Nature_Regeneration");
+	AtlasLootMenuItem_7.lootpage="PVPDruid";
 	AtlasLootMenuItem_7:Show();
 	--Hunter
-	AtlasLootMenuItem_18_Name:SetText(AL["Hunter"]);
+	AtlasLootMenuItem_18_Name:SetText("|cffaad372"..AL["Hunter"]);
 	AtlasLootMenuItem_18_Extra:SetText("");
 	AtlasLootMenuItem_18_Icon:SetTexture("Interface\\Icons\\Ability_Hunter_RunningShot");
 	AtlasLootMenuItem_18.lootpage="PVPHunter";
 	AtlasLootMenuItem_18:Show();
-	--Paladin
-	AtlasLootMenuItem_19_Name:SetText(AL["Paladin"]);
+	--Shaman
+	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
-	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_Holy_SealOfMight");
-	AtlasLootMenuItem_19.lootpage="PVPPaladin";
+	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
+	AtlasLootMenuItem_19.lootpage="PVPShaman";
 	AtlasLootMenuItem_19:Show();
-	--Rogue
-	AtlasLootMenuItem_20_Name:SetText(AL["Rogue"]);
+	--Paladin
+	AtlasLootMenuItem_20_Name:SetText("|cfff48cba"..AL["Paladin"]);
 	AtlasLootMenuItem_20_Extra:SetText("");
-	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\Ability_BackStab");
-	AtlasLootMenuItem_20.lootpage="PVPRogue";
+	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\Spell_Holy_SealOfMight");
+	AtlasLootMenuItem_20.lootpage="PVPPaladin";
 	AtlasLootMenuItem_20:Show();
-	--Warlock
-	AtlasLootMenuItem_21_Name:SetText(AL["Warlock"]);
+	--Warrior
+	AtlasLootMenuItem_21_Name:SetText("|cffc69b6d"..AL["Warrior"]);
 	AtlasLootMenuItem_21_Extra:SetText("");
-	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Pants_Cloth_05");
-	AtlasLootMenuItem_21.lootpage="PVPWarlock";
+	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Shield_05");
+	AtlasLootMenuItem_21.lootpage="PVPWarrior";
 	AtlasLootMenuItem_21:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();

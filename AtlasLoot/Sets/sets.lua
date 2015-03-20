@@ -1,7 +1,9 @@
 AtlasLoot_Data["AtlasLootSetItems"] = {
 	EmptyInstance = {};
 	DEADMINES = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s1#","" },
+		{ 0, "", "", "" },
 		{ 10399, "INV_Chest_Leather_08", "=q3=Blackened Defias Armor", "=ds=#s5#, #a2# =q7=#x6#", "14.77%" },
 		{ 10401, "INV_Gauntlets_18", "=q2=Blackened Defias Gloves", "=ds=#s9#, #a2# =q7=#x9#", "1.76%" },
 		{ 10403, "INV_Belt_26", "=q2=Blackened Defias Belt", "=ds=#s10#, #a2# =q7=#x8#", "23.26%" },
@@ -9,7 +11,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 10402, "INV_Boots_05", "=q2=Blackened Defias Boots", "=ds=#s12#, #a2# =q7=#x8#", "1.23%" },
 	};
 	WAILING = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s2#","" },
+		{ 0, "", "", "" },
 		{ 6473, "INV_Shirt_16", "=q2=Armor of the Fang", "=ds=#s5#, #a2# =q7=#x5#", "52.05%" },
 		{ 10413, "INV_Gauntlets_18", "=q2=Gloves of the Fang", "=ds=#s9#, #a2# =q7=#x4#", "1.20%" },
 		{ 10412, "INV_Belt_30", "=q2=Belt of the Fang", "=ds=#s10#, #a2# =q7=#x2#", "8.64%" },
@@ -17,7 +21,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 10411, "INV_Boots_04", "=q2=Footpads of the Fang", "=ds=#s12#, #a2# =q7=#x3#", "19.08%" },
 	};
 	SCARLET = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s3#","" },
+		{ 0, "", "", "" },
 		{ 10328, "INV_Chest_Chain_07", "=q3=Scarlet Chestpiece", "=ds=#s5#, #a3# =q7=#x35#", "0.3%"},
 		{ 10333, "INV_Bracer_03", "=q2=Scarlet Wristguards", "=ds=#s8#, #a3# =q7=#x38#=ds=/=q7=#x66#", "1.6%"},
 		{ 10331, "INV_Gauntlets_19", "=q2=Scarlet Gauntlets", "=ds=#s9#, #a3# =q7=#x36#", "1.7%" },
@@ -26,7 +32,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 10332, "INV_Boots_02", "=q3=Scarlet Boots", "=ds=#s12#, #a3#", "0.1%"},
 	};
 	BLACKROCKD = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s4#","" },
+		{ 0, "", "", "" },
 		{ 11729, "INV_Helmet_01", "=q3=Savage Gladiator Helm", "=ds=#s1#, #a3# =q7=#brd5#", "10.08%" },
 		{ 11726, "INV_Chest_Chain_15", "=q4=Savage Gladiator Chain", "=ds=#s5#, #a3# =q7=#brd3#", "14.52%" },
 		{ 11730, "INV_Gauntlets_04", "=q3=Savage Gladiator Grips", "=ds=#s9#, #a3# =q7=#brd2#", "14.12%"},
@@ -34,7 +42,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 11731, "INV_Boots_01", "=q3=Savage Gladiator Greaves", "=ds=#s12#, #a3# =q7=#brd1#", "15.14%" },
 	};
 	IRONWEAVE = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s5#","" },
+		{ 0, "", "", "" },
 		{ 22302, "INV_Helmet_30", "=q3=Ironweave Cowl", "=ds=#s1#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "27.72%" },
 		{ 22305, "INV_Shoulder_05", "=q3=Ironweave Mantle", "=ds=#s3#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "30.39%" },
 		{ 22301, "INV_Chest_Cloth_48", "=q3=Ironweave Robe", "=ds=#s5#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "19.00%" },
@@ -45,7 +55,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 22311,"INV_Boots_Cloth_05","=q3=Ironweave Boots", "=ds=#s12#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "12.31%" },
 	};
 	ScholoCloth = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s6#","" },
+		{ 0, "", "", "" },
 		{ 14633, "INV_Shoulder_02", "=q3=Necropile Mantle", "=ds=#s3#, #a1#", "1.12%" },
 		{ 14626, "INV_Chest_Cloth_43", "=q3=Necropile Robe", "=ds=#s5#, #a1#", "1.27%" },
 		{ 14629, "INV_Bracer_07", "=q3=Necropile Cuffs", "=ds=#s8#, #a1#", "1.03%" },
@@ -53,7 +65,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 14631, "INV_Boots_05", "=q3=Necropile Boots", "=ds=#s12#, #a1#", "0.88%" },
 	};
 	ScholoLeather = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s7#","" },
+		{ 0, "", "", "" },
 		{ 14637, "INV_Chest_Leather_03", "=q3=Cadaverous Armor", "=ds=#s5#, #a2#", "1.51%" },
 		{ 14640, "INV_Gauntlets_15", "=q3=Cadaverous Gloves", "=ds=#s9#, #a2#", "0.82%" },
 		{ 14636, "INV_Belt_16", "=q3=Cadaverous Belt", "=ds=#s10#, #a2#", "0.60%" },
@@ -61,7 +75,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 14641, "INV_Boots_05", "=q3=Cadaverous Walkers", "=ds=#s12#, #a2#", "0.67%" },
 	};
 	ScholoMail = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s8#","" },
+		{ 0, "", "", "" },
 		{ 14611, "INV_Chest_Leather_05", "=q3=Bloodmail Hauberk", "=ds=#s5#, #a3#", "0.54%" },
 		{ 14615, "INV_Gauntlets_26", "=q3=Bloodmail Gauntlets", "=ds=#s9#, #a3#", "0.09%" },
 		{ 14614, "INV_Belt_23", "=q3=Bloodmail Belt", "=ds=#s10#, #a3#", "0.60%" },
@@ -69,7 +85,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 14616, "INV_Boots_01", "=q3=Bloodmail Boots", "=ds=#s12#, #a3#", "0.36%" },
 	};
 	ScholoPlate = {
+		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s9#","" },
+		{ 0, "", "", "" },
 		{ 14624, "INV_Chest_Chain_15", "=q3=Deathbone Chestplate", "=ds=#s5#, #a4#", "0.45%" },
 		{ 14622, "INV_Gauntlets_28", "=q3=Deathbone Gauntlets", "=ds=#s9#, #a4#", "0.45%" },
 		{ 14620, "INV_Belt_12", "=q3=Deathbone Girdle", "=ds=#s10#, #a4#", "0.67%" },
@@ -77,7 +95,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 14621, "INV_Boots_01", "=q3=Deathbone Sabatons", "=ds=#s12#, #a4#", "0.57%" },
 	};
 	STRAT = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s10#", "" },
+		{ 0, "", "", "" },
 		{ 13390, "INV_Misc_Bandage_15", "=q3=The Postmaster's Band", "=ds=#s1#, #a1#", "18.58%" },
 		{ 13388, "INV_Chest_Leather_10", "=q3=The Postmaster's Tunic", "=ds=#s5#, #a1#", "17.24%" },
 		{ 13389, "INV_Pants_06", "=q3=The Postmaster's Trousers", "=ds=#s11#, #a1#", "21.04%" },
@@ -112,11 +132,14 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 23078, "INV_Gauntlets_29", "=q3=Gauntlets of Undead Slaying", "=ds=#s9#, #a4#", "" },
 	};
 	ShardOfGods = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s15#", "" },
+		{ 0, "", "", "" },
 		{ 17082, "INV_Misc_Orb_05", "=q4=Shard of the Flame", "=ds=#s14#", "4.46%" }, 
 		{ 17064, "INV_Misc_MonsterScales_15", "=q4=Shard of the Scale", "=ds=#s14#", "3.71%" }, 
 	};
 	ZGRings = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s16#", "" },
 		{ 19898, "INV_Jewelry_Ring_44", "=q3=Seal of Jin", "=ds=#s13#", "8.81%" },
 		{ 19925, "INV_Jewelry_Ring_44", "=q3=Band of Jin", "=ds=#s13#", "10.36%" },
@@ -141,35 +164,45 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19893, "INV_Jewelry_Ring_46", "=q3=Zanzil's Seal", "=ds=#s13#", "10.12%" },
 	};
 	SpiritofEskhandar = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s20#", "" },
+		{ 0, "", "", "" },
 		{ 18204, "INV_Misc_Cape_07", "=q4=Eskhandar's Pelt", "=ds=#s4#", "9.16%" },
 		{ 18205, "INV_Belt_12", "=q4=Eskhandar's Collar", "=ds=#s2#", "14.29% " },
 		{ 18203, "INV_Misc_MonsterClaw_04", "=q4=Eskhandar's Right Claw", "=ds=#h3#, #w13#", "16.97%" },
 		{ 18202, "INV_Misc_MonsterClaw_04", "=q4=Eskhandar's Left Claw", "=ds=#h4#, #w13#", "12.36%" },
 	};
 	HakkariBlades = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s21#", "" },
+		{ 0, "", "", "" },
 		{ 19865, "INV_Sword_55", "=q4=Warblade of the Hakkari", "=ds=#h3#, #w10#", "5.18%" },
 		{ 19866, "INV_Sword_55", "=q4=Warblade of the Hakkari", "=ds=#h4#, #w10#", "4.55%" },
 	};
 	PrimalBlessing = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s22#", "" },
+		{ 0, "", "", "" },
 		{ 19896, "INV_Weapon_Hand_01", "=q4=Thekal's Grasp", "=ds=#h3#, #w13#", "5.20%" },
 		{ 19910, "INV_Weapon_Hand_01", "=q4=Arlokk's Grasp", "=ds=#h4#, #w13#", "4.54%" },
 	};
 	DalRend = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s23#", "" },
+		{ 0, "", "", "" },
 		{ 12940, "INV_Sword_43", "=q3=Dal'Rend's Sacred Charge", "=ds=#h3#, #w10#", "6.62%" },
 		{ 12939, "INV_Sword_40", "=q3=Dal'Rend's Tribal Guardian", "=ds=#h4#, #w10#", "7.44%" },
 	};
 	SpiderKiss = {
+		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#pre60s24#", "" },
+		{ 0, "", "", "" },
 		{ 13218, "INV_Weapon_ShortBlade_16", "=q3=Fang of the Crystal Spider", "=ds=#h1#, #w4#", "15.46%" },
 		{ 13183, "INV_Wand_10", "=q3=Venomspitter", "=ds=#h1#, #w6#", "13.07%" },
 	};
 	T3Mage = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Frost_IceStorm", "=q6=#t3s3#", ""},
+		{ 0, "Spell_Frost_IceStorm", "=q10=#t3s3#", ""},
 		{ 0, "", "", "" },
 		{ 22498, "INV_Crown_01", "=q4=Frostfire Circlet", "=ds=#s1#, #a1# =q7=#db4#" },
 		{ 22499, "INV_Shoulder_25", "=q4=Frostfire Shoulderpads", "=ds=#s3#, #a1# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -183,7 +216,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Warlock = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Shadow_CurseOfTounges", "=q6=#t3s8#", "" },
+		{ 0, "Spell_Shadow_CurseOfTounges", "=q11=#t3s8#", "" },
 		{ 0, "", "", "" },
 		{ 22506, "INV_Crown_01", "=q4=Plagueheart Circlet", "=ds=#s1#, #a1# =q7=#db4#" },
 		{ 22507, "INV_Shoulder_25", "=q4=Plagueheart Shoulderpads", "=ds=#s3#, #a1# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -197,7 +230,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Priest = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_PowerWordShield", "=q6=#t3s5#", "" },
+		{ 0, "Spell_Holy_PowerWordShield", "=q9=#t3s5#", "" },
 		{ 0, "", "", "" },
 		{ 22514, "INV_Crown_01", "=q4=Circlet of Faith", "=ds=#s1#, #a1# =q7=#db4#" },
 		{ 22515, "INV_Shoulder_25", "=q4=Shoulderpads of Faith", "=ds=#s3#, #a1# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -211,7 +244,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Rogue = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_BackStab", "=q6=#t3s6#", "" },
+		{ 0, "Ability_BackStab", "=q12=#t3s6#", "" },
 		{ 0, "", "", "" },
 		{ 22478, "INV_Helmet_58", "=q4=Bonescythe Helmet", "=ds=#s1#, #a2# =q7=#db4#" },
 		{ 22479, "INV_Shoulder_29", "=q4=Bonescythe Pauldrons", "=ds=#s3#, #a2# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -225,7 +258,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Druid = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Nature_Regeneration", "=q6=#t3s1#", "" },
+		{ 0, "Spell_Nature_Regeneration", "=q13=#t3s1#", "" },
 		{ 0, "", "", "" },
 		{ 22490, "INV_Helmet_15", "=q4=Dreamwalker Headpiece", "=ds=#s1#, #a2# =q7=#db4#" },
 		{ 22491, "INV_Shoulder_14", "=q4=Dreamwalker Spaulders", "=ds=#s3#, #a2# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -239,7 +272,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Hunter = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_Hunter_RunningShot", "=q6=#t3s2#", "" },
+		{ 0, "Ability_Hunter_RunningShot", "=q14=#t3s2#", "" },
 		{ 0, "", "", "" },
 		{ 22438, "INV_Helmet_15", "=q4=Cryptstalker Headpiece", "=ds=#s1#, #a3# =q7=#db4#" },
 		{ 22439, "INV_Shoulder_14", "=q4=Cryptstalker Spaulders", "=ds=#s3#, #a3# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -253,7 +286,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Shaman = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_FireResistanceTotem_01", "=q6=#t3s7#", "" },
+		{ 0, "Spell_FireResistanceTotem_01", "=q15=#t3s7#", "" },
 		{ 0, "", "", "" },
 		{ 22466, "INV_Helmet_15", "=q4=Earthshatter Headpiece", "=ds=#s1#, #a3# =q7=#db4#" },
 		{ 22467, "INV_Shoulder_14", "=q4=Earthshatter Spaulders", "=ds=#s3#, #a3# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -267,7 +300,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Paladin = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_SealOfMight", "=q6=#t3s4#", "" },
+		{ 0, "Spell_Holy_SealOfMight", "=q16=#t3s4#", "" },
 		{ 0, "", "", "" },
 		{ 22428, "INV_Helmet_15", "=q4=Redemption Headpiece", "=ds=#s1#, #a4# =q7=#db4#" },
 		{ 22429, "INV_Shoulder_14", "=q4=Redemption Spaulders", "=ds=#s3#, #a4# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -281,7 +314,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T3Warrior = {
 		{ 0, "", "", "" },
-		{ 0, "INV_Shield_05", "=q6=#t3s9#", "" },
+		{ 0, "INV_Shield_05", "=q17=#t3s9#", "" },
 		{ 0, "", "", "" },
 		{ 22418, "INV_Helmet_58", "=q4=Dreadnaught Helmet", "=ds=#s1#, #a4# =q7=#db4#" },
 		{ 22419, "INV_Shoulder_29", "=q4=Dreadnaught Pauldrons", "=ds=#s3#, #a4# =q7=#db1#=ds=, =q7=#db2#=ds=, =q7=#db3#" },
@@ -295,7 +328,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Mage = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Frost_IceStorm", "=q6=#t2s3#", "" },
+		{ 0, "Spell_Frost_IceStorm", "=q10=#t2s3#", "" },
 		{ 0, "", "", "" },
 		{ 16914, "INV_Helmet_70", "=q4=Netherwind Crown", "=ds=#s1#, #a1# =q7=#db15#" },
 		{ 16917, "INV_Shoulder_32", "=q4=Netherwind Mantle", "=ds=#s3#, #a1# =q7=#db23#" },
@@ -308,7 +341,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Priest = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_PowerWordShield", "=q6=#t2s5#", "" },
+		{ 0, "Spell_Holy_PowerWordShield", "=q9=#t2s5#", "" },
 		{ 0, "", "", "" },
 		{ 16921, "INV_Helmet_24", "=q4=Halo of Transcendence", "=ds=#s1#, #a1# =q7=#db15#" },
 		{ 16924, "INV_Shoulder_02", "=q4=Pauldrons of Transcendence", "=ds=#s3#, #a1# =q7=#db23#" },
@@ -321,7 +354,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Warlock = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Shadow_CurseOfTounges", "=q6=#t2s8#", "" },
+		{ 0, "Spell_Shadow_CurseOfTounges", "=q11=#t2s8#", "" },
 		{ 0, "", "", "" },
 		{ 16929, "INV_Helmet_08", "=q4=Nemesis Skullcap", "=ds=#s1#, #a1# =q7=#db15#" },
 		{ 16932, "INV_Shoulder_19", "=q4=Nemesis Spaulders", "=ds=#s3#, #a1# =q7=#db23#" },
@@ -334,7 +367,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Rogue = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_BackStab", "=q6=#t2s6#", "" },
+		{ 0, "Ability_BackStab", "=q12=#t2s6#", "" },
 		{ 0, "", "", "" },
 		{ 16908, "INV_Helmet_41", "=q4=Bloodfang Hood", "=ds=#s1#, #a2# =q7=#db15#" },
 		{ 16832, "INV_Shoulder_23", "=q4=Bloodfang Spaulders", "=ds=#s3#, #a2# =q7=#db23#" },
@@ -347,7 +380,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Druid = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Nature_Regeneration", "=q6=#t2s1#", "" },
+		{ 0, "Spell_Nature_Regeneration", "=q13=#t2s1#", "" },
 		{ 0, "", "", "" },
 		{ 16900, "INV_Helmet_09", "=q4=Stormrage Cover", "=ds=#s1#, #a2# =q7=#db15#" },
 		{ 16902, "INV_Shoulder_07", "=q4=Stormrage Pauldrons", "=ds=#s3#, #a2# =q7=#db23#" },
@@ -360,7 +393,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Shaman = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_FireResistanceTotem_01", "=q6=#t2s7#", "" },
+		{ 0, "Spell_FireResistanceTotem_01", "=q15=#t2s7#", "" },
 		{ 0, "", "", "" },
 		{ 16947, "INV_Helmet_69", "=q4=Helmet of Ten Storms", "=ds=#s1#, #a3# =q7=#db15#" },
 		{ 16945, "INV_Shoulder_33", "=q4=Epaulets of Ten Storms", "=ds=#s3#, #a3# =q7=#db23#" },
@@ -373,7 +406,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Hunter = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_Hunter_RunningShot", "=q6=#t2s2#", "" },
+		{ 0, "Ability_Hunter_RunningShot", "=q14=#t2s2#", "" },
 		{ 0, "", "", "" },
 		{ 16939, "INV_Helmet_05", "=q4=Dragonstalker's Helm", "=ds=#s1#, #a3# =q7=#db15#" },
 		{ 16937, "INV_Shoulder_10", "=q4=Dragonstalker's Spaulders", "=ds=#s3#, #a3# =q7=#db23#" },
@@ -386,7 +419,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Warrior = {
 		{ 0, "", "", "" },
-		{ 0, "INV_Shield_05", "=q6=#t2s9#", "" },
+		{ 0, "INV_Shield_05", "=q17=#t2s9#", "" },
 		{ 0, "", "", "" },
 		{ 16963, "INV_Helmet_71", "=q4=Helm of Wrath", "=ds=#s1#, #a4# =q7=#db15#" },
 		{ 16961, "INV_Shoulder_34", "=q4=Pauldrons of Wrath", "=ds=#s3#, #a4# =q7=#db23#" },
@@ -399,7 +432,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T2Paladin = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_SealOfMight", "=q6=#t2s4#", "" },
+		{ 0, "Spell_Holy_SealOfMight", "=q16=#t2s4#", "" },
 		{ 0, "", "", "" },
 		{ 16955, "INV_Helmet_74", "=q4=Judgement Crown", "=ds=#s1#, #a4# =q7=#db15#" },
 		{ 16953, "INV_Shoulder_37", "=q4=Judgement Spaulders", "=ds=#s3#, #a4# =q7=#db23#" },
@@ -412,7 +445,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Mage = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Frost_IceStorm", "=q6=#t1s3#", "" },
+		{ 0, "Spell_Frost_IceStorm", "=q10=#t1s3#", "" },
 		{ 0, "", "", "" },
 		{ 16795, "INV_Helmet_53", "=q4=Arcanist Crown", "=ds=#s1#, #a1# =q7=#db28#" },
 		{ 16797, "INV_Shoulder_02", "=q4=Arcanist Mantle", "=ds=#s3#, #a1# =q7=#db29#" },
@@ -425,7 +458,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Priest = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_PowerWordShield", "=q6=#t1s5#", "" },
+		{ 0, "Spell_Holy_PowerWordShield", "=q9=#t1s5#", "" },
 		{ 0, "", "", "" },
 		{ 16813, "INV_Helmet_34", "=q4=Circlet of Prophecy", "=ds=#s1#, #a1# =q7=#db28#" },
 		{ 16816, "INV_Shoulder_02", "=q4=Mantle of Prophecy", "=ds=#s3#, #a1# =q7=#db31#" },
@@ -438,7 +471,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Warlock = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Shadow_CurseOfTounges", "=q6=#t1s8#", "" },
+		{ 0, "Spell_Shadow_CurseOfTounges", "=q11=#t1s8#", "" },
 		{ 0, "", "", "" },
 		{ 16808, "INV_Helmet_08", "=q4=Felheart Horns", "=ds=#s1#, #a1# =q7=#db28#" },
 		{ 16807, "INV_Shoulder_23", "=q4=Felheart Shoulder Pads", "=ds=#s3#, #a1# =q7=#db29#" },
@@ -451,7 +484,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Rogue = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_BackStab", "=q6=#t1s6#", "" },
+		{ 0, "Ability_BackStab", "=q12=#t1s6#", "" },
 		{ 0, "", "", "" },
 		{ 16821, "INV_Helmet_41", "=q4=Nightslayer Cover", "=ds=#s1#, #a2# =q7=#db28#" },
 		{ 16823, "INV_Shoulder_25", "=q4=Nightslayer Shoulder Pads", "=ds=#s3#, #a2# =q7=#db31#" },
@@ -464,7 +497,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Druid = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Nature_Regeneration", "=q6=#t1s1#", "" },
+		{ 0, "Spell_Nature_Regeneration", "=q13=#t1s1#", "" },
 		{ 0, "", "", "" },
 		{ 16834, "INV_Helmet_09", "=q4=Cenarion Helm", "=ds=#s1#, #a2# =q7=#db28#" },
 		{ 16836, "INV_Shoulder_07", "=q4=Cenarion Spaulders", "=ds=#s3#, #a2# =q7=#db29#" },
@@ -477,7 +510,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Shaman = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_FireResistanceTotem_01", "=q6=#t1s7#", "" },
+		{ 0, "Spell_FireResistanceTotem_01", "=q15=#t1s7#", "" },
 		{ 0, "", "", "" },
 		{ 16842, "INV_Helmet_09", "=q4=Earthfury Helmet", "=ds=#s1#, #a3# =q7=#db28#" },
 		{ 16844, "INV_Shoulder_29", "=q4=Earthfury Epaulets", "=ds=#s3#, #a3# =q7=#db29#" },
@@ -490,7 +523,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Hunter = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_Hunter_RunningShot", "=q6=#t1s2#", "" },
+		{ 0, "Ability_Hunter_RunningShot", "=q14=#t1s2#", "" },
 		{ 0, "", "", "" },
 		{ 16846, "INV_Helmet_05", "=q4=Giantstalker's Helmet", "=ds=#s1#, #a3# =q7=#db28#" },
 		{ 16848, "INV_Shoulder_10", "=q4=Giantstalker's Epaulets", "=ds=#s3#, #a3# =q7=#db31#" },
@@ -503,7 +536,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Warrior = {
 		{ 0, "", "", "" },
-		{ 0, "INV_Shield_05", "=q6=#t1s9#", "" },
+		{ 0, "INV_Shield_05", "=q17=#t1s9#", "" },
 		{ 0, "", "", "" },
 		{ 16866, "INV_Helmet_09", "=q4=Helm of Might", "=ds=#s1#, #a4# =q7=#db28#" },
 		{ 16868, "INV_Shoulder_15", "=q4=Pauldrons of Might", "=ds=#s3#, #a4# =q7=#db31#" },
@@ -516,7 +549,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T1Paladin = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_SealOfMight", "=q6=#t1s4#", "" },
+		{ 0, "Spell_Holy_SealOfMight", "=q16=#t1s4#", "" },
 		{ 0, "", "", "" },
 		{ 16854, "INV_Helmet_05", "=q4=Lawbringer Helm", "=ds=#s1#, #a4# =q7=#db28#" },
 		{ 16856, "INV_Shoulder_20", "=q4=Lawbringer Spaulders", "=ds=#s3#, #a4# =q7=#db29#" },
@@ -529,7 +562,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Mage = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Frost_IceStorm", "=q6=#t0s3#", "" },
+		{ 0, "Spell_Frost_IceStorm", "=q10=#t0s3#", "" },
 		{ 0, "", "", "" },
 		{ 16686, "INV_Crown_02", "=q3=Magister's Crown", "=ds=#s1#, #a1# =q7=#db33#" },
 		{ 16689, "INV_Shoulder_23", "=q3=Magister's Mantle", "=ds=#s3#, #a1# =q7=#db36#" },
@@ -544,7 +577,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Spell_Frost_IceStorm", "=q6=#t05s3#", "" },
+		{ 0, "Spell_Frost_IceStorm", "=q10=#t05s3#", "" },
 		{ 0, "", "", "" },
 		{ 22065, "INV_Crown_02", "=q4=Sorcerer's Crown", "=ds=#s1#, #a1#" },
 		{ 22068, "INV_Shoulder_23", "=q3=Sorcerer's Mantle", "=ds=#s3#, #a1#" },
@@ -557,7 +590,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Priest = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_PowerWordShield", "=q6=#t0s5#", "" },
+		{ 0, "Spell_Holy_PowerWordShield", "=q9=#t0s5#", "" },
 		{ 0, "", "", "" },
 		{ 16693, "INV_Crown_01", "=q3=Devout Crown", "=ds=#s1#, #a1# =q7=#db33#" },
 		{ 16695, "INV_Shoulder_02", "=q3=Devout Mantle", "=ds=#s3#, #a1# =q7=#db39#" },
@@ -572,7 +605,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_PowerWordShield", "=q6=#t05s5#", "" },
+		{ 0, "Spell_Holy_PowerWordShield", "=q9=#t05s5#", "" },
 		{ 0, "", "", "" },
 		{ 22080, "INV_Crown_01", "=q4=Virtuous Crown", "=ds=#s1#, #a1#" },
 		{ 22082, "INV_Shoulder_02", "=q3=Virtuous Mantle", "=ds=#s3#, #a1#" },
@@ -585,7 +618,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Warlock = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Shadow_CurseOfTounges", "=q6=#t0s8#", "" },
+		{ 0, "Spell_Shadow_CurseOfTounges", "=q11=#t0s8#", "" },
 		{ 0, "", "", "" },
 		{ 16698, "INV_Helmet_29", "=q3=Dreadmist Mask", "=ds=#s1#, #a1# =q7=#db33#" },
 		{ 16701, "INV_Misc_Bone_TaurenSkull_01", "=q3=Dreadmist Mantle", "=ds=#s3#, #a1# =q7=#db42#" },
@@ -600,7 +633,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Spell_Shadow_CurseOfTounges", "=q6=#t05s8#", "" },
+		{ 0, "Spell_Shadow_CurseOfTounges", "=q11=#t05s8#", "" },
 		{ 0, "", "", "" },
 		{ 22074, "INV_Helmet_29", "=q4=Deathmist Mask", "=ds=#s1#, #a1#" },
 		{ 22073, "INV_Misc_Bone_TaurenSkull_01", "=q3=Deathmist Mantle", "=ds=#s3#, #a1#" },
@@ -613,7 +646,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Rogue = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_BackStab", "=q6=#t0s6#", "" },
+		{ 0, "Ability_BackStab", "=q12=#t0s6#", "" },
 		{ 0, "", "", "" },
 		{ 16707, "INV_Helmet_41", "=q3=Shadowcraft Cap", "=ds=#s1#, #a2# =q7=#db33#" },
 		{ 16708, "INV_Shoulder_07", "=q3=Shadowcraft Spaulders", "=ds=#s3#, #a2# =q7=#db45#" },
@@ -628,7 +661,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Ability_BackStab", "=q6=#t05s6#", "" },
+		{ 0, "Ability_BackStab", "=q12=#t05s6#", "" },
 		{ 0, "", "", "" },
 		{ 22005, "INV_Helmet_41", "=q4=Darkmantle Cap", "=ds=#s1#, #a2#" },
 		{ 22008, "INV_Shoulder_07", "=q3=Darkmantle Spaulders", "=ds=#s3#, #a2#" },
@@ -641,7 +674,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Druid = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Nature_Regeneration", "=q6=#t0s1#", "" },
+		{ 0, "Spell_Nature_Regeneration", "=q13=#t0s1#", "" },
 		{ 0, "", "", "" },
 		{ 16720, "INV_Helmet_27", "=q3=Wildheart Cowl", "=ds=#s1#, #a2# =q7=#db33#" },
 		{ 16718, "INV_Shoulder_01", "=q3=Wildheart Spaulders", "=ds=#s3#, #a2# =q7=#db49#" },
@@ -656,7 +689,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Spell_Nature_Regeneration", "=q6=#t05s1#", "" },
+		{ 0, "Spell_Nature_Regeneration", "=q13=#t05s1#", "" },
 		{ 0, "", "", "" },
 		{ 22109, "INV_Helmet_27", "=q4=Feralheart Cowl", "=ds=#s1#, #a2#" },
 		{ 22112, "INV_Shoulder_01", "=q3=Feralheart Spaulders",  "=ds=#s3#, #a2#" },
@@ -669,7 +702,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Hunter = {
 		{ 0, "", "", "" },
-		{ 0, "Ability_Hunter_RunningShot", "=q6=#t0s2#", "" },
+		{ 0, "Ability_Hunter_RunningShot", "=q14=#t0s2#", "" },
 		{ 0, "", "", "" },
 		{ 16677, "INV_Helmet_24", "=q3=Beaststalker's Cap", "=ds=#s1#, #a3# =q7=#db33#" },
 		{ 16679, "INV_Shoulder_10", "=q3=Beaststalker's Mantle", "=ds=#s3#, #a3# =q7=#db53#" },
@@ -684,7 +717,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Ability_Hunter_RunningShot", "=q6=#t05s2#", "" },
+		{ 0, "Ability_Hunter_RunningShot", "=q14=#t05s2#", "" },
 		{ 0, "", "", "" },
 		{ 22013, "INV_Helmet_24", "=q4=Beastmaster's Cap", "=ds=#s1#, #a3#" },
 		{ 22016, "INV_Shoulder_10", "=q3=Beastmaster's Mantle", "=ds=#s3#, #a3#" },
@@ -697,7 +730,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Shaman = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_FireResistanceTotem_01", "=q6=#t0s7#", "" },
+		{ 0, "Spell_FireResistanceTotem_01", "=q15=#t0s7#", "" },
 		{ 0, "", "", "" },
 		{ 16667, "INV_Helmet_04", "=q3=Coif of Elements", "=ds=#s1#, #a3# =q7=#db33#" },
 		{ 16669,"INV_Shoulder_29","=q3=Pauldrons of Elements", "=ds=#s3#, #a3# =q7=#db56#" },
@@ -712,7 +745,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Spell_FireResistanceTotem_01", "=q6=#t05s7#", "" },
+		{ 0, "Spell_FireResistanceTotem_01", "=q15=#t05s7#", "" },
 		{ 0, "", "", "" },
 		{ 22097, "INV_Helmet_04", "=q4=Coif of The Five Thunders", "=ds=#s1#, #a3#" },
 		{ 22101,"INV_Shoulder_29","=q3=Pauldrons of The Five Thunders","=ds=#s3#, #a3#" },
@@ -725,7 +758,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Warrior = {
 		{ 0, "", "", "" },
-		{ 0, "INV_Shield_05", "=q6=#t0s9#", "" },
+		{ 0, "INV_Shield_05", "=q17=#t0s9#", "" },
 		{ 0, "", "", "" },
 		{ 16731, "INV_Helmet_02", "=q3=Helm of Valor", "=ds=#s1#, #a4# =q7=#db33#" },
 		{ 16733,"INV_Shoulder_30","=q3=Spaulders of Valor", "=ds=#s3#, #a4# =q7=#db59#" },
@@ -740,7 +773,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_Shield_05", "=q6=#t05s9#", "" },
+		{ 0, "INV_Shield_05", "=q17=#t05s9#", "" },
 		{ 0, "", "", "" },
 		{ 21999, "INV_Helmet_02", "=q4=Helm of Heroism", "=ds=#s1#, #a4#" },
 		{ 22001,"INV_Shoulder_30","=q3=Spaulders of Heroism","=ds=#s3#, #a4#" },
@@ -753,7 +786,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	T0Paladin = {
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_SealOfMight", "=q6=#t0s4#", "" },
+		{ 0, "Spell_Holy_SealOfMight", "=q16=#t0s4#", "" },
 		{ 0, "", "", "" },
 		{ 16727, "INV_Helmet_08", "=q3=Lightforge Helm", "=ds=#s1#, #a4# =q7=#db33#" },
 		{ 16729,"INV_Shoulder_10","=q3=Lightforge Spaulders", "=ds=#s3#, #a4# =q7=#db62#" },
@@ -768,7 +801,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 0, "Spell_Holy_SealOfMight", "=q6=#t05s4#", "" },
+		{ 0, "Spell_Holy_SealOfMight", "=q16=#t05s4#", "" },
 		{ 0, "", "", "" },
 		{ 22091, "INV_Helmet_08", "=q4=Soulforge Helm", "=ds=#s1#, #a4#" },
 		{ 22093, "INV_Shoulder_10","=q3=Soulforge Spaulders", "=ds=#s3#, #a4#" },
@@ -780,7 +813,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 22087, "INV_Boots_Plate_03", "=q4=Soulforge Boots", "=ds=#s12#, #a4#" },
 	};
 	ZGMage = {
-		{ 0,"Spell_Frost_IceStorm","=q6=#zgs3#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Frost_IceStorm", "=q10=#zgs3#","" },
+		{ 0, "", "", "" },
 		{ 19959, "INV_Jewelry_Necklace_19", "=q4=Hazza'rah's Charm of Magic", "=ds=#s14#" },
 		{ 19601, "INV_Jewelry_Necklace_26", "=q4=Jewel of Kajaro", "=ds=#r5#" },
 		{ 20034, "INV_Chest_Cloth_12", "=q4=Zandalar Illusionist's Robe", "=q4=#x10#=ds=, #r4#" },
@@ -788,7 +823,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19846, "INV_Bracer_07", "=q4=Zandalar Illusionist's Wraps", "=q4=#x12#=ds=, #r2#" },
 	};
 	ZGWarlock = {
-		{ 0,"Spell_Shadow_CurseOfTounges","=q6=#zgs8#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Shadow_CurseOfTounges", "=q11=#zgs8#","" },
+		{ 0, "", "", "" },
 		{ 19957, "INV_Jewelry_Necklace_19", "=q4=Hazza'rah's Charm of Destruction", "=ds=#s14#" },
 		{ 19605, "INV_Jewelry_Necklace_26", "=q4=Kezan's Unstoppable Taint", "=ds=#r5#" },
 		{ 20033, "INV_Chest_Cloth_12", "=q4=Zandalar Demoniac's Robe", "=q4=#x10#=ds=, #r4#" },
@@ -796,7 +833,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19848, "INV_Bracer_07", "=q4=Zandalar Demoniac's Wraps", "=q4=#x14#=ds=, #r2#" },
 	};
 	ZGPriest = {
-		{ 0,"Spell_Holy_PowerWordShield","=q6=#zgs5#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Holy_PowerWordShield", "=q9=#zgs5#","" },
+		{ 0, "", "", "" },
 		{ 19958, "INV_Jewelry_Necklace_19", "=q4=Hazza'rah's Charm of Healing", "=ds=#s14#" },
 		{ 19594, "INV_Jewelry_Necklace_26", "=q4=The All-Seeing Eye of Zuldazar", "=ds=#r5#" },
 		{ 19841, "INV_Shoulder_01", "=q4=Zandalar Confessor's Mantle", "=q4=#x15#=ds=, #r4#" },
@@ -804,7 +843,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19843, "INV_Bracer_07", "=q4=Zandalar Confessor's Wraps", "=q4=#x14#=ds=, #r2#" },
 	};
 	ZGRogue = {
-		{ 0,"Ability_BackStab","=q6=#zgs6#","" },
+		{ 0, "", "", "" },
+		{ 0,"Ability_BackStab", "=q12=#zgs6#","" },
+		{ 0, "", "", "" },
 		{ 19954, "INV_Jewelry_Necklace_19", "=q4=Renataki's Charm of Trickery", "=ds=#s14#" },
 		{ 19617, "INV_Jewelry_Necklace_26", "=q4=Zandalarian Shadow Mastery Talisman", "=ds=#r5#" },
 		{ 19834, "INV_Chest_Leather_10", "=q4=Zandalar Madcap's Tunic", "=q4=#x15#=ds=, #r4#" },
@@ -812,7 +853,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19836, "INV_Bracer_14", "=q4=Zandalar Madcap's Bracers", "=q4=#x17#=ds=, #r2#" },
 	};
 	ZGDruid = {
-		{ 0,"Spell_Nature_Regeneration","=q6=#zgs1#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Nature_Regeneration", "=q13=#zgs1#","" },
+		{ 0, "", "", "" },
 		{ 19955, "INV_Jewelry_Necklace_19", "=q4=Wushoolay's Charm of Nature", "=ds=#s14#" },
 		{ 19613, "INV_Jewelry_Necklace_26", "=q4=Pristine Enchanted South Seas Kelp", "=ds=#r5#" },
 		{ 19838, "INV_Chest_Leather_06", "=q4=Zandalar Haruspex's Tunic", "=q4=#x18#=ds=, #r4#" },
@@ -820,7 +863,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19840, "INV_Bracer_08", "=q4=Zandalar Haruspex's Bracers", "=q4=#x14#=ds=, #r2#" },
 	};
 	ZGHunter = {
-		{ 0,"Ability_Hunter_RunningShot","=q6=#zgs2#","" },
+		{ 0, "", "", "" },
+		{ 0,"Ability_Hunter_RunningShot", "=q14=#zgs2#","" },
+		{ 0, "", "", "" },
 		{ 19953, "INV_Jewelry_Necklace_19", "=q4=Renataki's Charm of Beasts", "=ds=#s14#" },
 		{ 19621, "INV_Jewelry_Necklace_26", "=q4=Maelstrom's Wrath", "=ds=#r5#" },
 		{ 19831, "INV_Shoulder_22", "=q4=Zandalar Predator's Mantle", "=q4=#x15#=ds=, #r4#" },
@@ -828,7 +873,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19833, "INV_Bracer_18", "=q4=Zandalar Predator's Bracers", "=q4=#x12#=ds=, #r2#" },
 	};
 	ZGShaman = {
-		{ 0,"Spell_FireResistanceTotem_01","=q6=#zgs7#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_FireResistanceTotem_01", "=q15=#zgs7#","" },
+		{ 0, "", "", "" },
 		{ 19956, "INV_Jewelry_Necklace_19", "=q4=Wushoolay's Charm of Spirits", "=ds=#s14#" },
 		{ 19609, "INV_Jewelry_Necklace_26", "=q4=Unmarred Vision of Voodress", "=ds=#r5#" },
 		{ 19828, "INV_Chest_Fur", "=q4=Zandalar Augur's Hauberk", "=q4=#x18#=ds=, #r4#" },
@@ -836,7 +883,8 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19830, "INV_Bracer_15", "=q4=Zandalar Augur's Bracers", "=q4=#x17#=ds=, #r2#" },
 	};
 	ZGWarrior = {
-		{ 0,"INV_Shield_05","=q6=#zgs9#","" },
+		{ 0, "", "", "" },
+		{ 0,"INV_Shield_05", "=q17=#zgs9#","" },
 		{ 19951, "INV_Jewelry_Necklace_19", "=q4=Gri'lek's Charm of Might", "=ds=#s14#" },
 		{ 19577, "INV_Jewelry_Necklace_26", "=q4=Rage of Mugamba", "=ds=#r5#" },
 		{ 19822, "INV_Chest_Plate07", "=q4=Zandalar Vindicator's Breastplate", "=q4=#x10#=ds=, #r4#" },
@@ -844,7 +892,8 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19824, "INV_Bracer_14", "=q4=Zandalar Vindicator's Armguards", "=q4=#x17#=ds=, #r2#" },
 	};
 	ZGPaladin = {
-		{ 0,"Spell_Holy_SealOfMight","=q6=#zgs4#","" },
+		{ 0,"Spell_Holy_SealOfMight", "=q16=#zgs4#","" },
+		{ 0, "", "", "" },
 		{ 19952, "INV_Jewelry_Necklace_19", "=q4=Gri'lek's Charm of Valor", "=ds=#s14#" },
 		{ 19588, "INV_Jewelry_Necklace_26", "=q4=Hero's Brand", "=ds=#r5#" },
 		{ 19825, "INV_Chest_Plate07", "=q4=Zandalar Freethinker's Breastplate", "=q4=#x18#=ds=, #r4#" },
@@ -852,61 +901,81 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19827, "INV_Bracer_14", "=q4=Zandalar Freethinker's Armguards", "=q4=#x12#=ds=, #r2#" },
 	};
 	AQ20Mage = {
-		{ 0,"Spell_Frost_IceStorm","=q6=#aq20s3#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Frost_IceStorm", "=q10=#aq20s3#","" },
+		{ 0, "", "", "" },
 		{ 21413, "INV_Sword_57", "=q4=Blade of Vaulted Secrets", "=q4=#x19#=ds=, #r5#" },
 		{ 21415, "INV_Misc_Cape_19", "=q4=Drape of Vaulted Secrets", "=q3=#x20#=ds=, #r4#" },
 		{ 21414, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Band of Vaulted Secrets", "=q3=#x21#=ds=, #r3#" },
 	};
 	AQ20Warlock = {
-		{ 0,"Spell_Shadow_CurseOfTounges","=q6=#aq20s8#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Shadow_CurseOfTounges", "=q11=#aq20s8#","" },
+		{ 0, "", "", "" },
 		{ 21416, "INV_Weapon_ShortBlade_27", "=q4=Kris of Unspoken Names", "=q4=#x19#=ds=, #r5#" },
 		{ 21418, "INV_Misc_Cape_20", "=q4=Shroud of Unspoken Names", "=q3=#x23#=ds=, #r4#" },
 		{ 21417, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Ring of Unspoken Names", "=q3=#x22#=ds=, #r3#" },
 	};
 	AQ20Priest = {
-		{ 0,"Spell_Holy_PowerWordShield","=q6=#aq20s5#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Holy_PowerWordShield", "=q9=#aq20s5#","" },
+		{ 0, "", "", "" },
 		{ 21410, "INV_Mace22", "=q4=Gavel of Infinite Wisdom", "=q4=#x19#=ds=, #r5#" },
 		{ 21412, "INV_Misc_Cape_16", "=q4=Shroud of Infinite Wisdom", "=q3=#x20#=ds=, #r4#" },
 		{ 21411, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Ring of Infinite Wisdom", "=q3=#x22#=ds=, #r3#" },
 	};
 	AQ20Rogue = {
-		{ 0,"Ability_BackStab","=q6=#aq20s6#","" },
+		{ 0, "", "", "" },
+		{ 0,"Ability_BackStab", "=q12=#aq20s6#","" },
+		{ 0, "", "", "" },
 		{ 21404, "INV_Weapon_ShortBlade_27", "=q4=Dagger of Veiled Shadows", "=q4=#x24#=ds=, #r5#" },
 		{ 21406, "INV_Misc_Cape_19", "=q4=Cloak of Veiled Shadows", "=q3=#x20#=ds=, #r4#" },
 		{ 21405, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Band of Veiled Shadows", "=q3=#x22#=ds=, #r3#" },
 	};
 	AQ20Druid = {
-		{ 0,"Spell_Nature_Regeneration","=q6=#aq20s1#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Nature_Regeneration", "=q13=#aq20s1#","" },
+		{ 0, "", "", "" },
 		{ 21407, "INV_Mace22", "=q4=Mace of Unending Life", "=q4=#x19#=ds=, #r5#" },
 		{ 21409, "INV_Misc_Cape_15", "=q4=Cloak of Unending Life", "=q3=#x23#=ds=, #r4#" },
 		{ 21408, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Band of Unending Life", "=q3=#x21#=ds=, #r3#" },
 	};
 	AQ20Hunter = {
-		{ 0,"Ability_Hunter_RunningShot","=q6=#aq20s2#","" },
+		{ 0, "", "", "" },
+		{ 0,"Ability_Hunter_RunningShot", "=q14=#aq20s2#","" },
+		{ 0, "", "", "" },
 		{ 21401, "INV_Axe_15", "=q4=Scythe of the Unseen Path", "=q4=#x24#=ds=, #r5#" },
 		{ 21403, "INV_Misc_Cape_15", "=q4=Cloak of the Unseen Path", "=q3=#x23#=ds=, #r4#" },
 		{ 21402, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Signet of the Unseen Path", "=q3=#x22#=ds=, #r3#" },
 	};
 	AQ20Paladin = {
-		{ 0,"Spell_Holy_SealOfMight","=q6=#aq20s4#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_Holy_SealOfMight", "=q16=#aq20s4#","" },
+		{ 0, "", "", "" },
 		{ 21395, "INV_Sword_57", "=q4=Blade of Eternal Justice", "=q4=#x24#=ds=, #r5#" },
 		{ 21397, "INV_Misc_Cape_14", "=q4=Cape of Eternal Justice", "=q3=#x23#=ds=, #r4#" },
 		{ 21396, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Ring of Eternal Justice", "=q3=#x21#=ds=, #r3#" },
 	};
 	AQ20Shaman = {
-		{ 0,"Spell_FireResistanceTotem_01","=q6=#aq20s7#","" },
+		{ 0, "", "", "" },
+		{ 0,"Spell_FireResistanceTotem_01", "=q15=#aq20s7#","" },
+		{ 0, "", "", "" },
 		{ 21398, "INV_Mace22", "=q4=Hammer of the Gathering Storm", "=q4=#x24#=ds=, #r5#" },
 		{ 21400, "INV_Misc_Cape_16", "=q4=Cloak of the Gathering Storm", "=q3=#x23#=ds=, #r4#" },
 		{ 21399, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Ring of the Gathering Storm", "=q3=#x21#=ds=, #r3#" },
 	};
 	AQ20Warrior = {
-		{ 0,"INV_Shield_05","=q6=#aq20s9#","" },
+		{ 0, "", "", "" },
+		{ 0,"INV_Shield_05", "=q17=#aq20s9#","" },
+		{ 0, "", "", "" },
 		{ 21392, "INV_Axe_15", "=q4=Sickle of Unyielding Strength", "=q4=#x24#=ds=, #r5#" },
 		{ 21394, "INV_Misc_Cape_20", "=q4=Drape of Unyielding Strength", "=q3=#x20#=ds=, #r4#" },
 		{ 21393, "INV_Jewelry_Ring_AhnQiraj_03", "=q4=Signet of Unyielding Strength", "=q3=#x21#=ds=, #r3#" },
 	};
 	AQ40Mage = {
-		{ 0,"Spell_Frost_IceStorm","=q6=#aq40s3#","" }, --Mage
+		{ 0, "", "", "" },
+		{ 0,"Spell_Frost_IceStorm", "=q10=#aq40s3#","" }, --Mage
+		{ 0, "", "", "" },
 		{ 21343, "INV_Chest_Cloth_11", "=q4=Enigma Robes", "=q4=#x28#=ds=, #r3#" },
 		{ 21347, "INV_Helmet_06", "=q4=Enigma Circlet", "=q4=#x26#=ds=, #r2#" },
 		{ 21346, "INV_Pants_Cloth_08", "=q4=Enigma Leggings", "=q4=#x27#=ds=, #r2#" },
@@ -914,7 +983,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21344, "INV_Boots_Cloth_03", "=q4=Enigma Boots", "=q4=#x25#=ds=, #r1#" },
 	};
 	AQ40Priest = {
-		{ 0,"Spell_Holy_PowerWordShield","=q6=#aq40s5#","" }, --Priest
+		{ 0, "", "", "" },
+		{ 0,"Spell_Holy_PowerWordShield", "=q9=#aq40s5#","" }, --Priest
+		{ 0, "", "", "" },
 		{ 21351, "INV_Chest_Cloth_10", "=q4=Vestments of the Oracle", "=q4=#x28#=ds=, #r3#" },
 		{ 21348, "INV_Helmet_06", "=q4=Tiara of the Oracle", "=q4=#x26#=ds=, #r2#" },
 		{ 21352, "INV_Pants_Cloth_07", "=q4=Trousers of the Oracle","=q4=#x27#=ds=, #r2#" },
@@ -922,7 +993,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21349, "INV_Boots_Cloth_07", "=q4=Footwraps of the Oracle", "=q4=#x29#=ds=, #r1#" },
 	};
 	AQ40Warlock = {
-		{ 0,"Spell_Shadow_CurseOfTounges","=q6=#aq40s8#","" }, --Warlock
+		{ 0, "", "", "" },
+		{ 0,"Spell_Shadow_CurseOfTounges", "=q11=#aq40s8#","" }, --Warlock
+		{ 0, "", "", "" },
 		{ 21334, "INV_Chest_Cloth_12", "=q4=Doomcaller's Robes", "=q4=#x28#=ds=, #r3#" },
 		{ 21337, "INV_Helmet_06", "=q4=Doomcaller's Circlet", "=q4=#x26#=ds=, #r2#" },
 		{ 21336, "INV_Pants_Cloth_02", "=q4=Doomcaller's Trousers", "=q4=#x31#=ds=, #r2#" },
@@ -930,7 +1003,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21338, "INV_Boots_Cloth_02", "=q4=Doomcaller's Footwraps", "=q4=#x25#=ds=, #r1#" },
 	};
 	AQ40Rogue = {
-		{ 0,"Ability_BackStab","=q6=#aq40s6#","" }, --Rogue
+		{ 0, "", "", "" },
+		{ 0,"Ability_BackStab", "=q12=#aq40s6#","" }, --Rogue
+		{ 0, "", "", "" },
 		{ 21364, "INV_Chest_Leather_08", "=q4=Deathdealer's Vest", "=q4=#x32#=ds=, #r3#" },
 		{ 21360, "INV_Helmet_04", "=q4=Deathdealer's Helm", "=q4=#x30#=ds=, #r2#" },
 		{ 21362, "INV_Pants_Leather_07", "=q4=Deathdealer's Leggings", "=q4=#x27#=ds=, #r2#" },
@@ -938,7 +1013,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21359, "INV_Boots_08", "=q4=Deathdealer's Boots", "=q4=#x29#=ds=, #r1#" },
 	};
 	AQ40Druid = {
-		{ 0,"Spell_Nature_Regeneration","=q6=#aq40s1#","" }, --Druid
+		{ 0, "", "", "" },
+		{ 0,"Spell_Nature_Regeneration", "=q13=#aq40s1#","" }, --Druid
+		{ 0, "", "", "" },
 		{ 21357, "INV_Chest_Leather_08", "=q4=Genesis Vest", "=q4=#x28#=ds=, #r3#" },
 		{ 21353, "INV_Helmet_06", "=q4=Genesis Helm", "=q4=#x30#=ds=, #r2#" },
 		{ 21356, "INV_Pants_Leather_01", "=q4=Genesis Trousers", "=q4=#x31#=ds=, #r2#" },
@@ -946,7 +1023,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21355, "INV_Boots_Cloth_07", "=q4=Genesis Boots", "=q4=#x25#=ds=, #r1#" },
 	};
 	AQ40Shaman = {
-		{ 0,"Spell_FireResistanceTotem_01","=q6=#aq40s7#","" }, --Shaman
+		{ 0, "", "", "" },
+		{ 0,"Spell_FireResistanceTotem_01", "=q15=#aq40s7#","" }, --Shaman
+		{ 0, "", "", "" },
 		{ 21374, "INV_Chest_Chain_13", "=q4=Stormcaller's Hauberk", "=q4=#x32#=ds=, #r3#" },
 		{ 21372, "INV_Helmet_73", "=q4=Stormcaller's Diadem", "=q4=#x30#=ds=, #r2#" },
 		{ 21375, "INV_Pants_Mail_10", "=q4=Stormcaller's Leggings", "=q4=#x31#=ds=, #r2#" },
@@ -954,7 +1033,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21373, "INV_Boots_Chain_07", "=q4=Stormcaller's Footguards", "=q4=#x25#=ds=, #r1#" },
 	};
 	AQ40Hunter = {
-		{ 0,"Ability_Hunter_RunningShot","=q6=#aq40s2#","" }, --Hunter
+		{ 0, "", "", "" },
+		{ 0,"Ability_Hunter_RunningShot", "=q14=#aq40s2#","" }, --Hunter
+		{ 0, "", "", "" },
 		{ 21370, "INV_Chest_Chain_04", "=q4=Striker's Hauberk", "=q4=#x32#=ds=, #r3#" },
 		{ 21366, "INV_Helmet_73", "=q4=Striker's Diadem", "=q4=#x30#=ds=, #r2#" },
 		{ 21368, "INV_Pants_Mail_11", "=q4=Striker's Leggings", "=q4=#x31#=ds=, #r2#" },
@@ -962,7 +1043,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21365, "INV_Boots_Chain_08", "=q4=Striker's Footguards", "=q4=#x29#=ds=, #r1#" },
 	};
 	AQ40Warrior = {
-		{ 0,"INV_Shield_05","=q6=#aq40s9#","" }, --Warrior
+		{ 0, "", "", "" },
+		{ 0,"INV_Shield_05", "=q17=#aq40s9#","" }, --Warrior
+		{ 0, "", "", "" },
 		{ 21331, "INV_Chest_Plate12", "=q4=Conqueror's Breastplate", "=q4=#x32#=ds=, #r3#" },
 		{ 21329, "INV_Helmet_72", "=q4=Conqueror's Crown", "=q4=#x26#=ds=, #r2#" },
 		{ 21332, "INV_Pants_Plate_03", "=q4=Conqueror's Legguards", "=q4=#x27#=ds=, #r2#" },
@@ -970,7 +1053,9 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21333, "INV_Boots_Plate_05", "=q4=Conqueror's Greaves", "=q4=#x29#=ds=, #r1#" },
 	};
 	AQ40Paladin = {
-		{ 0,"Spell_Holy_SealOfMight","=q6=#aq40s4#","" }, --Paladin
+		{ 0, "", "", "" },
+		{ 0,"Spell_Holy_SealOfMight", "=q16=#aq40s4#","" }, --Paladin
+		{ 0, "", "", "" },
 		{ 21389, "INV_Chest_Plate03", "=q4=Avenger's Breastplate", "=q4=#x32#=ds=, #r3#" },
 		{ 21387, "INV_Helmet_72", "=q4=Avenger's Crown", "=q4=#x30#=ds=, #r2#" },
 		{ 21390, "INV_Pants_Plate_02", "=q4=Avenger's Legguards", "=q4=#x31#=ds=, #r2#" },
@@ -1016,6 +1101,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 13262, "INV_Sword_48", "=q5=Ashbringer", "=ds=#h2#, #w10#" },
 	};
 	RareMounts = {
+		{ 0, "", "", "" },
 		{ 21176, "INV_Misc_QirajiCrystal_05", "=q5=Black Qiraji Resonating Crystal", "=ds=#e7#" },
 		{ 0, "", "", "" },
 		{ 13335, "Ability_Mount_Undeadhorse", "=q4=Deathcharger's Reins", "=ds=#e7#" },
@@ -1030,6 +1116,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 21324, "INV_Misc_QirajiCrystal_01", "=q3=Yellow Qiraji Resonating Crystal", "=ds=#e7#" },
 	};
 	OldMounts = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "" },
 		{ 0, "", "", "" },
 		{ 12302, "Ability_Mount_Whitetiger", "=q4=Reins of the Frostsaber", "=ds=#e7#" },
@@ -1055,6 +1142,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 15293, "Ability_Mount_Kodo_02", "=q4=Teal Kodo", "=ds=#e7#" },
 	};
 	PvPMountsSets = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=Rank 11" },
 		{ 0, "", "", "" },
 		{ 19030, "Ability_Mount_MountainRam", "=q4=Stormpike Battle Charger", "=ds=#e7#" },
@@ -1080,6 +1168,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 18248, "Ability_Mount_Undeadhorse", "=q4=Red Skeletal Warhorse", "=ds=#e7#" },
 	};
 	UnobMounts = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "" },
 		{ 0, "", "", "" },
 		{ 18768, "Ability_Mount_Whitetiger", "=q4=Reins of the Swift Dawnsaber", "=ds=#e7#" },
@@ -1102,6 +1191,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 8628, "Ability_Mount_Blackpanther", "=q1=Reins of the Spotted Nightsaber", "=ds=#e7#" },
 	};
 	Tabards = {
+		{ 0, "", "", "" },
 		{ 15196, "INV_Misc_TabardPVP_01", "=q1=Private's Tabard", "=ds=#s7# =q8=#m7#" },
 		{ 15198, "INV_Misc_TabardPVP_03", "=q1=Knight's Colors", "=ds=#s7# =q8=#m7#" },
 		{ 19506, "INV_Shirt_GuildTabard_01", "=q1=Silverwing Battle Tabard", "=ds=#s7# =q8=#m7#" },
@@ -1124,6 +1214,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19031, "INV_Shirt_GuildTabard_01", "=q1=Frostwolf Battle Tabard", "=ds=#s7# =q6=#m6#" },
 	};
 	WorldEpics1 = {
+		{ 0, "", "", "" },
 		{ 1981, "INV_Chest_Plate06", "=q4=Icemail Jerkin", "=ds=#s5#, #a3#", "" },
 		{ 867, "INV_Gauntlets_06", "=q4=Gloves of Holy Might", "=ds=#s9#, #a2#", "" },
 		{ 1980, "INV_Jewelry_Ring_15", "=q4=Underworld Band", "=ds=#s13#", "" },
@@ -1148,6 +1239,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 873, "INV_Staff_13", "=q4=Staff of Jordan", "=ds=#w9#", "" },
 	};
 	WorldEpics2 = {
+		{ 0, "", "", "" },
 		{ 3075, "INV_Helmet_44", "=q4=Eye of Flame", "=ds=#s1#, #a1#", "" },
 		{ 1315, "INV_Misc_Flower_01", "=q4=Lei of Lilies", "=ds=#s2#", "" },
 		{ 940, "INV_Chest_Cloth_26", "=q4=Robes of Insight", "=ds=#s5#, #a1#", "" },
@@ -1178,6 +1270,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 1979, "INV_Shield_02", "=q4=Wall of the Dead", "=ds=#w8#", "" },
 	};
 	WorldEpics3 = {
+		{ 0, "", "", "" },
 		{ 2245, "INV_Helmet_05", "=q4=Helm of Narv", "=ds=#s1#, #a3#", "" },
 		{ 1443, "INV_Jewelry_Amulet_01", "=q4=Jeweled Amulet of Cainwyn", "=ds=#s2#", "" },
 		{ 14558, "INV_Jewelry_Necklace_08", "=q4=Lady Maye's Pendant", "=ds=#s2#", "" },
@@ -1207,6 +1300,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 944, "INV_Staff_07", "=q4=Elemental Mage Staff", "=ds=#w9#", "" },
 	};
 	RarePets1 = {
+		{ 0, "", "", "" },
 		{ 23713, "INV_Egg_02", "=q4=Hippogryph Hatchling", "=ds=#e15# =q6=TCG" },
 		{ 23712, "INV_Misc_Head_Tiger_01", "=q4=White Tiger Cub", "=ds=#e15# =q6=TCG" },
 		{ 0,"","","" },
@@ -1238,6 +1332,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 8494,"Spell_Nature_ForceofNature","=q1=Parrot Cage (Hyacinth Macaw)","=ds=#e15#" },
 	};
 	RarePets2 = {
+		{ 0, "", "", "" },
 		{ 11825,"INV_Misc_Bomb_04","=q1=Pet Bombling","=ds=#e15#" },
 		{ 12529,"INV_Box_Birdcage_01","=q1=Smolderweb Carrier","=ds=#e15#" },
 		{ 11474,"INV_Egg_02","=q1=Sprite Darter Egg","=ds=#e15#" },
