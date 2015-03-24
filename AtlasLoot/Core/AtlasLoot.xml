@@ -2,6 +2,7 @@
 
 	<Script file="ButtonRegistry.lua"/>
 	<Script file="TextParsing.lua"/>
+	<Script file="Spells.lua"/>
 	<Script file="Sets.lua"/>
 	<Script file="Factions.lua"/>
 	<Script file="WorldEvents.lua"/>
@@ -185,10 +186,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][1][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -197,6 +200,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(1);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][1][1]) then
 							pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
@@ -223,10 +231,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][2][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -235,6 +245,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(2);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][2][1]) then
 							pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
@@ -261,10 +276,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][3][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -273,6 +290,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(3);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][3][1]) then
 							pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
@@ -299,10 +321,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][4][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -311,6 +335,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(4);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][4][1]) then
 							pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
@@ -1866,13 +1895,12 @@
 					<OnClick>
 						AtlasLoot_QuickLooks:Hide();
 						AtlasLootQuickLooksButton:Hide();
-						<!--AtlasLoot_CraftingMenu();-->
+						AtlasLoot_CraftingMenu();
 					</OnClick>
 					<OnShow>
 						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						this:SetText(AL["Crafting"]);
 						this:SetFrameLevel( (this:GetParent()):GetFrameLevel() + 1 );
-						this:Disable();
 					</OnShow>
 				</Scripts>
 			</Button>
@@ -1949,10 +1977,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][1][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -1961,6 +1991,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(1);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][1][1]) then
 							if getglobal("AtlasLootPanel"):GetParent() == AtlasFrame then
@@ -1993,10 +2028,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][2][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -2005,6 +2042,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(2);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][2][1]) then
 							if getglobal("AtlasLootPanel"):GetParent() == AtlasFrame then
@@ -2037,10 +2079,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][3][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -2049,6 +2093,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(3);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][3][1]) then
 							if getglobal("AtlasLootPanel"):GetParent() == AtlasFrame then
@@ -2081,10 +2130,12 @@
 				</Anchors>
 				<Scripts>
 					<OnEnter>
+						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 						if this:IsEnabled() then
 							GameTooltip:ClearLines();
 							GameTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 5);
 							GameTooltip:AddLine(AtlasLootCharDB["QuickLooks"][4][3]);
+							GameTooltip:AddLine(AL["|cff9d9d9dALT+Click to clear|r"]);
 							GameTooltip:Show();
 						end
 					</OnEnter>
@@ -2093,6 +2144,11 @@
 							GameTooltip:Hide();
 						end
 					</OnLeave>
+					<OnMouseUp>
+						if IsAltKeyDown() then
+							AtlasLoot_ClearQuickLookButton(4);
+						end
+					</OnMouseUp>
 					<OnClick>
 						if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB["QuickLooks"][4][1]) then
 							if getglobal("AtlasLootPanel"):GetParent() == AtlasFrame then

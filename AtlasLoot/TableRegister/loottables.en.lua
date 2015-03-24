@@ -554,7 +554,6 @@ AtlasLoot_TableNames = {
 ------------------------
 
 	["CraftedWeapons1"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
-	["CraftedWeapons2"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
 	["WorldEpics1"] = { AL["World Epics"].." - "..AL["Level 30-39"], "AtlasLootSetItems" },
 	["WorldEpics2"] = { AL["World Epics"].." - "..AL["Level 40-49"], "AtlasLootSetItems" },
 	["WorldEpics3"] = { AL["World Epics"].." - "..AL["Level 50-60"], "AtlasLootSetItems" },
@@ -649,13 +648,14 @@ AtlasLoot_TableNames = {
 --------------
 --- Trades ---
 --------------
---[[
+
 	--Alchemy
 	["AlchemyApprentice1"] = { AL["Alchemy"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["AlchemyJourneyman1"] = { AL["Alchemy"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
 	["AlchemyExpert1"] = { AL["Alchemy"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["AlchemyArtisan1"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["AlchemyArtisan2"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["AlchemyArtisan3"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--BlackSmithing
 	["SmithingApprentice1"] = { AL["Blacksmithing"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["SmithingJourneyman1"] = { AL["Blacksmithing"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -663,6 +663,9 @@ AtlasLoot_TableNames = {
 	["SmithingExpert2"] = { AL["Blacksmithing"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["SmithingArtisan1"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["SmithingArtisan2"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan3"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan4"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan5"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["Armorsmith1"] = { AL["Armorsmith"], "AtlasLootCrafting" },
 	["Weaponsmith1"] = { AL["Weaponsmith"], "AtlasLootCrafting" },
 	["Axesmith1"] = { AL["Master Axesmith"], "AtlasLootCrafting" },
@@ -675,6 +678,7 @@ AtlasLoot_TableNames = {
 	["EnchantingExpert2"] = { AL["Enchanting"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EnchantingArtisan1"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["EnchantingArtisan2"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["EnchantingArtisan3"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--Engineering
 	["EngineeringApprentice1"] = { AL["Engineering"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["EngineeringJourneyman1"] = { AL["Engineering"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -693,6 +697,9 @@ AtlasLoot_TableNames = {
 	["LeatherExpert2"] = { AL["Leatherworking"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["LeatherArtisan1"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["LeatherArtisan2"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan3"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan4"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan5"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["Dragonscale1"] = { AL["Dragonscale Leatherworking"], "AtlasLootCrafting" },
 	["Elemental1"] = { AL["Elemental Leatherworking"], "AtlasLootCrafting" },
 	["Tribal1"] = { AL["Tribal Leatherworking"], "AtlasLootCrafting" },
@@ -707,14 +714,17 @@ AtlasLoot_TableNames = {
 	["TailoringArtisan1"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["TailoringArtisan2"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["TailoringArtisan3"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan4"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan5"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--Cooking
 	["CookingApprentice1"] = { AL["Cooking"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["CookingJourneyman1"] = { AL["Cooking"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
-	["CookingJourneyman2"] = { AL["Cooking"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
 	["CookingExpert1"] = { AL["Cooking"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["CookingArtisan1"] = { AL["Cooking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--FirstAid
-	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },]]
+	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
+	--Poisons
+	["Poisons1"] = { AL["Poisons"], "AtlasLootCrafting" },
 	
 -----------
 --- PvP ---
@@ -798,20 +808,18 @@ AtlasLoot_TableNames = {
 	["WORLDEPICS"] = { "dummy", "dummy" },
 	["WORLDEVENTMENU"] = { "dummy", "dummy" },
 	["AbyssalCouncil"] = { "dummy", "dummy" },
-	--[[["ALCHEMYMENU"] = { "dummy", "dummy" },
+	["ALCHEMYMENU"] = { "dummy", "dummy" },
 	["CRAFTSET"] = { "dummy", "dummy" },
-	["CRAFTSET2"] = { "dummy", "dummy" },
 	["HONORMENU"] = { "dummy", "dummy" },
 	["CRAFTINGMENU"] = { "dummy", "dummy" },
 	["SMITHINGMENU"] = { "dummy", "dummy" },
 	["ENCHANTINGMENU"] = { "dummy", "dummy" },
 	["ENGINEERINGMENU"] = { "dummy", "dummy" },
-	["JEWELCRAFTINGMENU"] = { "dummy", "dummy" },
 	["LEATHERWORKINGMENU"] = { "dummy", "dummy" },
 	["MININGMENU"] = { "dummy", "dummy" },
 	["TAILORINGMENU"] = { "dummy", "dummy" },
 	["COOKINGMENU"] = { "dummy", "dummy" },
-	["FIRSTAIDMENU"] = { "dummy", "dummy" },]]
+	["FIRSTAIDMENU"] = { "dummy", "dummy" },
 	["WishList"] = { AL["WishList"], "AtlasLootCharDB" },
 	--If all else fails!
 	["EmptyInstance"] = { "AtlasLoot", "AtlasLootFallback" },
@@ -1314,19 +1322,22 @@ AtlasLoot_TableNamesBoss = {
 	["Tabards"] = { AL["Tabards"], "AtlasLootSetItems" },
 	["RarePets1"] = { AL["Rare Pets"], "AtlasLootSetItems" },
 	["RarePets2"] = { AL["Rare Pets"], "AtlasLootSetItems" },
-	["CraftedWeapons1"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
-	["CraftedWeapons2"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
 	["WorldEpics1"] = { AL["World Epics"].." - "..AL["Level 30-39"], "AtlasLootSetItems" },
 	["WorldEpics2"] = { AL["World Epics"].." - "..AL["Level 40-49"], "AtlasLootSetItems" },
 	["WorldEpics3"] = { AL["World Epics"].." - "..AL["Level 50-60"], "AtlasLootSetItems" },
 	},
-	--[[Crafted Sets - Blacksmithing
+	--Crafted Sets - Blacksmithing
+	["Crafted Sets - Blacksmithing"] = {
 	["ImperialPlate"] = { AL["Imperial Plate"], "AtlasLootCrafting" },
 	["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
 	["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
+	},
 	--Crafted Sets - Tailoring
+	["Crafted Sets - Tailoring"] = {
 	["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
+	},
 	--Crafted Sets - Leatherworking
+	["Crafted Sets - Leatherworking"] = {
 	["VolcanicArmor"] = { AL["Volcanic Armor"], "AtlasLootCrafting" },
 	["IronfeatherArmor"] = { AL["Ironfeather Armor"], "AtlasLootCrafting" },
 	["StormshroudArmor"] = { AL["Stormshroud Armor"], "AtlasLootCrafting" },
@@ -1335,7 +1346,8 @@ AtlasLoot_TableNamesBoss = {
 	["PrimalBatskin"] = { AL["Primal Batskin"], "AtlasLootCrafting" },
 	["GreenDragonM"] = { AL["Green Dragon Mail"], "AtlasLootCrafting" },
 	["BlueDragonM"] = { AL["Blue Dragon Mail"], "AtlasLootCrafting" },
-	["BlackDragonM"] = { AL["Black Dragon Mail"], "AtlasLootCrafting" },]]
+	["BlackDragonM"] = { AL["Black Dragon Mail"], "AtlasLootCrafting" },
+	},
   ["ZG Sets"] = {
 	["ZGDruid"] = { AL["Druid"].." - "..AL["ZG Class Sets"], "AtlasLootSetItems" },
 	["ZGHunter"] = { AL["Hunter"].." - "..AL["ZG Class Sets"], "AtlasLootSetItems" },
@@ -1512,13 +1524,15 @@ AtlasLoot_TableNamesBoss = {
 --------------
 --- Trades ---
 --------------
---[[
+	["Professions"] = {
+	["CraftedWeapons1"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
 	--Alchemy
 	["AlchemyApprentice1"] = { AL["Alchemy"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["AlchemyJourneyman1"] = { AL["Alchemy"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
 	["AlchemyExpert1"] = { AL["Alchemy"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["AlchemyArtisan1"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["AlchemyArtisan2"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["AlchemyArtisan3"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--BlackSmithing
 	["SmithingApprentice1"] = { AL["Blacksmithing"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["SmithingJourneyman1"] = { AL["Blacksmithing"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -1526,6 +1540,9 @@ AtlasLoot_TableNamesBoss = {
 	["SmithingExpert2"] = { AL["Blacksmithing"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["SmithingArtisan1"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["SmithingArtisan2"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan3"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan4"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan5"] = { AL["Blacksmithing"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["Armorsmith1"] = { AL["Armorsmith"], "AtlasLootCrafting" },
 	["Weaponsmith1"] = { AL["Weaponsmith"], "AtlasLootCrafting" },
 	["Axesmith1"] = { AL["Master Axesmith"], "AtlasLootCrafting" },
@@ -1538,6 +1555,7 @@ AtlasLoot_TableNamesBoss = {
 	["EnchantingExpert2"] = { AL["Enchanting"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EnchantingArtisan1"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["EnchantingArtisan2"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["EnchantingArtisan3"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--Engineering
 	["EngineeringApprentice1"] = { AL["Engineering"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["EngineeringJourneyman1"] = { AL["Engineering"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -1556,6 +1574,9 @@ AtlasLoot_TableNamesBoss = {
 	["LeatherExpert2"] = { AL["Leatherworking"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["LeatherArtisan1"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["LeatherArtisan2"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan3"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan4"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan5"] = { AL["Leatherworking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["Dragonscale1"] = { AL["Dragonscale Leatherworking"], "AtlasLootCrafting" },
 	["Elemental1"] = { AL["Elemental Leatherworking"], "AtlasLootCrafting" },
 	["Tribal1"] = { AL["Tribal Leatherworking"], "AtlasLootCrafting" },
@@ -1570,14 +1591,18 @@ AtlasLoot_TableNamesBoss = {
 	["TailoringArtisan1"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["TailoringArtisan2"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["TailoringArtisan3"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan4"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan5"] = { AL["Tailoring"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--Cooking
 	["CookingApprentice1"] = { AL["Cooking"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["CookingJourneyman1"] = { AL["Cooking"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
-	["CookingJourneyman2"] = { AL["Cooking"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
 	["CookingExpert1"] = { AL["Cooking"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["CookingArtisan1"] = { AL["Cooking"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--FirstAid
-	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },]]
+	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
+	--Poisons
+	["Poisons1"] = { AL["Poisons"], "AtlasLootCrafting" },
+	},
 	
 -----------
 --- PvP ---

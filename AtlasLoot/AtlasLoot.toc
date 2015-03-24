@@ -2,7 +2,7 @@
 ## Title: AtlasLoot Enhanced
 ## Notes: Shows the possible loot from the bosses
 ## Author: Daviesh
-## Version: 4.06.05
+## Version: 4.06.04
 ## SavedVariablesPerCharacter: AtlasLootCharDB
 ## OptionalDeps: Alphamap, AtlasLoader, LootLink, ItemSync, DewdropLib, Ace2, EquipCompare, EQCompare
 
@@ -17,6 +17,7 @@ Libs\Dewdrop\Dewdrop-2.0.lua
 Locale\Locale.xml
 Bossnames\BossNames.xml
 Sets\Sets.xml
+Crafting\Crafting.xml
 PvP\PvP.xml
 WorldEvents\WorldEvents.xml
 Factions\Factions.xml

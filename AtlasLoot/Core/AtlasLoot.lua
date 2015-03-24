@@ -185,17 +185,15 @@ AtlasLoot_MenuList = {
 	"REPMENU",
 	"WORLDEVENTMENU",
 	"AbyssalCouncil",
-	--[["ALCHEMYMENU",
+	"ALCHEMYMENU",
 	"CRAFTINGMENU",
 	"SMITHINGMENU",
 	"ENCHANTINGMENU",
 	"ENGINEERINGMENU",
-	"JEWELCRAFTINGMENU",
 	"LEATHERWORKINGMENU",
 	"TAILORINGMENU",
 	"CRAFTSET",
-	"CRAFTSET2",
-	"COOKINGMENU",]]
+	"COOKINGMENU",
 };
 
 --entrance maps to instance maps NOT NEEDED FOR ATLAS 1.12
@@ -1093,10 +1091,6 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 			dataSource = AtlasLoot_Data[dataSource_backup];
 		end
 	end
-	--[[Set up checks to see if we have a heroic loot table or not
-	local HeroicCheck=string.sub(dataID, string.len(dataID)-5, string.len(dataID));
-	local HeroicdataID=dataID.."HEROIC";
-	local NonHeroicdataID=string.sub(dataID, 1, string.len(dataID)-6);]]
 	--Get AtlasQuest out of the way
 	if (AtlasQuestInsideFrame) then
 		HideUIPanel(AtlasQuestInsideFrame);
@@ -1105,22 +1099,6 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 	AtlasLoot_QuickLooks:Hide();
 	AtlasLootQuickLooksButton:Hide();
 	AtlasLootServerQueryButton:Hide();
-	--[[Change the dataID to be consistant with the Heroic Mode toggle
-	if dataSource then
-		if((AtlasLootCharDB.HeroicMode == nil) or (AtlasLootCharDB.HeroicMode == false)) then
-			if(HeroicCheck == "HEROIC") then
-				if dataSource[NonHeroicdataID] then
-					dataID=NonHeroicdataID;
-				end
-			end
-		elseif(AtlasLootCharDB.HeroicMode == true) then
-			if(HeroicCheck ~= "HEROIC") then
-				if dataSource[HeroicdataID] then
-					dataID=HeroicdataID;
-				end
-			end
-		end
-	end]]
 	--Hide the menu objects.  These are not required for a loot table
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i):Hide();
@@ -1163,12 +1141,10 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLootWorldEventMenu();
 	elseif(dataID=="AbyssalCouncil") then
 		AtlasLootAbyssalCouncilMenu();
-	--[[elseif(dataID=="CRAFTINGMENU") then
-		--AtlasLoot_CraftingMenu();
+	elseif(dataID=="CRAFTINGMENU") then
+		AtlasLoot_CraftingMenu();
 	elseif(dataID=="CRAFTSET") then
 		AtlasLootCraftedSetMenu();
-	elseif(dataID=="CRAFTSET2") then
-		AtlasLootCraftedSetMenu2();
 	elseif(dataID=="ALCHEMYMENU") then
 		AtlasLoot_AlchemyMenu();
 	elseif(dataID=="SMITHINGMENU") then
@@ -1177,14 +1153,12 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLoot_EnchantingMenu();
 	elseif(dataID=="ENGINEERINGMENU") then
 		AtlasLoot_EngineeringMenu();
-	elseif(dataID=="JEWELCRAFTINGMENU") then
-		AtlasLoot_JewelcrafingMenu();
 	elseif(dataID=="LEATHERWORKINGMENU") then
 		AtlasLoot_LeatherworkingMenu();
 	elseif(dataID=="TAILORINGMENU") then
 		AtlasLoot_TailoringMenu();
 	elseif(dataID=="COOKINGMENU") then
-		AtlasLoot_CookingMenu();]]
+		AtlasLoot_CookingMenu();
 	else
 		--Iterate through each item object and set its properties
 		for i = 1, 30, 1 do
@@ -1207,7 +1181,7 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 						text = AtlasLoot_FixText(text);
 					end
 				else
-					spellName, _, spellIcon, _, _, _, _, _, _ = GetSpellInfo(string.sub(dataSource[dataID][i][1], 2));
+					spellName, _, spellIcon = GetSpellInfo(string.sub(dataSource[dataID][i][1], 2));
 					text = AtlasLoot_FixText(string.sub(dataSource[dataID][i][3], 1, 4)..spellName)
 				end
 				--Store data about the state of the items frame to allow minor tweaks or a recall of the current loot page
@@ -1242,7 +1216,7 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 					iconFrame:SetTexture(itemTexture1);
 				elseif (not isItem) and (spellIcon) then
 					if type(dataSource[dataID][i][2]) == "number" then
-						local _, _, _, _, _, _, _, _, itemTexture2 = GetItemInfo(dataSource[dataID][i][1])
+						local _, _, _, _, _, _, _, _, itemTexture2 = GetItemInfo(dataSource[dataID][i][2])
 						iconFrame:SetTexture(itemTexture2);
 					elseif type(dataSource[dataID][i][2]) == "string" then
 						iconFrame:SetTexture("Interface\\Icons\\"..dataSource[dataID][i][2]);
@@ -1367,19 +1341,6 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 				else
 					getglobal("AtlasLootItem_"..i.."_Unsafe"):Hide();
 				end
-				--Decide whether to show the Heroic mode toggle
-				--Checks if a heroic version of the loot table is available.
-				--[[HeroicCheck=string.sub(dataID, string.len(dataID)-5, string.len(dataID));
-				HeroicdataID=dataID.."HEROIC";
-				if dataSource[HeroicdataID] then
-					AtlasLootItemsFrame_Heroic:Show();
-					AtlasLootItemsFrame_Heroic:SetChecked(false);
-				else
-					if HeroicCheck=="HEROIC" then
-						AtlasLootItemsFrame_Heroic:Show();
-						AtlasLootItemsFrame_Heroic:SetChecked(true);
-					end
-				end]]
 			else
 				getglobal("AtlasLootItem_"..i):Hide();
 			end
@@ -1864,6 +1825,17 @@ function AtlasLoot_RefreshQuickLookButtons()
 		end
 		i=i+1;
 	end
+end
+
+--[[
+AtlasLoot_ClearQuickLookButton()
+Clears a quicklook button.
+]]
+function AtlasLoot_ClearQuickLookButton(button)
+	if not button or button == nil then return end
+	AtlasLootCharDB["QuickLooks"][button] = nil
+	AtlasLoot_RefreshQuickLookButtons()
+	DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..WHITE..AL["QuickLook"].." "..button.." "..AL["has been reset!"]);
 end
 
 --[[
@@ -3165,12 +3137,12 @@ function AtlasLootItem_OnClick(arg1)
 	else
 		if IsShiftKeyDown() then
 			spellID = string.sub(this.itemID, 2);
-			ChatEdit_InsertLink(GetSpellLink(spellID));
+			ChatFrameEditBox:Insert(color.."|Henchant:"..spellID..":0:0:0|h["..name.."]|h|r");
 		elseif(IsAltKeyDown() and (this.itemID ~= 0)) then
 			if AtlasLootItemsFrame.refresh[1] == "WishList" then
 				AtlasLoot_DeleteFromWishList(this.itemID);
 			else
-				spellName, _, _, _, _, _, _, _, _ = GetSpellInfo(string.sub(this.itemID, 2));
+				spellName = GetSpellInfo(string.sub(this.itemID, 2));
 				--spellIcon = GetItemIcon(this.dressingroomID);
 				AtlasLoot_AddToWishlist(this.itemID, this.dressingroomID, "=ds="..spellName, "=ds="..AtlasLootItemsFrame.refresh[3], AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
 			end
@@ -3199,4 +3171,17 @@ function AtlasLoot_QueryLootPage()
 		end
 		i=i+1;
 	end
+end
+
+function GetSpellInfo(id)
+	if not GetSpellInfoVanillaDB[tonumber(id)] then DEFAULT_CHAT_FRAME:AddMessage("Spell ID "..id.." not present.") return end
+	local name, rank, icon, cost, isFunnel, powerType
+	name = GetSpellInfoVanillaDB[tonumber(id)]["name"]
+	rank = GetSpellInfoVanillaDB[tonumber(id)]["rank"]
+	icon = GetSpellInfoVanillaDB[tonumber(id)]["icon"]
+	cost = GetSpellInfoVanillaDB[tonumber(id)]["cost"]
+	isFunnel = GetSpellInfoVanillaDB[tonumber(id)]["isFunnel"]
+	powerType = GetSpellInfoVanillaDB[tonumber(id)]["powerType"]
+	
+	return name, rank, icon, cost, isFunnel, powerType
 end

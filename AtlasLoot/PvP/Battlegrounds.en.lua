@@ -280,6 +280,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19323, "INV_Hammer_13", "=q4=The Unstoppable Force", "=ds=#h2#, #w6#" },
 	};
 	ABRepFriendly2029 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 21119, "INV_Jewelry_Talisman_05", "=q3=Talisman of Arathor", "=ds=#s14#" },
@@ -303,6 +304,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20235, "INV_Misc_Bandage_02", "=q1=Defiler's Silk Bandage", "=ds=#e4#" },
 	};
 	ABRepFriendly3039 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 21118, "INV_Jewelry_Talisman_05", "=q3=Talisman of Arathor", "=ds=#s14#" },
@@ -328,6 +330,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 17352, "INV_Potion_81", "=q1=Superior Mana Draught", "=ds=#e1#" },
 	};
 	ABRepFriendly4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 21117, "INV_Jewelry_Talisman_05", "=q3=Talisman of Arathor", "=ds=#s14#" },
@@ -351,6 +354,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20234, "INV_Misc_Bandage_12", "=q1=Defiler's Runecloth Bandage", "=ds=#e4#" },
 	};
 	ABRepFriendly5059 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20071, "INV_Jewelry_Talisman_05", "=q3=Talisman of Arathor", "=ds=#s14#" },
@@ -371,6 +375,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20072, "INV_Jewelry_Talisman_05", "=q3=Defiler's Talisman", "=ds=#s14#" },
 	};
 	ABRepHonored2029 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20099, "INV_Belt_17", "=q3=Highlander's Cloth Girdle", "=ds=#s10#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -396,6 +401,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20207, "INV_Belt_14", "=q3=Defiler's Plate Girdle", "=ds=#s10#, #a3# =q17=#c9#" },
 	};
 	ABRepHonored3039 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20098, "INV_Belt_17", "=q3=Highlander's Cloth Girdle", "=ds=#s10#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -418,6 +424,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20173, "INV_Belt_17", "=q3=Defiler's Lizardhide Girdle", "=ds=#s10#, #a2# =q12=#c6#=ds=, =q13=#c1#" },
 	};
 	ABRepHonored4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20097, "INV_Belt_17", "=q3=Highlander's Cloth Girdle", "=ds=#s10#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -447,6 +454,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20206, "INV_Belt_14", "=q3=Defiler's Plate Girdle", "=ds=#s10#, #a4# =q17=#c9#" },
 	};
 	ABRepHonored5059 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20047, "INV_Belt_17", "=q3=Highlander's Cloth Girdle", "=ds=#s10#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -472,6 +480,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20204, "INV_Belt_14", "=q3=Defiler's Plate Girdle", "=ds=#s10#, #a4# =q17=#c9#" },
 	};
 	ABRepRevered2029 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20096, "INV_Boots_Cloth_07", "=q3=Highlander's Cloth Boots", "=ds=#s12#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -497,6 +506,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20210, "INV_Boots_Plate_04", "=q3=Defiler's Plate Greaves", "=ds=#s12#, #a3# =q17=#c9#" },
 	};
 	ABRepRevered3039 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20095, "INV_Boots_Cloth_07", "=q3=Highlander's Cloth Boots", "=ds=#s12#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -519,6 +529,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20168, "INV_Boots_Cloth_04", "=q3=Defiler's Lizardhide Boots", "=ds=#s12#, #a2# =q12=#c6#=ds=, =q13=#c1#" },
 	};
 	ABRepRevered4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20094, "INV_Boots_Cloth_07", "=q3=Highlander's Cloth Boots", "=ds=#s12#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -548,6 +559,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20209, "INV_Boots_Plate_04", "=q3=Defiler's Plate Greaves", "=ds=#s12#, #a4# =q17=#c9#" },
 	};
 	ABRepRevered5059 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20054, "INV_Boots_Cloth_07", "=q3=Highlander's Cloth Boots", "=ds=#s12#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -573,6 +585,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20208, "INV_Boots_Plate_04", "=q3=Defiler's Plate Greaves", "=ds=#s12#, #a4# =q17=#c9#" },
 	};
 	ABRepExalted = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b5#" },
 		{ 0, "", "", "" },
 		{ 20061, "INV_Shoulder_24", "=q4=Highlander's Epaulets", "=ds=#s3#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#" },
@@ -603,6 +616,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20131, "INV_Shirt_GuildTabard_01", "=q1=Battle Tabard of the Defilers", "=q1=#m4# =ds=#s7#" },
 	};
 	WSGRepFriendly2029 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 21568, "INV_Misc_Rune_02", "=q3=Rune of Duty", "=ds=#s14# =q17=#c9#=ds=, =q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#" },
@@ -627,6 +641,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19068, "INV_Misc_Bandage_02", "=q1=Warsong Gulch Silk Bandage", "=ds=#e4#" },
 	};
 	WSGRepFriendly3039 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
@@ -653,6 +668,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 17352, "INV_Potion_81", "=q1=Superior Mana Draught", "=ds=#e1#" },
 	};
 	WSGRepFriendly4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 21567, "INV_Misc_Rune_02", "=q3=Rune of Duty", "=ds=#s14# =q17=#c9#=ds=, =q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#" },
@@ -677,6 +693,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19066, "INV_Misc_Bandage_12", "=q1=Warsong Gulch Runecloth Bandage", "=ds=#e4#" },
 	};
 	WSGRepHonored1019 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 20444, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
@@ -700,6 +717,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20439, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepHonored2029 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19541, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
@@ -723,6 +741,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19517, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepHonored3039 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19540, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
@@ -746,6 +765,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19515, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepHonored4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19539, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
@@ -772,6 +792,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 17351, "INV_Potion_80", "=q1=Major Mana Draught", "=ds=#e1#" },
 	};
 	WSGRepHonored5059 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19538, "INV_Jewelry_Necklace_13", "=q3=Sentinel's Medallion", "=ds=#s2#" },
@@ -795,6 +816,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19514, "INV_Jewelry_Ring_10", "=q3=Protector's Band", "=ds=#s13#" },
 	};
 	WSGRepRevered1019 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 20438, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
@@ -818,6 +840,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 20425, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered2029 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19565, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
@@ -841,6 +864,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19569, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered3039 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19564, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
@@ -864,6 +888,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19568, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19563, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
@@ -887,6 +912,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19567, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepRevered5059 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19562, "INV_Weapon_Bow_02", "=q3=Outrunner's Bow", "=ds=#w2#" },
@@ -910,6 +936,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19566, "INV_Staff_25", "=q3=Advisor's Gnarled Staff", "=ds=#w9#" },
 	};
 	WSGRepExalted4049 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19597, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
@@ -933,6 +960,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19581, "INV_Bracer_06", "=q4=Berserker Bracers", "=ds=#s8#, #a4#" },
 	};
 	WSGRepExalted5059 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19596, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
@@ -956,6 +984,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 19580, "INV_Bracer_06", "=q4=Berserker Bracers", "=ds=#s8#, #a4#" },
 	};
 	WSGRepExalted60 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b3#" },
 		{ 0, "", "", "" },
 		{ 19595, "INV_Bracer_13", "=q4=Dryad's Wrist Bindings", "=ds=#s8#, #a1#" },
@@ -1049,6 +1078,7 @@ AtlasLoot_Data["AtlasLootGeneralPvPItems"] = {
 		{ 23469, "INV_Misc_Book_14", "=q4=High Warlord's Tome of Mending", "=ds=#s15#" },
 	};
 	PvP60Accessories1 = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=Rank 2" },
 		{ 0,"","","" },
 		{ 18862, "INV_Jewelry_TrinketPVP_01", "=q3=Insignia of the Alliance", "=ds=#s14# =q9=#c5#" },
@@ -1411,6 +1441,7 @@ AtlasLoot_Data["AtlasLootGeneralPvPItems"] = {
 		{ 23275, "INV_Boots_Plate_03", "=q3=Knight-Lieutenant's Lamellar Sabatons", "=ds=#s12#, #a4# =q7=Rank 7" },
 	};
 	PvPMountsPvP = {
+		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=Rank 11" },
 		{ 0, "", "", "" },
 		{ 19030, "Ability_Mount_MountainRam", "=q4=Stormpike Battle Charger", "=ds=#e7#" },

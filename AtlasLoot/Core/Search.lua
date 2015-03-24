@@ -38,7 +38,7 @@ function AtlasLoot:Search(Text)
 						if quality then itemName = "=q"..quality.."="..itemName end
 						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], itemName, v[4], dataID.."|"..dataSource });
 					end
-				--[[elseif (v[1] ~= nil) and (v[1] ~= "") and (string.sub(v[1], 1, 1) == "s") then 
+				elseif (v[1] ~= nil) and (v[1] ~= "") and (string.sub(v[1], 1, 1) == "s") then 
 					local spellName = GetSpellInfo(string.sub(v[1], 2));
 					if not spellName then
 						if (string.sub(v[3], 1, 2) == "=d") then  
@@ -56,7 +56,7 @@ function AtlasLoot:Search(Text)
 					if found then
 						spellName = string.sub(v[3], 1, 4)..spellName;
 						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], spellName, v[4], dataID.."|"..dataSource });
-					end]]
+					end
 				end
 			end
 		end

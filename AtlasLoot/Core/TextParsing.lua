@@ -94,6 +94,12 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#c8#", AL["Warlock"]); -- =q11=#c8#
     text = gsub(text, "#c9#", AL["Warrior"]); -- =q17=#c9#
 
+    --Skill
+    text = gsub(text, "#sk1#", AL["Apprentice"]);
+    text = gsub(text, "#sk2#", AL["Journeyman"]);
+    text = gsub(text, "#sk3#", AL["Expert"]);
+    text = gsub(text, "#sk4#", AL["Artisan"]);
+	
     --Professions
     text = gsub(text, "#p1#", AL["Alchemy"]);
     text = gsub(text, "#p2#", AL["Blacksmithing"]);
@@ -299,6 +305,24 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#j17#", AL["Earth"]);
     text = gsub(text, "#j18#", AL["Air"]);
 
+    -- Blacksmithing Crafted Sets
+    text = gsub(text, "#craftbp1#", AL["Imperial Plate"]);
+    text = gsub(text, "#craftbp2#", AL["The Darksoul"]);
+    text = gsub(text, "#craftbm1#", AL["Bloodsoul Embrace"]);
+
+    -- Tailoring Crafted Sets
+    text = gsub(text, "#craftt1#", AL["Bloodvine Garb"]);
+
+    -- Leatherworking Crafted Sets
+    text = gsub(text, "#craftlwl1#", AL["Volcanic Armor"]);
+    text = gsub(text, "#craftlwl2#", AL["Ironfeather Armor"]);
+    text = gsub(text, "#craftlwl3#", AL["Stormshroud Armor"]);
+    text = gsub(text, "#craftlwl4#", AL["Devilsaur Armor"]);
+    text = gsub(text, "#craftlwl5#", AL["Blood Tiger Harness"]);
+    text = gsub(text, "#craftlwl6#", AL["Primal Batskin"]);
+    text = gsub(text, "#craftlwm1#", AL["Green Dragon Mail"]);
+    text = gsub(text, "#craftlwm2#", AL["Blue Dragon Mail"]);
+    text = gsub(text, "#craftlwm3#", AL["Black Dragon Mail"]);
     
 	-- Chests, boxes
     text = gsub(text, "#cb1#", AL["Doan's Strongbox"]);
@@ -497,6 +521,18 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#pvpra8#", AL["Lieutenant Commander's Battlearmor"]);
     text = gsub(text, "#pvpra9#", AL["Lieutenant Commander's Stormcaller"]);
     
+    --Rogue
+    text = gsub(text, "#rp1#", AL["Poisons"]);
+    text = gsub(text, "#rp2#", AL["Reagent"]);
+    
+    --Crafting
+    text = gsub(text, "#sr#", AL["Skill:"]);
+    text = gsub(text, "#lr#", AL["Level:"]);
+    text = gsub(text, "=so1=", "|cffff7f3f"); --orange skill
+    text = gsub(text, "=so2=", "|cffffff00"); --yellow skill
+    text = gsub(text, "=so3=", "|cff3fbf3f"); --green skill
+    text = gsub(text, "=so4=", "|cff7f7f7f"); --gray skill
+	
     --Misc PvP Set Text
     text = gsub(text, "#pvps1#", AL["Epic Set"]);
     text = gsub(text, "#pvps2#", AL["Rare Set"]);
