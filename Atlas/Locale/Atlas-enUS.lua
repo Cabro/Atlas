@@ -109,6 +109,9 @@ ATLAS_DDL_TYPE_ENTRANCE = GREN.."Entrances";
 ATLAS_DDL_BGS = GREN.."Battlegrounds";
 ATLAS_DDL_DUNGEON_LOCATIONS = GREN.."Dungeon Locations";
 ATLAS_DDL_FLIGHT_PATHS = GREN.."Flight Path Maps";
+ATLAS_DDL_LEVELING_GUIDE = "Leveling Guide";
+ATLAS_DDL_LEVELING_GUIDE_ALLIANCE = "Alliance Leveling Guide";
+ATLAS_DDL_LEVELING_GUIDE_HORDE = "Horde Leveling Guide";
 
 ATLAS_INSTANCE_BUTTON = "Instance";
 ATLAS_ENTRANCE_BUTTON = "Entrance";
@@ -165,6 +168,8 @@ AtlasLocale = {
 	["Ghost"] = "Ghost";
 	["Hallow's End"] = "Hallow's End";
 	["Heroic"] = "Heroic";
+	["Horde Leveling Guide"] = "Horde Leveling Guide";
+	["Alliance Leveling Guide"] = "Alliance Leveling Guide";
 	["Holy Paladin"] = "Holy Paladin";
 	["Holy Priest"] = "Holy Priest";
 	["Horde"] = "Horde";
@@ -1334,6 +1339,14 @@ AtlasLocale = {
 	["Wetlands"] = "Wetlands";
 	["Winterspring"] = "Winterspring";
 	["Zoram'gar Outpost"] = "Zoram'gar Outpost";
+	["Tauren Leveling Guide"] = "Tauren Leveling Guide";
+	["Undead Leveling Guide"] = "Undead Leveling Guide";
+	["Troll/Orc Leveling Guide"] = "Troll/Orc Leveling Guide"; 
+	["Horde Leveling Guide"] = "Horde Leveling Guide";
+	["Human Leveling Guide"] = "Human Leveling Guide";
+	["Night Elf Leveling Guide"] = "Night Elf Leveling Guide";
+	["Gnome/Dwarf Leveling Guide"] = "Gnome/Dwarf Leveling Guide"; 
+	["Alliance Leveling Guide"] = "Alliance Leveling Guide";
 };
 
 end

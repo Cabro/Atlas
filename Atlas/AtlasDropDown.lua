@@ -27,6 +27,7 @@ Atlas_DropDownLayouts_Order = {
 	[2] = ATLAS_DDL_PARTYSIZE;
 	[3] = ATLAS_DDL_TYPE;
 	[4] = ATLAS_DDL_ALL;
+	[5] = ATLAS_DDL_LEVELING_GUIDE;
 	[ATLAS_DDL_CONTINENT] = {
 		[1] = ATLAS_DDL_CONTINENT_EASTERN;
 		[2] = ATLAS_DDL_CONTINENT_KALIMDOR;
@@ -63,6 +64,17 @@ Atlas_DropDownLayouts_Order = {
 		[4] = ATLAS_DDL_BGS;
 		[5] = ATLAS_DDL_DUNGEON_LOCATIONS;
 		[6] = ATLAS_DDL_FLIGHT_PATHS;
+	};
+	[ATLAS_DDL_LEVELING_GUIDE] = {
+		[1] = ATLAS_DDL_LEVELING_GUIDE_ALLIANCE;
+		[2] = ATLAS_DDL_LEVELING_GUIDE_HORDE;
+		[3] = ATLAS_DDL_TYPE_DUNGEONS;
+		[4] = ATLAS_DDL_TYPE_RAIDS;
+		[5] = ATLAS_DDL_WORLDBOSSES;
+		[6] = ATLAS_DDL_TYPE_ENTRANCE;
+		[7] = ATLAS_DDL_BGS;
+		[8] = ATLAS_DDL_DUNGEON_LOCATIONS;
+		[9] = ATLAS_DDL_FLIGHT_PATHS;
 	};
 };
 
@@ -274,6 +286,91 @@ Atlas_DropDownLayouts = {
 			"AlteracValleySouth",
 			"ArathiBasin",
 			"WarsongGulch",
+		},
+		[ATLAS_DDL_DUNGEON_LOCATIONS] = {
+			"DLEast",
+			"DLWest",
+		},
+		[ATLAS_DDL_FLIGHT_PATHS] = {
+			"FPAllianceEast",
+			"FPAllianceWest",
+			"FPHordeEast",
+			"FPHordeWest",
+		},
+	},
+	[ATLAS_DDL_LEVELING_GUIDE] = {
+		[ATLAS_DDL_TYPE_DUNGEONS] = {
+			"BlackfathomDeeps",
+			"BlackrockDepths",
+			"BlackrockSpireLower",
+			"DireMaulEast",
+			"DireMaulNorth",
+			"DireMaulWest",
+			"Gnomeregan",
+			"Maraudon",
+			"TheDeadmines",
+			"RagefireChasm",
+			"RazorfenDowns",
+			"RazorfenKraul",
+			"Scholomance",
+			"ShadowfangKeep",
+			"SMArmory",
+			"SMCathedral",
+			"SMGraveyard",
+			"SMLibrary",
+			"Stratholme",
+			"TheStockade",
+			"TheSunkenTemple",
+			"Uldaman",
+			"WailingCaverns",
+			"ZulFarrak",
+		},
+		[ATLAS_DDL_TYPE_RAIDS] = {
+			"BlackwingLair",
+			"BlackrockSpireLower",
+			"BlackrockSpireUpper",
+			"MoltenCore",
+			"Naxxramas",
+			"OnyxiasLair",
+			"TheRuinsofAhnQiraj",
+			"TheTempleofAhnQiraj",
+			"ZulGurub",
+		},
+		[ATLAS_DDL_WORLDBOSSES] = {
+			"Azuregos",
+			"FourDragons",
+			"LordKazzak",
+		},
+		[ATLAS_DDL_TYPE_ENTRANCE] = {
+			"BlackfathomDeepsEnt",
+			"BlackrockMountainEnt",
+			"DireMaulEnt",
+			"GnomereganEnt",
+			"MaraudonEnt",
+			"SMEnt",
+			"TheDeadminesEnt",
+			"TheSunkenTempleEnt",
+			"UldamanEnt",
+			"WailingCavernsEnt",
+		},
+		[ATLAS_DDL_BGS] = {
+			"AlteracValleyNorth",
+			"AlteracValleySouth",
+			"ArathiBasin",
+			"WarsongGulch",
+		},
+		[ATLAS_DDL_LEVELING_GUIDE_ALLIANCE] = {
+			"AlteracValleyNorth",
+			"AlteracValleySouth",
+		},
+		[ATLAS_DDL_LEVELING_GUIDE_HORDE] = {
+			"TaurenLeveling1",
+			"TaurenLeveling2",
+			"TaurenLeveling3",
+			"UndeadLeveling1",
+			"UndeadLeveling2",
+			"UndeadLeveling3",
+			"TrollOrcLeveling1",
 		},
 		[ATLAS_DDL_DUNGEON_LOCATIONS] = {
 			"DLEast",

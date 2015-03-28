@@ -724,7 +724,7 @@ AtlasLoot_TableNames = {
 	--FirstAid
 	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
 	--Poisons
-	["Poisons1"] = { AL["Poisons"], "AtlasLootCrafting" },
+	["Poisons1"] = { AL["Rogue"].." "..AL["Poisons"], "AtlasLootCrafting" },
 	
 -----------
 --- PvP ---
@@ -1601,7 +1601,7 @@ AtlasLoot_TableNamesBoss = {
 	--FirstAid
 	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
 	--Poisons
-	["Poisons1"] = { AL["Poisons"], "AtlasLootCrafting" },
+	["Poisons1"] = { AL["Rogue"].." "..AL["Poisons"], "AtlasLootCrafting" },
 	},
 	
 -----------

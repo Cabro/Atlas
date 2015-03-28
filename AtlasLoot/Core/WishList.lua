@@ -47,7 +47,7 @@ function AtlasLoot_AddToWishlist(itemID, itemTexture, itemName, lootPage, source
 		end
 	end
 	table.insert(AtlasLootCharDB["WishList"], { itemID, itemTexture, itemName, lootPage, sourcePage });
-	DEFAULT_CHAT_FRAME:AddMessage(RED..AL["AtlasLoot"]..": "..AtlasLoot_FixText(itemName)..GREY..AL[" added to the WishList."]);
+	DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..AtlasLoot_FixText(itemName)..GREY..AL[" added to the WishList."]);
 	AtlasLoot_WishList = AtlasLoot_CategorizeWishList(AtlasLootCharDB["WishList"]);
 end
 

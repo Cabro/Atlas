@@ -1,4 +1,4 @@
-## Interface: 20400
+## Interface: 11200
 ## Title: Atlas
 ## Title-zhTW: |r|cFF0099FF[地圖]|rAtlas 副本地圖
 ## Notes: Instance Map Browser

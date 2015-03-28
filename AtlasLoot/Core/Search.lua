@@ -39,7 +39,26 @@ function AtlasLoot:Search(Text)
 						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], itemName, v[4], dataID.."|"..dataSource });
 					end
 				elseif (v[1] ~= nil) and (v[1] ~= "") and (string.sub(v[1], 1, 1) == "s") then 
-					local spellName = GetSpellInfo(string.sub(v[1], 2));
+					local spellName = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(v[1], 2))]["name"];
+					if not spellName then
+						if (string.sub(v[3], 1, 2) == "=d") then  
+							spellName = gsub(v[3], "=ds=", "");
+						else
+							spellName = gsub(v[3], "=q%d=", ""); 
+						end
+					end
+					local found;
+					if partial then
+						found = string.find(string.lower(spellName), text);
+					else
+						found = string.lower(spellName) == text;
+					end
+					if found then
+						spellName = string.sub(v[3], 1, 4)..spellName;
+						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], spellName, v[4], dataID.."|"..dataSource });
+					end
+				elseif (v[1] ~= nil) and (v[1] ~= "") and (string.sub(v[1], 1, 1) == "e") then 
+					local spellName = GetSpellInfoVanillaDB["enchants"][tonumber(string.sub(v[1], 2))]["name"];
 					if not spellName then
 						if (string.sub(v[3], 1, 2) == "=d") then  
 							spellName = gsub(v[3], "=ds=", "");

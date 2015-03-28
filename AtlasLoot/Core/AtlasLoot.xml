@@ -18,7 +18,7 @@
 		</Size>
 	</Button>
 
-	<Frame name="AtlasLootDefaultFrame" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent" enableKeyboard="true">
+	<Frame name="AtlasLootDefaultFrame" toplevel="true" frameStrata="MEDIUM" movable="true" enableMouse="true" hidden="true" parent="UIParent" enableKeyboard="true">
 		<Size>
 			<AbsDimension x="600" y="690"/>
 		</Size>
@@ -574,6 +574,8 @@
 	</Frame>
 
 	<GameTooltip name="AtlasLootTooltip" inherits="GameTooltipTemplate" parent="UIParent" hidden="true"/>
+	
+	<GameTooltip name="AtlasLootTooltip2" inherits="GameTooltipTemplate" parent="UIParent" hidden="true"/>
 
 	<Button name="AtlasLootBossLineTemplate" virtual="true" hidden="true">
 		<Size>
@@ -581,7 +583,7 @@
 		</Size>
 		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"/>
 		<Layers>
-			<Layer level="OVERLAY">
+			<Layer level="PARENT">
 				<FontString name="$parent_Text" inherits="GameFontNormal" justifyH="LEFT">
 					<Size>
 						<AbsDimension x="240" y="15"/>
@@ -621,7 +623,7 @@
 		</Size>
 		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"/>
 		<Layers>
-			<Layer level="OVERLAY">
+			<Layer level="PARENT">
 				<FontString name="$parent_Text" inherits="GameFontNormal" justifyH="LEFT">
 					<Size>
 						<AbsDimension x="320" y="15"/>
@@ -664,52 +666,20 @@
 		</Scripts>
 	</Button>
 
-	<Button name="AtlasLootNextButtonTemplate" virtual="true" hidden="true" frameStrata="HIGH">
+	<Button name="AtlasLootNextButtonTemplate" virtual="true" hidden="true" frameStrata="MEDIUM">
 		<Size>
 			<AbsDimension x="32" y="32" />
 		</Size>
-		<Layers>
-			<Layer level="BACKGROUND">
-				<Texture file="Interface\Buttons\UI-PageButton-Background">
-					<Size>
-						<AbsDimension x="32" y="32"/>
-					</Size>
-					<Anchors>
-						<Anchor point="CENTER">
-							<Offset>
-								<AbsDimension x="0" y="1"/>
-							</Offset>
-						</Anchor>
-					</Anchors>
-				</Texture>
-			</Layer>
-		</Layers>
 		<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up"/>
 		<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Down"/>
 		<DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Disabled"/>
 		<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
 	</Button>
 
-	<Button name="AtlasLootPrevButtonTemplate" virtual="true" hidden="true" frameStrata="HIGH">
+	<Button name="AtlasLootPrevButtonTemplate" virtual="true" hidden="true" frameStrata="MEDIUM">
 		<Size>
 			<AbsDimension x="32" y="32" />
 		</Size>
-		<Layers>
-			<Layer level="BACKGROUND">
-				<Texture file="Interface\Buttons\UI-PageButton-Background">
-					<Size>
-						<AbsDimension x="32" y="32"/>
-					</Size>
-					<Anchors>
-						<Anchor point="CENTER">
-							<Offset>
-								<AbsDimension x="0" y="1"/>
-							</Offset>
-						</Anchor>
-					</Anchors>
-				</Texture>
-			</Layer>
-		</Layers>
 		<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Up"/>
 		<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down"/>
 		<DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Disabled"/>
@@ -752,6 +722,21 @@
 						</Anchor>
 					</Anchors>
 				</Texture>
+				<FontString name="$parent_Quantity" font="Fonts\ARIALN.TTF" outline="NORMAL" justifyH="RIGHT" hidden="false">
+					<Size>
+						<AbsDimension x="25" y="0"/>
+					</Size>
+					<FontHeight>
+						<AbsValue val="12"/>
+					</FontHeight>
+					<Anchors>
+						<Anchor point="BOTTOMRIGHT" relativeTo="$parent_Icon" relativePoint="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="0" y="1"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
 				<FontString name="$parent_Name" inherits="GameFontNormal" justifyH="LEFT">
 					<Size>
 						<AbsDimension x="205" y="12"/>

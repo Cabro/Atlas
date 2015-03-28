@@ -561,25 +561,25 @@ function AtlasLoot_CookingMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_2_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Cooking"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Misc_Food_15");
 	AtlasLootMenuItem_2.lootpage = "CookingApprentice1";
 	AtlasLootMenuItem_2:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Cooking"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Misc_Food_15");
 	AtlasLootMenuItem_3.lootpage = "CookingJourneyman1";
 	AtlasLootMenuItem_3:Show();
 	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Cooking"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Misc_Food_15");
 	AtlasLootMenuItem_4.lootpage="CookingExpert1";
 	AtlasLootMenuItem_4:Show();
 	--Artisan
-	AtlasLootMenuItem_5_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Cooking"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Misc_Food_15");
 	AtlasLootMenuItem_5.lootpage="CookingArtisan1";
