@@ -1224,27 +1224,27 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Title = AL["Blacksmithing"]..": "..AL["Artisan"];
 	};
 	["Armorsmith1"] = {
-		Title = AL["Armorsmith"];
+		Title = AL["Blacksmithing"]..": "..AL["Armorsmith"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
 	};
 	["Weaponsmith1"] = {
-		Title = AL["Weaponsmith"];
+		Title = AL["Blacksmithing"]..": "..AL["Weaponsmith"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
 	};
 	["Axesmith1"] = {
-		Title = AL["Master Axesmith"];
+		Title = AL["Blacksmithing"]..": "..AL["Master Axesmith"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
 	};
 	["Hammersmith1"] = {
-		Title = AL["Master Hammersmith"];
+		Title = AL["Blacksmithing"]..": "..AL["Master Hammersmith"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
 	};
 	["Swordsmith1"] = {
-		Title = AL["Master Swordsmith"];
+		Title = AL["Blacksmithing"]..": "..AL["Master Swordsmith"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
 	};
@@ -1367,12 +1367,12 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Title = AL["Engineering"]..": "..AL["Artisan"];
 	};
 	["Gnomish1"] = {
-		Title = AL["Gnomish Engineering"];
+		Title = AL["Engineering"]..": "..AL["Gnomish Engineering"];
 		Back_Page = "ENGINEERINGMENU";
 		Back_Title = AL["Engineering"];
 	};
 	["Goblin1"] = {
-		Title = AL["Goblin Engineering"];
+		Title = AL["Engineering"]..": "..AL["Goblin Engineering"];
 		Back_Page = "ENGINEERINGMENU";
 		Back_Title = AL["Engineering"];
 	};
@@ -1463,17 +1463,17 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Title = AL["Leatherworking"]..": "..AL["Artisan"];
 	};
 	["Dragonscale1"] = {
-		Title = AL["Dragonscale Leatherworking"];
+		Title = AL["Leatherworking"]..": "..AL["Dragonscale Leatherworking"];
 		Back_Page = "LEATHERWORKINGMENU";
 		Back_Title = AL["Leatherworking"];
 	};
 	["Elemental1"] = {
-		Title = AL["Elemental Leatherworking"];
+		Title = AL["Leatherworking"]..": "..AL["Elemental Leatherworking"];
 		Back_Page = "LEATHERWORKINGMENU";
 		Back_Title = AL["Leatherworking"];
 	};
 	["Tribal1"] = {
-		Title = AL["Tribal Leatherworking"];
+		Title = AL["Leatherworking"]..": "..AL["Tribal Leatherworking"];
 		Back_Page = "LEATHERWORKINGMENU";
 		Back_Title = AL["Leatherworking"];
 	};

@@ -237,25 +237,25 @@ function AtlasLoot_AlchemyMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_2_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Alchemy"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\Trade_Alchemy");
 	AtlasLootMenuItem_2.lootpage = "AlchemyApprentice1";
 	AtlasLootMenuItem_2:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Alchemy"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\Trade_Alchemy");
 	AtlasLootMenuItem_3.lootpage = "AlchemyJourneyman1";
 	AtlasLootMenuItem_3:Show();
 	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Alchemy"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\Trade_Alchemy");
 	AtlasLootMenuItem_4.lootpage="AlchemyExpert1";
 	AtlasLootMenuItem_4:Show();
 	--Artisan
-	AtlasLootMenuItem_5_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Alchemy"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\Trade_Alchemy");
 	AtlasLootMenuItem_5.lootpage="AlchemyArtisan1";
@@ -281,55 +281,55 @@ function AtlasLoot_SmithingMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_1_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_1_Name:SetText(AL["Blacksmithing"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_1_Extra:SetText("");
 	AtlasLootMenuItem_1_Icon:SetTexture("Interface\\Icons\\Trade_BlackSmithing");
 	AtlasLootMenuItem_1.lootpage = "SmithingApprentice1";
 	AtlasLootMenuItem_1:Show();
 	--Expert
-	AtlasLootMenuItem_2_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Blacksmithing"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\Trade_BlackSmithing");
 	AtlasLootMenuItem_2.lootpage="SmithingExpert1";
 	AtlasLootMenuItem_2:Show();
 	--Armorsmith
-	AtlasLootMenuItem_5_Name:SetText(AL["Armorsmith"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Blacksmithing"]..": "..AL["Armorsmith"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Chest_Plate04");
 	AtlasLootMenuItem_5.lootpage="Armorsmith1";
 	AtlasLootMenuItem_5:Show();
 	--Master Axesmith
-	AtlasLootMenuItem_6_Name:SetText(AL["Master Axesmith"]);
+	AtlasLootMenuItem_6_Name:SetText(AL["Blacksmithing"]..": "..AL["Master Axesmith"]);
 	AtlasLootMenuItem_6_Extra:SetText("");
 	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\INV_Axe_05");
 	AtlasLootMenuItem_6.lootpage="Axesmith1";
 	AtlasLootMenuItem_6:Show();
 	--Master Swordsmith
-	AtlasLootMenuItem_7_Name:SetText(AL["Master Swordsmith"]);
+	AtlasLootMenuItem_7_Name:SetText(AL["Blacksmithing"]..": "..AL["Master Swordsmith"]);
 	AtlasLootMenuItem_7_Extra:SetText("");
 	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Sword_41");
 	AtlasLootMenuItem_7.lootpage="Swordsmith1";
 	AtlasLootMenuItem_7:Show();
 	--Journeyman
-	AtlasLootMenuItem_16_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_16_Name:SetText(AL["Blacksmithing"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_16_Extra:SetText("");
 	AtlasLootMenuItem_16_Icon:SetTexture("Interface\\Icons\\Trade_BlackSmithing");
 	AtlasLootMenuItem_16.lootpage = "SmithingJourneyman1";
 	AtlasLootMenuItem_16:Show();
 	--Artisan
-	AtlasLootMenuItem_17_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_17_Name:SetText(AL["Blacksmithing"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_17_Extra:SetText("");
 	AtlasLootMenuItem_17_Icon:SetTexture("Interface\\Icons\\Trade_BlackSmithing");
 	AtlasLootMenuItem_17.lootpage="SmithingArtisan1";
 	AtlasLootMenuItem_17:Show();
 	--Weaponsmith
-	AtlasLootMenuItem_20_Name:SetText(AL["Weaponsmith"]);
+	AtlasLootMenuItem_20_Name:SetText(AL["Blacksmithing"]..": "..AL["Weaponsmith"]);
 	AtlasLootMenuItem_20_Extra:SetText("");
 	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\INV_Sword_25");
 	AtlasLootMenuItem_20.lootpage="Weaponsmith1";
 	AtlasLootMenuItem_20:Show();
 	--Master Hammersmith
-	AtlasLootMenuItem_21_Name:SetText(AL["Master Hammersmith"]);
+	AtlasLootMenuItem_21_Name:SetText(AL["Blacksmithing"]..": "..AL["Master Hammersmith"]);
 	AtlasLootMenuItem_21_Extra:SetText("");
 	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Hammer_23");
 	AtlasLootMenuItem_21.lootpage="Hammersmith1";
@@ -355,25 +355,25 @@ function AtlasLoot_EnchantingMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_2_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Enchanting"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_2.lootpage = "EnchantingApprentice1";
 	AtlasLootMenuItem_2:Show();
 	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Enchanting"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_4.lootpage="EnchantingExpert1";
 	AtlasLootMenuItem_4:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Enchanting"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_3.lootpage = "EnchantingJourneyman1";
 	AtlasLootMenuItem_3:Show();
 	--Artisan
-	AtlasLootMenuItem_5_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Enchanting"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_5.lootpage="EnchantingArtisan1";
@@ -399,37 +399,37 @@ function AtlasLoot_EngineeringMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_2_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Engineering"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\Trade_Engineering");
 	AtlasLootMenuItem_2.lootpage = "EngineeringApprentice1";
 	AtlasLootMenuItem_2:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Engineering"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\Trade_Engineering");
 	AtlasLootMenuItem_3.lootpage = "EngineeringJourneyman1";
 	AtlasLootMenuItem_3:Show();
 	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Engineering"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\Trade_Engineering");
 	AtlasLootMenuItem_4.lootpage="EngineeringExpert1";
 	AtlasLootMenuItem_4:Show();
 	--Artisan
-	AtlasLootMenuItem_5_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Engineering"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\Trade_Engineering");
 	AtlasLootMenuItem_5.lootpage="EngineeringArtisan1";
 	AtlasLootMenuItem_5:Show();
 	--Gnomish Engineering
-	AtlasLootMenuItem_7_Name:SetText(AL["Gnomish Engineering"]);
+	AtlasLootMenuItem_7_Name:SetText(AL["Engineering"]..": "..AL["Gnomish Engineering"]);
 	AtlasLootMenuItem_7_Extra:SetText("");
 	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\Trade_Engineering");
 	AtlasLootMenuItem_7.lootpage="Gnomish1";
 	AtlasLootMenuItem_7:Show();
 	--Goblin Engineering
-	AtlasLootMenuItem_22_Name:SetText(AL["Gnomish Engineering"]);
+	AtlasLootMenuItem_22_Name:SetText(AL["Engineering"]..": "..AL["Gnomish Engineering"]);
 	AtlasLootMenuItem_22_Extra:SetText("");
 	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\Trade_Engineering");
 	AtlasLootMenuItem_22.lootpage="Goblin1";
@@ -455,43 +455,43 @@ function AtlasLoot_LeatherworkingMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_2_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Leatherworking"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_2.lootpage = "LeatherApprentice1";
 	AtlasLootMenuItem_2:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Leatherworking"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_3.lootpage = "LeatherJourneyman1";
 	AtlasLootMenuItem_3:Show();
 	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Leatherworking"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_4.lootpage="LeatherExpert1";
 	AtlasLootMenuItem_4:Show();
 	--Artisan
-	AtlasLootMenuItem_5_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Leatherworking"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_5.lootpage="LeatherArtisan1";
 	AtlasLootMenuItem_5:Show();
 	--Dragonscale Leatherworking
-	AtlasLootMenuItem_7_Name:SetText(AL["Dragonscale Leatherworking"]);
+	AtlasLootMenuItem_7_Name:SetText(AL["Leatherworking"]..": "..AL["Dragonscale Leatherworking"]);
 	AtlasLootMenuItem_7_Extra:SetText("");
 	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Misc_MonsterScales_03");
 	AtlasLootMenuItem_7.lootpage="Dragonscale1";
 	AtlasLootMenuItem_7:Show();
 	--Tribal Leatherworking
-	AtlasLootMenuItem_8_Name:SetText(AL["Tribal Leatherworking"]);
+	AtlasLootMenuItem_8_Name:SetText(AL["Leatherworking"]..": "..AL["Tribal Leatherworking"]);
 	AtlasLootMenuItem_8_Extra:SetText("");
 	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\Spell_Nature_NullWard");
 	AtlasLootMenuItem_8.lootpage="Tribal1";
 	AtlasLootMenuItem_8:Show();
 	--Elemental Leatherworking
-	AtlasLootMenuItem_22_Name:SetText(AL["Elemental Leatherworking"]);
+	AtlasLootMenuItem_22_Name:SetText(AL["Leatherworking"]..": "..AL["Elemental Leatherworking"]);
 	AtlasLootMenuItem_22_Extra:SetText("");
 	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\Spell_Fire_Volcano");
 	AtlasLootMenuItem_22.lootpage="Elemental1";
@@ -517,25 +517,25 @@ function AtlasLoot_TailoringMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Apprentice
-	AtlasLootMenuItem_2_Name:SetText(AL["Apprentice"]);
+	AtlasLootMenuItem_2_Name:SetText(AL["Tailoring"]..": "..AL["Apprentice"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_2.lootpage = "TailoringApprentice1";
 	AtlasLootMenuItem_2:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Journeyman"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Tailoring"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_3.lootpage = "TailoringJourneyman1";
 	AtlasLootMenuItem_3:Show();
 	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Expert"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Tailoring"]..": "..AL["Expert"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
 	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_4.lootpage="TailoringExpert1";
 	AtlasLootMenuItem_4:Show();
 	--Artisan
-	AtlasLootMenuItem_5_Name:SetText(AL["Artisan"]);
+	AtlasLootMenuItem_5_Name:SetText(AL["Tailoring"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Misc_ArmorKit_17");
 	AtlasLootMenuItem_5.lootpage="TailoringArtisan1";

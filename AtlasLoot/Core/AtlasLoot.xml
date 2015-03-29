@@ -1515,7 +1515,7 @@
 				<Scripts>
 					<OnLoad>
 						local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
-						getglobal(this:GetName().."Text"):SetText(AL["Show itemIDs at all times"]);
+						getglobal(this:GetName().."Text"):SetText(AL["Show IDs at all times"]);
 					</OnLoad>
 					<OnClick>
 						AtlasLootOptions_ItemIDToggle();

@@ -581,6 +581,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	SmithingArtisan1 = {
+		{ "s21161", "inv_hammer_unique_sulfuras", "=q4=Sulfuron Hammer", "=ds=#sr# 300" },
 		--[[{ "s9920", 7966, "=q1=Solid Grinding Stone", "=ds=#sr# 200" },
 		{ "s9918", 7964, "=q1=Solid Sharpening Stone", "=ds=#sr# 200" },
 		{ "s9921", 7965, "=q1=Solid Weightstone", "=ds=#sr# 200" },
@@ -736,8 +737,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s16665", 12611, "=q2=Runic Plate Boots", "=ds=#sr# 300" },
 		{ "s16732", 12614, "=q2=Runic Plate Leggings", "=ds=#sr# 300" },
 		{ "s16664", 12610, "=q2=Runic Plate Shoulders", "=ds=#sr# 300" },
-		{ "s16662", 12414, "=q2=Thorium Leggings", "=ds=#sr# 300" },
-		{ "s21161", 17193, "=q4=Sulfuron Hammer", "=ds=#sr# 300" },]]
+		{ "s16662", 12414, "=q2=Thorium Leggings", "=ds=#sr# 300" },]]
 	};
 
 	Armorsmith1 = {

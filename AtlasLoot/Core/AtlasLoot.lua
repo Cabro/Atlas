@@ -2356,27 +2356,28 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	--[7] = {
-	--	[AL["Crafting"]] = {
-		--	[1] = { { AL["Alchemy"], "Alchemy", "Submenu" }, },
-			--[2] = { { (AL["Blacksmithing"]), "Blacksmithing", "Submenu" }, },
-			--[3] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
-			--[4] = { { (AL["Enchanting"]), "Enchanting", "Submenu" }, },
-			--[5] = { { (AL["Engineering"]), "Engineering", "Submenu" }, },
-			--[6] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
-			--[7] = { { (AL["Leatherworking"]), "Leatherworking", "Submenu" }, },
-			--[8] = { { (AL["Mining"]), "Mining1", "Table" }, },
-			--[9] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
-			--[10] = { 
-				--[AL["Crafted Sets"]] = {
-					--{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
-					--{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
-					--{ (AL["Tailoring"]), "CraftSetTailor", "Submenu" },
-				--}, 
-			--},
-			--[11] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
-		--},
-	--},
+	[7] = {
+		[AL["Crafting"]] = {
+			[1] = { { AL["Alchemy"], "Alchemy", "Submenu" }, },
+			[2] = { { (AL["Blacksmithing"]), "Blacksmithing", "Submenu" }, },
+			[3] = { { (AL["Enchanting"]), "Enchanting", "Submenu" }, },
+			[4] = { { (AL["Engineering"]), "Engineering", "Submenu" }, },
+			[5] = { { (AL["Leatherworking"]), "Leatherworking", "Submenu" }, },
+			[6] = { { (AL["Mining"]), "Mining1", "Table" }, },
+			[7] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
+			[8] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
+			[9] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
+			[10] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
+			[11] = { 
+				[AL["Crafted Sets"]] = {
+					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
+					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
+					{ (AL["Tailoring"]), "BloodvineG", "Table" },
+				}, 
+			},
+			[12] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
+		},
+	},
 };
 
 --This table defines all the subtables needed for the full menu
@@ -2813,15 +2814,7 @@ AtlasLoot_DewDropDown_SubTables = {
 	["CraftSetBlacksmith"] = {
 		{ AL["Imperial Plate"], "ImperialPlate" },
 		{ AL["The Darksoul"], "TheDarksoul" },
-		{ AL["Fel Iron Plate"], "FelIronPlate" },
-		{ AL["Adamantite Battlegear"], "AdamantiteB" },
-		{ AL["Flame Guard"], "FlameG" },
-		{ AL["Enchanted Adamantite Armor"], "EnchantedAdaman" },
-		{ AL["Khorium Ward"], "KhoriumWard" },
-		{ AL["Faith in Felsteel"], "FaithFelsteel" },
-		{ AL["Burning Rage"], "BurningRage" },
 		{ AL["Bloodsoul Embrace"], "BloodsoulEmbrace" },
-		{ AL["Fel Iron Chain"], "FelIronChain" },
 	},
 	["CraftSetLeatherwork"] = {
 		{ AL["Volcanic Armor"], "VolcanicArmor" },
@@ -2830,35 +2823,9 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Devilsaur Armor"], "DevilsaurArmor" },
 		{ AL["Blood Tiger Harness"], "BloodTigerH" },
 		{ AL["Primal Batskin"], "PrimalBatskin" },
-		{ AL["Wild Draenish Armor"], "WildDraenishA" },
-		{ AL["Thick Draenic Armor"], "ThickDraenicA" },
-		{ AL["Fel Skin"], "FelSkin" },
-		{ AL["Strength of the Clefthoof"], "SClefthoof" },
-		{ AL["Primal Intent"], "PrimalIntent" },
-		{ AL["Windhawk Armor"], "WindhawkArmor" },	
 		{ AL["Green Dragon Mail"], "GreenDragonM" },
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },
-		{ AL["Scaled Draenic Armor"], "ScaledDraenicA" },
-		{ AL["Felscale Armor"], "FelscaleArmor" },
-		{ AL["Felstalker Armor"], "FelstalkerArmor" },
-		{ AL["Fury of the Nether"], "NetherFury" },
-		{ AL["Netherscale Armor"], "NetherscaleArmor" },
-		{ AL["Netherstrike Armor"], "NetherstrikeArmor" },
-	},
-	["CraftSetTailor"] = {
-		{ AL["Bloodvine Garb"], "BloodvineG" },
-		{ AL["Netherweave Vestments"], "NeatherVest" },
-		{ AL["Imbued Netherweave"], "ImbuedNeather" },
-		{ AL["Arcanoweave Vestments"], "ArcanoVest" },
-		{ AL["The Unyielding"], "TheUnyielding" },
-		{ AL["Whitemend Wisdom"], "WhitemendWis" },
-		{ AL["Spellstrike Infusion"], "SpellstrikeInfu" },
-		{ AL["Battlecast Garb"], "BattlecastG" },
-		{ AL["Soulcloth Embrace"], "SoulclothEm" },
-		{ AL["Primal Mooncloth"], "PrimalMoon" },
-		{ AL["Shadow's Embrace"], "ShadowEmbrace" },
-		{ AL["Wrath of Spellfire"], "SpellfireWrath" },
 	},
 	["DungeonSets12"] = {
 		{ "|cffffffff"..AL["Priest"], "T0Priest" },
@@ -2986,7 +2953,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Honored Reputation Rewards"], "WSGRepHonored5059" },
 		{ AL["Friendly Reputation Rewards"], "WSGRepFriendly4049" },
 	},
-	--[[["Alchemy"] = {
+	["Alchemy"] = {
 		{ AtlasLoot_TableNames["AlchemyApprentice1"][1], "AlchemyApprentice1" },
 		{ AtlasLoot_TableNames["AlchemyJourneyman1"][1], "AlchemyJourneyman1" },
 		{ AtlasLoot_TableNames["AlchemyExpert1"][1], "AlchemyExpert1" },
@@ -3037,7 +3004,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AtlasLoot_TableNames["TailoringJourneyman1"][1], "TailoringJourneyman1" },
 		{ AtlasLoot_TableNames["TailoringExpert1"][1], "TailoringExpert1" },
 		{ AtlasLoot_TableNames["TailoringArtisan1"][1], "TailoringArtisan1" },
-	},]]
+	},
 };
 
 --------------------------------------------------------------------------------
@@ -3147,11 +3114,17 @@ function AtlasLootItem_OnEnter()
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 			AtlasLootTooltip:ClearLines();
 			AtlasLootTooltip:SetHyperlink("enchant:"..spellID);
+			if ( AtlasLootCharDB.ItemIDs ) then
+				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
+			end
 			AtlasLootTooltip:Show();
 			if GetSpellInfoVanillaDB["enchants"][spellID]["item"] and GetSpellInfoVanillaDB["enchants"][spellID]["item"] ~= nil and GetSpellInfoVanillaDB["enchants"][spellID]["item"] ~= "" then
 				AtlasLootTooltip2:SetOwner(AtlasLootTooltip, "ANCHOR_BOTTOMRIGHT", -(AtlasLootTooltip:GetWidth()), 0);
 				AtlasLootTooltip2:ClearLines();
 				AtlasLootTooltip2:SetHyperlink("item:"..GetSpellInfoVanillaDB["enchants"][spellID]["item"]..":0:0:0");
+				if ( AtlasLootCharDB.ItemIDs ) then
+					AtlasLootTooltip2:AddLine(BLUE..AL["ItemID:"].." "..GetSpellInfoVanillaDB["enchants"][spellID]["item"], nil, nil, nil, 1);
+				end
 				AtlasLootTooltip2:Show();
 			end
 		elseif isSpell then
@@ -3183,12 +3156,18 @@ function AtlasLootItem_OnEnter()
 			if GetSpellInfoVanillaDB["craftspells"][spellID]["text"] ~= "" then
 				AtlasLootTooltip:AddLine(GetSpellInfoVanillaDB["craftspells"][spellID]["text"], nil, nil, nil, 1);
 			end
+			if ( AtlasLootCharDB.ItemIDs ) then
+				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
+			end
 			AtlasLootTooltip:Show();
 			local craftitem2 = GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"]
 			if craftitem2 ~= nil and craftitem2 ~= "" then
 				AtlasLootTooltip2:SetOwner(AtlasLootTooltip, "ANCHOR_BOTTOMRIGHT", -(AtlasLootTooltip:GetWidth()), 0);
 				AtlasLootTooltip2:ClearLines();
 				AtlasLootTooltip2:SetHyperlink("item:"..GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"]..":0:0:0");
+				if ( AtlasLootCharDB.ItemIDs ) then
+					AtlasLootTooltip2:AddLine(BLUE..AL["ItemID:"].." "..GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"], nil, nil, nil, 1);
+				end
 				AtlasLootTooltip2:Show();
 			end
 		end
@@ -3261,12 +3240,24 @@ function AtlasLootItem_OnClick(arg1)
 			if not AtlasLootCharDB.ItemSpam then
 				DEFAULT_CHAT_FRAME:AddMessage(itemName..AL[" is safe."]);
 			end
-		elseif(IsShiftKeyDown() and not iteminfo and (AtlasLootCharDB.SafeLinks)) then
-			ChatFrameEditBox:Insert(name);
-		elseif(IsShiftKeyDown() and AtlasLootCharDB.AllLinks) then
+		elseif IsShiftKeyDown() and not iteminfo and this.itemID ~= 0 then
+			if AtlasLootCharDB.SafeLinks then
+				if ChatFrameEditBox:IsVisible() then
+					ChatFrameEditBox:Insert("["..name.."]");
+				else
+					AtlasLoot_SayItemReagents(this.itemID, nil, name, true)
+				end
+			elseif AtlasLootCharDB.AllLinks then
+				if ChatFrameEditBox:IsVisible() then
+					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID..":0:0:0:0:0\124h["..name.."]|h|r");
+				else
+					AtlasLoot_SayItemReagents(this.itemID, color, name)
+				end
+			end
+		elseif(ChatFrameEditBox:IsVisible() and iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
 			ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
-		elseif(ChatFrameEditBox:IsVisible() and IsShiftKeyDown()) then
-			ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+		elseif IsShiftKeyDown() and iteminfo and this.itemID ~= 0 then
+			AtlasLoot_SayItemReagents(this.itemID, color, name);
 		--If control-clicked, use the dressing room
 		elseif(IsControlKeyDown() and iteminfo) then
 			DressUpItemLink(itemLink);
@@ -3286,8 +3277,7 @@ function AtlasLootItem_OnClick(arg1)
 		end
 	elseif isEnchant then
 		if IsShiftKeyDown() then
-			spellID = string.sub(this.itemID, 2);
-			ChatFrameEditBox:Insert(color.."|Henchant:"..spellID..":0:0:0|h["..name.."]|h|r");
+			AtlasLoot_SayItemReagents(this.itemID)
 		elseif(IsAltKeyDown() and (this.itemID ~= 0)) then
 			if AtlasLootItemsFrame.refresh[1] == "WishList" then
 				AtlasLoot_DeleteFromWishList(this.itemID);
@@ -3306,8 +3296,17 @@ function AtlasLootItem_OnClick(arg1)
 		end
 	elseif isSpell then
 		if IsShiftKeyDown() then
-			spellID = string.sub(this.itemID, 2);
-			ChatFrameEditBox:Insert("need to fix this");
+			if ChatFrameEditBox:IsVisible() then
+				local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+				if craftitem ~= nil and craftitem ~= "" then
+					local craftname = GetItemInfo(craftitem)
+					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem..":0:0:0:0:0\124h["..craftname.."]|h|r");
+				else
+					ChatFrameEditBox:Insert(name);
+				end
+			else
+				AtlasLoot_SayItemReagents(this.itemID)
+			end
 		elseif(IsAltKeyDown() and (this.itemID ~= 0)) then
 			if AtlasLootItemsFrame.refresh[1] == "WishList" then
 				AtlasLoot_DeleteFromWishList(this.itemID);
@@ -3377,4 +3376,88 @@ function AtlasLoot_CheckBagsForItems(id, qty)
 	else
 		return RED..itemName.." ("..qty..")"
 	end
+end
+
+function AtlasLoot_SayItemReagents(id, color, name, safe)
+	if not id then return end
+	local channel, chatnumber = ChatFrameEditBox.chatType;
+	local chatline = "";
+	local itemCount = 0;
+	if channel == "WHISPER" then
+		chatnumber = ChatFrameEditBox.tellTarget
+	elseif channel == "CHANNEL" then
+		chatnumber = ChatFrameEditBox.channelTarget
+	end
+	if string.sub( id, 1, 1 ) == "s" then
+		local spellid = string.sub( id, 2 )
+		local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["craftItem"]
+		if craftitem ~= nil and craftitem ~= "" then
+			local craftnumber = "";
+			local qtyMin = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["craftQuantityMin"];
+			local qtyMax = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["craftQuantityMax"];
+			if qtyMin and qtyMin ~= "" then
+				if qtyMax and qtyMax ~= "" then
+					craftnumber = craftnumber..qtyMin.. "-"..qtyMax.."x"
+				else
+					craftnumber = craftnumber..qtyMin.."x"
+				end
+			end
+			SendChatMessage(AL["To craft "]..craftnumber..AtlasLoot_GetChatLink(craftitem)..AL[" the following reagents are needed:"],channel,nil,chatnumber);
+			for j = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"]) do
+				local tempnumber = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][2]
+				if not tempnumber or tempnumber == nil or tempnumber == "" then
+					tempnumber = 1;
+				end
+				chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
+				itemCount = itemCount + 1;
+				if itemCount == 4 then
+					SendChatMessage(string.sub(chatline, 1, -2), channel, nil, chatnumber);
+					chatline = "";
+					itemCount = 0;
+				end
+			end
+			if itemCount > 0 then
+				SendChatMessage(chatline, channel, nil, chatnumber);
+			end
+		else
+			SendChatMessage(AL["To cast "]..GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["name"]..AL[" the following items are needed:"],channel,nil,chatnumber);
+			for j = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"]) do
+				local tempnumber = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][2]
+				if not tempnumber or tempnumber == nil or tempnumber == "" then
+					tempnumber = 1;
+				end
+				chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
+				itemCount = itemCount + 1;
+				if itemCount == 4 then
+					SendChatMessage(string.sub(chatline, 1, -2), channel, nil, chatnumber);
+					chatline = "";
+					itemCount = 0;
+				end
+			end
+			if itemCount > 0 then
+				SendChatMessage(chatline, channel, nil, chatnumber);
+			end
+		end
+	elseif string.sub( id,1 ,1 ) == "e" then
+		local spellid = string.sub( id, 2 )
+		local name = GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["name"]
+		if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
+			SendChatMessage("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+		else
+			SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+		end
+	else
+		if safe then
+			SendChatMessage("["..name.."]", channel, nil, chatnumber);
+		else
+			SendChatMessage("\124"..string.sub(color, 2).."\124Hitem:"..id..":0:0:0:0:0:0:0:0\124h["..name.."]\124h\124r", channel, nil, chatnumber);
+		end
+	end
+end
+
+function AtlasLoot_GetChatLink(id)
+	local a, b, c = GetItemInfo(tonumber(id));
+	local _, _, _, d = GetItemQualityColor(c);
+	local e = string.sub(d, 2)
+	return "\124"..e.."\124H"..b..":0:0:0:0:0\124h["..a.."]\124h\124r"
 end
