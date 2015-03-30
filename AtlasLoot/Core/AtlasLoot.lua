@@ -1196,13 +1196,13 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 					quantityFrame:SetText("")
 				elseif isEnchant then
 					spellName = GetSpellInfoVanillaDB["enchants"][tonumber(string.sub(dataSource[dataID][i][1], 2))]["name"]
-					spellIcon = GetSpellInfoVanillaDB["enchants"][tonumber(string.sub(dataSource[dataID][i][1], 2))]["icon"]
+					spellIcon = dataSource[dataID][i][2]
 					text = AtlasLoot_FixText(string.sub(dataSource[dataID][i][3], 1, 4)..spellName)
 					quantityFrame = getglobal("AtlasLootItem_"..i.."_Quantity");
 					quantityFrame:SetText("")
 				elseif isSpell then
 					spellName = dataSource[dataID][i][3]
-					spellIcon = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(dataSource[dataID][i][1], 2))]["icon"]
+					spellIcon = dataSource[dataID][i][2]
 					text = AtlasLoot_FixText(spellName)
 					local qtyMin = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(dataSource[dataID][i][1], 2))]["craftQuantityMin"];
 					local qtyMax = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(dataSource[dataID][i][1], 2))]["craftQuantityMax"];
@@ -3277,7 +3277,11 @@ function AtlasLootItem_OnClick(arg1)
 		end
 	elseif isEnchant then
 		if IsShiftKeyDown() then
-			AtlasLoot_SayItemReagents(this.itemID)
+			--[[if ChatFrameEditBox:IsVisible() then
+				ChatFrameEditBox:Insert(color.."|Henchant:"..string.sub(this.itemID, 2)..":0:0:0|h["..name.."]|h|r");
+			else]]
+				AtlasLoot_SayItemReagents(this.itemID)
+			--end
 		elseif(IsAltKeyDown() and (this.itemID ~= 0)) then
 			if AtlasLootItemsFrame.refresh[1] == "WishList" then
 				AtlasLoot_DeleteFromWishList(this.itemID);
@@ -3354,7 +3358,9 @@ function AtlasLoot_CheckBagsForItems(id, qty)
 	if not id then DEFAULT_CHAT_FRAME:AddMessage("AtlasLoot_CheckBagsForItems: no ID specified!") return end
 	if not qty then qty = 1 end
 	local itemsfound = 0;
+	if not GetItemInfo then return RED..AL["Unknown"] end
 	local itemName = GetItemInfo(id);
+	if not itemName then itemName = AL["Uncached"] end
 	for i=0,NUM_BAG_FRAMES do
 		for j=1,GetContainerNumSlots(i) do
 			local itemLink = GetContainerItemLink(i, j)
@@ -3441,10 +3447,18 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 	elseif string.sub( id,1 ,1 ) == "e" then
 		local spellid = string.sub( id, 2 )
 		local name = GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["name"]
-		if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
-			SendChatMessage("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+		if ChatFrameEditBox:IsVisible() then
+			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
+				ChatFrameEditBox:Insert("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+			else
+				ChatFrameEditBox:Insert(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+			end
 		else
-			SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
+				SendChatMessage("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+			else
+				SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+			end
 		end
 	else
 		if safe then
