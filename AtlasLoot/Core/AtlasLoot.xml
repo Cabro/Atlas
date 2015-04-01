@@ -576,54 +576,14 @@
 	<GameTooltip name="AtlasLootTooltip" inherits="GameTooltipTemplate" parent="UIParent" hidden="true"/>
 	
 	<GameTooltip name="AtlasLootTooltip2" inherits="GameTooltipTemplate" parent="UIParent" hidden="true"/>
-
-	<Button name="AtlasLootBossLineTemplate" virtual="true" hidden="true">
-		<Size>
-			<AbsDimension x="256" y="15"/>
-		</Size>
-		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"/>
-		<Layers>
-			<Layer level="PARENT">
-				<FontString name="$parent_Text" inherits="GameFontNormal" justifyH="LEFT">
-					<Size>
-						<AbsDimension x="240" y="15"/>
-					</Size>
-					<Anchors>
-						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT"/>
-					</Anchors>
-				</FontString>
-				<Texture name="$parent_Loot" file="Interface\AddOns\AtlasLoot\Images\looticon" hidden="true">
-					<Size>
-						<AbsDimension x="16" y="16"/>
-					</Size>
-					<Anchors>
-						<Anchor point="CEMTER" relativeTo="$parent" relativePoint="CENTER"/>
-					</Anchors>
-				</Texture>
-				<Texture name="$parent_Selected" file="Interface\AddOns\AtlasLoot\Images\gold" hidden="true">
-					<Size>
-						<AbsDimension x="16" y="16"/>
-					</Size>
-					<Anchors>
-						<Anchor point="RIGHT" relativeTo="$parent" relativePoint="RIGHT"/>
-					</Anchors>
-				</Texture>
-			</Layer>
-		</Layers>
-		<Scripts>
-			<OnClick>
-				AtlasLootBoss_OnClick(this:GetName());
-			</OnClick>
-		</Scripts>
-	</Button>
-
+	
 	<Button name="AtlasLootNewBossLineTemplate" virtual="true" hidden="true">
 		<Size>
 			<AbsDimension x="336" y="15"/>
 		</Size>
 		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"/>
 		<Layers>
-			<Layer level="PARENT">
+			<Layer level="ARTWORK">
 				<FontString name="$parent_Text" inherits="GameFontNormal" justifyH="LEFT">
 					<Size>
 						<AbsDimension x="320" y="15"/>
@@ -651,9 +611,6 @@
 			</Layer>
 		</Layers>
 		<Scripts>
-			<!--<OnUpdate>
-				AtlasEntryTemplate_OnUpdate(self);
-			</OnUpdate>-->
 			<OnLeave>
 				GameTooltip:Hide();
 			</OnLeave>

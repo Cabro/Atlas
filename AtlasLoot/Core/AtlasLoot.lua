@@ -614,18 +614,23 @@ function AtlasLoot_AtlasScrollBar_Update()
 			if ( lineplusoffset <= ATLAS_CUR_LINES ) then
 				getglobal("AtlasBossLine"..line.."_Text"):SetText(ATLAS_SCROLL_LIST[lineplusoffset]);
 				if AtlasLootItemsFrame.activeBoss == lineplusoffset then
+					getglobal("AtlasBossLine"..line):Enable();
 					getglobal("AtlasBossLine"..line.."_Loot"):Hide();
 					getglobal("AtlasBossLine"..line.."_Selected"):Show();
 				elseif (AtlasLootBossButtons[zoneID]~=nil and AtlasLootBossButtons[zoneID][lineplusoffset] ~= nil and AtlasLootBossButtons[zoneID][lineplusoffset] ~= "") then
+					getglobal("AtlasBossLine"..line):Enable();
 					getglobal("AtlasBossLine"..line.."_Loot"):Show();
 					getglobal("AtlasBossLine"..line.."_Selected"):Hide();
 				elseif (AtlasLootWBBossButtons[zoneID]~=nil and AtlasLootWBBossButtons[zoneID][lineplusoffset] ~= nil and AtlasLootWBBossButtons[zoneID][lineplusoffset] ~= "") then
+					getglobal("AtlasBossLine"..line):Enable();
 					getglobal("AtlasBossLine"..line.."_Loot"):Show();
 					getglobal("AtlasBossLine"..line.."_Selected"):Hide();
 				elseif (AtlasLootBattlegrounds[zoneID]~=nil and AtlasLootBattlegrounds[zoneID][lineplusoffset] ~= nil and AtlasLootBattlegrounds[zoneID][lineplusoffset] ~= "") then
+					getglobal("AtlasBossLine"..line):Enable();
 					getglobal("AtlasBossLine"..line.."_Loot"):Show();
 					getglobal("AtlasBossLine"..line.."_Selected"):Hide();
 				else
+					getglobal("AtlasBossLine"..line):Disable();
 					getglobal("AtlasBossLine"..line.."_Loot"):Hide();
 					getglobal("AtlasBossLine"..line.."_Selected"):Hide();
 				end

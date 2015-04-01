@@ -1302,7 +1302,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8607] = {
-			["name"] = "Cooking: Roasted Kodo Meat",
+			["name"] = "Cooking: Smoked Bear Meat",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
