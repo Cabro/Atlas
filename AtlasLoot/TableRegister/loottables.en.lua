@@ -655,7 +655,6 @@ AtlasLoot_TableNames = {
 	["AlchemyExpert1"] = { AL["Alchemy"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["AlchemyArtisan1"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["AlchemyArtisan2"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
-	["AlchemyArtisan3"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--BlackSmithing
 	["SmithingApprentice1"] = { AL["Blacksmithing"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["SmithingJourneyman1"] = { AL["Blacksmithing"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -682,11 +681,11 @@ AtlasLoot_TableNames = {
 	--Engineering
 	["EngineeringApprentice1"] = { AL["Engineering"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["EngineeringJourneyman1"] = { AL["Engineering"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
+	["EngineeringJourneyman2"] = { AL["Engineering"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
 	["EngineeringExpert1"] = { AL["Engineering"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EngineeringExpert2"] = { AL["Engineering"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EngineeringArtisan1"] = { AL["Engineering"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["EngineeringArtisan2"] = { AL["Engineering"]..": "..AL["Artisan"], "AtlasLootCrafting" },
-	["EngineeringArtisan3"] = { AL["Engineering"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["Gnomish1"] = { AL["Gnomish Engineering"], "AtlasLootCrafting" },
 	["Goblin1"] = { AL["Goblin Engineering"], "AtlasLootCrafting" },
 	--Leatherworking
@@ -705,6 +704,10 @@ AtlasLoot_TableNames = {
 	["Tribal1"] = { AL["Tribal Leatherworking"], "AtlasLootCrafting" },
 	--Mining
 	["Mining1"] = { AL["Mining"], "AtlasLootCrafting" },
+	["Mining2"] = { AL["Mining"], "AtlasLootCrafting" },
+	["Smelting1"] = { AL["Smelting"], "AtlasLootCrafting" },
+	["Herbalism1"] = { AL["Herbalism"], "AtlasLootCrafting" },
+	["Herbalism2"] = { AL["Herbalism"], "AtlasLootCrafting" },
 	--Tailoring
 	["TailoringApprentice1"] = { AL["Tailoring"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["TailoringJourneyman1"] = { AL["Tailoring"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -1532,7 +1535,6 @@ AtlasLoot_TableNamesBoss = {
 	["AlchemyExpert1"] = { AL["Alchemy"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["AlchemyArtisan1"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["AlchemyArtisan2"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
-	["AlchemyArtisan3"] = { AL["Alchemy"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--BlackSmithing
 	["SmithingApprentice1"] = { AL["Blacksmithing"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["SmithingJourneyman1"] = { AL["Blacksmithing"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
@@ -1555,10 +1557,10 @@ AtlasLoot_TableNamesBoss = {
 	["EnchantingExpert2"] = { AL["Enchanting"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EnchantingArtisan1"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	["EnchantingArtisan2"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
-	["EnchantingArtisan3"] = { AL["Enchanting"]..": "..AL["Artisan"], "AtlasLootCrafting" },
 	--Engineering
 	["EngineeringApprentice1"] = { AL["Engineering"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["EngineeringJourneyman1"] = { AL["Engineering"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
+	["EngineeringJourneyman2"] = { AL["Engineering"]..": "..AL["Journeyman"], "AtlasLootCrafting" },
 	["EngineeringExpert1"] = { AL["Engineering"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EngineeringExpert2"] = { AL["Engineering"]..": "..AL["Expert"], "AtlasLootCrafting" },
 	["EngineeringArtisan1"] = { AL["Engineering"]..": "..AL["Artisan"], "AtlasLootCrafting" },
@@ -1582,6 +1584,10 @@ AtlasLoot_TableNamesBoss = {
 	["Tribal1"] = { AL["Tribal Leatherworking"], "AtlasLootCrafting" },
 	--Mining
 	["Mining1"] = { AL["Mining"], "AtlasLootCrafting" },
+	["Mining2"] = { AL["Mining"], "AtlasLootCrafting" },
+	["Smelting1"] = { AL["Smelting"], "AtlasLootCrafting" },
+	["Herbalism1"] = { AL["Herbalism"], "AtlasLootCrafting" },
+	["Herbalism2"] = { AL["Herbalism"], "AtlasLootCrafting" },
 	--Tailoring
 	["TailoringApprentice1"] = { AL["Tailoring"]..": "..AL["Apprentice"], "AtlasLootCrafting" },
 	["TailoringJourneyman1"] = { AL["Tailoring"]..": "..AL["Journeyman"], "AtlasLootCrafting" },

@@ -1134,16 +1134,7 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Alchemy"]..": "..AL["Artisan"];
 		Back_Page = "ALCHEMYMENU";
 		Back_Title = AL["Alchemy"];
-		Next_Page = "AlchemyArtisan3";
-		Next_Title = AL["Alchemy"]..": "..AL["Artisan"];
 		Prev_Page = "AlchemyArtisan1";
-		Prev_Title = AL["Alchemy"]..": "..AL["Artisan"];
-	};
-	["AlchemyArtisan3"] = {
-		Title = AL["Alchemy"]..": "..AL["Artisan"];
-		Back_Page = "ALCHEMYMENU";
-		Back_Title = AL["Alchemy"];
-		Prev_Page = "AlchemyArtisan2";
 		Prev_Title = AL["Alchemy"]..": "..AL["Artisan"];
 	};
 	["SmithingApprentice1"] = {
@@ -1320,6 +1311,15 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Engineering"];
 		Prev_Page = "EngineeringApprentice1";
 		Prev_Title = AL["Engineering"]..": "..AL["Apprentice"];
+		Next_Page = "EngineeringJourneyman2";
+		Next_Title = AL["Engineering"]..": "..AL["Journeyman"];
+	};
+	["EngineeringJourneyman2"] = {
+		Title = AL["Engineering"]..": "..AL["Journeyman"];
+		Back_Page = "ENGINEERINGMENU";
+		Back_Title = AL["Engineering"];
+		Prev_Page = "EngineeringJourneyman1";
+		Prev_Title = AL["Engineering"]..": "..AL["Journeyman"];
 		Next_Page = "EngineeringExpert1";
 		Next_Title = AL["Engineering"]..": "..AL["Expert"];
 	};
@@ -1327,7 +1327,7 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Engineering"]..": "..AL["Expert"];
 		Back_Page = "ENGINEERINGMENU";
 		Back_Title = AL["Engineering"];
-		Prev_Page = "EngineeringJourneyman1";
+		Prev_Page = "EngineeringJourneyman2";
 		Prev_Title = AL["Engineering"]..": "..AL["Journeyman"];
 		Next_Page = "EngineeringExpert2";
 		Next_Title = AL["Engineering"]..": "..AL["Expert"];
@@ -1356,25 +1356,24 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Engineering"];
 		Prev_Page = "EngineeringArtisan1";
 		Prev_Title = AL["Engineering"]..": "..AL["Artisan"];
-		Next_Page = "EngineeringArtisan3";
-		Next_Title = AL["Engineering"]..": "..AL["Artisan"];
-	};
-	["EngineeringArtisan3"] = {
-		Title = AL["Engineering"]..": "..AL["Artisan"];
-		Back_Page = "ENGINEERINGMENU";
-		Back_Title = AL["Engineering"];
-		Prev_Page = "EngineeringArtisan2";
-		Prev_Title = AL["Engineering"]..": "..AL["Artisan"];
+		Next_Page = "Gnomish1";
+		Next_Title = AL["Engineering"]..": "..AL["Gnomish Engineering"];
 	};
 	["Gnomish1"] = {
 		Title = AL["Engineering"]..": "..AL["Gnomish Engineering"];
 		Back_Page = "ENGINEERINGMENU";
 		Back_Title = AL["Engineering"];
+		Prev_Page = "EngineeringArtisan2";
+		Prev_Title = AL["Engineering"]..": "..AL["Artisan"];
+		Next_Page = "Goblin1";
+		Next_Title = AL["Engineering"]..": "..AL["Goblin Engineering"];
 	};
 	["Goblin1"] = {
 		Title = AL["Engineering"]..": "..AL["Goblin Engineering"];
 		Back_Page = "ENGINEERINGMENU";
 		Back_Title = AL["Engineering"];
+		Prev_Page = "Gnomish1";
+		Prev_Title = AL["Engineering"]..": "..AL["Gnomish Engineering"];
 	};
 	["LeatherApprentice1"] = {
 		Title = AL["Leatherworking"]..": "..AL["Apprentice"];
@@ -1477,10 +1476,42 @@ AtlasLoot_ButtonRegistry = {
 		Back_Page = "LEATHERWORKINGMENU";
 		Back_Title = AL["Leatherworking"];
 	};
-	["Mining1"] = {
-		Title = AL["Mining"];
+	["Herbalism1"] = {
+		Title = AL["Herbalism"];
 		Back_Page = "CRAFTINGMENU";
 		Back_Title = AL["Crafting"];
+		Next_Page = "Herbalism2";
+		Next_Title = AL["Herbalism"];
+	};
+	["Herbalism2"] = {
+		Title = AL["Herbalism"];
+		Back_Page = "CRAFTINGMENU";
+		Back_Title = AL["Crafting"];
+		Prev_Page = "Herbalism1";
+		Prev_Title = AL["Herbalism"];
+	};
+	["Mining1"] = {
+		Title = AL["Mining"];
+		Back_Page = "MININGMENU";
+		Back_Title = AL["Crafting"];
+		Next_Page = "Mining2";
+		Next_Title = AL["Mining"];
+	};
+	["Mining2"] = {
+		Title = AL["Mining"];
+		Back_Page = "MININGMENU";
+		Back_Title = AL["Crafting"];
+		Next_Page = "Smelting1";
+		Next_Title = AL["Smelting"];
+		Prev_Page = "Mining1";
+		Prev_Title = AL["Mining"];
+	};
+	["Smelting1"] = {
+		Title = AL["Smelting"];
+		Back_Page = "MININGMENU";
+		Back_Title = AL["Crafting"];
+		Prev_Page = "Mining2";
+		Prev_Title = AL["Mining"];
 	};
 	["TailoringApprentice1"] = {
 		Title = AL["Tailoring"]..": "..AL["Apprentice"];

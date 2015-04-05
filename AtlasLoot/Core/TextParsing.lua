@@ -113,6 +113,8 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#p10#", AL["Tribal"]);
     text = gsub(text, "#p11#", AL["Elemental"]);
     text = gsub(text, "#p13#", AL["Lockpicking"]);
+    text = gsub(text, "#p14#", AL["Gnomish Engineering"]);
+    text = gsub(text, "#p15#", AL["Goblin Engineering"]);
 
     --Reputation
     text = gsub(text, "#r1#", AL["Neutral"]);

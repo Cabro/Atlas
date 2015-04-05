@@ -190,6 +190,7 @@ AtlasLoot_MenuList = {
 	"ENCHANTINGMENU",
 	"ENGINEERINGMENU",
 	"LEATHERWORKINGMENU",
+	"MININGMENU",
 	"TAILORINGMENU",
 	"CRAFTSET",
 	"COOKINGMENU",
@@ -1164,6 +1165,8 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLoot_EngineeringMenu();
 	elseif(dataID=="LEATHERWORKINGMENU") then
 		AtlasLoot_LeatherworkingMenu();
+	elseif(dataID=="MININGMENU") then
+		AtlasLoot_MiningMenu();
 	elseif(dataID=="TAILORINGMENU") then
 		AtlasLoot_TailoringMenu();
 	elseif(dataID=="COOKINGMENU") then
@@ -1429,10 +1432,12 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 							GameTooltip:SetHyperlink("item:"..GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"]..":0:0:0");
 						end
 					end
-					for i = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"]) do
-						local reagent = GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"][i]
-						if not GetItemInfo(reagent[1]) then
-							GameTooltip:SetHyperlink("item:"..reagent[1]..":0:0:0");
+					if GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"] ~= "" then
+						for i = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"]) do
+							local reagent = GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"][i]
+							if not GetItemInfo(reagent[1]) then
+								GameTooltip:SetHyperlink("item:"..reagent[1]..":0:0:0");
+							end
 						end
 					end
 					if GetSpellInfoVanillaDB["craftspells"][spellID]["tools"] ~= "" then
@@ -3142,11 +3147,13 @@ function AtlasLootItem_OnEnter()
 				end
 				TooltipTools = string.sub(TooltipTools, 1, -3)
 			end
-			for i = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"]) do
-				local reagent = GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"][i]
-				TooltipReagents = TooltipReagents..AtlasLoot_CheckBagsForItems(reagent[1], reagent[2])..WHITE..", "
+			if GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"] ~= "" then
+				for i = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"]) do
+					local reagent = GetSpellInfoVanillaDB["craftspells"][spellID]["reagents"][i]
+					TooltipReagents = TooltipReagents..AtlasLoot_CheckBagsForItems(reagent[1], reagent[2])..WHITE..", "
+				end
+				TooltipReagents = string.sub(TooltipReagents, 1, -3)
 			end
-			TooltipReagents = string.sub(TooltipReagents, 1, -3)
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 			AtlasLootTooltip:ClearLines();
 			AtlasLootTooltip:AddLine(GetSpellInfoVanillaDB["craftspells"][spellID]["name"]);
@@ -3157,12 +3164,24 @@ function AtlasLootItem_OnEnter()
 			if TooltipTools ~= "" then
 				AtlasLootTooltip:AddLine(WHITE.."Tools: "..TooltipTools, nil, nil, nil, 1);
 			end
-			AtlasLootTooltip:AddLine(WHITE.."Reagents: "..TooltipReagents, nil, nil, nil, 1);
+			if TooltipReagents ~= "" then
+				AtlasLootTooltip:AddLine(WHITE.."Reagents: "..TooltipReagents, nil, nil, nil, 1);
+			end
 			if GetSpellInfoVanillaDB["craftspells"][spellID]["text"] ~= "" then
 				AtlasLootTooltip:AddLine(GetSpellInfoVanillaDB["craftspells"][spellID]["text"], nil, nil, nil, 1);
 			end
 			if ( AtlasLootCharDB.ItemIDs ) then
-				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
+				if spellID < 100000 then
+					AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
+				elseif spellID >= 100000 and spellID <= 100005 then
+					AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." 2575", nil, nil, nil, 1);
+				elseif spellID >= 100006 and spellID <= 100007 then
+					AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." 2576", nil, nil, nil, 1);
+				elseif spellID >= 100008 and spellID <= 100011 then
+					AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." 3564", nil, nil, nil, 1);
+				elseif spellID >= 100012 and spellID <= 100024 then
+					AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." 10248", nil, nil, nil, 1);
+				end
 			end
 			AtlasLootTooltip:Show();
 			local craftitem2 = GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"]
@@ -3254,7 +3273,7 @@ function AtlasLootItem_OnClick(arg1)
 				end
 			elseif AtlasLootCharDB.AllLinks then
 				if ChatFrameEditBox:IsVisible() then
-					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID..":0:0:0:0:0\124h["..name.."]|h|r");
+					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, color, name)
 				end
@@ -3305,16 +3324,35 @@ function AtlasLootItem_OnClick(arg1)
 		end
 	elseif isSpell then
 		if IsShiftKeyDown() then
-			if ChatFrameEditBox:IsVisible() then
-				local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
-				if craftitem ~= nil and craftitem ~= "" then
-					local craftname = GetItemInfo(craftitem)
-					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem..":0:0:0:0:0\124h["..craftname.."]|h|r");
+			if tonumber(string.sub(this.itemID, 2)) < 100000 then
+				if ChatFrameEditBox:IsVisible() then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+					else
+						ChatFrameEditBox:Insert(name);
+					end
 				else
-					ChatFrameEditBox:Insert(name);
+					AtlasLoot_SayItemReagents(this.itemID)
 				end
 			else
-				AtlasLoot_SayItemReagents(this.itemID)
+				if ChatFrameEditBox:IsVisible() then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						ChatFrameEditBox:Insert(AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]));
+					else
+						ChatFrameEditBox:Insert(name);
+					end
+				else
+					if channel == "WHISPER" then
+						chatnumber = ChatFrameEditBox.tellTarget
+					elseif channel == "CHANNEL" then
+						chatnumber = ChatFrameEditBox.channelTarget
+					end	
+					SendChatMessage(AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]),channel,nil,chatnumber);
+				end
 			end
 		elseif(IsAltKeyDown() and (this.itemID ~= 0)) then
 			if AtlasLootItemsFrame.refresh[1] == "WishList" then
@@ -3422,7 +3460,7 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 				chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
 				itemCount = itemCount + 1;
 				if itemCount == 4 then
-					SendChatMessage(string.sub(chatline, 1, -2), channel, nil, chatnumber);
+					SendChatMessage(chatline, channel, nil, chatnumber);
 					chatline = "";
 					itemCount = 0;
 				end
@@ -3440,7 +3478,7 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 				chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
 				itemCount = itemCount + 1;
 				if itemCount == 4 then
-					SendChatMessage(string.sub(chatline, 1, -2), channel, nil, chatnumber);
+					SendChatMessage(chatline, channel, nil, chatnumber);
 					chatline = "";
 					itemCount = 0;
 				end
@@ -3469,7 +3507,7 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 		if safe then
 			SendChatMessage("["..name.."]", channel, nil, chatnumber);
 		else
-			SendChatMessage("\124"..string.sub(color, 2).."\124Hitem:"..id..":0:0:0:0:0:0:0:0\124h["..name.."]\124h\124r", channel, nil, chatnumber);
+			SendChatMessage("\124"..string.sub(color, 2).."\124Hitem:"..id..":0:0:0\124h["..name.."]\124h\124r", channel, nil, chatnumber);
 		end
 	end
 end
@@ -3478,5 +3516,5 @@ function AtlasLoot_GetChatLink(id)
 	local a, b, c = GetItemInfo(tonumber(id));
 	local _, _, _, d = GetItemQualityColor(c);
 	local e = string.sub(d, 2)
-	return "\124"..e.."\124H"..b..":0:0:0:0:0\124h["..a.."]\124h\124r"
+	return "\124"..e.."\124H"..b.."\124h["..a.."]\124h\124r"
 end

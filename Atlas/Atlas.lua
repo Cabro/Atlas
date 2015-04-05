@@ -349,7 +349,12 @@ function Atlas_PopulateDropdowns()
 			table.insert(ATLAS_DROPDOWNS[n], v);
 		end
 		
-		if ( subcatOrder[n] ~= ATLAS_DDL_ALL_MENU and subcatOrder[n] ~= ATLAS_DDL_WORLDBOSSES and subcatOrder[n] ~= ATLAS_DDL_LEVELING_GUIDE_HORDE and subcatOrder[n] ~= ATLAS_DDL_LEVELING_GUIDE_ALLIANCE ) then
+		if ( subcatOrder[n] ~= ATLAS_DDL_ALL_MENU and 
+			subcatOrder[n] ~= ATLAS_DDL_WORLDBOSSES and 
+			subcatOrder[n] ~= ATLAS_DDL_LEVELING_GUIDE_HORDE1 and 
+			subcatOrder[n] ~= ATLAS_DDL_LEVELING_GUIDE_HORDE2 and 
+			subcatOrder[n] ~= ATLAS_DDL_LEVELING_GUIDE_ALLIANCE1 and
+			subcatOrder[n] ~= ATLAS_DDL_LEVELING_GUIDE_ALLIANCE2 ) then
 			table.sort(ATLAS_DROPDOWNS[n], Atlas_SortZonesAlpha);
 		end
 		

@@ -110,8 +110,10 @@ ATLAS_DDL_BGS = GREN.."Battlegrounds";
 ATLAS_DDL_DUNGEON_LOCATIONS = GREN.."Dungeon Locations";
 ATLAS_DDL_FLIGHT_PATHS = GREN.."Flight Path Maps";
 ATLAS_DDL_LEVELING_GUIDE = "Leveling Guide";
-ATLAS_DDL_LEVELING_GUIDE_ALLIANCE = "Alliance Leveling Guide";
-ATLAS_DDL_LEVELING_GUIDE_HORDE = "Horde Leveling Guide";
+ATLAS_DDL_LEVELING_GUIDE_ALLIANCE1 = "Alliance Leveling Guide Part 1";
+ATLAS_DDL_LEVELING_GUIDE_ALLIANCE2 = "Alliance Leveling Guide Part 2";
+ATLAS_DDL_LEVELING_GUIDE_HORDE1 = "Horde Leveling Guide Part 1";
+ATLAS_DDL_LEVELING_GUIDE_HORDE2 = "Horde Leveling Guide Part 2";
 
 ATLAS_INSTANCE_BUTTON = "Instance";
 ATLAS_ENTRANCE_BUTTON = "Entrance";
@@ -826,7 +828,7 @@ AtlasLocale = {
 	["Elders' Square Postbox"] = "Elders' Square Postbox";
 	["King's Square Postbox"] = "King's Square Postbox";
 	["Fras Siabi's Postbox"] = "Fras Siabi's Postbox";
-	["3rd Postbox Opened"] = "3rd Postbox Opened";
+	["Third Postbox Opened"] = "Third Postbox Opened";
 	["Postmaster Malown"] = "Postmaster Malown";
 
 	--The Deadmines

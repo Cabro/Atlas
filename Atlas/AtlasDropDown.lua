@@ -66,15 +66,17 @@ Atlas_DropDownLayouts_Order = {
 		[6] = ATLAS_DDL_FLIGHT_PATHS;
 	};
 	[ATLAS_DDL_LEVELING_GUIDE] = {
-		[1] = ATLAS_DDL_LEVELING_GUIDE_ALLIANCE;
-		[2] = ATLAS_DDL_LEVELING_GUIDE_HORDE;
-		[3] = ATLAS_DDL_TYPE_DUNGEONS;
-		[4] = ATLAS_DDL_TYPE_RAIDS;
-		[5] = ATLAS_DDL_WORLDBOSSES;
-		[6] = ATLAS_DDL_TYPE_ENTRANCE;
-		[7] = ATLAS_DDL_BGS;
-		[8] = ATLAS_DDL_DUNGEON_LOCATIONS;
-		[9] = ATLAS_DDL_FLIGHT_PATHS;
+		[1] = ATLAS_DDL_LEVELING_GUIDE_ALLIANCE1;
+		[2] = ATLAS_DDL_LEVELING_GUIDE_ALLIANCE2;
+		[3] = ATLAS_DDL_LEVELING_GUIDE_HORDE1;
+		[4] = ATLAS_DDL_LEVELING_GUIDE_HORDE2;
+		[5] = ATLAS_DDL_TYPE_DUNGEONS;
+		[6] = ATLAS_DDL_TYPE_RAIDS;
+		[7] = ATLAS_DDL_WORLDBOSSES;
+		[8] = ATLAS_DDL_TYPE_ENTRANCE;
+		[9] = ATLAS_DDL_BGS;
+		[10] = ATLAS_DDL_DUNGEON_LOCATIONS;
+		[11] = ATLAS_DDL_FLIGHT_PATHS;
 	};
 };
 
@@ -359,11 +361,15 @@ Atlas_DropDownLayouts = {
 			"ArathiBasin",
 			"WarsongGulch",
 		},
-		[ATLAS_DDL_LEVELING_GUIDE_ALLIANCE] = {
+		[ATLAS_DDL_LEVELING_GUIDE_ALLIANCE1] = {
 			"AlteracValleyNorth",
 			"AlteracValleySouth",
 		},
-		[ATLAS_DDL_LEVELING_GUIDE_HORDE] = {
+		[ATLAS_DDL_LEVELING_GUIDE_ALLIANCE2] = {
+			"AlteracValleyNorth",
+			"AlteracValleySouth",
+		},
+		[ATLAS_DDL_LEVELING_GUIDE_HORDE1] = {
 			"TaurenLeveling1",
 			"TaurenLeveling2",
 			"TaurenLeveling3",
@@ -371,6 +377,61 @@ Atlas_DropDownLayouts = {
 			"UndeadLeveling2",
 			"UndeadLeveling3",
 			"TrollOrcLeveling1",
+			"TrollOrcLeveling2",
+			"TrollOrcLeveling3",
+			"HordeLeveling1",	
+			"HordeLeveling2",	
+			"HordeLeveling3",	
+			"HordeLeveling4",	
+			"HordeLeveling5",	
+			"HordeLeveling6",	
+			"HordeLeveling7",	
+			"HordeLeveling8",
+			"HordeLeveling9",
+			"HordeLeveling10",
+			"HordeLeveling11",
+			"HordeLeveling12",
+			"HordeLeveling13",
+			"HordeLeveling14",
+			"HordeLeveling15",
+			"HordeLeveling16",
+			"HordeLeveling17",
+			"HordeLeveling18",
+			"HordeLeveling19",
+			"HordeLeveling20",	
+			"HordeLeveling21",	
+		},
+		[ATLAS_DDL_LEVELING_GUIDE_HORDE2] = {
+			"HordeLeveling22",	
+			"HordeLeveling23",	
+			"HordeLeveling24",	
+			"HordeLeveling25",	
+			"HordeLeveling26",	
+			"HordeLeveling27",	
+			"HordeLeveling28",	
+			"HordeLeveling29",	
+			"HordeLeveling30",	
+			"HordeLeveling31",	
+			"HordeLeveling32",	
+			"HordeLeveling33",	
+			"HordeLeveling34",	
+			"HordeLeveling35",	
+			"HordeLeveling36",	
+			"HordeLeveling37",	
+			"HordeLeveling38",	
+			"HordeLeveling39",	
+			"HordeLeveling40",	
+			"HordeLeveling41",	
+			"HordeLeveling42",	
+			"HordeLeveling43",	
+			"HordeLeveling44",	
+			"HordeLeveling45",	
+			"HordeLeveling46",	
+			"HordeLeveling47",	
+			"HordeLeveling48",	
+			"HordeLeveling49",	
+			"HordeLeveling50",
+			"HordeLeveling51",
 		},
 		[ATLAS_DDL_DUNGEON_LOCATIONS] = {
 			"DLEast",
