@@ -98,6 +98,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["refreshed when you next mouse"] = true,
 	["over them."] = true,
 	["reset"] = true,
+	["default"] = true,
 	["panel"] = true,
 	["options"] = true,
 	["Reset complete!"] = true,
