@@ -5971,7 +5971,8 @@ AtlasMaps = {
 		{ WHIT.."to finish it up)" };
 		{ "" };
 		{ WHIT.."13) wild guardians part2 (grind away at owls at " };
-		{ WHIT.."the owl wing thicket for a few hours, before leaving here)" };
+		{ WHIT.."the owl wing thicket for a few hours, before" };
+		{ WHIT.."leaving here)" };
 		{ "" };
 		{ WHIT.."14) then when a few bars away from lvl 59, go " };
 		{ WHIT.."back up to everlook." };

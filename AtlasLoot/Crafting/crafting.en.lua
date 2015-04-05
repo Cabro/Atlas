@@ -171,7 +171,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 --- Alchemy ---
 ---------------
 	AlchemyApprentice1 = {
-		{ 0, "Trade_Alchemy", "=q6=#sk1#", "" },
 		{ "s2329", "inv_potion_56", "=q1=Elixir of Lion's Strength", "=ds=#sr# =so1=1 =so2=55 =so3=75 =so4=95" },
 		{ "s7183", "inv_potion_63", "=q1=Elixir of Minor Defense", "=ds=#sr# =so1=1 =so2=55 =so3=75 =so4=95" },
 		{ "s2330", "inv_potion_49", "=q1=Minor Healing Potion", "=ds=#sr# =so1=1 =so2=55 =so3=75 =so4=95" },
@@ -187,7 +186,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	AlchemyJourneyman1 = {
-		{ 0, "Trade_Alchemy", "=q6=#sk2#", "" },
 		{ "s7836", "inv_drink_12", "=q1=Blackmouth Oil", "=ds=#sr# =so1=80 =so2=80 =so3=90 =so4=100" },
 		{ "s8240", "inv_potion_10", "=q1=Elixir of Giant Growth", "=ds=#sr# =so1=90 =so2=120 =so3=140 =so4=160" },
 		{ "s7179", "inv_potion_17", "=q1=Elixir of Water Breathing", "=ds=#sr# =so1=90 =so2=120 =so3=140 =so4=160" },
@@ -209,7 +207,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	AlchemyExpert1 = {
-		{ 0, "Trade_Alchemy", "=q6=#sk3#", "" },
 		{ "s7181", "inv_potion_52", "=q1=Greater Healing Potion", "=ds=#sr# =so1=155 =so2=175 =so3=195 =so4=215" },
 		{ "s3452", "inv_potion_72", "=q1=Mana Potion", "=ds=#sr# =so1=160 =so2=180 =so3=200 =so4=220" },
 		{ "s3448", "inv_potion_18", "=q1=Lesser Invisibility Potion", "=ds=#sr# =so1=165 =so2=185 =so3=205 =so4=225" },
@@ -241,7 +238,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	AlchemyArtisan1 = {
-		{ 0, "Trade_Alchemy", "=q6=#sk4#", "" },
 		{ "s15833", "inv_potion_83", "=q1=Dreamless Sleep Potion", "=ds=#sr# =so1=230 =so2=245 =so3=265 =so4=285" },
 		{ "s11460", "inv_potion_53", "=q1=Elixir of Detect Undead", "=ds=#sr# =so1=230 =so2=245 =so3=265 =so4=285" },
 		{ "s11461", "inv_potion_30", "=q1=Arcane Elixir", "=ds=#sr# =so1=235 =so2=250 =so3=270 =so4=290" },
@@ -271,10 +267,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s17563", "spell_nature_acid_01", "=q2=Transmute: Undeath to Water", "=ds=#sr# =so1=275 =so2=275 =so3=282 =so4=290" },
 		{ "s17562", "spell_nature_earthbind", "=q2=Transmute: Water to Air", "=ds=#sr# =so1=275 =so2=275 =so3=282 =so4=290" },
 		{ "s17564", "spell_shadow_shadetruesight", "=q2=Transmute: Water to Undeath", "=ds=#sr# =so1=275 =so2=275 =so3=282 =so4=290" },
+		{ "s17557", "inv_potion_40", "=q1=Elixir of Brute Force", "=ds=#sr# =so1=275 =so2=290 =so3=310 =so4=330" },
 	};
 
 	AlchemyArtisan2 = {
-		{ "s17557", "inv_potion_40", "=q1=Elixir of Brute Force", "=ds=#sr# =so1=275 =so2=290 =so3=310 =so4=330" },
 		{ "s24366", "inv_potion_83", "=q1=Greater Dreamless Sleep Potion", "=ds=#sr# =so1=275 =so2=290 =so3=310 =so4=330" },
 		{ "s24365", "inv_potion_45", "=q1=Mageblood Potion", "=ds=#sr# =so1=275 =so2=290 =so3=310 =so4=330" },
 		{ "s17556", "inv_potion_54", "=q1=Major Healing Potion", "=ds=#sr# =so1=275 =so2=290 =so3=310 =so4=330" },
@@ -1394,7 +1390,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 -----------------
 
 	EngineeringApprentice1 = {
-		{ 0, "Trade_Engineering", "=q6=#sk1#", "" },
 		{ "s3918", "inv_misc_dust_01", "=q1=Rough Blasting Powder", "=ds=#sr# =so1=1 =so2=20 =so3=30 =so4=40" },
 		{ "s3920", "inv_ammo_bullet_02", "=q1=Crafted Light Shot", "=ds=#sr# =so1=1 =so2=30 =so3=45 =so4=60" },
 		{ "s3919", "inv_misc_bomb_06", "=q1=Rough Dynamite", "=ds=#sr# =so1=1 =so2=30 =so3=45 =so4=60" },
@@ -1412,7 +1407,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	EngineeringJourneyman1 = {
-		{ 0, "Trade_Engineering", "=q6=#sk2#", "" },
 		{ "s3932", "inv_crate_06", "=q1=Target Dummy", "=ds=#sr# =so1=85 =so2=115 =so3=130 =so4=145" },
 		{ "s3973", "inv_ingot_04", "=q1=Silver Contact", "=ds=#sr# =so1=90 =so2=110 =so3=125 =so4=140" },
 		{ "s8339", "inv_misc_bomb_06", "=q1=EZ-Thro Dynamite", "=ds=#sr# =so1=100 =so2=115 =so3=122 =so4=130" },
@@ -1442,10 +1436,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s3953", "inv_gizmo_bronzeframework_01", "=q1=Bronze Framework", "=ds=#sr# =so1=145 =so2=145 =so3=170 =so4=195" },
 		{ "s3954", "inv_weapon_rifle_06", "=q2=Moonsight Rifle", "=ds=#sr# =so1=145 =so2=170 =so3=182 =so4=195" },
 		{ "s9271", "inv_misc_food_26", "=q1=Aquadynamic Fish Attractor", "=ds=#sr# =so1=150 =so2=150 =so3=160 =so4=170" },
+		{ "s23067", "spell_ice_magicdamage", "=q1=Blue Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 	};
 	
 	EngineeringJourneyman2 = {	
-		{ "s23067", "spell_ice_magicdamage", "=q1=Blue Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 		{ "s23068", "spell_nature_abolishmagic", "=q1=Green Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 		{ "s23066", "spell_fire_fireball02", "=q1=Red Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 		{ "s12584", "inv_battery_02", "=q1=Gold Power Core", "=ds=#sr# =so1=150 =so2=150 =so3=170 =so4=190" },
@@ -1454,7 +1448,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	EngineeringExpert1 = {
-		{ 0, "Trade_Engineering", "=q6=#sk3#", "" },
 		{ "s3957", "inv_gizmo_01", "=q1=Ice Deflector", "=ds=#sr# =so1=155 =so2=175 =so3=185 =so4=195" },
 		{ "s3958", "inv_spear_05", "=q1=Iron Strut", "=ds=#sr# =so1=160 =so2=160 =so3=170 =so4=180" },
 		{ "s3959", "inv_misc_spyglass_02", "=q1=Discombobulator Ray", "=ds=#sr# =so1=160 =so2=180 =so3=190 =so4=200" },
@@ -1484,10 +1477,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s12591", "inv_battery_01", "=q1=Unstable Trigger", "=ds=#sr# =so1=200 =so2=200 =so3=220 =so4=240" },
 		{ "s3971", "inv_gizmo_01", "=q1=Gnomish Cloaking Device", "=ds=#sr# =so1=200 =so2=220 =so3=230 =so4=240" },
 		{ "s3969", "inv_misc_head_dragon_01", "=q1=Mechanical Dragonling", "=ds=#sr# =so1=200 =so2=220 =so3=230 =so4=240" },
+		{ "s12594", "inv_helmet_47", "=q2=Fire Goggles", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
 	};
 
 	EngineeringExpert2 = {
-		{ "s12594", "inv_helmet_47", "=q2=Fire Goggles", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
 		{ "s12595", "inv_weapon_rifle_07", "=q2=Mithril Blunderbuss", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
 		{ "s12596", "inv_ammo_bullet_01", "=q2=Hi-Impact Mithril Slugs", "=ds=#sr# =so1=210 =so2=210 =so3=230 =so4=250" },
 		{ "s12597", "inv_misc_spyglass_02", "=q1=Deadly Scope", "=ds=#sr# =so1=210 =so2=230 =so3=240 =so4=250" },
@@ -1504,57 +1497,55 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	EngineeringArtisan1 = {
-		{ 0, "Trade_Engineering", "=q6=#sk4#", "" },
-		-- { "s12617", 10506, "=q2=Deepdive Helmet", "=ds=#sr# =so1=230 =so2=245 =so3=255 =so4=265" },
-		-- { "s12618", 10503, "=q2=Rose Colored Goggles", "=ds=#sr# 230" },
-		-- { "s12619", 10562, "=q1=Hi-Explosive Bomb", "=ds=#sr# 235" },
-		-- { "s12620", 10548, "=q1=Sniper Scope", "=ds=#sr# 240" },
-		-- { "s12621", 10513, "=q2=Mithril Gyro-Shot", "=ds=#sr# 245" },
-		-- { "s12622", 10504, "=q3=Green Lens", "=ds=#sr# 245" },
-		-- { "s19788", 15992, "=q1=Dense Blasting Powder", "=ds=#sr# 250" },
-		-- { "s23070", 18641, "=q1=Dense Dynamite", "=ds=#sr# 250" },
-		-- { "s23507", 19026, "=q1=Snake Burst Firework", "=ds=#sr# 250" },
-		-- { "s12624", 10576, "=q2=Mithril Mechanical Dragonling", "=ds=#sr# 250" },
-		-- { "s19567", 15846, "=q1=Salt Shaker", "=ds=#sr# 250" },
-		-- { "s26011", 21277, "=q1=Tranquil Mechanical Yeti", "=ds=#sr# 250" },
-		-- { "s23071", 18631, "=q1=Truesilver Transformer", "=ds=#sr# 260" },
-		-- { "s23077", 18634, "=q3=Gyrofreeze Ice Reflector", "=ds=#sr# 260" },
-		-- { "s19792", 15995, "=q2=Thorium Rifle", "=ds=#sr# 260" },
-		-- { "s19790", 15993, "=q1=Thorium Grenade", "=ds=#sr# 260" },
-		-- { "s19791", 15994, "=q1=Thorium Widget", "=ds=#sr# 260" },
-		-- { "s19793", 15996, "=q1=Lifelike Mechanical Toad", "=ds=#sr# 265" },
-		-- { "s19794", 15999, "=q2=Spellpower Goggles Xtreme Plus", "=ds=#sr# 270" },
-		-- { "s26426", 21714, "=q1=Large Blue Rocket Cluster", "=ds=#sr# 275" },
-		-- { "s26427", 21716, "=q1=Large Green Rocket Cluster", "=ds=#sr# 275" },
-		-- { "s26428", 21718, "=q1=Large Red Rocket Cluster", "=ds=#sr# 275" },
-		-- { "s23080", 18594, "=q1=Powerful Seaforium Charge", "=ds=#sr# 275" },
-		-- { "s23079", 18637, "=q2=Major Recombobulator", "=ds=#sr# 275" },
-		-- { "s19796", 16004, "=q3=Dark Iron Rifle", "=ds=#sr# 275" },
-		-- { "s19814", 16023, "=q1=Masterwork Target Dummy", "=ds=#sr# 275" },
-		-- { "s19795", 16000, "=q1=Thorium Tube", "=ds=#sr# 275" },
-		-- { "s19800", 15997, "=q2=Thorium Shells", "=ds=#sr# 285" },
-		-- { "s19799", 16005, "=q1=Dark Iron Bomb", "=ds=#sr# 285" },
+		{ "s12617", "inv_helmet_49", "=q2=Deepdive Helmet", "=ds=#sr# =so1=230 =so2=250 =so3=260 =so4=270" },
+		{ "s12618", "inv_helmet_47", "=q2=Rose Colored Goggles", "=ds=#sr# =so1=230 =so2=250 =so3=260 =so4=270" },
+		{ "s12619", "inv_misc_bomb_07", "=q1=Hi-Explosive Bomb", "=ds=#sr# =so1=235 =so2=235 =so3=255 =so4=275" },
+		{ "s12620", "inv_misc_spyglass_02", "=q1=Sniper Scope", "=ds=#sr# =so1=240 =so2=260 =so3=270 =so4=280" },
+		{ "s12621", "inv_ammo_bullet_01", "=q2=Mithril Gyro-Shot", "=ds=#sr# =so1=245 =so2=245 =so3=265 =so4=285" },
+		{ "s12622", "inv_helmet_44", "=q3=Green Lens", "=ds=#sr# =so1=245 =so2=265 =so3=275 =so4=285" },
+		{ "s19788", "inv_misc_ammo_gunpowder_01", "=q1=Dense Blasting Powder", "=ds=#sr# =so1=250 =so2=250 =so3=255 =so4=260" },
+		{ "s23070", "inv_misc_bomb_06", "=q1=Dense Dynamite", "=ds=#sr# =so1=250 =so2=250 =so3=260 =so4=270" },
+		{ "s23507", "spell_holy_holybolt", "=q1=Snake Burst Firework", "=ds=#sr# =so1=250 =so2=250 =so3=260 =so4=270" },
+		{ "s19567", "inv_egg_05", "=q1=Salt Shaker", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
+		{ "s12624", "inv_misc_head_dragon_01", "=q2=Mithril Mechanical Dragonling", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
+		{ "s26011", "ability_hunter_pet_gorilla", "=q1=Tranquil Mechanical Yeti", "=ds=#sr# =so1=250 =so2=320 =so3=330 =so4=340" },
+		{ "s23071", "inv_staff_18", "=q1=Truesilver Transformer", "=ds=#sr# =so1=260 =so2=270 =so3=275 =so4=280" },
+		{ "s19790", "inv_misc_bomb_08", "=q1=Thorium Grenade", "=ds=#sr# =so1=260 =so2=280 =so3=290 =so4=300" },
+		{ "s19791", "inv_gizmo_04", "=q1=Thorium Widget", "=ds=#sr# =so1=260 =so2=280 =so3=290 =so4=300" },
+		{ "s19792", "inv_weapon_rifle_07", "=q2=Thorium Rifle", "=ds=#sr# =so1=260 =so2=280 =so3=290 =so4=300" },
+		{ "s23077", "inv_misc_enggizmos_02", "=q3=Gyrofreeze Ice Reflector", "=ds=#sr# =so1=260 =so2=280 =so3=290 =so4=300" },
+		{ "s19793", "inv_misc_monsterhead_03", "=q1=Lifelike Mechanical Toad", "=ds=#sr# =so1=265 =so2=285 =so3=295 =so4=305" },
+		{ "s19794", "inv_helmet_47", "=q2=Spellpower Goggles Xtreme Plus", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
+		{ "s26426", "inv_misc_missilelargecluster_blue", "=q1=Large Blue Rocket Cluster", "=ds=#sr# =so1=275 =so2=275 =so3=280 =so4=285" },
+		{ "s26427", "inv_misc_missilelargecluster_green", "=q1=Large Green Rocket Cluster", "=ds=#sr# =so1=275 =so2=275 =so3=280 =so4=285" },
+		{ "s26428", "inv_misc_missilelargecluster_red", "=q1=Large Red Rocket Cluster", "=ds=#sr# =so1=275 =so2=275 =so3=280 =so4=285" },
+		{ "s23080", "spell_shadow_detectinvisibility", "=q1=Powerful Seaforium Charge", "=ds=#sr# =so1=275 =so2=275 =so3=285 =so4=295" },
+		{ "s23079", "inv_misc_enggizmos_09", "=q2=Major Recombobulator", "=ds=#sr# =so1=275 =so2=285 =so3=290 =so4=295" },
+		{ "s19814", "inv_crate_02", "=q1=Masterwork Target Dummy", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
+		{ "s19795", "inv_gizmo_pipe_04", "=q1=Thorium Tube", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
+		{ "s19796", "inv_weapon_rifle_08", "=q3=Dark Iron Rifle", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
+		{ "s19799", "inv_misc_bomb_05", "=q1=Dark Iron Bomb", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
+		{ "s19815", "inv_gizmo_07", "=q1=Delicate Arcanite Converter", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
+		{ "s19800", "inv_ammo_bullet_03", "=q2=Thorium Shells", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 	};
 
 	EngineeringArtisan2 = {
-		-- { "s19815", 16006, "=q1=Delicate Arcanite Converter", "=ds=#sr# 285" },
-		-- { "s23081", 18638, "=q3=Hyper-Radiant Flame Reflector", "=ds=#sr# 290" },
-		-- { "s19825", 16008, "=q2=Master Engineer's Goggles", "=ds=#sr# 290" },
-		-- { "s19819", 16009, "=q2=Voice Amplification Modulator", "=ds=#sr# 290" },
-		-- { "s22793", 18283, "=q3=Biznicks 247x128 Accurascope", "=ds=#sr# 300" },
-		-- { "s24356", 19999, "=q3=Bloodvine Goggles", "=ds=#sr# 300" },
-		-- { "s24357", 19998, "=q3=Bloodvine Lens", "=ds=#sr# 300" },
-		-- { "s19833", 16007, "=q3=Flawless Arcanite Rifle", "=ds=#sr# 300" },
-		-- { "s23082", 18639, "=q3=Ultra-Flash Shadow Reflector", "=ds=#sr# 300" },
-		-- { "s19831", 16040, "=q1=Arcane Bomb", "=ds=#sr# 300" },
-		-- { "s22704", 18232, "=q1=Field Repair Bot 74A", "=ds=#sr# 300" },
-		-- { "s19830", 16022, "=q3=Arcanite Dragonling", "=ds=#sr# 300" },
-		-- { "s22795", 18282, "=q4=Core Marksman Rifle", "=ds=#sr# 300" },
-		-- { "s22797", 18168, "=q4=Force Reactive Disk", "=ds=#sr# 300" },
+		{ "s19825", "inv_helmet_47", "=q2=Master Engineer's Goggles", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
+		{ "s19819", "inv_jewelry_amulet_07", "=q2=Voice Amplification Modulator", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
+		{ "s23081", "inv_misc_enggizmos_04", "=q3=Hyper-Radiant Flame Reflector", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
+		{ "s19831", "spell_shadow_mindbomb", "=q1=Arcane Bomb", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s22704", "inv_egg_05", "=q1=Field Repair Bot 74A", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s19830", "inv_misc_head_dragon_01", "=q3=Arcanite Dragonling", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s22793", "inv_misc_spyglass_02", "=q3=Biznicks 247x128 Accurascope", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s24356", "inv_helmet_47", "=q3=Bloodvine Goggles", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s24357", "inv_helmet_44", "=q3=Bloodvine Lens", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s19833", "inv_weapon_rifle_03", "=q3=Flawless Arcanite Rifle", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s23082", "inv_misc_enggizmos_16", "=q3=Ultra-Flash Shadow Reflector", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s22795", "inv_weapon_rifle_05", "=q4=Core Marksman Rifle", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s22797", "spell_arcane_portaldarnassus", "=q4=Force Reactive Disk", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 	};
 
 	Gnomish1 = {
-		{ 0, "Trade_Engineering", "=q6=#p14#", "" },
 		{ "s12895", "inv_scroll_05", "=q1=Inlaid Mithril Cylinder Plans", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
 		{ "s15633", "inv_misc_idol_02", "=q1=Lil' Smoky", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
 		{ "s12899", "inv_gizmo_09", "=q1=Gnomish Shrink Ray", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
@@ -1571,7 +1562,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	Goblin1 = {
-		{ 0, "Trade_Engineering", "=q6=#p15#", "" },
 		{ "s12715", "inv_scroll_03", "=q1=Goblin Rocket Fuel Recipe", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
 		{ "s15628", "inv_misc_bomb_04", "=q1=Pet Bombling", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
 		{ "s13240", "inv_musket_01", "=q1=The Mortar: Reloaded", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
@@ -1709,7 +1699,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	CookingApprentice1 = {
 		{ "s818", "spell_fire_fire", "=ds=Basic Campfire", "" },
 		{ 0, "", "", "" },
-		{ 0, "INV_Misc_Food_15", "=q6=#sk1#", "" },
 		{ "s7751", "inv_misc_fish_07", "=q1=Brilliant Smallfish", "=ds=#sr# =so1=1 =so2=45 =so3=65 =so4=85" },
 		{ "s2538", "inv_misc_food_18", "=q1=Charred Wolf Meat", "=ds=#sr# =so1=1 =so2=45 =so3=65 =so4=85" },
 		{ "s15935", "inv_misc_food_46", "=q1=Crispy Bat Wing", "=ds=#sr# =so1=1 =so2=45 =so3=65 =so4=85" },
@@ -1739,7 +1728,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	CookingJourneyman1 = {
-		{ 0, "INV_Misc_Food_15", "=q6=#sk2#", "" },
 		{ "s3370", "inv_misc_food_47", "=q1=Crocolisk Steak", "=ds=#sr# =so1=80 =so2=120 =so3=140 =so4=160" },
 		{ "s2546", "inv_misc_food_48", "=q1=Dry Pork Ribs", "=ds=#sr# =so1=80 =so2=120 =so3=140 =so4=160" },
 		{ "s25704", "inv_misc_fish_20", "=q1=Smoked Sagefish", "=ds=#sr# =so1=80 =so2=120 =so3=140 =so4=160" },
@@ -1766,7 +1754,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	CookingExpert1 = {
-		{ 0, "INV_Misc_Food_15", "=q6=#sk3#", "" },
 		{ "s13028", "inv_drink_15", "=q1=Goldthorn Tea", "=ds=#sr# =so1=175 =so2=175 =so3=190 =so4=205" },
 		{ "s7828", "inv_misc_fish_04", "=q1=Rockscale Cod", "=ds=#sr# =so1=175 =so2=190 =so3=210 =so4=230" },
 		{ "s4094", "inv_misc_food_18", "=q1=Barbecued Buzzard Wing", "=ds=#sr# =so1=175 =so2=215 =so3=235 =so4=255" },
@@ -1792,7 +1779,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	CookingArtisan1 = {
-		{ 0, "INV_Misc_Food_15", "=q6=#sk4#", "" },
 		{ "s18240", "inv_misc_fish_13", "=q1=Grilled Squid", "=ds=#sr# =so1=240 =so2=280 =so3=300 =so4=320" },
 		{ "s18242", "inv_misc_fish_03", "=q1=Hot Smoked Bass", "=ds=#sr# =so1=240 =so2=280 =so3=300 =so4=320" },
 		{ "s18243", "inv_drink_17", "=q1=Nightfin Soup", "=ds=#sr# =so1=250 =so2=290 =so3=310 =so4=330" },
