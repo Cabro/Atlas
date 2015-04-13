@@ -2372,20 +2372,21 @@ AtlasLoot_DewDropDown = {
 			[2] = { { (AL["Blacksmithing"]), "Blacksmithing", "Submenu" }, },
 			[3] = { { (AL["Enchanting"]), "Enchanting", "Submenu" }, },
 			[4] = { { (AL["Engineering"]), "Engineering", "Submenu" }, },
-			[5] = { { (AL["Leatherworking"]), "Leatherworking", "Submenu" }, },
-			[6] = { { (AL["Mining"]), "Mining1", "Table" }, },
-			[7] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
-			[8] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
-			[9] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
-			[10] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
-			[11] = { 
+			[5] = { { (AL["Herbalism"]), "Herbalism1", "Table" }, },
+			[6] = { { (AL["Leatherworking"]), "Leatherworking", "Submenu" }, },
+			[7] = { { (AL["Mining"]), "Mining", "Submenu" }, },
+			[8] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
+			[9] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
+			[10] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
+			[11] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
+			[12] = { 
 				[AL["Crafted Sets"]] = {
 					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
 					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
 					{ (AL["Tailoring"]), "BloodvineG", "Table" },
 				}, 
 			},
-			[12] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
+			[13] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
 		},
 	},
 };
@@ -3009,6 +3010,10 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AtlasLoot_TableNames["Elemental1"][1], "Elemental1" },
 		{ AtlasLoot_TableNames["Tribal1"][1], "Tribal1" },
 	},
+	["Mining"] = {
+		{ AL["Mining"], "Mining1" },
+		{ AL["Smelting"], "Smelting1" },
+	},
 	["Tailoring"] = {
 		{ AtlasLoot_TableNames["TailoringApprentice1"][1], "TailoringApprentice1" },
 		{ AtlasLoot_TableNames["TailoringJourneyman1"][1], "TailoringJourneyman1" },
@@ -3132,6 +3137,9 @@ function AtlasLootItem_OnEnter()
 				AtlasLootTooltip2:SetOwner(AtlasLootTooltip, "ANCHOR_BOTTOMRIGHT", -(AtlasLootTooltip:GetWidth()), 0);
 				AtlasLootTooltip2:ClearLines();
 				AtlasLootTooltip2:SetHyperlink("item:"..GetSpellInfoVanillaDB["enchants"][spellID]["item"]..":0:0:0");
+				if GetSpellInfoVanillaDB["enchants"][spellID]["extra"] and GetSpellInfoVanillaDB["enchants"][spellID]["extra"] ~= nil and GetSpellInfoVanillaDB["enchants"][spellID]["extra"] ~= "" then
+					AtlasLootTooltip2:AddLine(GetSpellInfoVanillaDB["enchants"][spellID]["extra"], nil, nil, nil, 1);
+				end
 				if ( AtlasLootCharDB.ItemIDs ) then
 					AtlasLootTooltip2:AddLine(BLUE..AL["ItemID:"].." "..GetSpellInfoVanillaDB["enchants"][spellID]["item"], nil, nil, nil, 1);
 				end
@@ -3189,6 +3197,9 @@ function AtlasLootItem_OnEnter()
 				AtlasLootTooltip2:SetOwner(AtlasLootTooltip, "ANCHOR_BOTTOMRIGHT", -(AtlasLootTooltip:GetWidth()), 0);
 				AtlasLootTooltip2:ClearLines();
 				AtlasLootTooltip2:SetHyperlink("item:"..GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"]..":0:0:0");
+				if GetSpellInfoVanillaDB["craftspells"][spellID]["extra"] and GetSpellInfoVanillaDB["craftspells"][spellID]["extra"] ~= nil then
+					AtlasLootTooltip2:AddLine(GetSpellInfoVanillaDB["craftspells"][spellID]["extra"], nil, nil, nil, 1);
+				end
 				if ( AtlasLootCharDB.ItemIDs ) then
 					AtlasLootTooltip2:AddLine(BLUE..AL["ItemID:"].." "..GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"], nil, nil, nil, 1);
 				end
