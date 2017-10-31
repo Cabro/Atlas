@@ -19,6 +19,10 @@ function AtlasLoot:Search(Text)
 	Text = strtrim(Text);
 	if Text == "" then return end
 	local text = string.lower(Text);
+	local texta = nil
+	if string.find(text, "-") then
+		texta = string.gsub(text, "-", "@")
+	end
 	local search = function(dataSource)
 		if dataSource == "AtlasLootFallback" then return end
 		local partial = AtlasLootCharDB.PartialMatching;
@@ -29,11 +33,20 @@ function AtlasLoot:Search(Text)
 					if not itemName then itemName = gsub(v[3], "=q%d=", "") end
 					local found;
 					if partial then
-						found = string.find(string.lower(itemName), text);
+						if texta then
+							found = string.find(string.lower(string.gsub(itemName, "-", "@")), texta);
+						else
+							found = string.find(string.lower(itemName), text);
+						end
 					else
-						found = string.lower(itemName) == text;
+						if texta then
+							found = string.lower(string.gsub(itemName, "-", "@")) == texta;
+						else
+							found = string.lower(itemName) == text;
+						end
 					end
 					if found then
+						itemName = string.gsub(itemName, "@", "-")
 						local _, _, quality = string.find(v[3], "=q(%d)=");
 						if quality then itemName = "=q"..quality.."="..itemName end
 						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], itemName, v[4], dataID.."|"..dataSource });
@@ -49,11 +62,20 @@ function AtlasLoot:Search(Text)
 					end
 					local found;
 					if partial then
-						found = string.find(string.lower(spellName), text);
+						if texta then
+							found = string.find(string.lower(string.gsub(spellName, "-", "@")), texta);
+						else
+							found = string.find(string.lower(spellName), text);
+						end
 					else
-						found = string.lower(spellName) == text;
+						if texta then
+							found = string.lower(string.gsub(spellName, "-", "@")) == texta;
+						else
+							found = string.lower(spellName) == text;
+						end
 					end
 					if found then
+						spellName = string.gsub(spellName, "@", "-")
 						spellName = string.sub(v[3], 1, 4)..spellName;
 						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], spellName, v[4], dataID.."|"..dataSource });
 					end
@@ -68,11 +90,20 @@ function AtlasLoot:Search(Text)
 					end
 					local found;
 					if partial then
-						found = string.find(string.lower(spellName), text);
+						if texta then
+							found = string.find(string.lower(string.gsub(spellName, "-", "@")), texta);
+						else
+							found = string.find(string.lower(spellName), text);
+						end
 					else
-						found = string.lower(spellName) == text;
+						if texta then
+							found = string.lower(string.gsub(spellName, "-", "@")) == texta;
+						else
+							found = string.lower(spellName) == text;
+						end
 					end
 					if found then
+						spellName = string.gsub(spellName, "@", "-")
 						spellName = string.sub(v[3], 1, 4)..spellName;
 						table.insert(AtlasLootCharDB["SearchResult"], { v[1], v[2], spellName, v[4], dataID.."|"..dataSource });
 					end
@@ -92,6 +123,7 @@ function AtlasLoot:Search(Text)
 		SearchResult = AtlasLoot_CategorizeWishList(AtlasLootCharDB["SearchResult"]);
 		AtlasLoot_ShowItemsFrame("SearchResult", "SearchResultPage1", string.format((AL["Search Result: %s"]), AtlasLootCharDB.LastSearchedText or ""), pFrame);
 	end
+	collectgarbage()
 end
 
 function AtlasLoot:ShowSearchOptions(button)

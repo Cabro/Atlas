@@ -86,6 +86,12 @@ function AtlasLootSetMenu()
 	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Box_04");
 	AtlasLootMenuItem_22.lootpage="WORLDEPICS";
 	AtlasLootMenuItem_22:Show();
+	--World Blues
+	AtlasLootMenuItem_23_Name:SetText(AL["World Blues"]);
+	AtlasLootMenuItem_23_Extra:SetText("");
+	AtlasLootMenuItem_23_Icon:SetTexture("Interface\\Icons\\INV_Box_01");
+	AtlasLootMenuItem_23.lootpage="WORLDBLUES";
+	AtlasLootMenuItem_23:Show();
 	--Dungeon Set 1/2
 	AtlasLootMenuItem_17_Name:SetText(AL["Dungeon 1/2 Sets"]);
 	AtlasLootMenuItem_17_Extra:SetText("");
@@ -131,27 +137,215 @@ function AtlasLootWorldEpicsMenu()
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
 	--Lvl 30-39 BoE World Epics
-	AtlasLootMenuItem_2_Name:SetText(AL["Level 30-39"]);
-	AtlasLootMenuItem_2_Extra:SetText("");
-	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Ring_15");
-	AtlasLootMenuItem_2.lootpage="WorldEpics1";
-	AtlasLootMenuItem_2:Show();
-	--Lvl 40-49 BoE World Epics
-	AtlasLootMenuItem_3_Name:SetText(AL["Level 40-49"]);
-	AtlasLootMenuItem_3_Extra:SetText("");
-	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Staff_29");
-	AtlasLootMenuItem_3.lootpage="WorldEpics2";
-	AtlasLootMenuItem_3:Show();
-	--Lvl 50-60 BoE World Epics
-	AtlasLootMenuItem_4_Name:SetText(AL["Level 50-60"]);
+	AtlasLootMenuItem_4_Name:SetText(AL["Level 30-39"]);
 	AtlasLootMenuItem_4_Extra:SetText("");
-	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Sword_19");
-	AtlasLootMenuItem_4.lootpage="WorldEpics3";
+	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Ring_15");
+	AtlasLootMenuItem_4.lootpage="WorldEpics1";
 	AtlasLootMenuItem_4:Show();
+	--Lvl 40-49 BoE World Epics
+	AtlasLootMenuItem_5_Name:SetText(AL["Level 40-49"]);
+	AtlasLootMenuItem_5_Extra:SetText("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Staff_29");
+	AtlasLootMenuItem_5.lootpage="WorldEpics2";
+	AtlasLootMenuItem_5:Show();
+	--Lvl 50-60 BoE World Epics
+	AtlasLootMenuItem_6_Name:SetText(AL["Level 50-60"]);
+	AtlasLootMenuItem_6_Extra:SetText("");
+	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\INV_Sword_19");
+	AtlasLootMenuItem_6.lootpage="WorldEpics3";
+	AtlasLootMenuItem_6:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end
 	AtlasLoot_BossName:SetText("|cffFFFFFF"..AL["World Epics"]);
+	AtlasLoot_SetItemInfoFrame(AtlasLoot_AnchorFrame);
+end
+	
+function AtlasLootWorldBluesMenu()
+	for i = 1, 30, 1 do
+		getglobal("AtlasLootItem_"..i):Hide();
+	end
+	for i = 1, 30, 1 do
+		getglobal("AtlasLootMenuItem_"..i):Hide();
+		getglobal("AtlasLootMenuItem_"..i).isheader = false;
+	end
+	getglobal("AtlasLootItemsFrame_BACK"):Show();
+	getglobal("AtlasLootItemsFrame_BACK").lootpage = "SETMENU";
+	getglobal("AtlasLootItemsFrame_NEXT"):Hide();
+	getglobal("AtlasLootItemsFrame_PREV"):Hide();
+	getglobal("AtlasLootServerQueryButton"):Hide();
+	--Head
+	AtlasLootMenuItem_2_Name:SetText(AL["Heads"]);
+	AtlasLootMenuItem_2_Extra:SetText("");
+	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Helmet_01");
+	AtlasLootMenuItem_2.lootpage="WorldBluesHead";
+	AtlasLootMenuItem_2:Show();
+	--Neck
+	AtlasLootMenuItem_3_Name:SetText(AL["Necks"]);
+	AtlasLootMenuItem_3_Extra:SetText("");
+	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
+	AtlasLootMenuItem_3.lootpage="WorldBluesNeck";
+	AtlasLootMenuItem_3:Show();
+	--Shoulder
+	AtlasLootMenuItem_4_Name:SetText(AL["Shoulders"]);
+	AtlasLootMenuItem_4_Extra:SetText("");
+	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_02");
+	AtlasLootMenuItem_4.lootpage="WorldBluesShoulder";
+	AtlasLootMenuItem_4:Show();
+	--Back
+	AtlasLootMenuItem_5_Name:SetText(AL["Backs"]);
+	AtlasLootMenuItem_5_Extra:SetText("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Misc_Cape_19");
+	AtlasLootMenuItem_5.lootpage="WorldBluesBack";
+	AtlasLootMenuItem_5:Show();
+	--Chest
+	AtlasLootMenuItem_6_Name:SetText(AL["Chests"]);
+	AtlasLootMenuItem_6_Extra:SetText("");
+	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\INV_Chest_Cloth_51");
+	AtlasLootMenuItem_6.lootpage="WorldBluesChest";
+	AtlasLootMenuItem_6:Show();
+	--Wrist
+	AtlasLootMenuItem_7_Name:SetText(AL["Wrists"]);
+	AtlasLootMenuItem_7_Extra:SetText("");
+	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Bracer_01");
+	AtlasLootMenuItem_7.lootpage="WorldBluesWrist";
+	AtlasLootMenuItem_7:Show();
+	--Hands
+	AtlasLootMenuItem_8_Name:SetText(AL["Hands"]);
+	AtlasLootMenuItem_8_Extra:SetText("");
+	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\INV_Gauntlets_14");
+	AtlasLootMenuItem_8.lootpage="WorldBluesHands";
+	AtlasLootMenuItem_8:Show();
+	--Waist
+	AtlasLootMenuItem_9_Name:SetText(AL["Waists"]);
+	AtlasLootMenuItem_9_Extra:SetText("");
+	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\INV_Belt_02");
+	AtlasLootMenuItem_9.lootpage="WorldBluesWaist";
+	AtlasLootMenuItem_9:Show();
+	--Legs
+	AtlasLootMenuItem_10_Name:SetText(AL["Legs"]);
+	AtlasLootMenuItem_10_Extra:SetText("");
+	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\INV_Pants_01");
+	AtlasLootMenuItem_10.lootpage="WorldBluesLegs";
+	AtlasLootMenuItem_10:Show();
+	--Feet
+	AtlasLootMenuItem_11_Name:SetText(AL["Feet"]);
+	AtlasLootMenuItem_11_Extra:SetText("");
+	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Boots_01");
+	AtlasLootMenuItem_11.lootpage="WorldBluesFeet";
+	AtlasLootMenuItem_11:Show();
+	--Ring
+	AtlasLootMenuItem_12_Name:SetText(AL["Rings"]);
+	AtlasLootMenuItem_12_Extra:SetText("");
+	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Ring_13");
+	AtlasLootMenuItem_12.lootpage="WorldBluesRing";
+	AtlasLootMenuItem_12:Show();
+	--Trinket
+	AtlasLootMenuItem_13_Name:SetText(AL["Trinkets"]);
+	AtlasLootMenuItem_13_Extra:SetText("");
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Misc_EngGizmos_12");
+	AtlasLootMenuItem_13.lootpage="WorldBluesTrinket";
+	AtlasLootMenuItem_13:Show();
+	--Wands
+	AtlasLootMenuItem_14_Name:SetText(AL["Wands"]);
+	AtlasLootMenuItem_14_Extra:SetText("");
+	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\INV_Wand_05");
+	AtlasLootMenuItem_14.lootpage="WorldBluesWand";
+	AtlasLootMenuItem_14:Show();
+	--Held in OffHand
+	AtlasLootMenuItem_15_Name:SetText(AL["Off-Hands"].." & "..AL["Relics"]);
+	AtlasLootMenuItem_15_Extra:SetText("");
+	AtlasLootMenuItem_15_Icon:SetTexture("Interface\\Icons\\INV_Misc_Book_06");
+	AtlasLootMenuItem_15.lootpage="WorldBluesHeldInOffhand";
+	AtlasLootMenuItem_15:Show();
+	--1h Axe
+	AtlasLootMenuItem_17_Name:SetText(AL["One-Handed Axes"]);
+	AtlasLootMenuItem_17_Extra:SetText("");
+	AtlasLootMenuItem_17_Icon:SetTexture("Interface\\Icons\\INV_ThrowingAxe_01");
+	AtlasLootMenuItem_17.lootpage="WorldBlues1HAxes";
+	AtlasLootMenuItem_17:Show();
+	--1h Mace
+	AtlasLootMenuItem_18_Name:SetText(AL["One-Handed Maces"]);
+	AtlasLootMenuItem_18_Extra:SetText("");
+	AtlasLootMenuItem_18_Icon:SetTexture("Interface\\Icons\\INV_Hammer_15");
+	AtlasLootMenuItem_18.lootpage="WorldBlues1HMaces";
+	AtlasLootMenuItem_18:Show();
+	--1h Sword
+	AtlasLootMenuItem_19_Name:SetText(AL["One-Handed Swords"]);
+	AtlasLootMenuItem_19_Extra:SetText("");
+	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\INV_Sword_05");
+	AtlasLootMenuItem_19.lootpage="WorldBlues1HSwords";
+	AtlasLootMenuItem_19:Show();
+	--2h Axe
+	AtlasLootMenuItem_20_Name:SetText(AL["Two-Handed Axes"]);
+	AtlasLootMenuItem_20_Extra:SetText("");
+	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\INV_ThrowingAxe_06");
+	AtlasLootMenuItem_20.lootpage="WorldBlues2HAxes";
+	AtlasLootMenuItem_20:Show();
+	--2h Mace
+	AtlasLootMenuItem_21_Name:SetText(AL["Two-Handed Maces"]);
+	AtlasLootMenuItem_21_Extra:SetText("");
+	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Hammer_17");
+	AtlasLootMenuItem_21.lootpage="WorldBlues2HMaces";
+	AtlasLootMenuItem_21:Show();
+	--2h Sword
+	AtlasLootMenuItem_22_Name:SetText(AL["Two-Handed Swords"]);
+	AtlasLootMenuItem_22_Extra:SetText("");
+	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Sword_23");
+	AtlasLootMenuItem_22.lootpage="WorldBlues2HSwords";
+	AtlasLootMenuItem_22:Show();
+	--Dagger
+	AtlasLootMenuItem_23_Name:SetText(AL["Daggers"]);
+	AtlasLootMenuItem_23_Extra:SetText("");
+	AtlasLootMenuItem_23_Icon:SetTexture("Interface\\Icons\\INV_Sword_33");
+	AtlasLootMenuItem_23.lootpage="WorldBluesDaggers";
+	AtlasLootMenuItem_23:Show();
+	--Fists
+	AtlasLootMenuItem_24_Name:SetText(AL["Fist Weapons"]);
+	AtlasLootMenuItem_24_Extra:SetText("");
+	AtlasLootMenuItem_24_Icon:SetTexture("Interface\\Icons\\INV_Gauntlets_04");
+	AtlasLootMenuItem_24.lootpage="WorldBluesFistWeapons";
+	AtlasLootMenuItem_24:Show();
+	--Polearms
+	AtlasLootMenuItem_25_Name:SetText(AL["Polearms"]);
+	AtlasLootMenuItem_25_Extra:SetText("");
+	AtlasLootMenuItem_25_Icon:SetTexture("Interface\\Icons\\INV_Spear_05");
+	AtlasLootMenuItem_25.lootpage="WorldBluesPolearms";
+	AtlasLootMenuItem_25:Show();
+	--Staves
+	AtlasLootMenuItem_26_Name:SetText(AL["Staves"]);
+	AtlasLootMenuItem_26_Extra:SetText("");
+	AtlasLootMenuItem_26_Icon:SetTexture("Interface\\Icons\\INV_Staff_29");
+	AtlasLootMenuItem_26.lootpage="WorldBluesStaves";
+	AtlasLootMenuItem_26:Show();
+	--Bows
+	AtlasLootMenuItem_27_Name:SetText(AL["Bows"]);
+	AtlasLootMenuItem_27_Extra:SetText("");
+	AtlasLootMenuItem_27_Icon:SetTexture("Interface\\Icons\\INV_Weapon_Bow_02");
+	AtlasLootMenuItem_27.lootpage="WorldBluesBows";
+	AtlasLootMenuItem_27:Show();
+	--Crossbows
+	AtlasLootMenuItem_28_Name:SetText(AL["Crossbows"]);
+	AtlasLootMenuItem_28_Extra:SetText("");
+	AtlasLootMenuItem_28_Icon:SetTexture("Interface\\Icons\\INV_Weapon_Crossbow_02");
+	AtlasLootMenuItem_28.lootpage="WorldBluesCrossbows";
+	AtlasLootMenuItem_28:Show();
+	--Guns
+	AtlasLootMenuItem_29_Name:SetText(AL["Guns"]);
+	AtlasLootMenuItem_29_Extra:SetText("");
+	AtlasLootMenuItem_29_Icon:SetTexture("Interface\\Icons\\INV_Weapon_Rifle_07");
+	AtlasLootMenuItem_29.lootpage="WorldBluesGuns";
+	AtlasLootMenuItem_29:Show();
+	--Shields
+	AtlasLootMenuItem_30_Name:SetText(AL["Shields"]);
+	AtlasLootMenuItem_30_Extra:SetText("");
+	AtlasLootMenuItem_30_Icon:SetTexture("Interface\\Icons\\INV_Shield_04");
+	AtlasLootMenuItem_30.lootpage="WorldBluesShields";
+	AtlasLootMenuItem_30:Show();
+	for i = 1, 30, 1 do
+		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
+	end
+	AtlasLoot_BossName:SetText("|cffFFFFFF"..AL["World Blues"]);
 	AtlasLoot_SetItemInfoFrame(AtlasLoot_AnchorFrame);
 end
 	

@@ -552,7 +552,7 @@ These fonts are useless atm -->
 					<Color r="0" g="0" b="0" a="0.75"/>
 				</Texture>
 			</Layer>
-			<Layer level="OVERLAY">
+			<Layer level="BACKGROUND">
 			  <FontString name="QuestName" inherits="SystemFont">
                 <Size>
                   <AbsDimension x="400" y="12"/>

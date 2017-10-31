@@ -271,6 +271,7 @@ AtlasMaps = {
 		{ GREY.."5) "..AtlasLocale["Captain Kromcrush"], NPC, 14325 };
 		{ GREY.."6) "..AtlasLocale["King Gordok"], NPC, 11501 };
 		{ GREY..INDENT..AtlasLocale["Cho'Rush the Observer"], NPC, 14324 };
+		{ GREY..INDENT..AtlasLocale["Tribute Run"], OBJECT, 190005 };
 		{ GREN.."1') "..AtlasLocale["Library"] };
 		{ GREN..INDENT..AtlasLocale["Falrin Treeshaper"], NPC, 16032 };
 		{ GREN..INDENT..AtlasLocale["Lorekeeper Lydros"], NPC, 14368 };
@@ -283,7 +284,6 @@ AtlasMaps = {
 		{ "" };
 		{ GREY..INDENT..AtlasLocale["Trash Mobs"] };
 		{ GREY..INDENT..AtlasLocale["Dire Maul Books"] };
-		{ GREY..INDENT..AtlasLocale["Tribute Run"], OBJECT, 190005 };
 	};
 	DireMaulWest = {
 		ZoneName = { AtlasLocale["Dire Maul"].." ("..AtlasLocale["West"]..")", 2557 };

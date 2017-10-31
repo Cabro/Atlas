@@ -364,7 +364,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "e13640", "Spell_Holy_GreaterHeal", "=ds=Enchant Chest - Greater Health", "=ds=#sr# =so1=160 =so2=180 =so3=200 =so4=220" },
 		{ "e13642", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Spirit", "=ds=#sr# =so1=165 =so2=185 =so3=205 =so4=225" },
 		{ "e13644", "Spell_Holy_GreaterHeal", "=ds=Enchant Boots - Lesser Stamina", "=ds=#sr# =so1=170 =so2=190 =so3=210 =so4=230" },
-		{ "e13646", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Lesser Deflection", "=ds=#sr# =so1=170 =so2=190 =so3=210 =so4=230" },
+		{ "e13646", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Lesser Deflect", "=ds=#sr# =so1=170 =so2=190 =so3=210 =so4=230" },
 		{ "e13648", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Stamina", "=ds=#sr# =so1=170 =so2=190 =so3=210 =so4=230" },
 		{ "e13657", "Spell_Holy_GreaterHeal", "=ds=Enchant Cloak - Fire Resistance", "=ds=#sr# =so1=175 =so2=195 =so3=215 =so4=235" },
 		{ "e13653", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Lesser Beastslayer", "=ds=#sr# =so1=175 =so2=195 =so3=215 =so4=235" },
@@ -1421,15 +1421,16 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s26428", "inv_misc_missilelargecluster_red", "=q1=Large Red Rocket Cluster", "=ds=#sr# =so1=275 =so2=275 =so3=280 =so4=285" },
 		{ "s23080", "spell_shadow_detectinvisibility", "=q1=Powerful Seaforium Charge", "=ds=#sr# =so1=275 =so2=275 =so3=285 =so4=295" },
 		{ "s23079", "inv_misc_enggizmos_09", "=q2=Major Recombobulator", "=ds=#sr# =so1=275 =so2=285 =so3=290 =so4=295" },
+		{ "s26443", "inv_misc_enggizmos_03", "=q1=Firework Cluster Launcher", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s19814", "inv_crate_02", "=q1=Masterwork Target Dummy", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s19795", "inv_gizmo_pipe_04", "=q1=Thorium Tube", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s19796", "inv_weapon_rifle_08", "=q3=Dark Iron Rifle", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s19799", "inv_misc_bomb_05", "=q1=Dark Iron Bomb", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 		{ "s19815", "inv_gizmo_07", "=q1=Delicate Arcanite Converter", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
-		{ "s19800", "inv_ammo_bullet_03", "=q2=Thorium Shells", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 	};
 
 	EngineeringArtisan2 = {
+		{ "s19800", "inv_ammo_bullet_03", "=q2=Thorium Shells", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 		{ "s19825", "inv_helmet_47", "=q2=Master Engineer's Goggles", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s19819", "inv_jewelry_amulet_07", "=q2=Voice Amplification Modulator", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s23081", "inv_misc_enggizmos_04", "=q3=Hyper-Radiant Flame Reflector", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
@@ -1540,7 +1541,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s14891", "inv_ingot_mithril", "=q1=Smelt Dark Iron", "=ds=#sr# =so1=230 =so2=230 =so3=230 =so4=230" },
 		{ "s10098", "inv_ingot_08", "=q2=Smelt Truesilver", "=ds=#sr# =so1=230 =so2=230 =so3=230 =so4=230" },
 		{ "s16153", "inv_ingot_07", "=q1=Smelt Thorium", "=ds=#sr# =so1=250 =so2=250 =so3=250 =so4=250" },
-		{ "s22967", "inv_ingot_thorium", "=q5=Smelt Elementium", "=ds=#sr# =so1=300 =so2=350 =so3=362 =so4=375" },
+		{ "s22967", "inv_ingot_thorium", "=q5=Smelt Elementium", "=ds=#sr# =so1=1 =so2=350 =so3=362 =so4=375" },
 	};
 
 -------------

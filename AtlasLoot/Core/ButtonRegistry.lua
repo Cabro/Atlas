@@ -965,6 +965,254 @@ AtlasLoot_ButtonRegistry = {
 		Back_Page = "WORLDEPICS";
 		Back_Title = AL["World Epics"];
 	};
+	["WorldBluesHead"] = {
+		Title = AtlasLoot_TableNames["WorldBluesHead"][1];
+		Next_Page = "WorldBluesNeck";
+		Next_Title = AtlasLoot_TableNames["WorldBluesNeck"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesNeck"] = {
+		Title = AtlasLoot_TableNames["WorldBluesNeck"][1];
+		Next_Page = "WorldBluesShoulder";
+		Next_Title = AtlasLoot_TableNames["WorldBluesShoulder"][1];
+		Prev_Page = "WorldBluesHead";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesHead"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesShoulder"] = {
+		Title = AtlasLoot_TableNames["WorldBluesShoulder"][1];
+		Next_Page = "WorldBluesBack";
+		Next_Title = AtlasLoot_TableNames["WorldBluesBack"][1];
+		Prev_Page = "WorldBluesNeck";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesNeck"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesBack"] = {
+		Title = AtlasLoot_TableNames["WorldBluesBack"][1];
+		Next_Page = "WorldBluesChest";
+		Next_Title = AtlasLoot_TableNames["WorldBluesChest"][1];
+		Prev_Page = "WorldBluesShoulder";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesShoulder"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesChest"] = {
+		Title = AtlasLoot_TableNames["WorldBluesChest"][1];
+		Next_Page = "WorldBluesWrist";
+		Next_Title = AtlasLoot_TableNames["WorldBluesWrist"][1];
+		Prev_Page = "WorldBluesBack";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesBack"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesWrist"] = {
+		Title = AtlasLoot_TableNames["WorldBluesWrist"][1];
+		Next_Page = "WorldBluesHands";
+		Next_Title = AtlasLoot_TableNames["WorldBluesHands"][1];
+		Prev_Page = "WorldBluesChest";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesChest"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesHands"] = {
+		Title = AtlasLoot_TableNames["WorldBluesHands"][1];
+		Next_Page = "WorldBluesWaist";
+		Next_Title = AtlasLoot_TableNames["WorldBluesWaist"][1];
+		Prev_Page = "WorldBluesWrist";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesWrist"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesWaist"] = {
+		Title = AtlasLoot_TableNames["WorldBluesWaist"][1];
+		Next_Page = "WorldBluesLegs";
+		Next_Title = AtlasLoot_TableNames["WorldBluesLegs"][1];
+		Prev_Page = "WorldBluesHands";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesHands"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesLegs"] = {
+		Title = AtlasLoot_TableNames["WorldBluesLegs"][1];
+		Next_Page = "WorldBluesFeet";
+		Next_Title = AtlasLoot_TableNames["WorldBluesFeet"][1];
+		Prev_Page = "WorldBluesWaist";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesWaist"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesFeet"] = {
+		Title = AtlasLoot_TableNames["WorldBluesFeet"][1];
+		Next_Page = "WorldBluesRing";
+		Next_Title = AtlasLoot_TableNames["WorldBluesRing"][1];
+		Prev_Page = "WorldBluesLegs";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesLegs"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesRing"] = {
+		Title = AtlasLoot_TableNames["WorldBluesRing"][1];
+		Next_Page = "WorldBluesTrinket";
+		Next_Title = AtlasLoot_TableNames["WorldBluesTrinket"][1];
+		Prev_Page = "WorldBluesFeet";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesFeet"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesTrinket"] = {
+		Title = AtlasLoot_TableNames["WorldBluesTrinket"][1];
+		Next_Page = "WorldBluesWand";
+		Next_Title = AtlasLoot_TableNames["WorldBluesWand"][1];
+		Prev_Page = "WorldBluesRing";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesRing"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesWand"] = {
+		Title = AtlasLoot_TableNames["WorldBluesWand"][1];
+		Next_Page = "WorldBluesHeldInOffhand";
+		Next_Title = AtlasLoot_TableNames["WorldBluesHeldInOffhand"][1];
+		Prev_Page = "WorldBluesTrinket";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesTrinket"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesHeldInOffhand"] = {
+		Title = AtlasLoot_TableNames["WorldBluesHeldInOffhand"][1];
+		Next_Page = "WorldBlues1HAxes";
+		Next_Title = AtlasLoot_TableNames["WorldBlues1HAxes"][1];
+		Prev_Page = "WorldBluesWand";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesWand"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBlues1HAxes"] = {
+		Title = AtlasLoot_TableNames["WorldBlues1HAxes"][1];
+		Next_Page = "WorldBlues1HMaces";
+		Next_Title = AtlasLoot_TableNames["WorldBlues1HMaces"][1];
+		Prev_Page = "WorldBluesHeldInOffhand";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesHeldInOffhand"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBlues1HMaces"] = {
+		Title = AtlasLoot_TableNames["WorldBlues1HMaces"][1];
+		Next_Page = "WorldBlues1HSwords";
+		Next_Title = AtlasLoot_TableNames["WorldBlues1HSwords"][1];
+		Prev_Page = "WorldBlues1HAxes";
+		Prev_Title = AtlasLoot_TableNames["WorldBlues1HAxes"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBlues1HSwords"] = {
+		Title = AtlasLoot_TableNames["WorldBlues1HSwords"][1];
+		Next_Page = "WorldBlues2HAxes";
+		Next_Title = AtlasLoot_TableNames["WorldBlues2HAxes"][1];
+		Prev_Page = "WorldBlues1HMaces";
+		Prev_Title = AtlasLoot_TableNames["WorldBlues1HMaces"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBlues2HAxes"] = {
+		Title = AtlasLoot_TableNames["WorldBlues2HAxes"][1];
+		Next_Page = "WorldBlues2HMaces";
+		Next_Title = AtlasLoot_TableNames["WorldBlues2HMaces"][1];
+		Prev_Page = "WorldBlues1HSwords";
+		Prev_Title = AtlasLoot_TableNames["WorldBlues1HSwords"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBlues2HMaces"] = {
+		Title = AtlasLoot_TableNames["WorldBlues2HMaces"][1];
+		Next_Page = "WorldBlues2HSwords";
+		Next_Title = AtlasLoot_TableNames["WorldBlues2HSwords"][1];
+		Prev_Page = "WorldBlues2HAxes";
+		Prev_Title = AtlasLoot_TableNames["WorldBlues2HAxes"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBlues2HSwords"] = {
+		Title = AtlasLoot_TableNames["WorldBlues2HSwords"][1];
+		Next_Page = "WorldBluesDaggers";
+		Next_Title = AtlasLoot_TableNames["WorldBluesDaggers"][1];
+		Prev_Page = "WorldBlues2HMaces";
+		Prev_Title = AtlasLoot_TableNames["WorldBlues2HMaces"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesDaggers"] = {
+		Title = AtlasLoot_TableNames["WorldBluesDaggers"][1];
+		Next_Page = "WorldBluesFistWeapons";
+		Next_Title = AtlasLoot_TableNames["WorldBluesFistWeapons"][1];
+		Prev_Page = "WorldBlues2HSwords";
+		Prev_Title = AtlasLoot_TableNames["WorldBlues2HSwords"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesFistWeapons"] = {
+		Title = AtlasLoot_TableNames["WorldBluesFistWeapons"][1];
+		Next_Page = "WorldBluesPolearms";
+		Next_Title = AtlasLoot_TableNames["WorldBluesPolearms"][1];
+		Prev_Page = "WorldBluesDaggers";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesDaggers"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesPolearms"] = {
+		Title = AtlasLoot_TableNames["WorldBluesPolearms"][1];
+		Next_Page = "WorldBluesStaves";
+		Next_Title = AtlasLoot_TableNames["WorldBluesStaves"][1];
+		Prev_Page = "WorldBluesFistWeapons";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesFistWeapons"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesStaves"] = {
+		Title = AtlasLoot_TableNames["WorldBluesStaves"][1];
+		Next_Page = "WorldBluesBows";
+		Next_Title = AtlasLoot_TableNames["WorldBluesBows"][1];
+		Prev_Page = "WorldBluesPolearms";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesPolearms"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesBows"] = {
+		Title = AtlasLoot_TableNames["WorldBluesBows"][1];
+		Next_Page = "WorldBluesCrossbows";
+		Next_Title = AtlasLoot_TableNames["WorldBluesCrossbows"][1];
+		Prev_Page = "WorldBluesStaves";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesStaves"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesCrossbows"] = {
+		Title = AtlasLoot_TableNames["WorldBluesCrossbows"][1];
+		Next_Page = "WorldBluesGuns";
+		Next_Title = AtlasLoot_TableNames["WorldBluesGuns"][1];
+		Prev_Page = "WorldBluesBows";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesBows"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesGuns"] = {
+		Title = AtlasLoot_TableNames["WorldBluesGuns"][1];
+		Next_Page = "WorldBluesShields";
+		Next_Title = AtlasLoot_TableNames["WorldBluesShields"][1];
+		Prev_Page = "WorldBluesCrossbows";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesCrossbows"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
+	["WorldBluesShields"] = {
+		Title = AtlasLoot_TableNames["WorldBluesShields"][1];
+		Prev_Page = "WorldBluesGuns";
+		Prev_Title = AtlasLoot_TableNames["WorldBluesGuns"][1];
+		Back_Page = "WORLDBLUES";
+		Back_Title = AL["World Blues"];
+	};
 	["ZGTrash1"] = {
 		Title = AtlasLoot_TableNames["ZGTrash1"][1];
 		Next_Page = "ZGTrash2";

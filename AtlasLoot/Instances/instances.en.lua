@@ -234,6 +234,7 @@ AtlasLootBossButtons = {
 		"DMNCaptainKromcrush";
 		"DMNKingGordok";
 		"DMNChoRush";
+		"DMNTRIBUTERUN";
 		"";
 		"";
 		"";
@@ -246,7 +247,6 @@ AtlasLootBossButtons = {
 		"";
 		"DMNTrash";
 		"DMBooks";
-		"DMNTRIBUTERUN";
 	};
 	DireMaulWest = {
 		"VanillaKeys";
@@ -2498,8 +2498,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 9486, "INV_Axe_21", "=q3=Supercharger Battle Axe", "=ds=#h2#, #w1#", "0.02%" },
 		{ 9490, "INV_Sword_37", "=q3=Gizmotron Megachopper", "=ds=#h2#, #w10#", "0.01%" },
 		{ 0,"","","" },
-		{ 0,"","","" },
-		{ 0,"","","" },
+		{ 10299,"INV_Jewelry_Necklace_03","q2=Gnomeregan Amulet","=ds=#s2# =q2=#e31#", "0.01" },
+		{ 10298,"INV_Jewelry_Ring_10","q2=Gnomeregan Band","=ds=#s13# =q2=#e31#", "0.01" },
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
@@ -2695,17 +2695,17 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 8492, "Spell_Nature_ForceOfNature", "=q1=Parrot Cage (Green Wing Macaw)", "=ds=#e15# =q7=#x40#", "1.59%" },
 	};
 	STBalconyMinibosses = {
-		{ 10783, "INV_Shoulder_18", "=q3=Atal'ai Spaulders", "=ds=#s3#, #a2# =q2=#e32#", "3.12%" },
-		{ 10784, "INV_Chest_Chain_05", "=q3=Atal'ai Breastplate", "=ds=#s5#, #a3# =q2=#e32#", "2.12%" },
-		{ 10787, "INV_Bracer_18", "=q3=Atal'ai Gloves", "=ds=#s9#, #a1# =q2=#e32#", "5.25%" },
+		{ 10783, "INV_Shoulder_18", "=q3=Atal'ai Spaulders", "=ds=#s3#, #a2# =q2=#e31#", "3.12%" },
+		{ 10784, "INV_Chest_Chain_05", "=q3=Atal'ai Breastplate", "=ds=#s5#, #a3# =q2=#e31#", "2.12%" },
+		{ 10787, "INV_Bracer_18", "=q3=Atal'ai Gloves", "=ds=#s9#, #a1# =q2=#e31#", "5.25%" },
 		{ 0, "", "", "" },
-		{ 10788, "INV_Belt_15", "=q2=Atal'ai Girdle", "=ds=#s10#, #a4# =q2=#e32", "7.17%" },
-		{ 10785, "INV_Pants_07", "=q2=Atal'ai Leggings", "=ds=#s11#, #a2# =q2=#e32", "4.42%" },
-		{ 10786, "INV_Boots_01", "=q2=Atal'ai Boots", "=ds=#s12#, #a3# =q2=#e32", "6.15%" },
-	{ 0, "", "", "" },
-	{ 20606, "INV_Feather_14","=q1=Amber Voodoo Feather", "=ds=#m3# =q7=#st1#, #st6#" },
-	{ 20607, "INV_Feather_13","=q1=Blue Voodoo Feather", "=ds=#m3# =q7=#st2#, #st4#" },
-	{ 20608, "INV_Feather_12","=q1=Green Voodoo Feather", "=ds=#m3# =q7=#st3#, #st5#" },
+		{ 10788, "INV_Belt_15", "=q2=Atal'ai Girdle", "=ds=#s10#, #a4# =q2=#e32#", "7.17%" },
+		{ 10785, "INV_Pants_07", "=q2=Atal'ai Leggings", "=ds=#s11#, #a2# =q2=#e32#", "4.42%" },
+		{ 10786, "INV_Boots_01", "=q2=Atal'ai Boots", "=ds=#s12#, #a3# =q2=#e32#", "6.15%" },
+		{ 0, "", "", "" },
+		{ 20606, "INV_Feather_14","=q1=Amber Voodoo Feather", "=ds=#m3# =q7=#st1#=ds=, =q7=#st6#" },
+		{ 20607, "INV_Feather_13","=q1=Blue Voodoo Feather", "=ds=#m3# =q7=#st2#=ds=, =q7=#st4#" },
+		{ 20608, "INV_Feather_12","=q1=Green Voodoo Feather", "=ds=#m3# =q7=#st3#=ds=, =q7=#st5#" },
 	};
 	STSpawnOfHakkar = {
 		{ 10801, "INV_Boots_07", "=q3=Slitherscale Boots", "=ds=#s12#, #a2#", "42.33%" },
@@ -2794,7 +2794,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 10630, "INV_Crown_01", "=q3=Soulcatcher Halo", "=ds=#s1#, #a1#", "0.01%" },
 		{ 10632, "INV_Jewelry_Ring_03", "=q3=Slimescale Bracers", "=ds=#s8#, #a3#", "0.01%" },
 		{ 10631, "INV_Gauntlets_11", "=q3=Murkwater Gauntlets", "=ds=#s9#, #a3#", "0.01%" },
-		{ 10633, "INV_Pants_04", "=q3=Silvershell Leggings", "=ds=#s11#, #a3#", "0.01%" },
+		{ 10633, "INV_Pants_04", "=q3=Silvershell Leggings", "=ds=#s11#, #a4#", "0.01%" },
 		{ 10629, "INV_Boots_05", "=q3=Mistwalker Boots", "=ds=#s12#, #a1#", "0.01%" },
 		{ 10634, "INV_Jewelry_Ring_10", "=q3=Mindseye Circle", "=ds=#s13#", "0.02%" },
 		{ 10624, "INV_Weapon_Bow_08", "=q3=Stinging Bow", "=ds=#w2#", "0.02%" },
@@ -2876,7 +2876,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 17730, "INV_Axe_04", "=q3=Gatorbite Axe", "=ds=#h2#, #w1#", "19.21%" },
 	};
 	MaraPrincessTheradras = {
-		{ 17780, "INV_Sword_09", "=q4=Blade of Eternal Darkness", "=ds=#h3#, #w4#", "0.20%" },
+		{ 17780, "INV_Sword_09", "=q4=Blade of Eternal Darkness", "=ds=#h3#, #w4#", "3.94%" },
 		{ 0,"","","" },
 		{ 17715, "INV_Crown_01", "=q3=Eye of Theradras", "=ds=#s1#, #a1#", "13.47%" },
 		{ 17707, "INV_Stone_01", "=q3=Gemshard Heart", "=ds=#s2#", "15.30%" },
@@ -2887,7 +2887,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 17766, "INV_Hammer_10", "=q3=Princess Theradras' Scepter", "=ds=#h2#, #w6#", "16.44%" },
 	};
 	ZFAntusul = {
-		{ 9640, "INV_Gauntlets_26", "=q3=Vice Grips", "=ds=#s9#, #a4#", "31.30%" },
+		{ 9640, "INV_Gauntlets_26", "=q3=Vice Grips", "=ds=#s9#, #a4# =q2=#e31#", "31.30%" },
 		{ 9641, "INV_Jewelry_Necklace_02", "=q3=Lifeblood Amulet", "=ds=#s2#", "30.80%" },
 		{ 9639, "INV_Mace_11", "=q3=The Hand of Antu'sul", "=ds=#h3#, #w6#", "15.47%" },
 		{ 0,"","","" },
@@ -3964,7 +3964,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 18482, "INV_Weapon_Bow_05", "=q2=Ogre Toothpick Shooter", "=ds=#w2#","15.10%" },
 		{ 18481, "INV_Mace_05", "=q2=Skullcracking Mace", "=ds=#h2#, #w6#","10.34%" },
 		{ 18655, "INV_Scroll_06", "=q2=Schematic: Major Recombobulator", "=ds=#p5# #m16#", "4.41%" },
-		{ 18637, "INV_Misc_EngGizmos_09", "=q2=Major Recombobulator", "=ds=#s14#" },
 	};
 	DMWTendrisWarpwood = {
 		{ 18393, "INV_Belt_34", "=q3=Warpwood Binding", "=ds=#s10#, #a3#", "19.81%" },
@@ -4718,7 +4717,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13873, "INV_Misc_Key_14", "=q1=Viewing Room Key", "=ds=#e14#", "100%" },
 	};
 	SCHOLODeathKnight = {
-		{ 18760, "INV_Jewelry_Ring_09", "=q3=Necromantic Band", "=ds=#s13#", "24.75%" },
+		{ 18760, "INV_Jewelry_Ring_09", "=q3=Necromantic Band", "=ds=#s13# =q2=#e31#", "24.75%" },
 		{ 18761, "INV_Wand_12", "=q3=Oblivion's Touch", "=ds=#w12#", "17.17%" },
 		{ 18758, "INV_Weapon_ShortBlade_18", "=q3=Specter's Blade", "=ds=#h1#, #w4#", "15.72%" },
 		{ 18759, "INV_Axe_18", "=q3=Malicious Axe", "=ds=#h2#, #w1#", "24.75%" },

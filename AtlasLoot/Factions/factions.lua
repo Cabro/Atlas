@@ -272,6 +272,12 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 19293, "INV_Misc_Food_18", "=q1=Last Year's Mutton", "", "", "50", "#darkmoon#" },
 		{ 19292, "INV_Misc_Food_18", "=q1=Last Month's Mutton", "", "", "10", "#darkmoon#" },
 		{ 19295, "INV_Misc_Herb_19", "=q1=Darkmoon Flower", "", "", "5", "#darkmoon#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19228, "INV_Misc_Ticket_Tarot_Stack_01", "=q4=Beasts Deck", "=ds=#m2#" },
+		{ 19267, "INV_Misc_Ticket_Tarot_Stack_01", "=q4=Elementals Deck", "=ds=#m2#" },
+		{ 19257, "INV_Misc_Ticket_Tarot_Stack_01", "=q4=Warlords Deck", "=ds=#m2#" },
+		{ 19277, "INV_Misc_Ticket_Tarot_Stack_01", "=q4=Portals Deck", "=ds=#m2#" },
 	};
 	Zandalar1 = {
 		{ 0, "", "", "" },

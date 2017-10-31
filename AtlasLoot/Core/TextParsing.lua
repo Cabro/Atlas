@@ -81,7 +81,8 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#e28#", AL["Crafting Reagent"]);
     text = gsub(text, "#e31#", AL["random stats"]);
 	text = gsub(text, "#e32#", AL["random resistance"]);
-	text = gsub(text, "#e33#", AL["random colour"]);
+	text = gsub(text, "#e33#", AL["random color"]);
+	text = gsub(text, "#e34#", AL["<Right Click to Open>"]);
 
     -- Classes
     text = gsub(text, "#c1#", AL["Druid"]); -- =q13=#c1#
@@ -328,29 +329,13 @@ function AtlasLoot_FixText(text)
     
 	-- Chests, boxes
     text = gsub(text, "#cb1#", AL["Doan's Strongbox"]);
-    --[[text = gsub(text, "#cb2#", ATLASLOOT_Chest of The Seven);
-    text = gsub(text, "#cb3#", ATLASLOOT_The Vault);
-    text = gsub(text, "#cb4#", ATLASLOOT_Dark Coffer);
-    text = gsub(text, "#cb5#", ATLASLOOT_The Secret Safe);
-    text = gsub(text, "#cb6#", ATLASLOOT_Ogre Tannin Basket);]]
     text = gsub(text, "#cb7#", AL["Fengus's Chest"]);
-    --[[text = gsub(text, "#cb8#", ATLASLOOT_The Princes Chest);]]
     text = gsub(text, "#cb9#", AL["Felvine Shard"]);
     text = gsub(text, "#cb10#", AL["Unforged Rune Covered Breastplate"]);
-    --[[text = gsub(text, "#cb11#", ATLASLOOT_Unfinished Painting);
-    text = gsub(text, "#cb12#", ATLASLOOT_Frostwhispers Embalming Fluid);--]]
     text = gsub(text, "#cb13#", AL["Malor's Strongbox"]);
-    --[[text = gsub(text, "#cb14#", ATLASLOOT_Baelogs Chest);
-    text = gsub(text, "#cb15#", ATLASLOOT_Conspicuous Urn);--]]
     text = gsub(text, "#cb16#", AL["Gift of Adoration"]);
     text = gsub(text, "#cb17#", AL["Box of Chocolates"]);
     text = gsub(text, "#cb18#", AL["Treat Bag"]);
-    --[[text = gsub(text, "#cb19#", ATLASLOOT_Gaily Wrapped Present);
-    text = gsub(text, "#cb20#", ATLASLOOT_Festive Gift);
-    text = gsub(text, "#cb21#", ATLASLOOT_Ticking Present);
-    text = gsub(text, "#cb22#", ATLASLOOT_Gently Shaken Gift);
-    text = gsub(text, "#cb24#", ATLASLOOT_Lunar Festival Fireworks Pack);
-    text = gsub(text, "#cb25#", ATLASLOOT_Lucky Red Envelope);--]]
     text = gsub(text, "#cb25#", AL["Brightly Colored Egg"]);
     text = gsub(text, "#cb26#", AL["Small Rocket Recipes"]);
     text = gsub(text, "#cb27#", AL["Large Rocket Recipes"]);

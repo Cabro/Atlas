@@ -1243,6 +1243,9 @@
 					<OnClick>
 						AtlasLoot_ShowQuickLooks(this);
 					</OnClick>
+					<OnHide>
+						AtlasLoot_Dewdrop:Close();
+					</OnHide>
 				</Scripts>
 			</Button>
 			<Button name="$parent_PREV" inherits="AtlasLootPrevButtonTemplate">
