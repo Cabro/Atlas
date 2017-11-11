@@ -65,7 +65,7 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
-		"";
+		"AVIvus";
 		"";
 		"";
 		"";
@@ -94,7 +94,7 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
-		"";
+		"AVLokholar";
 		"";
 		"";
 		"";
@@ -165,6 +165,24 @@ AtlasLootBattlegrounds = {
 ----------------------
 AtlasLoot_Data["AtlasLootBGItems"] = {
 	EmptyInstance = {};
+	AVIvus = {
+		{ 0, "", "", "" },
+		{ 19105, "INV_Helmet_61", "=q3=Frost Runed Headdress", "=ds=#s1#, #a1#", "24.56%" },
+		{ 19111, "INV_Shoulder_12", "=q3=Winteraxe Epaulets", "=ds=#s3#, #a3#", "18.79%" },
+		{ 19113, "INV_Bracer_08", "=q3=Yeti Hide Bracers", "=ds=#s8#, #a2#", "22.28%" },
+		{ 19112, "INV_Bracer_18", "=q3=Frozen Steel Vambraces", "=ds=#s8#, #a4#", "19.60%" },
+		{ 19109, "INV_Jewelry_Ring_35", "=q3=Deep Rooted Ring", "=ds=#s13#", "16.38%" },
+		{ 19110, "INV_Sword_47", "=q3=Cold Forged Blade", "=ds=#h1#, #w4#", "20.40%" },
+	};
+	AVLokholar = {
+		{ 0, "", "", "" },
+		{ 19105, "INV_Helmet_61", "=q3=Frost Runed Headdress", "=ds=#s1#, #a1#", "18.47%" },
+		{ 19111, "INV_Shoulder_12", "=q3=Winteraxe Epaulets", "=ds=#s3#, #a3#", "14.38%" },
+		{ 19113, "INV_Bracer_08", "=q3=Yeti Hide Bracers", "=ds=#s8#, #a2#", "15.04%" },
+		{ 19112, "INV_Bracer_18", "=q3=Frozen Steel Vambraces", "=ds=#s8#, #a4#", "24.80%" },
+		{ 19109, "INV_Jewelry_Ring_35", "=q3=Deep Rooted Ring", "=ds=#s13#", "12.93%" },
+		{ 19110, "INV_Sword_47", "=q3=Cold Forged Blade", "=ds=#h1#, #w4#", "17.28%" },
+	};
 	AVRepFriendly = {
 		{ 0, "INV_BannerPVP_02", "=q8=#m7#", "=q7=#b1#" },
 		{ 0, "", "", "" },

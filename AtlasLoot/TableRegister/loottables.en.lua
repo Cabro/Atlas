@@ -760,6 +760,8 @@ AtlasLoot_TableNames = {
 
 	--Battlegrounds
  	--Alterac Valley
+	["AVIvus"] = { AL["Alterac Valley"].." - "..AL["Ivus the Forest Lord"], "AtlasLootBGItems" },
+	["AVLokholar"] = { AL["Alterac Valley"].." - "..AL["Lokholar the Ice Lord"], "AtlasLootBGItems" },
 	["AVRepFriendly"] = { AL["Alterac Valley"].." "..AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
 	["AVRepHonored"] = { AL["Alterac Valley"].." "..AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
 	["AVRepRevered"] = { AL["Alterac Valley"].." "..AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
@@ -1667,6 +1669,8 @@ AtlasLoot_TableNamesBoss = {
 
 	["Battlegrounds"] = {
  	--Alterac Valley
+	["AVIvus"] = { AL["Alterac Valley"].." - "..AL["Ivus the Forest Lord"], "AtlasLootBGItems" },
+	["AVLokholar"] = { AL["Alterac Valley"].." - "..AL["Lokholar the Ice Lord"], "AtlasLootBGItems" },
 	["AVRepFriendly"] = { AL["Alterac Valley"].." "..AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
 	["AVRepHonored"] = { AL["Alterac Valley"].." "..AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
 	["AVRepRevered"] = { AL["Alterac Valley"].." "..AL["51-60 Revered Rewards"], "AtlasLootBGItems" },

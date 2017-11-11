@@ -1429,5 +1429,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Necks"] = true,
 	["Heads"] = true,
 	["Off-Hands"] = true,
+	["Ivus the Forest Lord"] = true,
+	["Lokholar the Ice Lord"] = true,
 	} end)
 	
