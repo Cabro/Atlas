@@ -821,6 +821,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 20034, "INV_Chest_Cloth_12", "=q4=Zandalar Illusionist's Robe", "=q4=#x10#=ds=, #r4#" },
 		{ 19845, "INV_Shoulder_17", "=q4=Zandalar Illusionist's Mantle", "=q4=#x11#=ds=, #r3#" },
 		{ 19846, "INV_Bracer_07", "=q4=Zandalar Illusionist's Wraps", "=q4=#x12#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19600, "INV_Jewelry_Necklace_25", "=q3=Pebble of Kajaro", "=ds=#r4#" },
+		{ 19598, "INV_Jewelry_Necklace_24", "=q3=Pebble of Kajaro", "=ds=#r3#" },
+		{ 19598, "INV_Jewelry_Necklace_23", "=q2=Pebble of Kajaro", "=ds=#r2#" },
 	};
 	ZGWarlock = {
 		{ 0, "", "", "" },
@@ -831,6 +838,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 20033, "INV_Chest_Cloth_12", "=q4=Zandalar Demoniac's Robe", "=q4=#x10#=ds=, #r4#" },
 		{ 19849, "INV_Shoulder_17", "=q4=Zandalar Demoniac's Mantle", "=q4=#x13#=ds=, #r3#" },
 		{ 19848, "INV_Bracer_07", "=q4=Zandalar Demoniac's Wraps", "=q4=#x14#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19604, "INV_Jewelry_Necklace_25", "=q3=Kezan's Taint", "=ds=#r4#" },
+		{ 19603, "INV_Jewelry_Necklace_24", "=q3=Kezan's Taint", "=ds=#r3#" },
+		{ 19602, "INV_Jewelry_Necklace_23", "=q2=Kezan's Taint", "=ds=#r2#" },
 	};
 	ZGPriest = {
 		{ 0, "", "", "" },
@@ -841,6 +855,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19841, "INV_Shoulder_01", "=q4=Zandalar Confessor's Mantle", "=q4=#x15#=ds=, #r4#" },
 		{ 19842, "INV_Belt_08", "=q4=Zandalar Confessor's Bindings", "=q4=#x13#=ds=, #r3#" },
 		{ 19843, "INV_Bracer_07", "=q4=Zandalar Confessor's Wraps", "=q4=#x14#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19593, "INV_Jewelry_Necklace_25", "=q3=The Eye of Zuldazar", "=ds=#r4#" },
+		{ 19592, "INV_Jewelry_Necklace_24", "=q3=The Eye of Zuldazar", "=ds=#r3#" },
+		{ 19591, "INV_Jewelry_Necklace_23", "=q2=The Eye of Zuldazar", "=ds=#r2#" },
 	};
 	ZGRogue = {
 		{ 0, "", "", "" },
@@ -851,6 +872,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19834, "INV_Chest_Leather_10", "=q4=Zandalar Madcap's Tunic", "=q4=#x15#=ds=, #r4#" },
 		{ 19835, "INV_Shoulder_29", "=q4=Zandalar Madcap's Mantle", "=q4=#x16#=ds=, #r3#" },
 		{ 19836, "INV_Bracer_14", "=q4=Zandalar Madcap's Bracers", "=q4=#x17#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19616, "INV_Jewelry_Necklace_25", "=q3=Zandalarian Shadow Talisman", "=ds=#r4#" },
+		{ 19615, "INV_Jewelry_Necklace_24", "=q3=Zandalarian Shadow Talisman", "=ds=#r3#" },
+		{ 19614, "INV_Jewelry_Necklace_23", "=q2=Zandalarian Shadow Talisman", "=ds=#r2#" },
 	};
 	ZGDruid = {
 		{ 0, "", "", "" },
@@ -861,6 +889,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19838, "INV_Chest_Leather_06", "=q4=Zandalar Haruspex's Tunic", "=q4=#x18#=ds=, #r4#" },
 		{ 19839, "INV_Belt_01", "=q4=Zandalar Haruspex's Belt","=q4=#x13#=ds=, #r3#" },
 		{ 19840, "INV_Bracer_08", "=q4=Zandalar Haruspex's Bracers", "=q4=#x14#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19612, "INV_Jewelry_Necklace_25", "=q3=Enchanted South Seas Kelp", "=ds=#r4#" },
+		{ 19611, "INV_Jewelry_Necklace_24", "=q3=Enchanted South Seas Kelp", "=ds=#r3#" },
+		{ 19610, "INV_Jewelry_Necklace_23", "=q2=Enchanted South Seas Kelp", "=ds=#r2#" },
 	};
 	ZGHunter = {
 		{ 0, "", "", "" },
@@ -871,6 +906,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19831, "INV_Shoulder_22", "=q4=Zandalar Predator's Mantle", "=q4=#x15#=ds=, #r4#" },
 		{ 19832, "INV_Belt_19", "=q4=Zandalar Predator's Belt", "=q4=#x11#=ds=, #r3#" },
 		{ 19833, "INV_Bracer_18", "=q4=Zandalar Predator's Bracers", "=q4=#x12#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19620, "INV_Jewelry_Necklace_25", "=q3=Maelstrom's Tendril", "=ds=#r4#" },
+		{ 19619, "INV_Jewelry_Necklace_24", "=q3=Maelstrom's Tendril", "=ds=#r3#" },
+		{ 19618, "INV_Jewelry_Necklace_23", "=q2=Maelstrom's Tendril", "=ds=#r2#" },
 	};
 	ZGShaman = {
 		{ 0, "", "", "" },
@@ -881,17 +923,33 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19828, "INV_Chest_Fur", "=q4=Zandalar Augur's Hauberk", "=q4=#x18#=ds=, #r4#" },
 		{ 19829, "INV_Belt_19", "=q4=Zandalar Augur's Belt", "=q4=#x16#=ds=, #r3#" },
 		{ 19830, "INV_Bracer_15", "=q4=Zandalar Augur's Bracers", "=q4=#x17#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19608, "INV_Jewelry_Necklace_25", "=q3=Vision of Voodress", "=ds=#r4#" },
+		{ 19607, "INV_Jewelry_Necklace_24", "=q3=Vision of Voodress", "=ds=#r3#" },
+		{ 19606, "INV_Jewelry_Necklace_23", "=q2=Vision of Voodress", "=ds=#r2#" },
 	};
 	ZGWarrior = {
 		{ 0, "", "", "" },
 		{ 0,"INV_Shield_05", "=q17=#zgs9#","" },
+		{ 0, "", "", "" },
 		{ 19951, "INV_Jewelry_Necklace_19", "=q4=Gri'lek's Charm of Might", "=ds=#s14#" },
 		{ 19577, "INV_Jewelry_Necklace_26", "=q4=Rage of Mugamba", "=ds=#r5#" },
 		{ 19822, "INV_Chest_Plate07", "=q4=Zandalar Vindicator's Breastplate", "=q4=#x10#=ds=, #r4#" },
 		{ 19823, "INV_Belt_32", "=q4=Zandalar Vindicator's Belt", "=q4=#x16#=ds=, #r3#" },
 		{ 19824, "INV_Bracer_14", "=q4=Zandalar Vindicator's Armguards", "=q4=#x17#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19576, "INV_Jewelry_Necklace_25", "=q3=Strength of Mugamba", "=ds=#r4#" },
+		{ 19575, "INV_Jewelry_Necklace_24", "=q3=Strength of Mugamba", "=ds=#r3#" },
+		{ 19574, "INV_Jewelry_Necklace_23", "=q2=Strength of Mugamba", "=ds=#r2#" },
 	};
 	ZGPaladin = {
+		{ 0, "", "", "" },
 		{ 0,"Spell_Holy_SealOfMight", "=q16=#zgs4#","" },
 		{ 0, "", "", "" },
 		{ 19952, "INV_Jewelry_Necklace_19", "=q4=Gri'lek's Charm of Valor", "=ds=#s14#" },
@@ -899,6 +957,13 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 19825, "INV_Chest_Plate07", "=q4=Zandalar Freethinker's Breastplate", "=q4=#x18#=ds=, #r4#" },
 		{ 19826, "INV_Belt_32", "=q4=Zandalar Freethinker's Belt", "=q4=#x11#=ds=, #r3#" },
 		{ 19827, "INV_Bracer_14", "=q4=Zandalar Freethinker's Armguards", "=q4=#x12#=ds=, #r2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 19586, "INV_Jewelry_Necklace_25", "=q3=Heathen's Brand", "=ds=#r4#" },
+		{ 19585, "INV_Jewelry_Necklace_24", "=q3=Heathen's Brand", "=ds=#r3#" },
+		{ 19579, "INV_Jewelry_Necklace_23", "=q2=Heathen's Brand", "=ds=#r2#" },
 	};
 	AQ20Mage = {
 		{ 0, "", "", "" },
