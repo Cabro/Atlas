@@ -826,7 +826,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 19600, "INV_Jewelry_Necklace_25", "=q3=Pebble of Kajaro", "=ds=#r4#" },
-		{ 19598, "INV_Jewelry_Necklace_24", "=q3=Pebble of Kajaro", "=ds=#r3#" },
+		{ 19599, "INV_Jewelry_Necklace_24", "=q3=Pebble of Kajaro", "=ds=#r3#" },
 		{ 19598, "INV_Jewelry_Necklace_23", "=q2=Pebble of Kajaro", "=ds=#r2#" },
 	};
 	ZGWarlock = {
