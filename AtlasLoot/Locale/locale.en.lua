@@ -1431,5 +1431,6 @@ AL:RegisterTranslations("enUS", function() return {
 	["Off-Hands"] = true,
 	["Ivus the Forest Lord"] = true,
 	["Lokholar the Ice Lord"] = true,
+	["The specified item does not exist!"] = true,
 	} end)
 	
