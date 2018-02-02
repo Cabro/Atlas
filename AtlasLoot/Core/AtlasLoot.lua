@@ -3504,22 +3504,26 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 					craftnumber = craftnumber..qtyMin.."x"
 				end
 			end
-			SendChatMessage(AL["To craft "]..craftnumber..AtlasLoot_GetChatLink(craftitem)..AL[" the following reagents are needed:"],channel,nil,chatnumber);
-			for j = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"]) do
-				local tempnumber = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][2]
-				if not tempnumber or tempnumber == nil or tempnumber == "" then
-					tempnumber = 1;
+			if craftnumber ~= "" then
+				SendChatMessage(AL["To craft "]..craftnumber..AtlasLoot_GetChatLink(craftitem)..AL[" the following reagents are needed:"],channel,nil,chatnumber);
+				for j = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"]) do
+					local tempnumber = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][2]
+					if not tempnumber or tempnumber == nil or tempnumber == "" then
+						tempnumber = 1;
+					end
+					chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
+					itemCount = itemCount + 1;
+					if itemCount == 4 then
+						SendChatMessage(chatline, channel, nil, chatnumber);
+						chatline = "";
+						itemCount = 0;
+					end
 				end
-				chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
-				itemCount = itemCount + 1;
-				if itemCount == 4 then
+				if itemCount > 0 then
 					SendChatMessage(chatline, channel, nil, chatnumber);
-					chatline = "";
-					itemCount = 0;
 				end
-			end
-			if itemCount > 0 then
-				SendChatMessage(chatline, channel, nil, chatnumber);
+			else
+				DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..RED..AL["The specified item does not exist!"])
 			end
 		else
 			SendChatMessage(AL["To cast "]..GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["name"]..AL[" the following items are needed:"],channel,nil,chatnumber);
