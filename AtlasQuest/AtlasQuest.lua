@@ -66,10 +66,10 @@ AQINSTATM = ""; -- variable to check whether AQINSTANZ has changed (see function
 
 -- Sets the max number of instances and quests to check for. 
 local AQMAXINSTANCES = "68"
-local AQMAXQUESTS = "19"
+local AQMAXQUESTS = "25"
 
 -- Set title for AtlasQuest side panel
-ATLASQUEST_VERSION = ""..BLUE.."AtlasQuest 4.1.2";
+ATLASQUEST_VERSION = ""..BLUE.."AtlasQuest 4.2";
 
 AQ_ShownSide = "Left"
 AQAtlasAuto = 1;
@@ -78,7 +78,7 @@ AtlasQuestHelp = {};
 AtlasQuestHelp[1] = "[/aq + available command: help, left/right, show/hide, autoshow\ndownload adress:\nhttp://ui.worldofwar.net/ui.php?id=3069, http://www.curse-gaming.com/de/wow/addons-4714-1-atlasquest.html]";
 
 local AtlasQuest_Defaults = {
-  ["Version"] =  "4.1.2",
+  ["Version"] =  "4.2",
   [UnitName("player")] = {
     ["ShownSide"] = "Left",
     ["AtlasAutoShow"] = 2,
@@ -445,10 +445,10 @@ function AQ_AtlasOrAlphamap()
            AtlasQuestFrame:SetParent(AtlasFrame);
            if (AQ_ShownSide == "Right" ) then
                AtlasQuestFrame:ClearAllPoints();
-               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -80);
+               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -36);
            else
                AtlasQuestFrame:ClearAllPoints();
-               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -545, -80);
+               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -545, -36);
            end
            AtlasQuestInsideFrame:SetParent(AtlasFrame);
            AtlasQuestInsideFrame:ClearAllPoints();
@@ -707,7 +707,7 @@ function Atlas_OnShow()
    -- AQ_AtlasOrAlphamap();
    if (AQ_ShownSide == "Right") then
        AtlasQuestFrame:ClearAllPoints();
-       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -80);
+       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -36);
   end
   original_Atlas_OnShow(); -- new line #2
 end

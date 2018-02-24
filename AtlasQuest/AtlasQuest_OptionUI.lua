@@ -106,7 +106,7 @@ end
 function AQRIGHTOption_OnClick()
      if ((AtlasFrame ~= nil) and (AtlasORAlphaMap == "Atlas")) then
        AtlasQuestFrame:ClearAllPoints();
-       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -80);
+       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -36);
      elseif (AtlasORAlphaMap == "AlphaMap") then
        AtlasQuestFrame:ClearAllPoints();
        AtlasQuestFrame:SetPoint("TOP","AlphaMapFrame", 400, -107);
@@ -127,7 +127,7 @@ end
 function AQLEFTOption_OnClick()
     if ((AtlasFrame ~= nil) and (AtlasORAlphaMap == "Atlas") and ( AQ_ShownSide == "Right") ) then
        AtlasQuestFrame:ClearAllPoints();
-       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -545, -80);
+       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -545, -36);
      elseif ((AtlasORAlphaMap == "AlphaMap") and ( AQ_ShownSide == "Right") ) then
        AtlasQuestFrame:ClearAllPoints();
        AtlasQuestFrame:SetPoint("TOPLEFT","AlphaMapFrame", -195, -107);

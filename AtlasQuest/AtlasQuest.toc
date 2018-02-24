@@ -9,11 +9,12 @@
 ## Notes-zhCN: Shows the Quests for the instance.
 ## Author: Thandrenn
 ## Original Author: Asurn
+## Updated by: Cabro
 ## Updated by: Loather
 ## Updated by: Rabidmax
 ## Updated by: Thandrenn (aka Mystery8)
 ## CLI by: Dazerdude
-## Version: 4.1.2
+## Version: 4.2
 ## X-eMail: mystery8@gmail.com
 ## X-Website: www.atlasmod.com/phpBB3/
 ## X-Category: MYADDONS_CATEGORY_MAP

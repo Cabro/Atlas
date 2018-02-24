@@ -1349,6 +1349,9 @@ AtlasLocale = {
 	["Night Elf Leveling Guide"] = "Night Elf Leveling Guide";
 	["Gnome/Dwarf Leveling Guide"] = "Gnome/Dwarf Leveling Guide"; 
 	["Alliance Leveling Guide"] = "Alliance Leveling Guide";
+	["Icebellow Anvil"] = "Icebellow Anvil";
+	["Master Craftsman Omarion"] = "Master Craftsman Omarion";
+	["The Behemoth"] = "The Behemoth";
 };
 
 end

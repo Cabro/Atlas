@@ -1083,6 +1083,8 @@ AtlasMaps = {
 		{ _RED..INDENT..INDENT..AtlasLocale["Lady Blaumeux"], NPC, 16065 };
 		{ _RED..INDENT..INDENT..AtlasLocale["Highlord Mograine <The Ashbringer>"], NPC, 16062 };
 		{ _RED..INDENT..INDENT..AtlasLocale["Sir Zeliek"], NPC, 16063 };
+		{ _RED..INDENT.."1') "..AtlasLocale["Master Craftsman Omarion"], NPC, 16365 };
+		{ _RED..INDENT.."2') "..AtlasLocale["Icebellow Anvil"], OBJECT, 181168 };
 		{ GREN..AtlasLocale["Frostwyrm Lair"] };
 		{ GREN..INDENT.."1) "..AtlasLocale["Sapphiron"], NPC, 15989 };
 		{ GREN..INDENT.."2) "..AtlasLocale["Kel'Thuzad"], NPC, 15990 };
@@ -1125,6 +1127,7 @@ AtlasMaps = {
 		{ GREY.."5) "..AtlasLocale["Orb of Command"].." ("..AtlasLocale["BWL"].. " "..AtlasLocale["Teleport"]..")", OBJECT, 179879 };
 		{ GREY.."6) "..AtlasLocale["Meeting Stone"].." ("..AtlasLocale["LBRS"]..", "..AtlasLocale["UBRS"]..")" };
 		{ GREY.."7) "..AtlasLocale["Scarshield Quartermaster <Scarshield Legion>"].." ("..AtlasLocale["Rare"]..")", NPC, 9046 };
+		{ GREY.."8) "..AtlasLocale["The Behemoth"].." ("..AtlasLocale["Rare"]..")", NPC, 8924 };
 	};
 	GnomereganEnt = {
 		ZoneName = { AtlasLocale["Gnomeregan"].." ("..AtlasLocale["Entrance"]..")", 133 };

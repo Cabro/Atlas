@@ -1432,5 +1432,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Ivus the Forest Lord"] = true,
 	["Lokholar the Ice Lord"] = true,
 	["The specified item does not exist!"] = true,
+	["Master Craftsman Omarion"] = true,
+	["The Behemoth"] = true,
 	} end)
 	
