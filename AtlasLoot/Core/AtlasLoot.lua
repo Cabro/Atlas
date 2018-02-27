@@ -3314,6 +3314,12 @@ function AtlasLootItem_OnClick(arg1)
 				DEFAULT_CHAT_FRAME:AddMessage(itemName..AL[" is safe."]);
 			end
 		elseif IsShiftKeyDown() and not iteminfo and this.itemID ~= 0 then
+			if not itemName then
+				if AtlasLootCharDB.SafeLinks then
+					DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..RED..AL["The specified item does not exist or is not cached!"])
+					return
+				end
+			end
 			if AtlasLootCharDB.SafeLinks then
 				if ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("["..name.."]");
@@ -3373,16 +3379,17 @@ function AtlasLootItem_OnClick(arg1)
 		end
 	elseif isSpell then
 		if IsShiftKeyDown() then
+			local itemexistance = GetItemInfo(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"])
+			if not itemexistance then
+				DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..RED..AL["The specified item does not exist or is not cached!"])
+				return
+			end
 			if tonumber(string.sub(this.itemID, 2)) < 100000 then
 				if ChatFrameEditBox:IsVisible() then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
-						if craftname then
-							ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
-						else
-							DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..RED..AL["The specified item does not exist!"])
-						end
+						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
 					else
 						ChatFrameEditBox:Insert(name);
 					end
@@ -3523,7 +3530,23 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 					SendChatMessage(chatline, channel, nil, chatnumber);
 				end
 			else
-				DEFAULT_CHAT_FRAME:AddMessage(BLUE..AL["AtlasLoot"]..": "..RED..AL["The specified item does not exist!"])
+				SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(craftitem)..AL[" the following reagents are needed:"],channel,nil,chatnumber);
+				for j = 1, table.getn(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"]) do
+					local tempnumber = GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][2]
+					if not tempnumber or tempnumber == nil or tempnumber == "" then
+						tempnumber = 1;
+					end
+					chatline = chatline..tempnumber.."x"..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["reagents"][j][1]).." ";
+					itemCount = itemCount + 1;
+					if itemCount == 4 then
+						SendChatMessage(chatline, channel, nil, chatnumber);
+						chatline = "";
+						itemCount = 0;
+					end
+				end
+				if itemCount > 0 then
+					SendChatMessage(chatline, channel, nil, chatnumber);
+				end
 			end
 		else
 			SendChatMessage(AL["To cast "]..GetSpellInfoVanillaDB["craftspells"][tonumber(spellid)]["name"]..AL[" the following items are needed:"],channel,nil,chatnumber);
