@@ -201,7 +201,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "INV_BannerPVP_01", "=q6=#m6#", "=q5=#b2#" },
 		{ 0, "", "", "" },
-		{ 19318, "INV_Drink_11", "=q1= Spring Water", "=ds=#e3#" },
+		{ 19318, "INV_Drink_11", "=q1=Spring Water", "=ds=#e3#" },
 		{ 19307, "INV_Misc_Bandage_12", "=q1=Alterac Heavy Runecloth Bandage", "=ds=#e4#" },
 		{ 17349, "INV_Potion_39", "=q1=Superior Healing Draught", "=ds=#e1#" },
 		{ 17352, "INV_Potion_81", "=q1=Superior Mana Draught", "=ds=#e1#" },

@@ -2245,7 +2245,7 @@ Inst14Quest4ID1_HORDE = "18253"
 Inst14Quest5Rewardtext_HORDE = AQDiscription_REWARD..WHITE.."1"
 --ITEM1
 Inst14Quest5ITC1_HORDE = Itemc5;
-Inst14Quest5Description1_HORDE = AQITEM_HEAD..AQITEM_CLOTH
+Inst14Quest5description1_HORDE = AQITEM_HEAD..AQITEM_CLOTH
 Inst14Quest5ID1_HORDE = "21517"
 
 --Quest 6 Horde
